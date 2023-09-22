@@ -1,3 +1,5 @@
+ENUNCIADO 
+
 <?xml version="1.0" encoding="UTF-8"?>
 <deportistas>
   <deportista>
@@ -5,6 +7,25 @@
     <nombre>Jesse Owens</nombre>
   <deportista>
     <deporte Natación />
+    <nombre>Mark Spitz</nombre>
+  </deportista>
+</deportistas>
+
+SOLUCION
+
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+    <deportista>
+    <deporte>
+      Atletismo 
+    </deporte>
+    <nombre>Jesse Owens</nombre>
+  </deportista>
+  
+    <deportista>
+    <deporte>
+      Natacion
+    </deporte>
     <nombre>Mark Spitz</nombre>
   </deportista>
 </deportistas>
