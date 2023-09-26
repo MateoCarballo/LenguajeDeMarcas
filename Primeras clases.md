@@ -19,8 +19,6 @@ CSharp</asignatura>
   <horas>12</horas>
 </asignatura> 
 <pausa/>
-
-
 ```
 Cosas que se tocaron.
 - Estructura en arbol
