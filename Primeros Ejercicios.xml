@@ -1,5 +1,7 @@
-Ejercicio sacado de la pagina [Enlace](https://www.mclibre.org/consultar/xml/ejercicios/documentos-bien-formados.html)
-ENUNCIADO 
+Ejercicios sacados de la pagina [Enlace](https://www.mclibre.org/consultar/xml/ejercicios/documentos-bien-formados.html)
+
+
+1)
 
 <?xml version="1.0" encoding="UTF-8"?>
 <deportistas>
@@ -30,3 +32,66 @@ SOLUCION
     <nombre>Mark Spitz</nombre>
   </deportista>
 </deportistas>
+
+2)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<pelicula>
+  <titulo>Con faldas y a lo loco</titulo>
+  <director>Billy Wilder</director>
+</pelicula>
+<pelicula>
+  <director>Leo McCarey</director>
+  <titulo>Sopa de ganso</titulo>
+</pelicula>
+<autor />barto</autor>
+
+3)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<texto>
+  <Titulo>XML explicado a los niños</titulo>
+  <párrafo>El <abreviatura>XML</abreviatura>define cómo crear
+  lenguajes de marcas.</párrafo>
+  <párrafo>Las marcas se añaden a un documento de texto
+  para añadir información.</párrafo>
+  <http://>www.example.org</http://>
+</texto>
+
+4)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia mundial>
+  <pais>
+    <pais>España</pais>
+    <continente>Europa</continente>
+    <capital></capital nombre="Madrid">
+  </pais>
+</geografia mundial>
+
+5)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<programas>
+  <programa nombre="Firefox" licencia="GPL" licencia="MPL" />
+  <programa nombre="LibreOffice" licencia="LGPL" />
+  <programa nombre="Inkscape" licencia=GPL />
+</programas>
+
+6)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<mundiales-de-futbol>
+  <mundial>
+    <pais="España" />
+    <1982 />
+  </mundial>
+</mundiales-de-futbol>
+
+7)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<mediosDeTransporte>
+  <bicicleta velocidad="v<100km/h" />
+  <patinete velocidad maxima="50 km/h"
+</mediosDeTransporte>
