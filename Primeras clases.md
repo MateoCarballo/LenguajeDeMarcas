@@ -3,7 +3,6 @@
 
 
 Mejora del codigo que aparece en los apuntes
-
 <titulo>O meu primeiro libro de pesca</titulo>
 <cantidade unidades="kg">7</cantidade>
 <asignatura numHoras="12">Programación en 
