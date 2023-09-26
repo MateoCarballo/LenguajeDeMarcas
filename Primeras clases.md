@@ -3,13 +3,16 @@
 
 
 Mejora del codigo que aparece en los apuntes
+
+
+```html
 <titulo>O meu primeiro libro de pesca</titulo>
 <cantidade unidades="kg">7</cantidade>
 <asignatura numHoras="12">Programación en 
 CSharp</asignatura>
 <pausa/>
 
-titulo>O meu primeiro libro de pesca</titulo>
+<titulo>O meu primeiro libro de pesca</titulo>
 <cantidade unidades="kg">7</cantidade>
 <asignatura>
   <materia>Programacion csharp</materia>
@@ -17,6 +20,8 @@ titulo>O meu primeiro libro de pesca</titulo>
 </asignatura> 
 <pausa/>
 
+
+```
 Cosas que se tocaron.
 - Estructura en arbol
 - Etiquetas
