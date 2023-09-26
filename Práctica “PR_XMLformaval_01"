@@ -9,8 +9,8 @@
 ]>
 <email>
   <para>destinatario</para>
-  <cc>optativo</cc><!-- con copia-->
-  <cco>optativo</cco><!-- con copia oculta-->
+  <cc>con copia</cc> <!-- campo NO obligatorio -->
+  <cco>con copia oculta</cco><!-- campo NO obligatorio -->
   <asunto>asunto</asunto>
   <cuerpo>cuerpo</cuerpo>
    </email>
