@@ -22,5 +22,6 @@ Cosas que se tocaron.
 - Etiquetas
 - Atributos
 - Entidades deñ
-- Como escribir los simbolos usados por el propio lenguaje para evitar errores pagina 8 del pdf LinguaxeXML_platega.pdf
+- Como escribir los simbolos usados por el propio 
+lenguaje para evitar errores pagina 8 del pdf LinguaxeXML_platega.pdf
 - nameSpace ??
