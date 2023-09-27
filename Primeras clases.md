@@ -1,7 +1,4 @@
 
-<!-- TODO  pendiente de descargar XML Copy Editor-->
-
-
 Mejora del codigo que aparece en los apuntes
 
 
