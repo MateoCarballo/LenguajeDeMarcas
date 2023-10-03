@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libroRecetas>
+    <receta>
+        <nombre>Sopa de cebolla</nombre>
+        <comensales>4</comensales>
+        <ingredientes>
+        
+            <ingrediente unidades="kg">
+                <nombre>Cebolla</nombre>
+                <cantidad>1</cantidad>
+            </ingrediente>
+          
+            <ingrediente unidades="Litros">
+                <nombre>Caldo de carne</nombre>
+                <cantidad>2</cantidad>
+            </ingrediente>
+            
+            <ingrediente unidades ="g">
+              <nombre>Mantequilla</nombre>
+              <cantidad>100</cantidad>
+          </ingrediente>
+          
+          <ingrediente unidades ="cucharadas">
+                <nombre>Harina</nombre>
+                <cantidad>1</cantidad>          
+          </ingrediente>
+          
+          <ingrediente nombre ="q" unidades="g">
+                <nombre>Queso emental</nombre>
+                <cantidad>100</cantidad>
+                <comentario> Se puede usar indistintamente emental o gruyere, la cantidad total no superara los 100gr </comentario>
+           </ingrediente>
+           
+            <ingrediente unidades="">
+                <nombre>Pan</nombre>
+                <cantidad>-1</cantidad>
+                <comentario>El pan es a gusto personal no existe una cantidad fija</comentario>
+            </ingrediente>
+            
+            <ingrediente unidades="">
+                <nombre>Tomillo</nombre>
+                <cantidad>-1</cantidad>
+                <comentario>Al gusto</comentario>
+            </ingrediente>
+            
+            <ingrediente unidades="hojas">
+                 <nombre>Laurel</nombre>
+                <cantidad>1</cantidad>
+            </ingrediente>
+            
+            <ingrediente unidades="">
+            <nombre>Pimienta</nombre>
+                <cantidad>-1</cantidad>
+                <comentario>Al gusto</comentario>
+            </ingrediente>
+            
+        </ingredientes>
+        <pasos>
+        
+           <paso>
+              <idPaso>1</idPaso>
+              <comentario>Pelar y partir las cebollas en rodajas finas</comentario>
+           </paso>
+           
+           <paso>
+              <idPaso>2</idPaso>
+              <comentario>Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse</comentario>
+           </paso>
+           
+            <paso>
+              <idPaso>3</idPaso>
+              <comentario>Añadir la harina sin dejar de remover</comentario>
+           </paso>
+           
+            <paso>
+              <idPaso>4</idPaso>
+              <comentario>Ponerlo en una cazuela con el caldo, el tomillo y el laurel</comentario>
+           </paso>
+           
+            <paso>
+              <idPaso>5</idPaso>
+              <comentario>Dejar cocer a fuego lento durante unos 15 minutos</comentario>
+           </paso>
+           
+            <paso>
+              <idPaso>6</idPaso>
+              <comentario>Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</comentario>
+            </paso>
+            
+        </pasos>
+    </receta>
+</libroRecetas>
+
+
+<!-- Ejercicio: fpadistanciaTareaLMSGI01
+Diseñar un documento válido en XML que permita estructurar la información de las recetas de 
+cocina de un restaurante y aplicarlo a la siguiente receta de cocina. Hay que hacerlo de modo que un
+sistema informático pueda realizar búsquedas por ingredientes, cantidad de comensales o nombre de
+la receta
+Sopa de cebolla (4 personas)Ingredientes:
+• 1 Kg. de cebollas. 
+• 2 l. de caldo de carne. 
+• 100 gr. mantequilla. 
+• 1 cucharada de harina. 
+• 100 gr. de queso emmental suizo o gruyére rallado. 
+• Pan tostado en rebanadas. 
+• Tomillo. 
+• 1 hoja de laurel. 
+• Pimienta. 
+Proceso:
+• Pelar y partir las cebollas en rodajas finas. 
+• Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin
+dorarse. 
+• Añadir la harina sin dejar de remover. 
+• Ponerlo en una cazuela con el caldo, el tomillo y el laurel. 
+• Dejar cocer a fuego lento durante unos 15 minutos. 
+• Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno-->
