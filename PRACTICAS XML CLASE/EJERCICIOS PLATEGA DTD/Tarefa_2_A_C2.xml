@@ -5,18 +5,18 @@
 	 <!ELEMENT nombre (#PCDATA)>
 	]>
 	<centro>
-	<ciclo>
-	        <codigo>CSIFC01</codigo>
-	        <nombre>Administración de sistemas informáticos</nombre>
-  </ciclo>
-  <ciclo>
-	        <codigo>CSIFC02</codigo>
-	        <nombre>Desenvolvemento de aplicacións multiplataforma</nombre>
-  </ciclo>
-  <ciclo>
-	        <codigo>CSIFC03</codigo>
-	        <nombre>Desenvolvemento de aplicacións web</nombre>
-  </ciclo>
+		<ciclo>
+	        	<codigo>CSIFC01</codigo>
+	        	<nombre>Administración de sistemas informáticos</nombre>
+  		</ciclo>
+  		<ciclo>
+	        	<codigo>CSIFC02</codigo>
+	        	<nombre>Desenvolvemento de aplicacións multiplataforma</nombre>
+  		</ciclo>
+  		<ciclo>
+	        	<codigo>CSIFC03</codigo>
+	        	<nombre>Desenvolvemento de aplicacións web</nombre>
+  		</ciclo>
 	</centro>
 	
 	
