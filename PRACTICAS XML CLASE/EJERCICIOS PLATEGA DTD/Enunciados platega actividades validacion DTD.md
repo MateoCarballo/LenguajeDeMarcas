@@ -42,7 +42,7 @@ Comprobación e modificación de documentos XML para que respondan a unha DTD d
 Comproba se os seguintes documentos son válidos e en caso contrario modifica o XML para 
 que responda á DTD proposta.
 
-	### a) Tarefa2a_a.xml
+### a) Tarefa2a_a.xml
 
 		<?xml version="1.0" encoding="UTF-8"?>
 		<!DOCTYPE ciclos [
@@ -55,7 +55,7 @@ que responda á DTD proposta.
 		 <ciclo>Desenvolvemento de Aplicacións Web</ciclo>
 		</ciclos>
 		
-	### b) Tarefa2a_b
+### b) Tarefa2a_b
 	
 		<?xml version="1.0" encoding="UTF-8"?>
 		<!DOCTYPE ciclo [
@@ -76,7 +76,7 @@ que responda á DTD proposta.
 		 <CSIFC03>Desenvolvemento de aplicacións web</CSIFC03>
 		</ciclo>
 		
-	### d) Tarefa2a_d
+### d) Tarefa2a_d
 	
 		<?xml version="1.0" encoding="UTF-8"?>
 		<!DOCTYPE familias [
@@ -97,7 +97,7 @@ que responda á DTD proposta.
 		 </familia>
 		</familias>
 		
-	### e) Tarefa2a_e
+### e) Tarefa2a_e
 	
 		<?xml version="1.0" encoding="UTF-8"?>
 		<!DOCTYPE contactos [
@@ -122,7 +122,7 @@ que responda á DTD proposta.
 		 </contacto>
 		</contactos>
 		
-	### f) Tarefa2a_f
+### f) Tarefa2a_f
 	
 		<?xml version="1.0" encoding="UTF-8"?>
 		<!DOCTYPE famosos [
