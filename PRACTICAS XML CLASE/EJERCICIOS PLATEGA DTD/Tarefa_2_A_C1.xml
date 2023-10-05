@@ -1,0 +1,10 @@
+﻿	<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE ciclo [
+	 <!ELEMENT ciclo (codigo*)>
+	 <!ELEMENT codigo (#PCDATA)>
+	]>
+	<ciclo>
+	 <codigo nombre="CSIFC01">Administración de sistemas informáticos</codigo>
+	 <codigo nombre="CSIFC02">Desenvolvemento de aplicacións multiplataforma</codigo>
+	 <codigo nombre="CSIFC03">Desenvolvemento de aplicacións web</codigo>
+	</ciclo>

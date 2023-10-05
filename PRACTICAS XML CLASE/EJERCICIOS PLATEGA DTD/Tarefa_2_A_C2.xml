@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE centro [
+	 <!ELEMENT ciclo (codigo+,nombre+)>
+	 <!ELEMENT codigo (#PCDATA)>
+	 <!ELEMENT nombre (#PCDATA)>
+	]>
+	<centro>
+	<ciclo>
+	        <codigo>CSIFC01</codigo>
+	        <nombre>Administración de sistemas informáticos</nombre>
+  </ciclo>
+  <ciclo>
+	        <codigo>CSIFC02</codigo>
+	        <nombre>Desenvolvemento de aplicacións multiplataforma</nombre>
+  </ciclo>
+  <ciclo>
+	        <codigo>CSIFC03</codigo>
+	        <nombre>Desenvolvemento de aplicacións web</nombre>
+  </ciclo>
+	</centro>
+	
+	
