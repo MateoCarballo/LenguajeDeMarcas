@@ -172,12 +172,12 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 		</provincia>
 	```	
 -(*) => 0 ou máis veces
-		```
+	```
 		<!ELEMENT maquinas (ip, maquina)*)>
-		```
-		```
+	```
+	```
 		<maquinas>
 		
-		
+
 		</maquinas>
-		```
+	```
