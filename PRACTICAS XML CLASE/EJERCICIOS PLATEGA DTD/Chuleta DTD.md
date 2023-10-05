@@ -122,56 +122,62 @@ Un modelo de contido é un patrón que establece os subelementos aceptados, e a 
 estes deben estar. A continuación imos ver as distintas posibilidades:
 			
 -Fillo unico
-					<!ELEMENT titor (nome)>
-			
-			
-					<titor>
-					<nome>Sara Vila Ferreiro</nome>
-					</titor>
-
+```
+	<!ELEMENT titor (nome)>
+```			
+```			
+	<titor>
+	<nome>Sara Vila Ferreiro</nome>
+	</titor>
+```
 -Fillos nunha orde determinada 
-					<!ELEMENT ciclo (codigo,nome,grao)>
+```
+	<!ELEMENT ciclo (codigo,nome,grao)>
 					
-					
-					<ciclo>
-					<codigo>CSIFC03</codigo>
-					<nome>Desenvolvemento de aplicacións
-					Web </nome>
-					<grao>Superior</grao>
-					</ciclo>
-					
+```
+```					
+	<ciclo>
+	<codigo>CSIFC03</codigo>
+	<nome>Desenvolvemento de aplicacións Web </nome>
+	<grao>Superior</grao>
+	</ciclo>
+```					
 -Opción a que aparezan uns fillos ou outros
-			
-					<!ELEMENT ciclo ((codigo|nome),grao)>
-					
+```			
+	<!ELEMENT ciclo ((codigo|nome),grao)>
+```					
 ### 3.4 Frecuencia.
+
 -(?) => Opcional
-		<!ELEMENT telefono (mobil, fixo?)>
-		
-		<telefono>
-		<mobil>632323232</mobil>
-		</telefono>
-		
+```
+	<!ELEMENT telefono (mobil, fixo?)>
+```
+```		
+	<telefono>
+	<mobil>632323232</mobil>
+	</telefono>
+```		
 -(+) => 1 ou máis veces
-	
+	```
 		<!ELEMENT provincia (nome, 
 		 (cp,poboacion)+)>
-		 
-		 
-		 <provincia>
+	```	 
+	```
+		<provincia>
 		<nome>Lugo</nome>
 		<cp>27003</cp>
 		<poboacion>Lugo</poboacion>
 		<cp>27850</cp>
 		<poboacion>Viveiro</poboacion>
 		</provincia>
-		
+	```	
 -(*) => 0 ou máis veces
-		
+		```
 		<!ELEMENT maquinas (ip, maquina)*)>
-		
+		```
+		```
 		<maquinas>
 		
 		
 		</maquinas>
-		
+		```
