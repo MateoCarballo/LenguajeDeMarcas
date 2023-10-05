@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mensaxe SYSTEM "Tarefa_1_B_DTD.dtd">
+<mensaxe>
+<de>mateocarballo@micorreo.com</de>
+<para>destinatario1@micorreo.com</para>
+<para>destinatario2@micorreo.com</para>
+<para>destinatario3@micorreo.com</para>
+<para>destinatario4@micorreo.com</para>
+<asunto>asunto del correo</asunto>
+<adxunto>archivo adjunto 1</adxunto>
+<adxunto>archivo adjunto 2</adxunto>
+<adxunto>archivo adjunto 3</adxunto>
+</mensaxe>
