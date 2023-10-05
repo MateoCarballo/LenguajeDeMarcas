@@ -99,8 +99,11 @@ ou ben
 ### 3.1 Especificacions.
 '''
 -EMPTY ```<!ELEMENT br EMPTY>``` -> ```<br />```
+
 -ANY
+
 -PCDATA```<!ELEMENT titulo (#PCDATA)>``` -> ```<titulo>A linguaxe XML</titulo>```
+
 -MIXED```<!ELEMENT obxecto (#PCDATA|imaxe)*>```
 
 
