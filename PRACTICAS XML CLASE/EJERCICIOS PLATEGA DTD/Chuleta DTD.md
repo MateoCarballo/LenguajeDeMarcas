@@ -3,18 +3,18 @@
 ## 1.Construccion de una DTD.
 A gramática dun documento XML defínese nun documento DTD. 
 A etiqueta  ```<!DOCTYPE>``` contén a definición da gramática. A súa sintaxe é a seguinte:
-```
+
 	<!DOCTYPE nomeElementoRaiz [ declaracions ]>
-	```
+
 Ou ben
-```
+
 	<!DOCTYPE nomeElementoRaiz SYSTEM "nomeArquivo.dtd">
-```			
+		
 Onde, nomeElementoRaiz é o nome do elemento raiz; declaracions define unha lista 
 do conxunto de declaracións dos elementos e atributos do documento; e nomeArquivo.dtd
 é o nome do arquivo da DTD.
 A continuación vemos a gramática DTD correspondente ao documento XML anterior:
-```
+
 	<!DOCTYPE tema [
 	<!ELEMENT tema (autor, apartado+)>
 	<!ATTLIST tema
@@ -25,13 +25,13 @@ A continuación vemos a gramática DTD correspondente ao documento XML anterior:
 	<!ATTLIST apartado
 	numero CDATA #REQUIRED>
 	]>
-```
+
 ## 2. Declaracion DTD. 
 			
 ### 2.1 Declaracións DTD dentro dun documento XML (DTD internas).			
 			
 Declaracións DTD dentro dun documento XML (DTD internas) <!DOCTYPE> xusto despois do prólogo:
-```
+
 	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 	<!-- Declaracións DTD-->
 	<!DOCTYPE tema [
@@ -50,7 +50,7 @@ Declaracións DTD dentro dun documento XML (DTD internas) <!DOCTYPE> xusto despo
 	<apartado numero="1">Contido do apartado 1</apartado>
 	<apartado numero="2">Contido do capitulo 2</apartado>
 	</tema>
-```
+
 ### 2.2 Declaracións DTD nun arquivo .dtd (DTD externas).
 
 Declaracións DTD nun arquivo .dtd (DTD externas) <!DOCTYPE nomeElementoRaiz SYSTEM "nomeArquivo.dtd">		
