@@ -69,14 +69,14 @@ En primeiro lugar, imos ver o contido do arquivo tema.dtd:
 
 E a continuación vemos o contido do arquivo tema.xml que contén o vínculo co arquivo .dtd asociado:
 
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE tema SYSTEM "tema.dtd">
-<!-- Datos XML-->
-<tema unidade="5" titulo="A linguaxe XML">
- <autor>Sabela Varela</autor>
- <apartado numero="1">Contido do apartado 1</apartado>
- <apartado numero="2">Contido do capitulo 2</apartado>
-</tema>
+			<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+			<!DOCTYPE tema SYSTEM "tema.dtd">
+			<!-- Datos XML-->
+			<tema unidade="5" titulo="A linguaxe XML">
+			 <autor>Sabela Varela</autor>
+			 <apartado numero="1">Contido do apartado 1</apartado>
+			 <apartado numero="2">Contido do capitulo 2</apartado>
+			</tema>
 
 Con esta solución, o documento XML non é es autosuficiente e, polo tanto, o valor do atributo standalone é no.
 
@@ -97,29 +97,29 @@ ou ben
 			<!ELEMENT nomeElemento (tipoDeContido)>	 
 
 ### 3.1 Especificacions.
-	- EMPTY 
+- EMPTY 
 		|<!ELEMENT br EMPTY>|<br />|
-	-ANY
-	-PCDATA
+-ANY
+-PCDATA
 		|<!ELEMENT titulo (#PCDATA)>|<titulo>A linguaxe XML</titulo>|
-	-MIXED
+-MIXED
 		<!ELEMENT obxecto (#PCDATA|imaxe)*>
 
 		Obxecto podería conter cero ou máis ocurrencias de datos de carácter (#PCDATA) e/ou
 		subelementos de tipo imaxe.
 ### 3.2 Regras.
 
-			Esta declaración debe respectar as seguintes condicións:
-			– Os datos textuais #PCDATA deben aparecer sempre en primeira posición.
-			– O grupo debe ser unha elección (separado co carácter | ).
-			– O grupo debe aparecer cero, unha ou varias veces (operador *).
+Esta declaración debe respectar as seguintes condicións:
+– Os datos textuais #PCDATA deben aparecer sempre en primeira posición.
+– O grupo debe ser unha elección (separado co carácter | ).
+– O grupo debe aparecer cero, unha ou varias veces (operador *).
 			
 ### 3.3 Modelos contidos.
 	
-	Un modelo de contido é un patrón que establece os subelementos aceptados, e a orde na que 
+Un modelo de contido é un patrón que establece os subelementos aceptados, e a orde na que 
 estes deben estar. A continuación imos ver as distintas posibilidades:
 			
-			-Fillo unico
+-Fillo unico
 					<!ELEMENT titor (nome)>
 			
 			
@@ -127,7 +127,7 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 					<nome>Sara Vila Ferreiro</nome>
 					</titor>
 
-			-Fillos nunha orde determinada 
+-Fillos nunha orde determinada 
 					<!ELEMENT ciclo (codigo,nome,grao)>
 					
 					
@@ -138,19 +138,19 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 					<grao>Superior</grao>
 					</ciclo>
 					
-			-Opción a que aparezan uns fillos ou outros
+-Opción a que aparezan uns fillos ou outros
 			
 					<!ELEMENT ciclo ((codigo|nome),grao)>
 					
 ### 3.4 Frecuencia.
-	-(?) => Opcional
+-(?) => Opcional
 		<!ELEMENT telefono (mobil, fixo?)>
 		
 		<telefono>
 		<mobil>632323232</mobil>
 		</telefono>
 		
-	-(+) => 1 ou máis veces
+-(+) => 1 ou máis veces
 	
 		<!ELEMENT provincia (nome, 
 		 (cp,poboacion)+)>
@@ -164,7 +164,7 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 		<poboacion>Viveiro</poboacion>
 		</provincia>
 		
-	-(*) => 0 ou máis veces
+-(*) => 0 ou máis veces
 		
 		<!ELEMENT maquinas (ip, maquina)*)>
 		
