@@ -64,7 +64,9 @@ que responda á DTD proposta.
 		]>
 		<ciclo>
 		</ciclo>
-		c) Tarefa2a_c
+
+### c) Tarefa2a_c
+
 		<?xml version="1.0" encoding="UTF-8"?>
 		<!DOCTYPE ciclo [
 		 <!ELEMENT ciclo (codigo*)>
