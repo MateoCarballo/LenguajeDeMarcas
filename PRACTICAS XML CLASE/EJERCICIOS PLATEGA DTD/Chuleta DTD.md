@@ -1,10 +1,10 @@
 # REGLAS CREACION DTD
 
-[1. Construcción de una DTD](#1. Construcción de una DTD)
+- [1. Construcción de una DTD](#1. Construcción de una DTD)
 
-[2. Declaración DTD](#2. Declaración DTD)
+- [2. Declaración DTD](#2. Declaración DTD)
 
-[3. Definir elementos.](#3 Definir elementos)
+- [3. Definir elementos.](#3 Definir elementos)
 
 	
 ## 1.Construccion de una DTD. {#1. Construcción de una DTD}
