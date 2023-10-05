@@ -60,25 +60,25 @@ Declaracións DTD nun arquivo .dtd (DTD externas) xusto despois do prólogo e an
 ```			
 En primeiro lugar, imos ver o contido do arquivo tema.dtd:
 ```
-	<!ELEMENT tema (autor, apartado+)>
-	<!ATTLIST tema
-	titulo CDATA #REQUIRED
-	unidade CDATA #REQUIRED>
-	<!ELEMENT autor (#PCDATA)>
-	<!ELEMENT apartado (#PCDATA)>
-	<!ATTLIST apartado
-		numero CDATA #REQUIRED>
+<!ELEMENT tema (autor, apartado+)>
+<!ATTLIST tema
+titulo CDATA #REQUIRED
+unidade CDATA #REQUIRED>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT apartado (#PCDATA)>
+<!ATTLIST apartado
+	numero CDATA #REQUIRED>
 ```
 E a continuación vemos o contido do arquivo tema.xml que contén o vínculo co arquivo .dtd asociado:
 ```
-	<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-	<!DOCTYPE tema SYSTEM "tema.dtd">
-	<!-- Datos XML-->
-	<tema unidade="5" titulo="A linguaxe XML">
-	<autor>Sabela Varela</autor>
-	<apartado numero="1">Contido do apartado 1</apartado>
-	<apartado numero="2">Contido do capitulo 2</apartado>
-	</tema>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tema SYSTEM "tema.dtd">
+<!-- Datos XML-->
+<tema unidade="5" titulo="A linguaxe XML">
+<autor>Sabela Varela</autor>
+<apartado numero="1">Contido do apartado 1</apartado>
+<apartado numero="2">Contido do capitulo 2</apartado>
+</tema>
 ```
 Con esta solución, o documento XML non é es autosuficiente e, polo tanto, o valor do atributo standalone é no.
 
