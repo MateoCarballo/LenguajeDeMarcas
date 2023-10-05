@@ -1,19 +1,23 @@
 # REGLAS CREACION DTD
 
-- [1.Construccion de una DTD.](#Construccion de una DTD)
-  
-- [2. Declaracion DTD.](#Declaracion DTD)
-	- [2.1 Declaracións DTD dentro dun documento XML (DTD internas).](#Declaracións DTD dentro dun documento XML (DTD internas))
-	- [2.2 Declaracións DTD nun arquivo .dtd (DTD externas).](#Declaracións DTD nun arquivo .dtd (DTD externas))
-	- [2.3 Declaracións DTD nun documento cunha referencia pública.](#Declaracións DTD nun documento cunha referencia pública)
+## 1. Construcción de una DTD
+   - 1.1 Declaraciones DTD dentro de un documento XML (DTD internas)
+   - 1.2 Declaraciones DTD en un archivo .dtd (DTD externas)
+   - 1.3 Declaraciones DTD en un documento con una referencia pública
+
+## 2. Declaración DTD
+   - 2.1 Declaraciones DTD dentro de un documento XML (DTD internas)
+   - 2.2 Declaraciones DTD en un archivo .dtd (DTD externas)
+   - 2.3 Declaraciones DTD en un documento con una referencia pública
+
+## 3. Definir elementos
+   - 3.1 Especificaciones
+   - 3.2 Reglas
+   - 3.3 Modelos de contenido
+   - 3.4 Frecuencia
+
 	
-- [3 Definir elementos.](#Definir elementos)
-	- [3.1 Especificacions.](#Especificacions)
-	- [3.2 Regras.](#Regras)
-	- [3.3 Modelos contidos.](Modelos contidos)
-	-[3.4 Frecuencia.](Frecuencia)
-	
-## 1.Construccion de una DTD. {#Construccion de una DTD}
+## 1.Construccion de una DTD. 
 A gramática dun documento XML defínese nun documento DTD. 
 A etiqueta  ```<!DOCTYPE>``` contén a definición da gramática. A súa sintaxe é a seguinte:
 
@@ -39,9 +43,9 @@ A continuación vemos a gramática DTD correspondente ao documento XML anterior:
 	numero CDATA #REQUIRED>
 	]>
 
-## 2. Declaracion DTD. {#Declaracion DTD}
+## 2. Declaracion DTD.
 			
-### 2.1 Declaracións DTD dentro dun documento XML (DTD internas).{#Declaracións DTD dentro dun documento XML (DTD internas)}			
+### 2.1 Declaracións DTD dentro dun documento XML (DTD internas).	
 			
 Declaracións DTD dentro dun documento XML (DTD internas) <!DOCTYPE> xusto despois do prólogo:
 
@@ -64,7 +68,7 @@ Declaracións DTD dentro dun documento XML (DTD internas) <!DOCTYPE> xusto despo
 	<apartado numero="2">Contido do capitulo 2</apartado>
 	</tema>
 
-### 2.2 Declaracións DTD nun arquivo .dtd (DTD externas). {#Declaracións DTD nun arquivo .dtd (DTD externas)}
+### 2.2 Declaracións DTD nun arquivo .dtd (DTD externas).
 
 Declaracións DTD nun arquivo .dtd (DTD externas) xusto despois do prólogo e antes
  dos datos XML para indicar o arquivo que contén a definición da gramática DTD:
@@ -95,7 +99,7 @@ E a continuación vemos o contido do arquivo tema.xml que contén o vínculo co 
 ```
 Con esta solución, o documento XML non é es autosuficiente e, polo tanto, o valor do atributo standalone é no.
 
-### 2.3 Declaracións DTD nun documento cunha referencia pública.{#Declaracións DTD nun documento cunha referencia pública}
+### 2.3 Declaracións DTD nun documento cunha referencia pública.
 
 Cando o documento é un estándar usaremos o identificador PUBLIC, a cadea de texto que o 
 identifica e a súa URL. Por exemplo:
@@ -103,7 +107,7 @@ identifica e a súa URL. Por exemplo:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 ```			 
-## 3 Definir elementos.{#Definir elementos}
+## 3 Definir elementos.
 
 A sintaxe para definir elementos é a seguinte:
 ```
@@ -113,7 +117,7 @@ ou ben
 ```
 <!ELEMENT nomeElemento (tipoDeContido)>	 
 ```
-### 3.1 Especificacions.{#Especificacions}
+### 3.1 Especificacions.
 
 -EMPTY ```<!ELEMENT br EMPTY>``` -> ```<br />```
 
@@ -126,14 +130,14 @@ ou ben
 
 Obxecto podería conter cero ou máis ocurrencias de datos de carácter (#PCDATA) e/ou
 subelementos de tipo imaxe.
-### 3.2 Regras.{#Regras}
+### 3.2 Regras.
 
 Esta declaración debe respectar as seguintes condicións:
 – Os datos textuais #PCDATA deben aparecer sempre en primeira posición.
 – O grupo debe ser unha elección (separado co carácter | ).
 – O grupo debe aparecer cero, unha ou varias veces (operador *).
 			
-### 3.3 Modelos contidos.{#Modelos contidos}
+### 3.3 Modelos contidos.
 	
 Un modelo de contido é un patrón que establece os subelementos aceptados, e a orde na que 
 estes deben estar. A continuación imos ver as distintas posibilidades:
