@@ -97,11 +97,11 @@ ou ben
 			<!ELEMENT nomeElemento (tipoDeContido)>	 
 
 ### 3.1 Especificacions.
-
--EMPTY '<!ELEMENT br EMPTY>' -> '<br />'
+'''
+-EMPTY ```<!ELEMENT br EMPTY>``` -> ```<br />```
 -ANY
--PCDATA'<!ELEMENT titulo (#PCDATA)>' -> '<titulo>A linguaxe XML</titulo>'
--MIXED'<!ELEMENT obxecto (#PCDATA|imaxe)*' -> ''
+-PCDATA```<!ELEMENT titulo (#PCDATA)>``` -> ```<titulo>A linguaxe XML</titulo>```
+-MIXED```<!ELEMENT obxecto (#PCDATA|imaxe)*>```
 
 
 Obxecto podería conter cero ou máis ocurrencias de datos de carácter (#PCDATA) e/ou
