@@ -53,8 +53,8 @@ Declaracións DTD dentro dun documento XML (DTD internas) <!DOCTYPE> xusto despo
 
 ### 2.2 Declaracións DTD nun arquivo .dtd (DTD externas).
 
-Declaracións DTD nun arquivo .dtd (DTD externas) <!DOCTYPE nomeElementoRaiz SYSTEM "nomeArquivo.dtd">		
-xusto despois do prólogo e antes dos datos XML para indicar o arquivo que contén a definición da gramática DTD:
+Declaracións DTD nun arquivo .dtd (DTD externas) xusto despois do prólogo e antes
+ dos datos XML para indicar o arquivo que contén a definición da gramática DTD:
 ```
 <!DOCTYPE nomeElementoRaiz SYSTEM "nomeArquivo.dtd">
 ```			
@@ -86,18 +86,20 @@ Con esta solución, o documento XML non é es autosuficiente e, polo tanto, o va
 
 Cando o documento é un estándar usaremos o identificador PUBLIC, a cadea de texto que o 
 identifica e a súa URL. Por exemplo:
-
-			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-			 "http://www.w3.org/TR/html4/strict.dtd">
-			 
+```
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+```			 
 ## 3 Definir elementos.
 
 A sintaxe para definir elementos é a seguinte:
-
-			<!ELEMENT nomeElemento contido>
+```
+<!ELEMENT nomeElemento contido>
+```
 ou ben
-			<!ELEMENT nomeElemento (tipoDeContido)>	 
-
+```
+<!ELEMENT nomeElemento (tipoDeContido)>	 
+```
 ### 3.1 Especificacions.
 
 -EMPTY ```<!ELEMENT br EMPTY>``` -> ```<br />```
