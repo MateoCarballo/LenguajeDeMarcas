@@ -7,7 +7,7 @@
 - [3. Definir elementos.](#3 Definir elementos)
 
 	
-## 1.Construccion de una DTD. {#1. Construcción de una DTD}
+## 1.Construccion de una DTD. <a name="1. Construcción de una DTD"></a>
 A gramática dun documento XML defínese nun documento DTD. 
 A etiqueta  ```<!DOCTYPE>``` contén a definición da gramática. A súa sintaxe é a seguinte:
 
@@ -33,7 +33,7 @@ A continuación vemos a gramática DTD correspondente ao documento XML anterior:
 	numero CDATA #REQUIRED>
 	]>
 
-## 2. Declaracion DTD.{#2. Declaración DTD}
+## 2. Declaracion DTD.<a name="2. Declaracion DTD"></a>
 			
 ### 2.1 Declaracións DTD dentro dun documento XML (DTD internas).	
 			
