@@ -4,7 +4,7 @@
 		 <!ELEMENT ciclo (#PCDATA)>
 		]>
 		<ciclos>
-		 <ciclo>Administración de Sistemas Informáticos e Redes</ciclo>
-		 <ciclo>Desenvolvemento de Aplicacións Multiplataforma</ciclo>
-		 <ciclo>Desenvolvemento de Aplicacións Web</ciclo>
+         <ciclo>Administración de Sistemas Informáticos e Redes</ciclo>
+         <ciclo>Desenvolvemento de Aplicacións Multiplataforma</ciclo>
+         <ciclo>Desenvolvemento de Aplicacións Web</ciclo>
 		</ciclos>

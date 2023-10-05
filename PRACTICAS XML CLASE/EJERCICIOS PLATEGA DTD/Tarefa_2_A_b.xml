@@ -4,6 +4,8 @@
 		 <!ELEMENT modulo (#PCDATA)>
 		]>
 		<ciclo>
+		
+		
 		</ciclo>
 
 <!-- Lo soluciono especificando que 'ciclo' puede tener un modulo o no con '?' -->
