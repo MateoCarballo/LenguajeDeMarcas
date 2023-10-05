@@ -97,7 +97,7 @@ ou ben
 			<!ELEMENT nomeElemento (tipoDeContido)>	 
 
 ### 3.1 Especificacions.
-'''
+
 -EMPTY ```<!ELEMENT br EMPTY>``` -> ```<br />```
 
 -ANY
