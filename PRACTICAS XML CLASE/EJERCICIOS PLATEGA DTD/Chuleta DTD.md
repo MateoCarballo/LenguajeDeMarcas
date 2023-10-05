@@ -1,19 +1,19 @@
 # REGLAS CREACION DTD
 
-- [Construccion de una DTD.](#Construccion de una DTD.)
+[Construccion de una DTD.](#Construccion de una DTD.)
   
-- [Declaracion DTD.](#Declaracion DTD.)
-	- [2.1 Declaracións DTD dentro dun documento XML (DTD internas).](#2.1 Declaracións DTD dentro dun documento XML (DTD internas).)
-	- [2.2 Declaracións DTD nun arquivo .dtd (DTD externas).](#2.2 Declaracións DTD nun arquivo .dtd (DTD externas).)
-	- [2.3 Declaracións DTD nun documento cunha referencia pública.](#2.3 Declaracións DTD nun documento cunha referencia pública.)
+[Declaracion DTD.](#Declaracion DTD.)
+[2.1 Declaracións DTD dentro dun documento XML (DTD internas).](#2.1 Declaracións DTD dentro dun documento XML (DTD internas).)
+[2.2 Declaracións DTD nun arquivo .dtd (DTD externas).](#2.2 Declaracións DTD nun arquivo .dtd (DTD externas).)
+[2.3 Declaracións DTD nun documento cunha referencia pública.](#2.3 Declaracións DTD nun documento cunha referencia pública.)
 	
-- [3 Definir elementos.](#3 Definir elementos.)
-	- [3.1 Especificacions.](#3.1 Especificacions.)
-	- [3.2 Regras.](#3.2 Regras.)
-	- [3.3 Modelos contidos.](3.3 Modelos contidos.)
-	-[3.4 Frecuencia.](3.4 Frecuencia.)
+[3 Definir elementos.](#3 Definir elementos.)
+[3.1 Especificacions.](#3.1 Especificacions.)
+[3.2 Regras.](#3.2 Regras.)
+[3.3 Modelos contidos.](3.3 Modelos contidos.)
+[3.4 Frecuencia.](3.4 Frecuencia.)
 	
-## 1.Construccion de una DTD.
+## 1.Construccion de una DTD. {1.Construccion de una DTD.}
 A gramática dun documento XML defínese nun documento DTD. 
 A etiqueta  ```<!DOCTYPE>``` contén a definición da gramática. A súa sintaxe é a seguinte:
 
