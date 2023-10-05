@@ -1,23 +1,13 @@
 # REGLAS CREACION DTD
 
-## 1. Construcción de una DTD
-   - 1.1 Declaraciones DTD dentro de un documento XML (DTD internas)
-   - 1.2 Declaraciones DTD en un archivo .dtd (DTD externas)
-   - 1.3 Declaraciones DTD en un documento con una referencia pública
-
-## 2. Declaración DTD
-   - 2.1 Declaraciones DTD dentro de un documento XML (DTD internas)
-   - 2.2 Declaraciones DTD en un archivo .dtd (DTD externas)
-   - 2.3 Declaraciones DTD en un documento con una referencia pública
-
-## 3. Definir elementos
-   - 3.1 Especificaciones
-   - 3.2 Reglas
-   - 3.3 Modelos de contenido
-   - 3.4 Frecuencia
-
+[1. Construcción de una DTD](#1. Construcción de una DTD)
+[2. Declaración DTD](#2. Declaración DTD)
+[3. Definir elementos.](#3 Definir elementos)
+[]()
+[]()
+[]()
 	
-## 1.Construccion de una DTD. 
+## 1.Construccion de una DTD. {#1. Construcción de una DTD}
 A gramática dun documento XML defínese nun documento DTD. 
 A etiqueta  ```<!DOCTYPE>``` contén a definición da gramática. A súa sintaxe é a seguinte:
 
@@ -43,7 +33,7 @@ A continuación vemos a gramática DTD correspondente ao documento XML anterior:
 	numero CDATA #REQUIRED>
 	]>
 
-## 2. Declaracion DTD.
+## 2. Declaracion DTD.{#2. Declaración DTD}
 			
 ### 2.1 Declaracións DTD dentro dun documento XML (DTD internas).	
 			
@@ -107,7 +97,7 @@ identifica e a súa URL. Por exemplo:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 ```			 
-## 3 Definir elementos.
+## 3 Definir elementos.{#3 Definir elementos}
 
 A sintaxe para definir elementos é a seguinte:
 ```
