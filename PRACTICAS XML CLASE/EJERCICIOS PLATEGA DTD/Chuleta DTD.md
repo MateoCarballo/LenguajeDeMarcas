@@ -186,3 +186,4 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 
 		</maquinas>
 	```
+-"si no aparece nada indica que el elemento debe aparecer una y solo una vez"

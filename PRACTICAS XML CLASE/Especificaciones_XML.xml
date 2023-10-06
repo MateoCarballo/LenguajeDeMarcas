@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<poesía xml:space="preserve" xml:lang="gl">
+Adiós, ríos; adios, fontes;
+adios, regatos pequenos;
+adios, vista dos meus ollos:
+non sei cando nos veremos.
+</poesía>
+
+<!-- Sin el comando xml:space="preserve" no guardaria los espacios  guardaria todo n la misma linea
+xml:lang=""gl"" indica que el idioma usado es gallego hay una pagina de codigos para cada idioma.
+
+--> 

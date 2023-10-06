@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"? standalone="yes
+
+<!DOCTYPE mensaxe [
+ <!ELEMENT mensaxe (autor, apartado+)>
+ <!ATTLIST tema
+                        titulo CDATA #REQUIRED
+                        unidade CDATA #REQUIRED>
+ <!ELEMENT autor (#PCDATA)>
+ <!ELEMENT apartado (#PCDATA)>
+ <!ATTLIST apartado
+                        numero CDATA #REQUIRED>
+]>
+
+<mensaxe>
+ <de>maria@gmail.com</de>
+ <para>ignacio@gmail.com</para>
+ <para>pedro@edu.xunta.es</para>
+ <asunto>Envíoche os arquivos</asunto>
+ <adxunto>D:\fotos\dePesca.jpg</adxunto>
+ <adxunto>D:\docs\carta.odt</adxunto>
+ <adxunto>D:\fotos\naCea.jpg</adxunto>
+</mensaxe>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+<libro isbn="isbn del libro 1">
+<nombre> nombre del libro</nombre>
+<autor>autor del libro</autor>
+<editorial>editorial del libro</editorial>
+<fechaDePublicacion>01/01/2023</fechaDePublicacion>
+</libro>
+<libro isbn="isbn del libro 2">
+<nombre> nombre del libro</nombre>
+<autor>autor del libro</autor>
+<editorial>editorial del libro</editorial>
+<fechaDePublicacion>01/01/2023</fechaDePublicacion>
+</libro>
+<libro isbn="isbn del libro 3">
+<nombre> nombre del libro</nombre>
+<autor>autor del libro</autor>
+<editorial>editorial del libro</editorial>
+<fechaDePublicacion>01/01/2023</fechaDePublicacion>
+</libro>
+</libreria>
+
+<!-- Práctica “PR_XMLformaval_00
+Uno) Definir un documento XML que permita representar un libro. Deberá contener los
+atributos típicos como título, autores, editorial, fecha de publicación, isbn, etc.
+Dos) A partir de la definición anterior escribir un documento XML que al menos contenga 3
+entradas de libros.
+Tres) Buscar un validador de XML online; introducir el documento generado en el ejercicio
+anterior y comprobar que el documento esté bien formado.”-->

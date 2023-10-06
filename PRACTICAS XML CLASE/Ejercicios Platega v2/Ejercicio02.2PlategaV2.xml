@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <programas>
+    <periodo2008-2013>
+    Programas con data &gt; 2008 e &lt; 2013
+      <programa nome="Notepad++" licenza="GPL LGPL Windows"/>
+      <programa nome="XML Copy Editor" licenza="GPL Windows Linux"/>
+   </periodo2008-2013>
+</programas>
+ 
+ <!-- Enunciado 
+ <programas>
+ <2008-2013>
+ Programas con data > 2008 e < 2013
+ <programa nome="Notepad++" licenza=GPL licenza=LGPL Windows />
+ </programa>
+ <programa nome="XML Copy Editor" licenza=GPL Windows Linux />
+ </programa>
+ </2008-2013>
+</programas>
+ 
+ Los caracteres especiales de amp  mayorque y menorque se deben cambiar por la nomenclatura correcta
+ Los atributos no pueden repetirse
+ Al no tener contenido las etiquetas se pueden cerrar en la misma linea
+ --> 

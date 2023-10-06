@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<coleccionMusical>
+  <artista nome="Queen">
+    <album nome="A Night at the Opera">
+      <cancion>Bohemian Rhapsody</cancion>
+      <cancion>'39</cancion>
+    </album>
+  </artista>
+  <artista nome="R.E.M.">
+    <album nome="Life's Rich Pageant">
+      <cancion>Superman</cancion>
+      <cancion>These days</cancion>
+ <canción>Superman</Canción>
+ <canción>These days</Canción>
+</album> 
+  </artista>
+  <artista nome="Iggy Pop">
+    <album nome="Brick by Brick">
+      <cancion>Candy</cancion>
+      <cancion>My Baby Wants to Rock &amp; Roll</cancion>
+    </album>
+  </artista>
+</coleccionMusical>
+
+
+
+<!-- Enunciado
+Documentos XML ben formados. Nesta tarefa partiremos de documentos 
+XML con erros que teremos que corrixir para acadar documentos XML ben formados.
+colección_musical.xml
+<xml versión="1.1" encoding="utf-8">
+<artista nome="Queen">
+ <album nome="A Night at the Opera">
+ <canción>Bohemian Rhapsody</Canción>
+ <canción>'39</Canción>
+ <artista>
+</album>
+<artista nome="R.E.M.">
+ <album nome="Life's Rich Pageant">
+ <canción>Superman</Canción>
+ <canción>These days</Canción>
+ </artista>
+</album>
+<artista nome="Iggy Pop">
+ <album nome="Brick by Brick>
+ <canción>Candy</Canción>
+ <canción>My Baby Wants to Rock & Roll</Canción>
+ </artista>
+</album>
+
+-->

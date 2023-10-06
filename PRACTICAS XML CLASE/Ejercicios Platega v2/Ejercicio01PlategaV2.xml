@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<coleccionMusical>
+    <artista nome="Queen">
+    <album nome="A Night at the Opera">
+    <cancion>bohemian rapsody</cancion>
+    <cancion>39</cancion>
+    </album>
+    </artista>
+
+    <artista nome="R.E.M.">
+ <album nome="Life's Rich Pageant">
+ <cancion>superMan</cancion>
+ <cancion>TheseDays</cancion>
+ </album>
+ </artista>
+</coleccionMusical>
+
+
+<!-- Enunciado 
+Tarefa 1. Elementos dun documento XML. Nesta tarefa imos traballar cos nomes e os 
+valores dos elementos e atributos dun documento XML.
+<colección musical>
+ <artista nome=Queen>
+ <album nome=A Night at the Opera>
+ <Bohemian Rhapsody>
+ <'39>
+ <album>
+ </artista>
+ <artista nome=R.E.M.>
+ <album nome='Life's Rich Pageant'>
+ <Superman>
+ <These days>
+ </album>
+ </artista>
+</colección musical>
+
+-->

@@ -91,7 +91,6 @@ que responda á DTD proposta.
 		 <familia>
 		 <codigo>IFC</codigo>
 		 <nome>Informática e comunicacións</nome>
-		Páxina 22 de 52
 		 </familia>
 		 <familia>
 		 <nome>Imaxe persoal</nome>
@@ -148,4 +147,4 @@ que responda á DTD proposta.
 		 <profesion>cantante</profesion>
 		 <profesion>actor</profesion>
 		 </famoso>
-		</famosos
+		</famosos>

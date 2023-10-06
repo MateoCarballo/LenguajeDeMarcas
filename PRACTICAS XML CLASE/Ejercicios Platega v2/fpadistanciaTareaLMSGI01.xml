@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libroRecetas>
+    <receta>
+        <nombre>Sopa de cebolla</nombre>
+        <comensales>4</comensales>
+        <ingredientes>
+          <ingrediente nombre ="cebolla" unidades="kg">1</ingrediente>
+          <ingrediente nombre ="caldo de carne" unidades="L">2</ingrediente>
+          <ingrediente nombre ="mantequilla" unidades ="gramos">100</ingrediente>
+          <ingrediente nombre ="harina" unidades ="cucharadas">1</ingrediente>
+          <ingrediente nombre ="queso emental" unidades="gramos">100
+                <comentario> Se puede usar indistintamente emental o gruyere, la cantidad total no superara los 100gr </comentario>
+           </ingrediente>
+            <ingrediente nombre="pan" unidades="">
+                <comentario>El pan es a gusto personal no existe una cantidad fija</comentario>
+            </ingrediente>
+            <ingrediente nombre = "tomillo" unidades="">
+                <comentario>Al gusto</comentario>
+            </ingrediente>
+            <ingrediente nombre ="laurel" unidades="hojas">1</ingrediente>
+            <ingrediente nombre = "pimienta" unidades="">
+                  <comentario>Al gusto</comentario>
+            </ingrediente>
+        </ingredientes>
+        <pasos>
+           <paso orden="1">Pelar y partir las cebollas en rodajas finas</paso>
+            <paso orden="2">Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse</paso>
+            <paso orden="3">Añadir la harina sin dejar de remover.</paso>
+            <paso orden="4">Ponerlo en una cazuela con el caldo, el tomillo y el laurel.</paso>
+            <paso orden="5">Dejar cocer a fuego lento durante unos 15 minutos</paso>
+           <paso orden="6"> Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno.</paso>
+        </pasos>
+    </receta>
+</libroRecetas>
+
+<!-- Ejercicio: fpadistanciaTareaLMSGI01
+Diseñar un documento válido en XML que permita estructurar la información de las recetas de 
+cocina de un restaurante y aplicarlo a la siguiente receta de cocina. Hay que hacerlo de modo que un
+sistema informático pueda realizar búsquedas por ingredientes, cantidad de comensales o nombre de
+la receta
+Sopa de cebolla (4 personas)Ingredientes:
+• 1 Kg. de cebollas. 
+• 2 l. de caldo de carne. 
+• 100 gr. mantequilla. 
+• 1 cucharada de harina. 
+• 100 gr. de queso emmental suizo o gruyére rallado. 
+• Pan tostado en rebanadas. 
+• Tomillo. 
+• 1 hoja de laurel. 
+• Pimienta. 
+Proceso:
+• Pelar y partir las cebollas en rodajas finas. 
+• Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin
+dorarse. 
+• Añadir la harina sin dejar de remover. 
+• Ponerlo en una cazuela con el caldo, el tomillo y el laurel. 
+• Dejar cocer a fuego lento durante unos 15 minutos. 
+• Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno-->

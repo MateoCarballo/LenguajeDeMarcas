@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<alumnos>
+
+ <alumno>
+ <nome>Xoan</nome>
+ <apelidos>Cancedo da Foz</apelidos>
+ <ciclo>ASIR ordinario</ciclo>
+ <curso>1º</curso>
+ <datanacemento>06/11/1991</datanacemento>
+ <nota>Xa fixo outro ciclo</nota>
+ </alumno>
+ 
+</alumnos>
+
+
+
+
+
+<!-- Actividad espacios de nombre-->

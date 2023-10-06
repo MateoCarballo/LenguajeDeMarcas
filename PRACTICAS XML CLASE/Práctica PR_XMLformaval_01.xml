@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaEmail [
+  <!ELEMENT listaEmail (email*)><!-- * permite ninguno,uno o muchos, el 
+  + permite uno y solo uno que tiene que existir-->
+<!ELEMENT email (para, cc?, cco?, asunto, cuerpo)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT cc (#PCDATA)>
+<!ELEMENT cco (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
+]>
+<listaEmail>
+<email>
+<para>hhh@gmail.com</para>
+<cc>ttt@hotmail.com</cc>
+<asunto>convocatoria opos</asunto>
+<cuerpo>Remito documento con .....</cuerpo>
+</email>
+<email>
+<para>hhh@gmail.com</para>
+<cco>ttt@hotmail.com</cco>
+<asunto>convocatoria opos</asunto>
+<cuerpo>Remito documento con .....</cuerpo>
+</email>
+   
+   <!-- Práctica “PR_XMLformaval_01”
+Uno) Elaborar un documento xml que permita recoger el contenido de un e-mail (elemento email) asociado con una
+cuenta de correo particular. El documento está caraterizado por los elementos: “para”, “cc” (optativo), “cco” (optativo),
+“asunto” y “cuerpo”. El documento deberá contener la correspondiente DTD interna. Probar “bien formado” y “válido”
+para diferentes configuraciones.
+Dos) Basándonos en el caso anterior, elaborar un nuevo documento xml que permita recoger las diferentes ocurrencias
+de elementos e-mail (listaEmail) asociados con una cuenta de correo particular. Probar “bien formado” y “válido” para
+diferentes configuraciones-->
+
+
+<!-- CON DTD EXTERNA 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaEmail SYSTEM "listaemail.dtd">
+<listaEmail>
+<email>
+<para>hhh@gmail.com</para>
+<cc>ttt@hotmail.com</cc>
+<asunto>convocatoria opos</asunto>
+<cuerpo>Remito documento con .....</cuerpo>
+</email>
+<email>
+<para>hhh@gmail.com</para>
+<cco>ttt@hotmail.com</cco>
+<asunto>convocatoria opos</asunto>
+<cuerpo>Remito documento con .....</cuerpo>
+</email>
+</listaEmail>
+
+-->
