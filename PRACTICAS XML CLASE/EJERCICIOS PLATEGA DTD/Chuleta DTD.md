@@ -187,3 +187,34 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 		</maquinas>
 	```
 -"si no aparece nada indica que el elemento debe aparecer una y solo una vez"
+
+
+## 4. Definir atributos
+
+  ``` LOS ATRIBUTOS NO PUEDEN TENER SUBATRIBUTOS(LOS ELEMENTOS PUEDEN TENER SUBELEMENTOS)  ```
+  Los atributos se usan para:
+  -Definir un valor por defecto.
+  -Definir un conjunto de valores validos.
+  -Definir constantes.
+  -Crear referencia entre elementos.
+  
+ 
+ Los atributos se definen empleando la etiqueta   
+ ``` <!ATTLIST nomeElemento 
+	nomeAtributo1 tipo valor
+	nomeAtributo1 tipo valor
+	...
+	>
+	```
+Por ejemplo:
+```
+<!ELEMENT actor (#PCDATA)>
+<!ATTLIST actor sexo CDATA #IMPLIED>
+```
+
+```
+<!ELEMENT auto (#PCDATA)
+<!ATTLIST auto
+codigo CDATA #REQUIRED
+grao CDATA #REQUIRED>
+```
