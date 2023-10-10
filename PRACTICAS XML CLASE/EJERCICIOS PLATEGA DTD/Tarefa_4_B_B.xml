@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE departamento [
+ <!ELEMENT departamento EMPTY>
+ <!ATTLIST departamento 
+ nome CDATA #REQUIRED
+ xefe CDATA #IMPLIED>
+]>
+<departamento nome="Electricidade e electrónica" />
+
+<!-- 
+
+b) Tarefa4b_b.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE departamento [
+ <!ELEMENT departamento EMPTY>
+ <!ATTLIST departamento 
+ nome NMTOKEN #REQUIRED
+ xefe NMTOKEN #REQUIRED>
+]>
+<departamento nome="Electricidade e electrónica" />
+-->
