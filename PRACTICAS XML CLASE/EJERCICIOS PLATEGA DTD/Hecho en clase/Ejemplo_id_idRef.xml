@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+
 <!-- Los atributos definidos como IDREF solo pueden contener elementos definidos antes como ID
 Podemos tener valores en ID que no existan en los IDREF, pero todos los IDREF tienen que existir en los atributos
 definidos como ID -->
