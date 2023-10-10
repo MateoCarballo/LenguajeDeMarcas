@@ -206,15 +206,15 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 	...
 	>
 	```
+	
+	
 Por ejemplo:
 ```
 <!ELEMENT actor (#PCDATA)>
 <!ATTLIST actor sexo CDATA #IMPLIED>
 ```
 
-```
-<!ELEMENT auto (#PCDATA)
+```<!ELEMENT auto (#PCDATA)
 <!ATTLIST auto
 codigo CDATA #REQUIRED
-grao CDATA #REQUIRED>
-```
+grao CDATA #REQUIRED>```
