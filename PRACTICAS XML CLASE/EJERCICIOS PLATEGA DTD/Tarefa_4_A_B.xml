@@ -15,19 +15,18 @@
 
 <!-- ENUNCIADO
 
-<!-- a) Tarefa4a_a.xml
+b) Tarefa4a_b
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE exames [
- <!ELEMENT exames (examen*)>
- <!ELEMENT examen EMPTY>
- <!ATTLIST examen data CDATA #REQUIRED>
- <!ATTLIST examen hora CDATA #REQUIRED>
- <!ATTLIST examen materia CDATA #REQUIRED> 
+<!DOCTYPE alumnos [
+ <!ELEMENT alumnos (alumno*)>
+ <!ELEMENT alumno EMPTY>
+ <!ATTLIST alumno codigo ID #REQUIRED>
+ <!ATTLIST alumno nome NMTOKENS #REQUIRED>
+ <!ATTLIST alumno idade NMTOKENS #REQUIRED>
 ]>
-<exames>
- <examen data="15/02/2012" hora="18:30">Bases de datos</examen>
- <examen data="06/03/2012" hora="16:00">XML</examen>
- <examen data="30/03/2012" hora="19:00">Redes</examen>
-</exames-->
-
+<alumnos>
+ <alumno codigo="100" nome="Lorena Casal Rodríguez" idade="5" />
+ <alumno codigo="123" nome="Xurxo Vega Sousa" idade="7" />
+ <alumno codigo="132" nome="Antía Castro Castiñeira" />
+</alumnos
 -->
