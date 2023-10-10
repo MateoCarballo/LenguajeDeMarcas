@@ -162,43 +162,48 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 	</telefono>
 ```		
 - 1 ou máis veces ->(+)
-	```
-		<!ELEMENT provincia (nome, 
-		 (cp,poboacion)+)>
-	```	 
-	```
-		<provincia>
-		<nome>Lugo</nome>
-		<cp>27003</cp>
-		<poboacion>Lugo</poboacion>
-		<cp>27850</cp>
-		<poboacion>Viveiro</poboacion>
-		</provincia>
-	```	
+```
+	<!ELEMENT provincia (nome, 
+	(cp,poboacion)+)>
+```	 
+```
+	<provincia>
+	<nome>Lugo</nome>
+	<cp>27003</cp>
+	<poboacion>Lugo</poboacion>
+	<cp>27850</cp>
+	<poboacion>Viveiro</poboacion>
+	</provincia>
+```	
 	
 -"0 ou mais veces" ->(*)
 	```
-		<!ELEMENT maquinas (ip, maquina)*)>
-		
-		
+	<!ELEMENT maquinas (ip, maquina)*)>	
 	```
+
+ 
 -"si no aparece nada indica que el elemento debe aparecer una y solo una vez"
 
 
 ## 4. Definir atributos
 
   ``` LOS ATRIBUTOS NO PUEDEN TENER SUBATRIBUTOS(LOS ELEMENTOS PUEDEN TENER SUBELEMENTOS)  ```
-  Los atributos se usan para:
+
+Los atributos se usan para:
+
   -Definir un valor por defecto.
-  -Definir un conjunto de valores validos.
-  -Definir constantes.
-  -Crear referencia entre elementos.
   
+  -Definir un conjunto de valores validos.
+  
+  -Definir constantes.
+  
+  -Crear referencia entre elementos.
  
  Los atributos se definen empleando la etiqueta
 
  
- ``` <!ATTLIST nomeElemento 
+ ```
+<!ATTLIST nomeElemento 
 	nomeAtributo1 tipo valor
 	nomeAtributo1 tipo valor
 	...
@@ -214,22 +219,27 @@ Por ejemplo:
 ```<!ELEMENT auto (#PCDATA)
 <!ATTLIST auto
 codigo CDATA #REQUIRED
-grao CDATA #REQUIRED>```
+grao CDATA #REQUIRED>
+```
 
 ### 4.1 Atributos IMPLIED, REQUIRED e FIXED
 
 "#IMPLIED"-> Atributo opcional(Puede incluirse o no, si se especifica entre comillas se le da un valor por defecto).
+
+
 ```
- <!ATTLIST alumno nacionalidade CDATA #IMPLIED>
+<!ATTLIST alumno nacionalidade CDATA #IMPLIED>
  <!ATTLIST alumno nacionalidade CDATA "española">
 ```
 
-"#REQUIRED -> Atributo de caracter obligatorio.
+#REQUIRED -> Atributo de caracter obligatorio.
+
 ```
 <!ATTLIST alumno sexo CDATA #REQUIRED>
 ```
 
 "#FIXED -> Atributo equivalente a una constante-
+
 ```
 <!ATTLIST documento tipo CDATA #FIXED "pdf">
 ```
