@@ -179,6 +179,8 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 -"0 ou mais veces" ->(*)
 	```
 		<!ELEMENT maquinas (ip, maquina)*)>
+		
+		
 	```
 -"si no aparece nada indica que el elemento debe aparecer una y solo una vez"
 
@@ -213,3 +215,21 @@ Por ejemplo:
 <!ATTLIST auto
 codigo CDATA #REQUIRED
 grao CDATA #REQUIRED>```
+
+### 4.1 Atributos IMPLIED, REQUIRED e FIXED
+
+"#IMPLIED"-> Atributo opcional(Puede incluirse o no, si se especifica entre comillas se le da un valor por defecto).
+```
+ <!ATTLIST alumno nacionalidade CDATA #IMPLIED>
+ <!ATTLIST alumno nacionalidade CDATA "española">
+```
+
+"#REQUIRED -> Atributo de caracter obligatorio.
+```
+<!ATTLIST alumno sexo CDATA #REQUIRED>
+```
+
+"#FIXED -> Atributo equivalente a una constante-
+```
+<!ATTLIST documento tipo CDATA #FIXED "pdf">
+```
