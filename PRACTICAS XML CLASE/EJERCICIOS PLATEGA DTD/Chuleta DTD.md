@@ -180,12 +180,6 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 	```
 		<!ELEMENT maquinas (ip, maquina)*)>
 	```
-	```
-		<maquinas>
-		
-
-		</maquinas>
-	```
 -"si no aparece nada indica que el elemento debe aparecer una y solo una vez"
 
 
@@ -199,14 +193,15 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
   -Crear referencia entre elementos.
   
  
- Los atributos se definen empleando la etiqueta   
+ Los atributos se definen empleando la etiqueta
+
+ 
  ``` <!ATTLIST nomeElemento 
 	nomeAtributo1 tipo valor
 	nomeAtributo1 tipo valor
 	...
 	>
-	```
-	
+```
 	
 Por ejemplo:
 ```
