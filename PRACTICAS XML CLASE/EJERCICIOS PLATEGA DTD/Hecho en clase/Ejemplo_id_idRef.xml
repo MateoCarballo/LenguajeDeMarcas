@@ -1,4 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Los atributos definidos como IDREF solo pueden contener elementos definidos antes como ID
+Podemos tener valores en ID que no existan en los IDREF, pero todos los IDREF tienen que existir en los atributos
+definidos como ID -->
+
+<!-- EJEMPLO CON IDREF -->
+<!-- 
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE cine [
    <!ELEMENT cine (directores, peliculas)>
    <!ELEMENT directores (director)*>
@@ -9,15 +17,11 @@
          <!ATTLIST pelicula direccion IDREF #REQUIRED>
 ]>
 
-<!-- Los atributos definidos como IDREF solo pueden contener elementos definidos antes como ID
-Podemos tener valores en ID que no existan en los IDREF, pero todos los IDREF tienen que existir en los atributos
-definidos como ID -->
-
-
 <cine>
    <directores>
       <director coddir="CE">Clint Eastwood</director>
       <director coddir="JC">James Cameron</director>
+      <director coddir="AB">Antonio Banderas</director>
    </directores>
    <peliculas>
       <pelicula direccion="JC">Avatar</pelicula>
@@ -25,5 +29,34 @@ definidos como ID -->
       <pelicula direccion="JC">Titanic</pelicula>
    </peliculas>
 </cine>
+-->
+
+
+<!-- IDREFS es identico a idref pero permite varios valores para un valor  -->
+
+
+<!DOCTYPE cine [
+   <!ELEMENT cine (directores, peliculas)>
+   <!ELEMENT directores (director)*>
+      <!ELEMENT director (#PCDATA)>
+         <!ATTLIST director coddir ID #REQUIRED>
+   <!ELEMENT peliculas (pelicula)*>
+      <!ELEMENT pelicula (#PCDATA)>
+         <!ATTLIST pelicula direccion IDREFS #REQUIRED>
+]>
+
+<cine>
+   <directores>
+      <director coddir="CE">Clint Eastwood</director>
+      <director coddir="JC">James Cameron</director>
+      <director coddir="AB">Antonio Banderas</director>
+   </directores>
+   <peliculas>
+      <pelicula direccion="JC">Avatar</pelicula>
+      <pelicula direccion="CE">Mystic River</pelicula>
+      <pelicula direccion="JC AB">Titanic</pelicula>
+   </peliculas>
+</cine>
+
 
 <!-- Ejemplo sacado de https://www.abrirllave.com/dtd/atributos-de-tipo-idref.php -->
