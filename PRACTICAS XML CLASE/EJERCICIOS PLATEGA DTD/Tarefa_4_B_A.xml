@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE exames [
- <!ELEMENT exames (examen)*>
+ <!ELEMENT exames (examen*)>
  <!ELEMENT examen (#PCDATA)>
  <!ATTLIST examen data CDATA #REQUIRED>
  <!ATTLIST examen hora CDATA #REQUIRED>
