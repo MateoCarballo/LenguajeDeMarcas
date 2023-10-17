@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE edificio [
+<!ELEMENT edificio (enderezo, dataConstrucion, material?)>
+<!ATTLIST edificio
+ valor CDATA #IMPLIED
+ alquiler (verdadeiro|falso) #REQUIRED>
+ <!ELEMENT enderezo (rua, numero, poboacion, provincia, codigoPostal)>
+ <!ELEMENT rua (#PCDATA)>
+ <!ELEMENT numero (#PCDATA)>
+ <!ELEMENT poboacion (#PCDATA)>
+ <!ELEMENT provincia (#PCDATA)>
+ <!ELEMENT codigoPostal (#PCDATA)>
+ <!ELEMENT dataConstrucion EMPTY>
+ <!ATTLIST dataConstrucion
+ mes CDATA #REQUIRED
+ ano CDATA #REQUIRED>
+ <!ELEMENT material (#PCDATA)>
+ 
+ ]>
+ 
+ <edificio valor ="" alquiler="verdadeiro">
+      <enderezo>
+            <rua>
+            Ponzano
+            </rua>
+            <numero>
+            66
+            </numero>
+            <poboacion>
+            Madrid
+            </poboacion>
+            <provincia>
+            Madrid
+            </provincia>
+            <codigoPostal>
+            28003
+            </codigoPostal>
+      </enderezo> 
+      
+      <dataConstrucion mes="Febreiro" ano="1989"></dataConstrucion>
+      
+      <material>
+      Hormigón
+      </material>
+ </edificio>
+
+<!-- 
+a)Tarefa5a
+A partir da seguinte DTD, escribe un documento XML que sexa válido para usar con esta 
+DTD e que describe un edificio que está situado na rúa Ponzano 66 de Madrid (28003), del 
+que descoñecemos o valor, que está construído en formigón en febreiro de 1989 e que se vai 
+destinar a alquiler.
+<!ELEMENT edificio (enderezo, dataConstrucion, material?)>
+ <!ELEMENT enderezo (rua, numero, poboacion, provincia, codigoPostal)>
+ <!ELEMENT rua (#PCDATA)>
+ <!ELEMENT numero (#PCDATA)>
+ <!ELEMENT poboacion (#PCDATA)>
+ <!ELEMENT provincia (#PCDATA)>
+ <!ELEMENT codigoPostal (#PCDATA)>
+ <!ELEMENT dataConstrucion EMPTY>
+ <!ATTLIST dataConstrucion
+ mes CDATA #REQUIRED
+ ano CDATA #REQUIRED>
+ <!ELEMENT material (#PCDATA)>
+ <!ATTLIST edificio
+ valor CDATA #IMPLIED
+ alquiler (verdadeiro|falso) #REQUIRED>
+
+-->
