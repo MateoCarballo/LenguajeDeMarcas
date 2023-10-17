@@ -15,7 +15,6 @@
  mes CDATA #REQUIRED
  ano CDATA #REQUIRED>
  <!ELEMENT material (#PCDATA)>
- 
  ]>
  
  <edificio valor ="" alquiler="verdadeiro">
@@ -43,6 +42,13 @@
       Hormigón
       </material>
  </edificio>
+ 
+<!-- IMPORTANTE 
+Debemos tener en cuenta que lo que vemos en la dtd( DOCTYPE) no es xml, son las instrucciones pero no son xml
+El orden de los elementos dentro de edificio es relevante, debemos respetarlo.
+--> 
+ 
+ 
 
 <!-- 
 a)Tarefa5a
