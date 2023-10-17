@@ -175,6 +175,11 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 	<poboacion>Viveiro</poboacion>
 	</provincia>
 ```	
+	IMPORTANTE DONDE COLOCAR LA CARDINALIDAD. NO ES LO MISMO
+	
+	A(B*,C*) QUE A(B,C)* EL SEGUNDO SON CONJUNTOS DE AB Y EL PRIMERO REPETICIONES DE ELLOS INDISTINTAMENTE
+	
+	
 	
 -"0 ou mais veces" ->(*)
 	```
