@@ -3,7 +3,7 @@
  <!ELEMENT instituto ((ciclo | alumno)*)>
  <!ELEMENT ciclo EMPTY>
                           <!ATTLIST ciclo 
-                             codigo NMTOKEN #REQUIRED
+                             codigo CDATA #REQUIRED
                              nome ID #REQUIRED
                             grao (medio | superior) #IMPLIED>
  <!ELEMENT alumno EMPTY>
