@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE reservas SYSTEM "Tarefa_5_B.dtd"[]>
+
+<reservas ano="2023">
+
+      <reserva local ="Polideportivo" bonificacion="0">
+            <data mes="Enero" dia="11" horario="maña"></data>
+            <informacion>Informacion del evento</informacion>
+            <clienteEmpresa>Informacion Cliente Empresa</clienteEmpresa>
+      </reserva>
+      
+      <reserva local ="Local" bonificacion="1">
+            <data mes="Febrero" dia="22"></data>
+            <informacion>Informacion del evento</informacion>
+            <clientePersonal>Informacion Cliente Personal</clientePersonal>
+      </reserva>
+      
+</reservas>

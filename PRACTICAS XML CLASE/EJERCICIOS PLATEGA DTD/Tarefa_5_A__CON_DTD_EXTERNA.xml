@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE edificio SYSTEM "Tarefa_5_A.dtd" [
-
- ]>
+<!DOCTYPE edificio SYSTEM "Tarefa_5_A.dtd" []>
  
  <edificio valor ="" alquiler="verdadeiro">
  

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reservas[
+<!ELEMENT reservas (reserva+)>
+<!ELEMENT reserva (data, informacion,(clienteEmpresa|clientePersonal))>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT informacion (#PCDATA)>
+<!ELEMENT clienteEmpresa (#PCDATA)>
+<!ELEMENT clientePersonal (#PCDATA)>
+<!ATTLIST data 
+mes CDATA #REQUIRED
+dia CDATA #REQUIRED
+horario (maña|tarde|dia) "tarde"
+>
+<!ATTLIST reservas
+ano CDATA #REQUIRED>
+<!ATTLIST reserva
+local (Polideportivo|Local) #REQUIRED
+bonificacion CDATA #IMPLIED>
+ ]>
+
+<reservas ano="2023">
+
+      <reserva local ="Polideportivo" bonificacion="0">
+            <data mes="Enero" dia="11" horario="maña"></data>
+            <informacion>Informacion del evento</informacion>
+            <clienteEmpresa>Informacion Cliente Empresa</clienteEmpresa>
+      </reserva>
+      
+      <reserva local ="Local" bonificacion="1">
+            <data mes="Febrero" dia="22"></data>
+            <informacion>Informacion del evento</informacion>
+            <clientePersonal>Informacion Cliente Personal</clientePersonal>
+      </reserva>
+      
+</reservas>
