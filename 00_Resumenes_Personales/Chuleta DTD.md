@@ -102,30 +102,40 @@ ou ben
 ```
 ### 3.1 Especificacions.
 
--EMPTY ```<!ELEMENT br EMPTY>``` -> ```<br />```
-
+-EMPTY 
+```
+<!ELEMENT br EMPTY> -> <br />
+``` 
 -ANY
 
--PCDATA```<!ELEMENT titulo (#PCDATA)>``` -> ```<titulo>A linguaxe XML</titulo>```
-
--MIXED```<!ELEMENT obxecto (#PCDATA|imaxe)*>```
-
+-PCDATA
+```
+<!ELEMENT titulo (#PCDATA)>  ->  <titulo>A linguaxe XML</titulo>
+```
+-MIXED
+```
+<!ELEMENT obxecto (#PCDATA|imaxe)*>
+```
 
 Obxecto podería conter cero ou máis ocurrencias de datos de carácter (#PCDATA) e/ou
 subelementos de tipo imaxe.
 ### 3.2 Regras.
 
 Esta declaración debe respectar as seguintes condicións:
+
 – Os datos textuais #PCDATA deben aparecer sempre en primeira posición.
+
 – O grupo debe ser unha elección (separado co carácter | ).
+
 – O grupo debe aparecer cero, unha ou varias veces (operador *).
+
 			
 ### 3.3 Modelos contidos.
 	
 Un modelo de contido é un patrón que establece os subelementos aceptados, e a orde na que 
 estes deben estar. A continuación imos ver as distintas posibilidades:
 			
--Fillo unico
+- **Fillo unico**
 ```
 	<!ELEMENT titor (nome)>
 ```			
@@ -134,7 +144,7 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 	<nome>Sara Vila Ferreiro</nome>
 	</titor>
 ```
--Fillos nunha orde determinada 
+- **Fillos nunha orde determinada**
 ```
 	<!ELEMENT ciclo (codigo,nome,grao)>
 					
@@ -146,13 +156,13 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 	<grao>Superior</grao>
 	</ciclo>
 ```					
--Opción a que aparezan uns fillos ou outros
+- **Opción a que aparezan uns fillos ou outros**
 ```			
 	<!ELEMENT ciclo ((codigo|nome),grao)>
 ```					
 ### 3.4 Frecuencia.{#Frecuencia}
 
-- Opcional ->(?)
+- **Opcional->(?)**
 ```
 	<!ELEMENT telefono (mobil, fixo?)>
 ```
@@ -161,7 +171,7 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 	<mobil>632323232</mobil>
 	</telefono>
 ```		
-- 1 ou máis veces ->(+)
+- **1 ou máis veces ->(+)**
 ```
 	<!ELEMENT provincia (nome, 
 	(cp,poboacion)+)>
@@ -176,39 +186,34 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 	</provincia>
 ```	
 
-
-IMPORTANTE DONDE COLOCAR LA CARDINALIDAD. NO ES LO MISMO
+>[!WARNING]
+>*IMPORTANTE DONDE COLOCAR LA CARDINALIDAD. NO ES LO MISMO
+>```A(B*,C*)``` QUE ```A(B,C)*``` EL SEGUNDO SON CONJUNTOS DE AB Y EL PRIMERO >REPETICIONES DE ELLOS INDISTINTAMENTE*
 	
-```A(B*,C*)``` QUE ```A(B,C)*``` EL SEGUNDO SON CONJUNTOS DE AB Y EL PRIMERO REPETICIONES DE ELLOS INDISTINTAMENTE
-	
-	
-	
--"0 ou mais veces" ->(*)
-	```
-	<!ELEMENT maquinas (ip, maquina)*)>	
-	```
+- **0 ou mais veces ->(*)**
+```
+<!ELEMENT maquinas (ip, maquina)*)>	
+```
 
  
--"si no aparece nada indica que el elemento debe aparecer una y solo una vez"
+- **si no aparece nada indica que el elemento debe aparecer una y solo una vez**
 
 
 ## 4. Definir atributos
-
-  ``` LOS ATRIBUTOS NO PUEDEN TENER SUBATRIBUTOS(LOS ELEMENTOS PUEDEN TENER SUBELEMENTOS)  ```
+>[!WARNING]
+LOS ATRIBUTOS NO PUEDEN TENER SUBATRIBUTOS(LOS ELEMENTOS PUEDEN TENER SUBELEMENTOS)
 
 Los atributos se usan para:
 
-  -Definir un valor por defecto.
+  - Definir un valor por defecto.
   
-  -Definir un conjunto de valores validos.
+  - Definir un conjunto de valores validos.
   
-  -Definir constantes.
+  - Definir constantes.
   
-  -Crear referencia entre elementos.
+  - Crear referencia entre elementos.
  
  Los atributos se definen empleando la etiqueta
-
- 
  ```
 <!ATTLIST nomeElemento 
 	nomeAtributo1 tipo valor
@@ -231,7 +236,7 @@ grao CDATA #REQUIRED>
 
 ### 4.1 Atributos IMPLIED, REQUIRED e FIXED
 
-"#IMPLIED"-> Atributo opcional(Puede incluirse o no, si se especifica entre comillas se le da un valor por defecto).
+**#IMPLIED**-> Atributo opcional(Puede incluirse o no, si se especifica entre comillas se le da un valor por defecto).
 
 
 ```
@@ -239,13 +244,13 @@ grao CDATA #REQUIRED>
  <!ATTLIST alumno nacionalidade CDATA "española">
 ```
 
-#REQUIRED -> Atributo de caracter obligatorio.
+**#REQUIRED** -> Atributo de caracter obligatorio.
 
 ```
 <!ATTLIST alumno sexo CDATA #REQUIRED>
 ```
 
-"#FIXED -> Atributo equivalente a una constante-
+**#FIXED** -> Atributo equivalente a una constante-
 
 ```
 <!ATTLIST documento tipo CDATA #FIXED "pdf">
