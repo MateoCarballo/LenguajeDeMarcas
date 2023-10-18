@@ -9,3 +9,7 @@
     atributoOpcionalConValorPredeterminado CDATA "valorPredeterminado"
     atributoObligatorio CDATA #REQUIRED
     atributoConValorFijo CDATA #FIXED "ValorFijado">
+
+
+
+<!-- La cardinalidad la pongo de modo que los elementos pueden aparecer 0 o muchas veces --> 
