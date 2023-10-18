@@ -1,6 +1,6 @@
 # REGLAS CREACION DTD
 
-## 1.Construccion de una DTD. <a name="1. Construcción de una DTD"></a>
+## 1.Construccion de una DTD. 
 A gramática dun documento XML defínese nun documento DTD. 
 A etiqueta  ```<!DOCTYPE>``` contén a definición da gramática. A súa sintaxe é a seguinte:
 
@@ -26,7 +26,7 @@ A continuación vemos a gramática DTD correspondente ao documento XML anterior:
 	numero CDATA #REQUIRED>
 	]>
 
-## 2. Declaracion DTD.<a name="2. Declaracion DTD"></a>
+## 2. Declaracion DTD.
 			
 ### 2.1 Declaracións DTD dentro dun documento XML (DTD internas).	
 			
@@ -90,7 +90,7 @@ identifica e a súa URL. Por exemplo:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
 "http://www.w3.org/TR/html4/strict.dtd">
 ```			 
-## 3 Definir elementos.{#3 Definir elementos}
+## 3 Definir elementos.
 
 A sintaxe para definir elementos é a seguinte:
 ```
@@ -160,7 +160,7 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 ```			
 	<!ELEMENT ciclo ((codigo|nome),grao)>
 ```					
-### 3.4 Frecuencia.{#Frecuencia}
+### 3.4 Frecuencia.
 
 - **Opcional->(?)**
 ```
@@ -190,9 +190,20 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 >*IMPORTANTE DONDE COLOCAR LA CARDINALIDAD. NO ES LO MISMO
 >```A(B*,C*)``` QUE ```A(B,C)*``` EL SEGUNDO SON CONJUNTOS DE AB Y EL PRIMERO >REPETICIONES DE ELLOS INDISTINTAMENTE*
 	
+<<<<<<< HEAD
 - **0 ou mais veces ->(*)**
 ```
 <!ELEMENT maquinas (ip, maquina)*)>	
+=======
+```A(B*,C*)``` QUE ```A(B,C)*``` EL SEGUNDO SON CONJUNTOS DE AB Y EL PRIMERO REPETICIONES DE ELLOS INDISTINTAMENTE
+	
+	
+	
+-"0 ou mais veces" ->(*)
+```
+<!ELEMENT maquinas (ip, maquina)*)>
+	
+>>>>>>> b7149aca65acab69327d9bf0c923c327e657d59e
 ```
 
  
