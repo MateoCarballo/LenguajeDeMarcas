@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plantilla SYSTEM "Plantilla_XML.dtd">
+<plantilla>
+      <etiquetaSimple>Contenido eqiqueta simple</etiquetaSimple>
+      <etiquetaOpcional>
+      <etiquetaOpcional1>Contenido etiqueta opcional 1</etiquetaOpcional1>
+      </etiquetaOpcional>
+      <etiquetaConAtributos atributoObligatorio="contenido obligatorio">Contenido etiqueta con atributos</etiquetaConAtributos>
+</plantilla>

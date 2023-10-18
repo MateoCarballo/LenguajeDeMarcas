@@ -1,0 +1,11 @@
+<!ELEMENT plantilla (etiquetaSimple*, etiquetaOpcional*, etiquetaConAtributos*)*>
+<!ELEMENT etiquetaSimple (#PCDATA)>
+<!ELEMENT etiquetaOpcional (etiquetaOpcional1 | etiquetaOpcional2)>
+<!ELEMENT etiquetaOpcional1 (#PCDATA)>
+<!ELEMENT etiquetaOpcional2 (#PCDATA)>
+<!ELEMENT etiquetaConAtributos (#PCDATA)>
+<!ATTLIST etiquetaConAtributos
+    atributoOpcional CDATA #IMPLIED
+    atributoOpcionalConValorPredeterminado CDATA "valorPredeterminado"
+    atributoObligatorio CDATA #REQUIRED
+    atributoConValorFijo CDATA #FIXED "ValorFijado">
