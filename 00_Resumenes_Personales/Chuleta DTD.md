@@ -184,9 +184,10 @@ IMPORTANTE DONDE COLOCAR LA CARDINALIDAD. NO ES LO MISMO
 	
 	
 -"0 ou mais veces" ->(*)
-	```
-	<!ELEMENT maquinas (ip, maquina)*)>	
-	```
+```
+<!ELEMENT maquinas (ip, maquina)*)>
+	
+```
 
  
 -"si no aparece nada indica que el elemento debe aparecer una y solo una vez"
