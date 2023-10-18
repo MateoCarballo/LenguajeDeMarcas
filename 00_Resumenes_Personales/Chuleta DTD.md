@@ -150,7 +150,7 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 ```			
 	<!ELEMENT ciclo ((codigo|nome),grao)>
 ```					
-### 3.4 Frecuencia.{#Frecuencia}
+### 3.4 Frecuencia.
 
 - Opcional ->(?)
 ```
