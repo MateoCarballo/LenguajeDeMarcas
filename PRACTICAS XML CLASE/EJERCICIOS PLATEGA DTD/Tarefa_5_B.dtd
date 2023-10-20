@@ -1,6 +1,7 @@
 <!ELEMENT reservas (reserva+)>
-<!ELEMENT reserva (data, informacion,(clienteEmpresa|clientePersonal))>
 <!ATTLIST reservas
+<!ELEMENT reserva (data, informacion,(clienteEmpresa|clientePersonal))>
+<!ATTLIST reserva
 ano CDATA #REQUIRED>
 <!ELEMENT data (#PCDATA)>
 <!ELEMENT informacion (#PCDATA)>
@@ -12,6 +13,6 @@ dia CDATA #REQUIRED
 horario (maña|tarde|dia) "tarde"
 >
 
-<!ATTLIST reserva
+
 local (Polideportivo|Local) #REQUIRED
 bonificacion CDATA #IMPLIED>
