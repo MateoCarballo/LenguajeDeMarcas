@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Hardware SYSTEM  "Tarefa_6_B.dtd">
+
+<Hardware>
+<Maquina idMaquina="M100" idFabricante="F100" idUbicacion="U100">
+      <Info>
+          <Tipo>Sobremesa</Tipo>
+          <Fabricante idFabricante="F100">
+              <nome>Lenovo</nome>
+              <web>https://www.Lenovo.com</web>
+              <correo>supportDevices@Lenovo.com</correo>
+          </Fabricante> 
+          <Procesador Marca="Intel" NumNucleos="8" Velocidade="3.5GHz"/>
+          <Memoria Tecnoloxía="DDR3"/>
+          <Disco Tecnoloxía="SATA" Capacidade="1TB"/>
+          <Lectora Tipo="CD" Velocidade="."/>
+          <Gravadora Tipo="CD" Velocidade="."/>
+      </Info>
+<Config>
+      <Role>Role del dispositivo</Role>
+      <OS>Sistema Operativo</OS>
+      <IP>Direccion IP del ordenador</IP>
+      <Gateway>Gateway</Gateway>
+</Config>
+<Notas>Espacio para posibles anotaciones relevantes</Notas>
+<Espazo idUbicacion="U100">
+    <nome>Nombre de la ubicacion del hardware</nome>
+    <tipo>Definicion del espacion ocupado por el hardware</tipo>
+</Espazo>
+</Maquina>
+
+</Hardware>
