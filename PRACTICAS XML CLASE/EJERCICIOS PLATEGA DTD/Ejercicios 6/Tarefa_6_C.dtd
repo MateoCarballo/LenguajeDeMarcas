@@ -1,0 +1,16 @@
+<!ELEMENT material (libro?,artigo?)>
+<!ELEMENT libro (titulo,editorial,autor,ano)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT ano (#PCDATA)>
+<!ATTLIST libro ISBN CDATA #REQUIRED>
+
+<!ELEMENT artigo (titulo,revista,nome,paxina)>
+<!ELEMENT revista (#PCDATA)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT paxina (#PCDATA)>
+<!ATTLIST revista numero CDATA #REQUIRED>
+
+
+
