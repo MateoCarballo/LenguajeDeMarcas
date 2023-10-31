@@ -1,0 +1,8 @@
+Mi idea para este ejercicio es gestionar un alquiler de coches.
+Para esto tendremos una redAlquiler. En la que tendremos vehiculos y clientes. Los vehiculos los caracterizamos 
+a traves de tipo (coche,furgoneta,caravana,etc), fecha de matriculacion, peso, matricula y longitud. 
+En la red de talleres debemos tener constancia del numero total de vehiculos y clientes.
+Cada vehiculo y cliente tienen un codigo alfanumerico para poder identificarlos.
+
+De los clientes necesitamos saber su nombre, apellidos, telefono de contacto, correo, fecha de nacimiento y 
+que vehiculo tiene alquilado (si es que tiene alguno).

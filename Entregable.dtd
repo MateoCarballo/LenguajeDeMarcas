@@ -1,0 +1,49 @@
+
+<!ENTITY %  FormatoFecha
+" ano CDATA #REQURED
+  mes (Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre) #REQUIRED
+  ano CDATA #REQUIRED">
+  
+<!ELEMENT RedAlquiler (Vehiculos+,Clientes+)>
+
+<!ELEMENT Vehiculos (Vehiculo+)>
+<!ATTLIST Vehiculos cantidadTotal CDATA #IMPLIED>
+<!ELEMENT Clientes (Cliente+)>
+<!ATTLIST  Clientes cantidadTotal CDATA #IMPLIED>
+
+<!ELEMENT Vehiculo (Tipo, Marca, Modelo, FechaMatriculacion, Kilometraje, Matricula, Potencia, Peso)>
+<!ATTLIST  Vehiculo
+idVehiculo ID #REQUIRED >
+<!ELEMENT  Tipo (#PCDATA)>
+<!ELEMENT  Marca (#PCDATA)>
+<!ELEMENT  Modelo (#PCDATA)>
+<!ELEMENT  FechaMatriculacion (#PCDATA)>
+<!ATTLIST FechaMatriculacion
+  ano CDATA #REQUIRED
+  mes (Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre) #REQUIRED
+  dia CDATA #REQUIRED>
+<!ELEMENT  Kilometraje (#PCDATA)>
+<!ELEMENT  Matricula (#PCDATA)>
+<!ELEMENT  Potencia (#PCDATA)>
+<!ATTLIST Potencia
+  unidades CDATA #REQUIRED>
+<!ELEMENT  Peso (#PCDATA)>
+<!ATTLIST Peso
+  unidades CDATA #REQUIRED>
+
+
+<!ELEMENT Cliente (Nombre,Apellidos,Tfno,Correo,FechaNacimiento,VehiculoAlquilado)>
+<!ATTLIST Cliente
+idCliente ID #REQUIRED>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Apellidos (#PCDATA)>
+<!ELEMENT Tfno (#PCDATA)>
+<!ELEMENT Correo (#PCDATA)>
+<!ELEMENT FechaNacimiento (#PCDATA)>
+<!ATTLIST FechaNacimiento
+  ano CDATA #REQUIRED
+  mes (Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre) #REQUIRED
+  dia CDATA #REQUIRED>
+<!ELEMENT VehiculoAlquilado (#PCDATA)>
+<!ATTLIST VehiculoAlquilado
+  idVehiculo IDREF #IMPLIED>
