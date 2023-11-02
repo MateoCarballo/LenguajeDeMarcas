@@ -3,7 +3,7 @@
   mes (Enero|Febrero|Marzo|Abril|Mayo|Junio|Julio|Agosto|Septiembre|Octubre|Noviembre|Diciembre) #REQUIRED
   dia CDATA #REQUIRED">
 
-<!ELEMENT RedAlquiler (Sucursal, Clientes)>
+<!ELEMENT RedAlquiler (Sucursal+, Clientes)>
 <!ATTLIST RedAlquiler
 nombre CDATA #REQUIRED
 >
@@ -17,7 +17,7 @@ direccion CDATA #REQUIRED
 <!ELEMENT Clientes (Cliente+)>
 <!ATTLIST Clientes cantidadTotalClientes CDATA #IMPLIED>
 
-<!ELEMENT Vehiculo (Tipo, Marca, Modelo, FechaMatriculacion, Kilometraje, Matricula, Potencia, Peso,Descripcion)>
+<!ELEMENT Vehiculo (Tipo, Marca, Modelo, FechaMatriculacion, Kilometraje, Matricula, Potencia, Peso,PrecioDia,Descripcion)>
 <!ATTLIST Vehiculo idVehiculo ID #REQUIRED>
 
 <!ELEMENT Tipo (#PCDATA)>
@@ -36,9 +36,11 @@ direccion CDATA #REQUIRED
 <!ELEMENT Peso (#PCDATA)>
 <!ATTLIST Peso unidades CDATA #REQUIRED>
 
+<!ELEMENT PrecioDia (#PCDATA)>
+<!ATTLIST PrecioDia moneda CDATA #REQUIRED>
 <!ELEMENT Descripcion (#PCDATA)>
 
-<!ELEMENT Cliente (Nombre, Apellidos, Tfno, Correo, FechaNacimiento, VehiculoAlquilado)>
+<!ELEMENT Cliente (Nombre, Apellidos, Tfno, Correo, FechaNacimiento, AlquilerRealizado?)>
 <!ATTLIST Cliente idCliente ID #REQUIRED>
 
 <!ELEMENT Nombre (#PCDATA)>
@@ -49,6 +51,12 @@ direccion CDATA #REQUIRED
 <!ATTLIST FechaNacimiento
   %FormatoFecha;
 >
-
+<!ELEMENT AlquilerRealizado (VehiculoAlquilado,Inicio,Fin)>
 <!ELEMENT VehiculoAlquilado (#PCDATA)>
+<!ELEMENT Inicio EMPTY>
+<!ATTLIST   Inicio
+%FormatoFecha;>
+<!ELEMENT Fin EMPTY>
+<!ATTLIST   Fin
+%FormatoFecha;>
 <!ATTLIST VehiculoAlquilado idVehiculo IDREF #REQUIRED>

@@ -2,7 +2,7 @@
 <!DOCTYPE RedAlquiler SYSTEM "Entregable.dtd">
 
 <RedAlquiler nombre="Nombre compania">
-  <Sucursal cantidadTotalVehiculos="345" direccion="C/ Inventada numero &gt;10">
+  <Sucursal cantidadTotalVehiculos="345" direccion="C/ sucursal 1, numero 1">
     <Vehiculo idVehiculo="Co1000">
       <Tipo>Coche</Tipo>
       <Marca>MarcaDeCoche</Marca>
@@ -12,22 +12,25 @@
       <Matricula>1234ABC</Matricula>
       <Potencia unidades="cv">100</Potencia>
       <Peso unidades="kg">1450</Peso>
-      <Descripcion>Esta descripcion la uso para poder tener simbolos especiales  como ampersan &amp; o los simbolos de mayor que &gt; y menor que &lt;</Descripcion>
+      <PrecioDia moneda="euros">100</PrecioDia>
+      <Descripcion>Este modelo en concreto viene equipado con la tecnologia S&amp;S (Start and Stop) 
+      que apaga el motor cuando nos detenemos para ahorar combustible y evitar contaminar innecesariamente</Descripcion>
     </Vehiculo>
     
-    <Vehiculo idVehiculo="Fu2000">
+    <Vehiculo idVehiculo="Fu1000">
       <Tipo>Furgoneta</Tipo>
       <Marca>MarcaDeFurgoneta</Marca>
       <Modelo>ModeloDeFurgoneta</Modelo>
       <FechaMatriculacion ano="2023" mes="Febrero" dia="10"/>
-      <Kilometraje>400000</Kilometraje>
-      <Matricula>5678DEF</Matricula>
+      <Kilometraje>167548</Kilometraje>
+      <Matricula>2346JGF</Matricula>
       <Potencia unidades="cv">150</Potencia>
       <Peso unidades="kg">1750</Peso>
+      <PrecioDia moneda="euros">100</PrecioDia>
       <Descripcion>Breve descripcion del vehiculo</Descripcion>
     </Vehiculo>
     
-    <Vehiculo idVehiculo="Ca3000">
+    <Vehiculo idVehiculo="Ca1000">
       <Tipo>Caravana</Tipo>
       <Marca>MarcaDeCaravana</Marca>
       <Modelo>ModeloDeCaravana</Modelo>
@@ -36,6 +39,49 @@
       <Matricula>9012GHI</Matricula>
       <Potencia unidades="cv">200</Potencia>
       <Peso unidades="kg">3500</Peso>
+      <PrecioDia moneda="euros">100</PrecioDia>
+      <Descripcion>Breve descripcion del vehiculo</Descripcion>
+    </Vehiculo>
+  </Sucursal>
+  
+  <Sucursal cantidadTotalVehiculos="345" direccion="C/ sucursal 2 , numero 2">
+    <Vehiculo idVehiculo="Co2000">
+      <Tipo>Coche</Tipo>
+      <Marca>MarcaDeCoche</Marca>
+      <Modelo>ModeloDeCoche</Modelo>
+      <FechaMatriculacion ano="2023" mes="Enero" dia="1"/>
+      <Kilometraje>210000</Kilometraje>
+      <Matricula>1234ABC</Matricula>
+      <Potencia unidades="cv">100</Potencia>
+      <Peso unidades="kg">1450</Peso>
+      <PrecioDia moneda="euros">100</PrecioDia>
+      <Descripcion>Este modelo en concreto viene equipado con la tecnologia S&amp;S (Start and Stop) 
+      que apaga el motor cuando nos detenemos para ahorar combustible y evitar contaminar innecesariamente</Descripcion>
+    </Vehiculo>
+    
+    <Vehiculo idVehiculo="Fu2000">
+      <Tipo>Furgoneta</Tipo>
+      <Marca>MarcaDeFurgoneta</Marca>
+      <Modelo>ModeloDeFurgoneta</Modelo>
+      <FechaMatriculacion ano="2023" mes="Febrero" dia="10"/>
+      <Kilometraje>167548</Kilometraje>
+      <Matricula>2346JGF</Matricula>
+      <Potencia unidades="cv">150</Potencia>
+      <Peso unidades="kg">1750</Peso>
+      <PrecioDia moneda="euros">100</PrecioDia>
+      <Descripcion>Breve descripcion del vehiculo</Descripcion>
+    </Vehiculo>
+    
+    <Vehiculo idVehiculo="Ca2000">
+      <Tipo>Caravana</Tipo>
+      <Marca>MarcaDeCaravana</Marca>
+      <Modelo>ModeloDeCaravana</Modelo>
+      <FechaMatriculacion ano="2023" mes="Enero" dia="1"/>
+      <Kilometraje>50000</Kilometraje>
+      <Matricula>9012GHI</Matricula>
+      <Potencia unidades="cv">200</Potencia>
+      <Peso unidades="kg">3500</Peso>
+      <PrecioDia moneda="euros">100</PrecioDia>
       <Descripcion>Breve descripcion del vehiculo</Descripcion>
     </Vehiculo>
   </Sucursal>
@@ -47,7 +93,11 @@
       <Tfno>111111111</Tfno>
       <Correo>correo@cliente1.com</Correo>
       <FechaNacimiento ano="1993" mes="Enero" dia="1"/>
-      <VehiculoAlquilado idVehiculo="Ca3000"/>
+      <AlquilerRealizado>
+      <VehiculoAlquilado idVehiculo="Ca2000"/>
+        <Inicio ano="2023" mes="Agosto" dia="22"/>
+        <Fin ano="2023" mes="Agosto" dia="25"/>
+      </AlquilerRealizado>
     </Cliente>
     
     <Cliente idCliente="CL0002">
@@ -56,7 +106,11 @@
       <Tfno>222222222</Tfno>
       <Correo>correo@cliente2.com</Correo>
       <FechaNacimiento ano="1993" mes="Enero" dia="1"/>
+      <AlquilerRealizado>
       <VehiculoAlquilado idVehiculo="Co1000"/>
+        <Inicio ano="2023" mes="Agosto" dia="22"/>
+        <Fin ano="2023" mes="Agosto" dia="25"/>
+      </AlquilerRealizado>
     </Cliente>
   </Clientes>
 </RedAlquiler>
