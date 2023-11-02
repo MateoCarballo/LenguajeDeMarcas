@@ -34,13 +34,13 @@ direccion CDATA #REQUIRED
 <!ATTLIST Potencia unidades CDATA #REQUIRED>
 
 <!ELEMENT Peso (#PCDATA)>
-<!ATTLIST Peso unidades CDATA #REQUIRED>
+<!ATTLIST Peso unidades CDATA #FIXED "kg">
 
 <!ELEMENT PrecioDia (#PCDATA)>
 <!ATTLIST PrecioDia moneda CDATA #REQUIRED>
 <!ELEMENT Descripcion (#PCDATA)>
 
-<!ELEMENT Cliente (Nombre, Apellidos, Tfno, Correo, FechaNacimiento, AlquilerRealizado?)>
+<!ELEMENT Cliente (Nombre, Apellidos, Tfno, Correo, FechaNacimiento, AlquilerActivo?)>
 <!ATTLIST Cliente idCliente ID #REQUIRED>
 
 <!ELEMENT Nombre (#PCDATA)>
@@ -51,7 +51,7 @@ direccion CDATA #REQUIRED
 <!ATTLIST FechaNacimiento
   %FormatoFecha;
 >
-<!ELEMENT AlquilerRealizado (VehiculoAlquilado,Inicio,Fin)>
+<!ELEMENT AlquilerActivo (VehiculoAlquilado,Inicio,Fin)>
 <!ELEMENT VehiculoAlquilado (#PCDATA)>
 <!ELEMENT Inicio EMPTY>
 <!ATTLIST   Inicio
