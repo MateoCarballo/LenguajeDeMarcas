@@ -43,7 +43,7 @@ ocupado (Si|si|No|no) #REQUIRED>
 <!ATTLIST PrecioDia moneda CDATA #REQUIRED>
 <!ELEMENT Descripcion (#PCDATA)>
 
-<!ELEMENT Cliente (Nombre, Apellidos, Tfno, Correo, FechaNacimiento, AlquilerActivo?)>
+<!ELEMENT Cliente (Nombre, Apellidos, Tfno, Correo, FechaNacimiento,Activo?,Completado?)>
 <!ATTLIST Cliente idCliente ID #REQUIRED>
 
 <!ELEMENT Nombre (#PCDATA)>
@@ -54,7 +54,9 @@ ocupado (Si|si|No|no) #REQUIRED>
 <!ATTLIST FechaNacimiento
   %FormatoFecha;
 >
-<!ELEMENT AlquilerActivo (VehiculoAlquilado,Inicio,Fin)>
+
+<!ELEMENT Activo (Alquiler+)>
+<!ELEMENT Alquiler (VehiculoAlquilado,Inicio,Fin)>
 <!ELEMENT VehiculoAlquilado (#PCDATA)>
 <!ELEMENT Inicio EMPTY>
 <!ATTLIST   Inicio
@@ -63,3 +65,6 @@ ocupado (Si|si|No|no) #REQUIRED>
 <!ATTLIST   Fin
 %FormatoFecha;>
 <!ATTLIST VehiculoAlquilado idVehiculo IDREF #REQUIRED>
+
+<!ELEMENT Completado (Alquiler*)>
+

@@ -99,11 +99,13 @@
       <Tfno>111111111</Tfno>
       <Correo>correo@cliente1.com</Correo>
       <FechaNacimiento ano="1993" mes="Enero" dia="1"/>
-      <AlquilerActivo>
-      <VehiculoAlquilado idVehiculo="Ca2000"/>
-        <Inicio ano="2023" mes="Agosto" dia="22"/>
-        <Fin ano="2023" mes="Agosto" dia="25"/>
-      </AlquilerActivo>
+      <Activo>
+        <Alquiler>
+          <VehiculoAlquilado idVehiculo="Ca2000"/>
+          <Inicio ano="2023" mes="Agosto" dia="22"/>
+          <Fin ano="2023" mes="Agosto" dia="25"/>
+        </Alquiler>
+      </Activo>
     </Cliente>
     
     <Cliente idCliente="CL0002">
@@ -112,6 +114,18 @@
       <Tfno>222222222</Tfno>
       <Correo>correo@cliente2.com</Correo>
       <FechaNacimiento ano="1993" mes="Enero" dia="1"/>
+      <Completado>
+        <Alquiler>
+          <VehiculoAlquilado idVehiculo="Fu1000"/>
+          <Inicio ano="2023" mes="Agosto" dia="22"/>
+          <Fin ano="2023" mes="Agosto" dia="25"/>
+        </Alquiler>
+        <Alquiler>
+          <VehiculoAlquilado idVehiculo="Fu2000"/>
+          <Inicio ano="2023" mes="Agosto" dia="22"/>
+          <Fin ano="2023" mes="Agosto" dia="25"/>
+        </Alquiler>
+      </Completado>
     </Cliente>
   </Clientes>
 </RedAlquiler>
