@@ -4,6 +4,7 @@
 <RedAlquiler nombre="Nombre compania">
   <Sucursal cantidadTotalVehiculos="345" direccion="C/ sucursal 1, numero 1">
     <Vehiculo idVehiculo="Co1000">
+      <Estado ocupado="No"/>
       <Tipo>Coche</Tipo>
       <Marca>MarcaDeCoche</Marca>
       <Modelo>ModeloDeCoche</Modelo>
@@ -18,6 +19,7 @@
     </Vehiculo>
     
     <Vehiculo idVehiculo="Fu1000">
+      <Estado ocupado="No"/>
       <Tipo>Furgoneta</Tipo>
       <Marca>MarcaDeFurgoneta</Marca>
       <Modelo>ModeloDeFurgoneta</Modelo>
@@ -31,6 +33,7 @@
     </Vehiculo>
     
     <Vehiculo idVehiculo="Ca1000">
+      <Estado ocupado="No"/>
       <Tipo>Caravana</Tipo>
       <Marca>MarcaDeCaravana</Marca>
       <Modelo>ModeloDeCaravana</Modelo>
@@ -44,8 +47,9 @@
     </Vehiculo>
   </Sucursal>
   
-  <Sucursal cantidadTotalVehiculos="345" direccion="C/ sucursal 2 , numero 2">
+<Sucursal cantidadTotalVehiculos="345" direccion="C/ sucursal 2 , numero 2">
     <Vehiculo idVehiculo="Co2000">
+      <Estado ocupado="No"/>
       <Tipo>Coche</Tipo>
       <Marca>MarcaDeCoche</Marca>
       <Modelo>ModeloDeCoche</Modelo>
@@ -60,6 +64,7 @@
     </Vehiculo>
     
     <Vehiculo idVehiculo="Fu2000">
+      <Estado ocupado="No"/>
       <Tipo>Furgoneta</Tipo>
       <Marca>MarcaDeFurgoneta</Marca>
       <Modelo>ModeloDeFurgoneta</Modelo>
@@ -73,6 +78,7 @@
     </Vehiculo>
     
     <Vehiculo idVehiculo="Ca2000">
+    <Estado ocupado="Si"/>
       <Tipo>Caravana</Tipo>
       <Marca>MarcaDeCaravana</Marca>
       <Modelo>ModeloDeCaravana</Modelo>

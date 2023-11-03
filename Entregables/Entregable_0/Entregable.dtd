@@ -17,9 +17,11 @@ direccion CDATA #REQUIRED
 <!ELEMENT Clientes (Cliente+)>
 <!ATTLIST Clientes cantidadTotalClientes CDATA #IMPLIED>
 
-<!ELEMENT Vehiculo (Tipo, Marca, Modelo, FechaMatriculacion, Kilometraje, Matricula, Potencia, Peso,PrecioDia,Descripcion)>
+<!ELEMENT Vehiculo (Estado,Tipo, Marca, Modelo, FechaMatriculacion, Kilometraje, Matricula, Potencia, Peso,PrecioDia,Descripcion)>
 <!ATTLIST Vehiculo idVehiculo ID #REQUIRED>
-
+<!ELEMENT Estado EMPTY>
+<!ATTLIST Estado 
+ocupado (Si|si|No|no) #REQUIRED>
 <!ELEMENT Tipo (#PCDATA)>
 <!ELEMENT Marca (#PCDATA)>
 <!ELEMENT Modelo (#PCDATA)>
