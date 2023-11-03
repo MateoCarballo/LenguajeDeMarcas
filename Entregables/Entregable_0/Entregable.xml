@@ -93,7 +93,7 @@
   </Sucursal>
 
   <Clientes cantidadTotalClientes="543">
-    <Cliente idCliente="CL0001">
+    <Cliente idCliente="CL1001">
       <Nombre>nombrecliente1</Nombre>
       <Apellidos>Apellido1 Apellido2</Apellidos>
       <Tfno>111111111</Tfno>
@@ -108,7 +108,7 @@
       </Activo>
     </Cliente>
     
-    <Cliente idCliente="CL0002">
+    <Cliente idCliente="CL2002">
       <Nombre>nombrecliente2</Nombre>
       <Apellidos>Apellido1 Apellido2</Apellidos>
       <Tfno>222222222</Tfno>
