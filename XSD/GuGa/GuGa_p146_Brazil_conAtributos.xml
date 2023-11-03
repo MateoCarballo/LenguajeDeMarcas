@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <!-- Documento: GuGa_p146_Brazil_conAtributos.xml
+      Observaciones: derivado de GuGa_p136_Brazil.xml; cambiamos elementos por atributos -->
+<pelicula 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="GuGa_p146_Schema_Brazil_conAtributos.xsd"
+  titulo="Brazil" minutos="124"/>

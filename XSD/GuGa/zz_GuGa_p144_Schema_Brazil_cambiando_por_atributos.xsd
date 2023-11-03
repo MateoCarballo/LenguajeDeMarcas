@@ -9,7 +9,7 @@
       </complexType>
   </element>
 </schema>
-
+      <!-- Al poner atributos aunque el elemento no tenga subelementos lo hace complejo -->
       <!--  sequene indica que deben seguir ese orden concreto. En caso contrario nos dara error
       TENEMOS SOPORTE AL TIPADO DE DATOS(INTEGER,STRING,ETC.)-->
       <!-- Si escribimos esto 
