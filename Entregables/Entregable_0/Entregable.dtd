@@ -6,6 +6,7 @@
 <!ELEMENT RedAlquiler (Sucursal+, Clientes)>
 <!ATTLIST RedAlquiler
 nombre CDATA #REQUIRED
+cif CDATA #REQUIRED
 >
 
 <!ELEMENT Sucursal (Vehiculo+)>

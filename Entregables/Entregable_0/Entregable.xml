@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE RedAlquiler SYSTEM "Entregable.dtd">
 
-<RedAlquiler nombre="Nombre compania">
+<RedAlquiler cif="A12345678" nombre="Nombre compania">
   <Sucursal cantidadTotalVehiculos="345" direccion="C/ sucursal 1, numero 1">
     <Vehiculo idVehiculo="Co1000">
       <Estado ocupado="No"/>
