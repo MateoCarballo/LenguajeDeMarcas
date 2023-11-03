@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documento: GuGa_p144_Schema_Brazil_conMinutos.xsd
+      Observaciones: derivado de GuGa_p136_Brazil_conSchema.xml; añadido elemento minutos-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="pelicula">
+      <complexType>
+          <attribute name="titulo" type="string"/>
+          <attribute name="minutos" type="integer"/>
+      </complexType>
+  </element>
+</schema>
+
+      <!--  sequene indica que deben seguir ese orden concreto. En caso contrario nos dara error
+      TENEMOS SOPORTE AL TIPADO DE DATOS(INTEGER,STRING,ETC.)-->
+      <!-- Si escribimos esto 
+        <all>
+          <element name="titulo" type="string"/>
+          <element name="minutos" type="integer"/>
+        </all>      
+        Que permite cualquier orden, es indiferente.
+      -->
+      <!-- Si escribimos esto 
+        <choice>
+          <element name="titulo" type="string"/>
+          <element name="minutos" type="integer"/>
+        </choice>     
+        Tenemos que seleccionar entre uno de ellos , equivalente a " | " en las DTD
+      -->
