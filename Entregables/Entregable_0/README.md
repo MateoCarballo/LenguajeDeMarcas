@@ -1,4 +1,6 @@
-**XML para organizar la información de clientes, vehículos y alquileres de un negocio.** Comenzando con una etiqueta llamada "RedAlquiler", que contiene las sucursales de la empresa, identificadas mediante los atributos "direccion" y "cantidadTotalVehiculos". Cada sucursal consta de una lista de vehículos disponibles.
+# XML para organizar la información de clientes, vehículos y alquileres de un negocio.
+
+Comenzando con una etiqueta llamada "RedAlquiler", que contiene las sucursales de la empresa, identificadas mediante los atributos "direccion" y "cantidadTotalVehiculos". Cada sucursal consta de una lista de vehículos disponibles.
 
 **Para cada vehículo, se registran los siguientes detalles:**
 
