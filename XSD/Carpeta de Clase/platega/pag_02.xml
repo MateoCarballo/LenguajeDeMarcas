@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documento: pag_02.xml
+      Observaciones: ejemplo (XML_XSD_actividades) página 2 -->
+<!DOCTYPE garderia SYSTEM "pag_03_garderia.dtd">
+<garderia>
+  <neno numeroExpedente="2344">
+    <nome>Noa Blanco Coello</nome>
+    <dataNacemento>2010-10-12</dataNacemento>
+    <peso>13.5</peso>
+    <altura>78</altura>
+    <vacunas>true</vacunas>
+  </neno>
+</garderia>
+
+<!-- 
+Aqui vemos la debilidad de las DTD que no controla si los contenidos de los elementos
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE garderia SYSTEM "pag_03_garderia.dtd">
+<garderia>
+  <neno numeroExpedente="popeye">
+    <nome>cousas</nome>
+    <dataNacemento>1.1.1</dataNacemento>
+    <peso>non o sei</peso>
+    <altura>falso</altura>
+    <vacunas>no</vacunas>
+  </neno>
+</garderia>
+
+-->

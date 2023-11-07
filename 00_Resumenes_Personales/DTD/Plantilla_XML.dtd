@@ -1,4 +1,4 @@
-<!ELEMENT plantilla (etiquetaSimple*, etiquetaOpcional*, etiquetaConAtributos*)*>
+<!ELEMENT plantilla (etiquetaSimple*, etiquetaOpcional+, etiquetaConAtributos*)*>
 <!ELEMENT etiquetaSimple (#PCDATA)>
 <!ELEMENT etiquetaOpcional (etiquetaOpcional1 | etiquetaOpcional2)>
 <!ELEMENT etiquetaOpcional1 (#PCDATA)>
@@ -12,4 +12,11 @@
 
 
 
-<!-- La cardinalidad la pongo de modo que los elementos pueden aparecer 0 o muchas veces --> 
+<!-- La cardinalidad la pongo de modo que los elementos pueden aparecer 0 o muchas veces
+introducir ID e IDREF IDREFS 
+                  Entidades 
+                  NameSpace
+Si no aparece nada 1 y solo 1 elemento.
++ 1 o mas elementos
+* 0 o mas elementos                  
+ --> 
