@@ -364,14 +364,14 @@ Estan diseñadas para contener listas de atributos y modelos de contenido. Permi
 Para definirlo lo que haremos sera entrecomillar el contenido y anadir un simbolo % antes de definir que atributos contendra.
 
 ```
-<!ELEMENT envios (orixen,destino)>				→	<!ELEMENT envios (orixen,destino)>
+<!ELEMENT envios (orixen,destino)>					→	<!ELEMENT envios (orixen,destino)>
 <!ELEMENT orixen EMPTY>							→		<!ENTITY % enderezo
 <!ELEMENT destino EMPTY>						→		"rua CDATA #REQUIRED
-<!ATTLIST orixen 								→		numero CDATA #IMPLIED
+<!ATTLIST orixen 						→		numero CDATA #IMPLIED
 		rua CDATA #REQUIRED 					→		poboacion CDATA #REQUIRED">
 		numero CDATA #IMPLIED 					→		<!ELEMENT orixen EMPTY>
 		poboacion CDATA #REQUIRED >				→		<!ELEMENT destino EMPTY>
-<!ATTLIST destino 								→		<!ATTLIST orixen %enderezo;>
+<!ATTLIST destino 						→		<!ATTLIST orixen %enderezo;>
 		rua CDATA #REQUIRED 					→		<!ATTLIST destino %enderezo;>
 		numero CDATA #IMPLIED 
 		poboacion CDATA #REQUIRED >
