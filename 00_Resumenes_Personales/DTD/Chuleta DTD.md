@@ -3,7 +3,7 @@
 # Índice
 1. [Construcción de una DTD](#1construccion-de-una-dtd)
 2. [Declaración DTD](#2-declaracion-dtd)
-   1. [Declaraciones DTD dentro de un documento XML (DTD internas)](#21-declaraciones-dtd-dentro-de-un-documento-xml-dtd-internas)
+   1. [Declaraciones DTD dentro de un documento XML (DTD internas)](#21declaraciones-dtd-dentro-de-un-documento-xml-dtd-internas)
    2. [Declaraciones DTD en un archivo .dtd (DTD externas)](#22-declaraciones-dtd-en-un-archivo-dtd-dtd-externas)
    3. [Declaraciones DTD en un documento con una referencia pública](#23-declaraciones-dtd-en-un-documento-con-una-referencia-publica)
 3. [Definir elementos](#3-definir-elementos)
@@ -376,7 +376,7 @@ En la parte izquieda tenemos un documento XML que hace referencia a otro(el de s
 ```
 
 
-##### 4.2.3.2 De parametro.
+##### 4.2.3.3 De parametro.
 >[!WARNING]
 >LAS MAS IMPORTANTES, CREAN UN CONJUNTO DE ATRIBUTOS REPETIBLES. ENCAPSULA. SI TENEMOS QUE MODIFICICAR LO HACEMOS SOLO EN UN PUNTO.
 
