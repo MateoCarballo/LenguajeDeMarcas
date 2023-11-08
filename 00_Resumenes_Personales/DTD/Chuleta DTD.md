@@ -1,6 +1,6 @@
-# REGLAS CREACION DTD
 
-# Índice
+<!--TODO cambiar todo a gallego o castellano-->
+# REGLAS CREACION DTD
 1. [Construcción de una DTD](#1construccion-de-una-dtd)
 2. [Declaración DTD](#2-declaracion-dtd)
    1. [Declaraciones DTD dentro de un documento XML (DTD internas)](#21declaraciones-dtd-dentro-de-un-documento-xml-dtd-internas)
@@ -10,6 +10,7 @@
    1. [Especificaciones](#31-especificaciones)
    2. [Reglas](#32-reglas)
    3. [Modelos de contenidos](#33-modelos-de-contenidos)
+   4. [Frecuencia](#34-Frecuencia)
 4. [Definir atributos](#4-definir-atributos)
    1. [Atributos IMPLIED, REQUIRED e FIXED](#41-atributos-implied-required-e-fixed)
    2. [Entidades](#42-entidades)
@@ -21,7 +22,7 @@
          3. [De parámetro](#4233-de-parametro)
 
 
-## 1.Construccion de una DTD. 
+## 1.Construccion de una DTD.
 A gramática dun documento XML defínese nun documento DTD. 
 A etiqueta  ```<!DOCTYPE>``` contén a definición da gramática. A súa sintaxe é a seguinte:
 
@@ -52,26 +53,26 @@ A continuación vemos a gramática DTD correspondente ao documento XML anterior:
 ### 2.1 Declaracións DTD dentro dun documento XML (DTD internas).	
 			
 Declaracións DTD dentro dun documento XML (DTD internas) <!DOCTYPE> xusto despois do prólogo:
-
-	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-	<!-- Declaracións DTD-->
-	<!DOCTYPE tema [
-	<!ELEMENT tema (autor, apartado+)>
-	<!ATTLIST tema
-	titulo CDATA #REQUIRED
-	unidade CDATA #REQUIRED>
-	<!ELEMENT autor (#PCDATA)>
-	<!ELEMENT apartado (#PCDATA)>
-	<!ATTLIST apartado
-	numero CDATA #REQUIRED>
-	]>
-	<!-- Datos XML-->
-	<tema unidade="5" titulo="A linguaxe XML">
-	<autor>Sabela Varela</autor>
-	<apartado numero="1">Contido do apartado 1</apartado>
-	<apartado numero="2">Contido do capitulo 2</apartado>
-	</tema>
-
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Declaracións DTD-->
+<!DOCTYPE tema [
+<!ELEMENT tema (autor, apartado+)>
+<!ATTLIST tema
+titulo CDATA #REQUIRED
+unidade CDATA #REQUIRED>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT apartado (#PCDATA)>
+<!ATTLIST apartado
+numero CDATA #REQUIRED>
+]>
+<!-- Datos XML-->
+<tema unidade="5" titulo="A linguaxe XML">
+<autor>Sabela Varela</autor>
+<apartado numero="1">Contido do apartado 1</apartado>
+<apartado numero="2">Contido do capitulo 2</apartado>
+</tema>
+```
 ### 2.2 Declaracións DTD nun arquivo .dtd (DTD externas).
 
 Declaracións DTD nun arquivo .dtd (DTD externas) xusto despois do prólogo e antes
@@ -121,7 +122,7 @@ ou ben
 ```
 <!ELEMENT nomeElemento (tipoDeContido)>	 
 ```
-### 3.1 Especificacions.
+### 3.1 Especificaciones.
 
 -EMPTY 
 ```
@@ -140,7 +141,7 @@ ou ben
 
 Obxecto podería conter cero ou máis ocurrencias de datos de carácter (#PCDATA) e/ou
 subelementos de tipo imaxe.
-### 3.2 Regras.
+### 3.2 Reglas.
 
 Esta declaración debe respectar as seguintes condicións:
 
@@ -152,7 +153,7 @@ Esta declaración debe respectar as seguintes condicións:
 
 
 			
-### 3.3 Modelos contidos.
+### 3.3 Modelos de contenidos.
 	
 Un modelo de contido é un patrón que establece os subelementos aceptados, e a orde na que 
 estes deben estar. A continuación imos ver as distintas posibilidades:
@@ -182,7 +183,7 @@ estes deben estar. A continuación imos ver as distintas posibilidades:
 ```			
 	<!ELEMENT ciclo ((codigo|nome),grao)>
 ```					
-### 3.4 Frecuencia.{#Frecuencia}
+### 3.4 Frecuencia.
 
 - **Opcional->(?)**
 <!--TODO El elemento puede aparecer o no pero siempre aparecera una sola vez?-->
