@@ -14,3 +14,7 @@ Repositorio para tener un backup de las tareas y conceptos de la materia. Encont
 y aspectos teoricos relevantes.
 
 [Resumenes personales](https://github.com/MateoCarballo/LenguajeDeMarcas/tree/main/_Resumenes_Personales)
+
+[Resumen teorico de las DTD](https://github.com/MateoCarballo/LenguajeDeMarcas/blob/main/_Resumenes_Personales/DTD/Chuleta%20DTD.md)
+[Plantilla XML con explicaciones](https://github.com/MateoCarballo/LenguajeDeMarcas/blob/main/_Resumenes_Personales/DTD/Plantilla_XML_con_DTD_externa.xml)
+[Plantilla DTD para XML de arriba](https://github.com/MateoCarballo/LenguajeDeMarcas/blob/main/_Resumenes_Personales/DTD/Plantilla_XML.dtd)
