@@ -5,10 +5,12 @@
       <!-- Elijo la primera opcion pero podria haber escogido la seguna lo que nos indica en la DTD es que debemos escoger entre uno u otro y pueden
       aparecer ninguna o muchas veces -->
       <etiquetaOpcional>
-      <etiquetaOpcional1>Contenido etiqueta opcional 1</etiquetaOpcional1>
+      <etiquetaOpcional1>Contenido etiqueta opcional 1.Si queremos usar simbolos reservados para XML debemos usarlos con entidades como por ejemplo
+      el simbolo ampersan &amp; o el simbolo mayor que &gt; y menor que &lt;</etiquetaOpcional1>
       </etiquetaOpcional>
       <!-- En esta etiqueta tengo ejemplos de cada uno de los tipos de atributos que podemos usar. Los que estan fijados y con valor por defecto si abrimos este 
       codigo con un navegador aparecer con los valores definidos en la DTD. El de valor fijo siempre con el mismo y el opcional con un valor por defecto aparece 
       con el valor por defecto siempre que no le introduzcamos otro en el documento .xml-->
       <etiquetaConAtributos atributoObligatorio="contenido obligatorio">Contenido etiqueta con atributos</etiquetaConAtributos>
+      <elementoDeEntidad1 parametro1="valor1" parametro2="valor2" parametro3="valor3"/>
 </plantilla>

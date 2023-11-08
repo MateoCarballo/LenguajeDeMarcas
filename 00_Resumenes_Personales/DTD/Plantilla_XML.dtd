@@ -1,4 +1,4 @@
-<!ELEMENT plantilla (etiquetaSimple*, etiquetaOpcional+, etiquetaConAtributos*)*>
+<!ELEMENT plantilla (etiquetaSimple*, etiquetaOpcional+, etiquetaConAtributos*,elementoDeEntidad1,elementoDeEntidad2?)*>
 <!ELEMENT etiquetaSimple (#PCDATA)>
 <!ELEMENT etiquetaOpcional (etiquetaOpcional1 | etiquetaOpcional2)>
 <!ELEMENT etiquetaOpcional1 (#PCDATA)>
@@ -9,14 +9,21 @@
     atributoOpcionalConValorPredeterminado CDATA "valorPredeterminado"
     atributoObligatorio CDATA #REQUIRED
     atributoConValorFijo CDATA #FIXED "ValorFijado">
-
-
-
+    
+<!ENTITY % nombreEntidad
+        " parametro1 CDATA #REQUIRED
+          parametro2 CDATA #REQUIRED
+          parametro3 CDATA #REQUIRED">
+          
+<!ELEMENT elementoDeEntidad1 EMPTY>
+<!ATTLIST  elementoDeEntidad1 %nombreEntidad; >
+<!ELEMENT elementoDeEntidad2 EMPTY>
+<!ATTLIST  elementoDeEntidad2 %nombreEntidad; >
 <!-- La cardinalidad la pongo de modo que los elementos pueden aparecer 0 o muchas veces
 introducir ID e IDREF IDREFS 
-                  Entidades 
                   NameSpace
 Si no aparece nada 1 y solo 1 elemento.
 + 1 o mas elementos
-* 0 o mas elementos                  
+* 0 o mas elementos
+? Puede no aparecer, si aparece es solo 1 vez                  
  --> 
