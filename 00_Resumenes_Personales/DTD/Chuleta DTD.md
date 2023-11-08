@@ -1,5 +1,26 @@
 # REGLAS CREACION DTD
 
+# Índice
+1. [Construcción de una DTD](#1construccion-de-una-dtd)
+2. [Declaración DTD](#2-declaracion-dtd)
+   1. [Declaraciones DTD dentro de un documento XML (DTD internas)](#21-declaraciones-dtd-dentro-de-un-documento-xml-dtd-internas)
+   2. [Declaraciones DTD en un archivo .dtd (DTD externas)](#22-declaraciones-dtd-en-un-archivo-dtd-dtd-externas)
+   3. [Declaraciones DTD en un documento con una referencia pública](#23-declaraciones-dtd-en-un-documento-con-una-referencia-publica)
+3. [Definir elementos](#3-definir-elementos)
+   1. [Especificaciones](#31-especificaciones)
+   2. [Reglas](#32-reglas)
+   3. [Modelos de contenidos](#33-modelos-de-contenidos)
+4. [Definir atributos](#4-definir-atributos)
+   1. [Atributos IMPLIED, REQUIRED e FIXED](#41-atributos-implied-required-e-fixed)
+   2. [Entidades](#42-entidades)
+      1. [Definición de las entidades](#421-definicion-de-las-entidades)
+      2. [Uso de las entidades](#422-uso-de-las-entidades)
+      3. [Tipos de entidades](#423-tipos-de-entidades)
+         1. [Internas](#4231-internas)
+         2. [Externas](#4232-externas)
+         3. [De parámetro](#4233-de-parametro)
+
+
 ## 1.Construccion de una DTD. 
 A gramática dun documento XML defínese nun documento DTD. 
 A etiqueta  ```<!DOCTYPE>``` contén a definición da gramática. A súa sintaxe é a seguinte:
@@ -376,5 +397,3 @@ Para definirlo lo que haremos sera entrecomillar el contenido y anadir un simbol
 		numero CDATA #IMPLIED 
 		poboacion CDATA #REQUIRED >
 ```
-
-<!-- Pendiente de anhadir las entidades, entiendo que facilitar el poder repetir estructuras y modificarlas solo una vez y no en cada punto que se usa-->
