@@ -258,4 +258,123 @@ grao CDATA #REQUIRED>
 <!ATTLIST documento tipo CDATA #FIXED "pdf">
 ```
 
+
+### 4.2 Entidades.
+
+Las entidades pueden ser usadas como constatntes dentro del documento XML, o hacer referencia a objetos externos(Imagenes, ficheros, paginas web,etc.).
+
+Existen entidades definibles y entidades predefinidas. Propias del lenguaje XML.
+
+#### 4.2.1 Definicion de las entidades.
+```
+<!ENTITY nomeEntidad definicionEntidad>
+
+<!ENTITY cidade "Santiago de Compostela">
+```
+Entidades predefinidas en XML
+
+
+
+#### 4.2.2 Uso de las entidades.
+```
+<códigoFonte>
+&lt;H1&gt;O operador de concatenación: &amp;&lt;/H1&gt;
+</códigoFonte>
+```
+| Columna 1 | Columna 2 |
+|-----------|-----------|
+| \&lt;  | Valor 1   |
+| \&gt;    | Valor 2   |
+| \&amp;   | Valor 3   |
+| \&apos;     | Valor 4   |
+| \&quot;    | Valor 5   |
+| \&#codChar;|El numero de su codigo ascii para el simbolo.  Ejemplo: \&#169; &#8594; &#169;|
+
+#### 4.2.3 tipos de entidades.
+
+##### 4.2.3.1 Internas.
+Se declaran en el propio documento XML y se referencia exclusivamente en este.
+
+Ejemplo:
+
+	```
+	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<!DOCTYPE tarxetaVisita [
+ 	<!ENTITY cidade "Santiago de Compostela">]>
+	<tarxetaVisita>
+	<apelidos>Graña Arias</apelidos>
+	<nome>Rodrigo</nome>
+	<profesion>Doctor</profesion>
+	<enderezo>
+	<rua>Ponzano</rua>
+	<numero>66</numero>
+	<poboacion>&cidade;</poboacion>
+	<cp>15891</cp>
+	</enderezo>
+	</tarxetaVisita>
+	```
+##### 4.2.3.2 Externas.
+
+Permiten vincular un documento a otro mediante su URL. 
+Permiten incluir contenido que no es XML, como imagenes.
+Usando la palabra clave  ```SYSTEM``` permite identificar un archivo de forma local o en red.
+
+
+```
+<!ENTITY doc SYSTEM "http:/localhost/docsxml/outrodoc.xml”>
+
+<!ENTITY imaxe SYSTEM "imaxe.gif" NDATA gif>
+```
+
+Ejemplo:
+
+En la parte izquieda tenemos un documento XML que hace referencia a otro(el de su derecha) y esto es equivalente al XML de abajo.
+
+```
+<?xml version="1.0" encoding="UTF-8" ?>            		<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entidadelibro [                               <capitulo>
+ <!ENTITY capitulo1 SYSTEM "capitulo1.xml">             <para>Este é o primeiro capitulo</para>
+]>                                                      </capitulo>
+<entidadelibro>
+ <tema>Exemplo de entidade externa</tema>
+ &capitulo1;
+</entidadelibro>
+```
+
+```
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE entidadelibro [
+ <!ENTITY capitulo1 SYSTEM "capitulo1.xml">
+]>
+<entidadelibro>
+ <tema>Exemplo de entidade externa</tema>
+ <capitulo>
+<para>Este é o primeiro capitulo</para>
+ </capitulo>
+</entidadelibro>
+```
+
+
+##### 4.2.3.2 De parametro.
+>[!WARNING]
+>LAS MAS IMPORTANTES, CREAN UN CONJUNTO DE ATRIBUTOS REPETIBLES. ENCAPSULA. SI TENEMOS QUE MODIFICICAR LO HACEMOS SOLO EN UN PUNTO.
+
+Estan diseñadas para contener listas de atributos y modelos de contenido. Permiten modularizar las DTD.
+
+Para definirlo lo que haremos sera entrecomillar el contenido y anadir un simbolo % antes de definir que atributos contendra.
+
+```
+<!ELEMENT envios (orixen,destino)>				→	<!ELEMENT envios (orixen,destino)>
+<!ELEMENT orixen EMPTY>							→		<!ENTITY % enderezo
+<!ELEMENT destino EMPTY>						→		"rua CDATA #REQUIRED
+<!ATTLIST orixen 								→		numero CDATA #IMPLIED
+		rua CDATA #REQUIRED 					→		poboacion CDATA #REQUIRED">
+		numero CDATA #IMPLIED 					→		<!ELEMENT orixen EMPTY>
+		poboacion CDATA #REQUIRED >				→		<!ELEMENT destino EMPTY>
+<!ATTLIST destino 								→		<!ATTLIST orixen %enderezo;>
+		rua CDATA #REQUIRED 					→		<!ATTLIST destino %enderezo;>
+		numero CDATA #IMPLIED 
+		poboacion CDATA #REQUIRED >
+```
+
 <!-- Pendiente de anhadir las entidades, entiendo que facilitar el poder repetir estructuras y modificarlas solo una vez y no en cada punto que se usa-->
