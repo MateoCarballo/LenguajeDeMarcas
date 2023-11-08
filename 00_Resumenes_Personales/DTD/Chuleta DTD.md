@@ -3,9 +3,9 @@
 # REGLAS CREACION DTD
 1. [Construcción de una DTD](#1construccion-de-una-dtd)
 2. [Declaración DTD](#2-declaracion-dtd)
-   1. [Declaraciones DTD dentro de un documento XML (DTD internas)](#21declaraciones-dtd-dentro-de-un-documento-xml-dtd-internas)
+   1. [Declaraciones DTD dentro de un documento XML (DTD internas)](#21-declaraciones-dtd-dentro-de-un-documento-xml-dtd-internas)
    2. [Declaraciones DTD en un archivo .dtd (DTD externas)](#22-declaraciones-dtd-en-un-archivo-dtd-dtd-externas)
-   3. [Declaraciones DTD en un documento con una referencia pública](#23-declaraciones-dtd-en-un-documento-con-una-referencia-publica)
+   3. [Declaraciones DTD en un documento con una referencia pública](#23-declaraciones-dtd-en-un-documento-con-una-referencia-pública)
 3. [Definir elementos](#3-definir-elementos)
    1. [Especificaciones](#31-especificaciones)
    2. [Reglas](#32-reglas)
@@ -50,7 +50,7 @@ A continuación vemos a gramática DTD correspondente ao documento XML anterior:
 
 ## 2. Declaracion DTD.
 			
-### 2.1 Declaracións DTD dentro dun documento XML (DTD internas).	
+### 2.1 Declaraciones DTD dentro de un documento XML (DTD internas).	
 			
 Declaracións DTD dentro dun documento XML (DTD internas) <!DOCTYPE> xusto despois do prólogo:
 ```
@@ -73,7 +73,7 @@ numero CDATA #REQUIRED>
 <apartado numero="2">Contido do capitulo 2</apartado>
 </tema>
 ```
-### 2.2 Declaracións DTD nun arquivo .dtd (DTD externas).
+### 2.2 Declaraciones DTD en un archivo .dtd (DTD externas).
 
 Declaracións DTD nun arquivo .dtd (DTD externas) xusto despois do prólogo e antes
  dos datos XML para indicar o arquivo que contén a definición da gramática DTD:
@@ -104,7 +104,7 @@ E a continuación vemos o contido do arquivo tema.xml que contén o vínculo co 
 ```
 Con esta solución, o documento XML non é es autosuficiente e, polo tanto, o valor do atributo standalone é no.
 
-### 2.3 Declaracións DTD nun documento cunha referencia pública.
+### 2.3 Declaraciones DTD en un documento con una referencia pública.
 
 Cando o documento é un estándar usaremos o identificador PUBLIC, a cadea de texto que o 
 identifica e a súa URL. Por exemplo:
