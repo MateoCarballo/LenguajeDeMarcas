@@ -13,4 +13,7 @@
       con el valor por defecto siempre que no le introduzcamos otro en el documento .xml-->
       <etiquetaConAtributos atributoObligatorio="contenido obligatorio">Contenido etiqueta con atributos</etiquetaConAtributos>
       <elementoDeEntidad1 parametro1="valor1" parametro2="valor2" parametro3="valor3"/>
+      
+      <etiquetaIdentificada identificador="claveID"></etiquetaIdentificada>
+      <etiquetaQueHaceReferencia referencia="claveID"></etiquetaQueHaceReferencia>
 </plantilla>

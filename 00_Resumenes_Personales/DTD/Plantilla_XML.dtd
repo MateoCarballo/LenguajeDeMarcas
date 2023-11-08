@@ -1,5 +1,9 @@
-<!ELEMENT plantilla (etiquetaSimple*, etiquetaOpcional+, etiquetaConAtributos*,elementoDeEntidad1,elementoDeEntidad2?)*>
+<!ELEMENT plantilla (etiquetaSimple*, etiquetaOpcional+, etiquetaConAtributos*,elementoDeEntidad1,elementoDeEntidad2?,etiquetaIdentificada,etiquetaQueHaceReferencia)*>
 <!ELEMENT etiquetaSimple (#PCDATA)>
+<!ELEMENT etiquetaIdentificada (#PCDATA)>
+<!ATTLIST etiquetaIdentificada identificador ID #REQUIRED>
+<!ELEMENT etiquetaQueHaceReferencia (#PCDATA)>
+<!ATTLIST etiquetaQueHaceReferencia referencia IDREF #REQUIRED>
 <!ELEMENT etiquetaOpcional (etiquetaOpcional1 | etiquetaOpcional2)>
 <!ELEMENT etiquetaOpcional1 (#PCDATA)>
 <!ELEMENT etiquetaOpcional2 (#PCDATA)>
