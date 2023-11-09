@@ -28,4 +28,18 @@ Analogamente a lo explicado en las DTD una instancia concreta de un esquema XML 
 
 ### 1.3 Vinculacion de un esquema.
  
+
+| Tipo Primitivo      | Descripción            | Ejemplo                                        |
+|----------------------|------------------------|------------------------------------------------|
+| xs:string            | Cadena de caracteres   | `<nombre>John</nombre>`                         |
+| xs:boolean           | Valor booleano         | `<activo>true</activo>`                         |
+| xs:decimal           | Número decimal         | `<precio>19.99</precio>`                        |
+| xs:integer           | Número entero          | `<cantidad>5</cantidad>`                        |
+| xs:date              | Fecha                  | `<fechaNacimiento>2000-01-01</fechaNacimiento>` |
+| xs:time              | Hora                   | `<hora>12:30:00</hora>`                         |
+| xs:dateTime          | Fecha y hora           | `<timestamp>2023-11-09T08:30:00</timestamp>`    |
+| xs:duration          | Duración               | `<duracion>PT2H30M</duracion>`                  |
+| xs:anyURI            | URI                    | `<enlace>http://ejemplo.com</enlace>`           |
+
+
  
