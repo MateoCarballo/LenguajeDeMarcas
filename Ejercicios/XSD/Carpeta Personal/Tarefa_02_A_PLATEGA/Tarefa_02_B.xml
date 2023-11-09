@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Ciclo  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+            xs:noNamespaceSchemaLocation="Tarefa_02_B.xsd">
+
+</Ciclo>
+
+
+<!-- ENUNCIADO
+
+Crea un esquema XML para validar os documentos XML que conteñen información dun 
+ciclo e dos módulos que este ten, tendo en conta que:
+▪ Un ciclo consta de varios módulos.
+Páxina 28 de 40
+▪ O ciclo ten como atributos a familia profesional e o tipo de ciclo (ciclo medio, ciclo 
+superior ou PCPI).
+Un exemplo de arquivo XML con información dun ciclo sería o seguinte:Crea un esquema XML para validar os documentos XML que conteñen información dun 
+ciclo e dos módulos que este ten, tendo en conta que:
+▪ Un ciclo consta de varios módulos.
+▪ O ciclo ten como atributos a familia profesional e o tipo de ciclo (ciclo medio, ciclo 
+superior ou PCPI).
+Un exemplo de arquivo XML con información dun ciclo sería o seguinte:
+
+-->

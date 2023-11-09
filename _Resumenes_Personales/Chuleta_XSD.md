@@ -27,3 +27,5 @@ Analogamente a lo explicado en las DTD una instancia concreta de un esquema XML 
 - PERMITE ESPECIFICAR RANGOS. Podemos especificar un valor minimo y maximo para los elementos de un tipo en .xsd
 
 ### 1.3 Vinculacion de un esquema.
+ 
+ 
