@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documento para validar Tarefa_02_A.xml de platega Esquemas-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Ciclo">
+    <xs:complexType>
+      <xs:sequence>
+      <xs:element name="Nome" type="xs:string"/>
+      <xs:element name="Modulo"  minOccurs="1" maxOccurs="50" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="familiaProfesional" type="xs:string"/>
+      <xs:attribute name="tipo" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
