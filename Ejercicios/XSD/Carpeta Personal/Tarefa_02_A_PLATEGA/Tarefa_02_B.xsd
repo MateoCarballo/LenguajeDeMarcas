@@ -1,33 +1,48 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- Documento para validar Tarefa_02_B.xml de platega Esquemas-->
+<!-- Documento para validar Tarefa_02_B.xml de platega Esquemas
+La norma que intento seguir es que los tipos de datos complejos
+ los nombro com "type" mas el nombre que tendrá el elemento
+-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
 <!--Declaracion del elemento "UD" -->
 <xs:complexType name="UD">
   <xs:sequence>
-  <xs:element name="Titulo" type="xs:string"/>
-  <xs:element name="Descripcion" type="xs:string"/>
+  <!-- Si no especificamos nada por defecto son opcionales-->
+  <xs:element name="Titulo" type="xs:string" use="required"/>
+  <xs:element name="Descripcion" type="xs:string" use="optional"/>
   </xs:sequence>
   <xs:attribute name="Numero" type="xs:integer" use="required"/>
-  <!-- Si no especificamos nada por defecto son opcionales-->
   <xs:attribute name="Sesions" type="xs:integer" use="required"/>
   </xs:complexType>
 
 <!-- Declaracion del elemento "Contidos"-->
- <xs:complexType name="Contidos">
+ <xs:complexType name="typeContidos">
   <xs:sequence>
-  <xs:element name="UnidadeDidactica" type="UD"/>
+  <!-- unbounded indica que el numero maximo es ilimitado y al no tener minimo el minimo=1 -->
+  <xs:element name="UnidadeDidactica" type="UD" maxOccurs="unbounded"/>
   </xs:sequence>
   </xs:complexType>
   
+  <xs:complexType name="typeCiclo">
+  <xs:sequence>
+  <xs:element name="Ciclo" type="xs:string" maxOccurs="5"/>
+  </xs:sequence>
+  </xs:complexType>
   
+   <xs:complexType name="typeDuracion">
+  <xs:attribute name="duracion" type="xs:integer" use="required"/>
+  <xs:attribute name="sesionsSemanais" type="xs:integer" use="required"/>
+  <xs:attribute name="sesionsAnuais" type="xs:integer" />
+  </xs:complexType>
   
   <xs:element name="Modulo">
     <xs:complexType>
       <xs:sequence>
-      <xs:element name="Duracion" type="xs:integer"/>
+      <xs:element name="Duracion" type="typeDuracion"/>
       <xs:element name="Nome" type="xs:string"/>
-      <xs:element name="Ciclo" type="xs:string"/>
-      <xs:element name="Contidos" type="xs:string"/>
+      <xs:element name="Ciclos" type="typeCiclo"/>
+      <xs:element name="Contidos" type="typeContidos"/>
       </xs:sequence>
       <xs:attribute name="codigo" type="xs:string" use="required"/>
     </xs:complexType>
