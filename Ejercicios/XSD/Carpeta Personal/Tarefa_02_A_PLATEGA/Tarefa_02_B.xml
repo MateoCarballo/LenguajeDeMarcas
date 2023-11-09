@@ -1,60 +1,32 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<Ciclo xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="Tarefa_02_B.xsd">
-  <modulo codigo="MP0373">
-    <duracion horas="133" sesions="160" sesionsSemanais="5"/>
-    <mome>Linguaxes de marcas e sistemas de xestión da información</mome>
-    <ciclo codigo="CSIFC01">
- Administración de sistemas informáticos e redes
- </ciclo>
-    <ciclo codigo="CSIFC02">
- Desenvolvemento de aplicacións multiplataforma
- </ciclo>
-    <ciclo codigo="CSIFC03">
- Desenvolvemento de aplicacións web
- </ciclo>
-    <contidos>
-      <UD num="1" sesións="5">
-        <titulo>
- Aplicacións web. Introdución aos linguaxes de marcas
- </titulo>
-        <descrición>
- Introdución aos conceptos relacionados coas aplicacións web.
- Páxinas web estáticas e dinámicas. Introdución aos linguaxes
- de marcas.
- </descrición>
-      </UD>
-      <UD num="2" sesións="12">
-        <titulo>
- Linguaxes de marcas para a transmisión de información a
-Páxina 29 de 40
- través da Web: HTML.
- </titulo>
-      </UD>
-      <UD num="3" sesións="13">
-        <titulo>
- Linguaxes de marcas para a transmisión de información a
- través da Web: CSS
- </titulo>
-        <descrición>
- Separar o contido da presentación. Follas de estilo CSS.
- </descrición>
-      </UD>
-    </contidos>
-  </modulo>
-</Ciclo>
-<!-- ENUNCIADO
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<Modulo xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+                xs:noNamespaceSchemaLocation="Tarefa_02_B.xsd"
+                codigo="LM-DAM">
 
-Crea un esquema XML para validar os documentos XML que conteñen información dun 
-ciclo e dos módulos que este ten, tendo en conta que:
-▪ Un ciclo consta de varios módulos.
-Páxina 28 de 40
-▪ O ciclo ten como atributos a familia profesional e o tipo de ciclo (ciclo medio, ciclo 
-superior ou PCPI).
-Un exemplo de arquivo XML con información dun ciclo sería o seguinte:Crea un esquema XML para validar os documentos XML que conteñen información dun 
-ciclo e dos módulos que este ten, tendo en conta que:
-▪ Un ciclo consta de varios módulos.
-▪ O ciclo ten como atributos a familia profesional e o tipo de ciclo (ciclo medio, ciclo 
-superior ou PCPI).
-Un exemplo de arquivo XML con información dun ciclo sería o seguinte:
+  <Duracion duracion="150" sesionsSemanais="3" sesionsAnuais="120"/>
 
--->
+  <Nome>Lenguaje de Marcas</Nome>
+
+
+<Ciclo>Superior de DAM</Ciclo>
+<Ciclo>Superior de DAM</Ciclo>
+<Ciclo>Superior de DAM</Ciclo>
+
+  <Contidos>
+    <UnidadeDidactica Numero="1" Sesions="40">
+      <Titulo>Introducción a XML</Titulo>
+      <Descripcion>Conceptos básicos de XML y su estructura.</Descripcion>
+    </UnidadeDidactica>
+
+    <UnidadeDidactica Numero="2" Sesions="50">
+      <Titulo>Validación y Transformación con XSD y XSLT</Titulo>
+      <Descripcion>Uso de XSD para validar documentos XML y XSLT para transformación.</Descripcion>
+    </UnidadeDidactica>
+
+    <UnidadeDidactica Numero="3" Sesions="30">
+      <Titulo>Desarrollo de documentos XML</Titulo>
+      <Descripcion>Creación y manipulación de documentos XML.</Descripcion>
+    </UnidadeDidactica>
+  </Contidos>
+
+</Modulo>
