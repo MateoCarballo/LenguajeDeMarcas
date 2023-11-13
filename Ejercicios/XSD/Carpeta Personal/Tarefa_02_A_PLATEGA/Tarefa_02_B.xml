@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> 
 <Modulo xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
                 xs:noNamespaceSchemaLocation="Tarefa_02_B.xsd"
-                codigo="LM-DAM">
+                codigo="MP0373">
 
-  <Duracion duracion="150" sesionsSemanais="3" sesionsAnuais="120"/>
-
-  <Nome>Lenguaje de Marcas</Nome>
-
-
-<Ciclo>Superior de DAM</Ciclo>
-<Ciclo>Superior de DAM</Ciclo>
-<Ciclo>Superior de DAM</Ciclo>
-
+<Duracion horas="150" sesionsSemanais="3" sesionsAnuais="120"/>
+<Nome>Linguaxes de marcas e sistemas de xestión da información</Nome>
+<Ciclos>
+  <Ciclo codigo="CSIFC01">Administración de sistemas informáticos e redes</Ciclo>
+  <Ciclo codigo="CSIFC02">Desenvolvemento de aplicacións multiplataforma</Ciclo>
+  <Ciclo codigo="CSIFC03">Desenvolvemento de aplicacións web</Ciclo>
+</Ciclos>
   <Contidos>
+  
     <UnidadeDidactica Numero="1" Sesions="40">
-      <Titulo>Introducción a XML</Titulo>
-      <Descripcion>Conceptos básicos de XML y su estructura.</Descripcion>
+      <Titulo>Aplicacións web. Introdución aos linguaxes de marcas</Titulo>
+      <Descripcion>Introdución aos conceptos relacionados coas aplicacións web.
+      Páxinas web estáticas e dinámicas. Introdución aos linguaxes
+      de marcas.
+      </Descripcion>
     </UnidadeDidactica>
-
+    
     <UnidadeDidactica Numero="2" Sesions="50">
-      <Titulo>Validación y Transformación con XSD y XSLT</Titulo>
-      <Descripcion>Uso de XSD para validar documentos XML y XSLT para transformación.</Descripcion>
+      <Titulo>Linguaxes de marcas para a transmisión de información a través da Web: HTML.</Titulo>
     </UnidadeDidactica>
-
     <UnidadeDidactica Numero="3" Sesions="30">
-      <Titulo>Desarrollo de documentos XML</Titulo>
-      <Descripcion>Creación y manipulación de documentos XML.</Descripcion>
+      <Titulo>Linguaxes de marcas para a transmisión de información a través da Web: CSS</Titulo>
+      <Descripcion>Separar o contido da presentación. Follas de estilo CSS.</Descripcion>
     </UnidadeDidactica>
   </Contidos>
 
