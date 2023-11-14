@@ -68,10 +68,91 @@ Analogamente a lo explicado en las DTD una instancia concreta de un esquema XML 
 
 #### 1.4.1 Basados en un tipo predefinido
 
-Solos pueden contener texto, no se permiten subelementos ni atributos.
+Solo pueden contener texto, no se permiten subelementos ni atributos.
 
 
-`<xs:element name="nombreElemento" type="tipoDefinido"/>`
+```
+<xs:element name="nombreElemento" type="tipoDefinido"/>
+```
 
 
 #### 1.4.2 Basados en un tipo simple definido por el usuario
+
+Solo pueden contener texto, no se permiten subelementos ni atributos.
+
+Se puede definir dentro de un elememento por lo que quedaria oculta al resto del schema o bien fuera para reutilizarla.
+
+**Definiendo el tipo de dato fuera del elemento**
+
+&#8595;
+```
+<xs:simpleType name="nombreDelTipoSimple">
+(...)
+</xs:simpleType>
+
+<xs:element name="nombreElemento" type="nombreDelTipoSimple"/>
+```
+
+**Definiendo el tipo de dato dentro del elemento**
+
+&#8595;
+```
+<xs:element name="nombreElemento">
+    <xs:simpleType>
+    (...)
+    </xs:simpleType>
+</xs:element>
+
+```
+
+#### 1.4.3 Basados en un tipo complejo definido por el usuario
+
+Permite subelementos y atributos.
+
+**Definiendo el tipo de dato fuera del elemento**
+
+&#8595;
+```
+<xs:complexType name="nombreDelTipoComplejo">
+(...)
+</xs:complexType>
+
+<xs:element name="nombreElemento" type="nombreDelTipoComplejo"/>
+```
+
+**Definiendo el tipo de dato dentro del elemento**
+
+&#8595;
+```
+<xs:element name="nombreElemento">
+    <xs:complexType>
+    (...)
+    </xs:complexType>
+</xs:element>
+
+```
+
+## 1.5 Ajustando declaracion de elementos
+
+Lista de atributos especificables para configurarlo segun nuestras necesidades.
+
+| Atributo      | Descripción                                            | Ejemplo                                       |
+|---------------|--------------------------------------------------------|-----------------------------------------------|
+| name          | El nombre del elemento en documentos XML                | `<xs:element name="liña" type="xs:string" maxOccurs="unbounded"/>`   |
+| type          | Tipo de datos del contenido del elemento                | `<xs:element name="peso" type="xs:double">`       |
+| maxOccurs     | Número máximo de veces que el elemento puede aparecer   | `<xs:element name="dataDeNacemento" type="xs:date" maxOccurs="10"/>` |
+| minOccurs     | Número mínimo de veces que el elemento debe aparecer    | `<xs:element name="vehiculos" type="xs:string" minOccurs="0"/>`        |
+| default       | Valor predeterminado para el contenido del elemento     | `<xs:element name="númeroDeCopias" type="xs:positiveInteger"default="1">`          |
+| fixed         | Valor asignado automáticamente al contenido             | `<xs:element name="correoElectronico" type="xs:string" fixed="ejemplo@example.com" />`        |
+| ref           | Nombre de otro elemento definido en el esquema           | `<xs:element ref="nomeDoElementoReferenciado"/>`|
+
+<!--TODO pendiente de revisar como usar este atributo-->
+```
+<!-- Definición de un elemento en el esquema -->
+<xs:element name="nombreElementoReferenciado">
+  (...)
+</xs:element>
+ 
+<!-- Uso del atributo 'ref' para hacer referencia al elemento ya definido -->
+<xs:element ref="nombreElementoReferenciado" />
+```
