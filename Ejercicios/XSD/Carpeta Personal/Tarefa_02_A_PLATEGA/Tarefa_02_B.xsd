@@ -28,13 +28,13 @@ La norma que intento seguir es que los tipos de datos complejos
   Aqui queria que aparezca un codigo por cada ciclo -->
 
 <xs:complexType name="typeCiclo">
-    <xs:sequence>
-      <xs:complexType>
+  <xs:complexType>
+  <xs:sequence>
         <xs:element name="nombre" type="xs:string" />
-        </xs:complexType>
-        <xs:attribute name="codigo" type="xs:string" use="required"/>
     </xs:sequence>
-  </xs:complexType> 
+    <xs:attribute name="codigo" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:complexType> 
 
 <!--Declaracion del elemento "UD" -->
 <xs:complexType name="typeUD">
