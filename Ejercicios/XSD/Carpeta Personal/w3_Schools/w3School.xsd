@@ -14,9 +14,7 @@
   </xs:element>
 
 <!--
-
 CUALQUIERA DE LAS OPCIONES ES VALIDA
-
 <xs:element name="note">
     <xs:complexType>
       <xs:sequence>
@@ -27,7 +25,6 @@ CUALQUIERA DE LAS OPCIONES ES VALIDA
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-
 -->
 
 </xs:schema>

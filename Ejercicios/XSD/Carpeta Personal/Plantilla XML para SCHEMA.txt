@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementoRaiz xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
+            xs:noNamespaceSchemaLocation="nombreSchemaEnlazado.xsd">
+ <elemento1>contenido elemento 1</elemento1>
+ <elemento2>contenido elemento 2</elemento2>
+</elementoRaiz>
