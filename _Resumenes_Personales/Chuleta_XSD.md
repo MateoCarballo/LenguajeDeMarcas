@@ -156,3 +156,60 @@ Lista de atributos especificables para configurarlo segun nuestras necesidades.
 <!-- Uso del atributo 'ref' para hacer referencia al elemento ya definido -->
 <xs:element ref="nombreElementoReferenciado" />
 ```
+
+## 2. TIPOS DE DATOS
+
+### 2.1 Tipos Simples
+
+- Su valor es siempre de tipo texto.
+- No pueden contener marcas `<>` de otros elementos ni atributos.
+- Existen tres mecanismos para crear datos simples (Restricciones,Lista y Uniones).
+
+#### 2.1.2 Restricciones
+Una vez especificado el nombre del elemento y sussu tipo podemos realizar restricciones.
+
+| Atributo           | Descripción                                            | Ejemplos                                        |
+|--------------------|--------------------------------------------------------|-------------------------------------------------|
+| xs:length          | Longitud                                              | `<xs:length value="10"/>`                        |
+| xs:minLength       | Longitud Mínima                                        | `<xs:minLength value="5"/>`                      |
+| xs:maxLength       | Longitud Máxima                                        | `<xs:maxLength value="100"/>`                    |
+| xs:pattern         | Patrón (Expresión Regular)                             | `<xs:pattern value="[A-Za-z0-9]+"/>`            |
+| xs:enumeration     | Enumeración (Valores Permitidos)                        | `<xs:enumeration value="red"/>`                  |
+| xs:whiteSpace      | Espacios en Blanco                                     | `<xs:whiteSpace value="collapse"/>`              |
+| xs:maxInclusive    | Máximo (Incluido)                                      | `<xs:maxInclusive value="10"/>`                  |
+| xs:maxExclusive    | Máximo (Excluido)                                      | `<xs:maxExclusive value="10"/>`                  |
+| xs:minInclusive    | Mínimo (Incluido)                                      | `<xs:minInclusive value="1"/>`                   |
+| xs:minExclusive    | Mínimo (Excluido)                                      | `<xs:minExclusive value="1"/>`                   |
+| xs:totalDigits     | Dígitos Totales (en Tipos Numéricos)                   | `<xs:totalDigits value="3"/>`                    |
+| xs:fractionDigits  | Dígitos Decimales Totales (en Tipos Numéricos)          | `<xs:fractionDigits value="2"/>`                 |
+
+
+**EJEMPLO DE USO DE LAS RESTRICCIONES definiendo el tipo fuera del elemento**
+&#8595;&#8595;&#8595;&#8595;&#8595;
+```
+<xs:simpleType name="tipoNota">
+        <xs:restriction base="xs:integer">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="10"/>
+        </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="nota1Ev" type="tipoNota" />
+
+```
+
+**EJEMPLO DE USO DE LAS RESTRICCIONES definiendo el tipo dentro del elemento**
+&#8595;&#8595;&#8595;&#8595;&#8595;
+```
+<xs:element name="nota1Ev">
+    <xs:simpleType>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+```
+
+### 2.2 Tipos Complejos
+
