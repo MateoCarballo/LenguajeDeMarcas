@@ -11,12 +11,10 @@ Las DTD solo validan la estructura mientras que los esquemas validan ademas los 
 
 Analogamente a lo explicado en las DTD una instancia concreta de un esquema XML se conoce como *Definicion de esquema XML* por esto su extension sera *.xsd*.
 
-
-
 > [!IMPORTANT]
 > UN ESQUEMA XML(EXTENSION .xsd) ES XML. USAMOS XML PARA VALIDAR XML.
 
-### 1.2 Diferencias XML↔DTD.
+### 1.2 Diferencias XML↔DTD
 
 - CONTRIBUCION DE LA SINTAXIS. Los esquemas usan XML las DTD no.
 - CONTRIBUCION DA TIPAXE. En .xsd podemos especificar tipos de datos y definir los nuestros.
@@ -26,7 +24,7 @@ Analogamente a lo explicado en las DTD una instancia concreta de un esquema XML 
 - REFERENCIAS CRUZADAS. .xsd puede formar claves a partir de varios atributos/nombres.
 - PERMITE ESPECIFICAR RANGOS. Podemos especificar un valor minimo y maximo para los elementos de un tipo en .xsd
 
-### 1.3 Tipos de datos.
+### 1.3 Tipos de datos
 
 | Tipo Primitivo         | Descripción            | Ejemplo                                        |
 |------------------------|------------------------|------------------------------------------------|
@@ -66,4 +64,14 @@ Analogamente a lo explicado en las DTD una instancia concreta de un esquema XML 
 > [!IMPORTANT]
 > PARA DATA EL FORMATO ES AAAA-MM-DD Y HORA ES hh:mm:ss
 
+### 1.4 Declaracion de elementos
 
+#### 1.4.1 Basados en un tipo predefinido
+
+Solos pueden contener texto, no se permiten subelementos ni atributos.
+
+
+`<xs:element name="nombreElemento" type="tipoDefinido"/>`
+
+
+#### 1.4.2 Basados en un tipo simple definido por el usuario
