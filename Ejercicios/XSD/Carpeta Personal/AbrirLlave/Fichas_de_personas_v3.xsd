@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="fichas">
+      <xs:complexType>
+          <xs:sequence>
+              <xs:element name="ficha" type="tipoFicha"maxOccurs="unbounded"/>
+          </xs:sequence>
+      </xs:complexType>
+</xs:element>
+
+  <xs:complexType name="tipoFicha">
+    <xs:sequence>
+     <xs:element name="nombre" type="xs:string"/>
+     <xs:element name="edad" type="xs:short"/>
+    </xs:sequence>
+    <xs:attribute name="numero" type="xs:byte"/>
+  </xs:complexType>
+
+</xs:schema>
+<!--
+pulirlo aunque se usa mas la referencia
+ -->
