@@ -60,5 +60,7 @@ Analogamente a lo explicado en las DTD una instancia concreta de un esquema XML 
 
 > [!IMPORTANT]
 > PARA REAL SEPARAMOS CON UN PUNTO
+> [!IMPORTANT]
 > PARA BOOLEAN PODEMOS USAR 0/1 O TRUE/FALSE
+> [!IMPORTANT]
 > PARA DATA EL FORMATO ES AAAA-MM-DD Y HORA ES hh:mm:ss
