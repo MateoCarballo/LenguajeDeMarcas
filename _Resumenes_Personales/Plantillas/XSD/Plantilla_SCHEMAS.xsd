@@ -1,0 +1,17 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="elementoRaiz">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="elementoVacio"/>
+    </xs:sequence>
+    <xs:attribute name="atributoElementoRaiz" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="elementoVacio">
+  <xs:complexType>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
