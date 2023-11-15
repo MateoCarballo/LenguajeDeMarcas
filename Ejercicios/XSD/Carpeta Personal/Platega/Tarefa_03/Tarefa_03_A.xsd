@@ -1,9 +1,4 @@
 ﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-
-
-
-
 <!-- Lo que teniamos en el ejercicio 1 de platega era así
 <xs:complexType name="tipoNeno">
     <xs:sequence>

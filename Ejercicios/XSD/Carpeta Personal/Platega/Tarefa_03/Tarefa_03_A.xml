@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- tarefa 1 UD7 -->
 <garderia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="Tarefa_03.xsd">
+xsi:noNamespaceSchemaLocation="Tarefa_03_A.xsd">
 
   <neno numeroExpedente="2344" codigo="P73-123">
     <sexo>M</sexo>
