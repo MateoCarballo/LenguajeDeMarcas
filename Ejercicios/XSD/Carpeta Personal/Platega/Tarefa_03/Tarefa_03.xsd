@@ -1,4 +1,9 @@
 ﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+
+
+
 <!-- Lo que teniamos en el ejercicio 1 de platega era así
 <xs:complexType name="tipoNeno">
     <xs:sequence>
@@ -33,13 +38,9 @@ seguintes valores: nai, pai, avó/a, titor, outra.
 – un atributo anos que pode tomar valores entre 0 e 3
 – un atributo meses que pode tomar valores entre 0 e 11
   
-<xs:element name="">
-      <xs:simpleType>
-          <xs:restriction base="">
-          </xs:restriction>
-      </xs:simpleType>
-</xs:element> 
+v
 -->
+<!-- Declaracion de elemento garderia, elemento PADRE/RAIZ -->
 <xs:element name="garderia">
   <xs:complexType>
     <xs:sequence>
@@ -47,40 +48,26 @@ seguintes valores: nai, pai, avó/a, titor, outra.
     </xs:sequence>
   </xs:complexType>
 </xs:element>
-
+<!-- Declaracion de neno, desde aqui hacemos referencia a los demas o declaramos los tipos-->
 <xs:element name="neno">
   <xs:complexType>
     <xs:sequence> 
-    <xs:element ref="sexo" maxOccurs="50"/>
-    <xs:element ref="nome"/>
-    <xs:element ref="dataNacemento"/>
-    <xs:element ref="peso"/>
-    <xs:element name="altura" type="xs:unsignedByte"/>
-    <xs:element ref="contactos"/>
-    <xs:element ref="idade"/> 
+      <xs:element name="sexo" type="typeSexo" maxOccurs="50"/>
+      <xs:element ref="nome"/>
+      <xs:element ref="dataNacemento"/>
+      <xs:element ref="peso"/>
+      <xs:element name="altura" type="xs:unsignedByte"/>
+      <xs:element name="vacunas" type="xs:boolean" default="true"/>
+      <xs:element ref="contactos"/>
+      <xs:element ref="idade"/> 
     </xs:sequence>
-    <xs:attribute name="numeroExpedente" type="xs:unsignedShort"/>
-      <xs:simpleType>
-          <xs:restriction base="xs:unsignedShort">
-            <xs:patter value="[0-9]{4}"/>
-          </xs:restriction>
-        </xs:simpleType>
-    <xs:attribute name="numeroExpedente" type="xs:unsignedShort"/>
-      <xs:simpleType>
-            <xs:restriction base="xs:unsignedShort">
-              <xs:patter value="[PM][3-7]-([0-9]{3})*"/>
-            </xs:restriction>
-      </xs:simpleType>
+    <xs:attribute name="numeroExpedente" type="typeExpediente"/>
+    <xs:attribute name="codigo" type="typeCodigo"/>
   </xs:complexType>
 </xs:element>
 
-<xs:element name="sexo">
-      <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:patter value="[HM]"/>
-          </xs:restriction>
-      </xs:simpleType>
-</xs:element>
+
+<!--Elementos referenciados por Elemento 'neno'-->
 
 <xs:element name="nome">
       <xs:simpleType>
@@ -94,7 +81,7 @@ seguintes valores: nai, pai, avó/a, titor, outra.
 <xs:element name="dataNacemento">
       <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:patter value="([2000-2023]-[1-11]-[1-31])"/>
+            <xs:pattern value="20[0-9]{2}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])"/>
           </xs:restriction>
       </xs:simpleType>
 </xs:element> 
@@ -117,46 +104,67 @@ seguintes valores: nai, pai, avó/a, titor, outra.
 </xs:element> 
 
 <xs:element name="contacto">
-       <xs:complexType>
-          <xs:sequence>
-            <xs:element ref="telefono"/>
-          </xs:sequence>
-          <xs:attribute name="relacion" type="xs:string"/>
-            <xs:simpleType>
-              <xs:restriction base="xs:string">
-                <xs:patter value="[pai][nai][avo][avoa][titor][outra]"/>
-              </xs:restriction>
-            </xs:simpleType>
-      </xs:complexType>
-</xs:element> 
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="telefono"/>
+    </xs:sequence>
+    <xs:attribute name="relacion">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="(pai|nai|avo|avoa|titor|outra)"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+</xs:element>
 
-<xs:element name="telefono"/>
-  <xs:simpleType>
-    <xs:restriction base="xs:string">
-      <xs:totalDigits value="9"/>
-    </xs:restriction>
-   </xs:simpleType>
+<xs:element name="telefono">
+      <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="9"/>
+          </xs:restriction>
+      </xs:simpleType>
 </xs:element> 
 
 <xs:element name="idade">
       <xs:complexType>
-          <xs:restriction base="">
-          </xs:restriction>
+        <xs:attribute name="anos" type="typeAnos"/>
+        <xs:attribute name="meses" type="typeMeses"/>
       </xs:complexType>
-      <xs:attribute name="anos" type="xs:Short"/>
-        <xs:simpleType>
-          <xs:restriction base="xs:short">
-            <xs:minInclusive value="0"/>
-            <xs:maxInclusive value="3"/>
-          </xs:restriction>
-        </xs:simpleType>
-      <xs:attribute name="meses" type="xs:Short"/>
-        <xs:simpleType>
-          <xs:restriction base="xs:short">
-            <xs:minInclusive value="0"/>
-            <xs:maxInclusive value="11"/>
-          </xs:restriction>
-        </xs:simpleType>
 </xs:element> 
+
+<!--Definiciones de tipos de dato -->
+<!--Definicion de tipo de dato 'typeAnos' usado en 'idade'-->
+<xs:simpleType name="typeAnos">
+   <xs:restriction base="xs:short">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="3"/>
+   </xs:restriction>
+</xs:simpleType>
+<!--Definicion de tipo de dato 'typeMeses' usado en 'idade'-->
+<xs:simpleType name="typeMeses">
+   <xs:restriction base="xs:short">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="11"/>
+   </xs:restriction>
+</xs:simpleType>
+<!-- Definicion del tipo numeroExpediente usado en atributo de 'neno' -->
+<xs:simpleType name="typeExpediente">
+    <xs:restriction base="xs:unsignedShort">
+      <xs:pattern value="[0-9]{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+<!-- Definicion del tipo typeCodigo usado en atributo de 'neno' -->
+<xs:simpleType name="typeCodigo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[PM][3-7]{2}(-[0-9]{3})?"/>
+    </xs:restriction>
+</xs:simpleType>
+<!-- Definicion del tipo typeSexo para elemento 'sexo' -->
+ <xs:simpleType name="typeSexo">
+     <xs:restriction base="xs:string">
+       <xs:pattern value="[HM]"/>
+    </xs:restriction>
+</xs:simpleType>
 
 </xs:schema>
