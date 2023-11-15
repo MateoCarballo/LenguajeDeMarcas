@@ -18,7 +18,7 @@
 </Ciclos>
   <Contidos>
   
-    <UnidadeDidactica Numero="1" Sesions="40">
+    <UnidadeDidactica numero="1" sesions="40">
       <Titulo>Aplicacións web. Introdución aos linguaxes de marcas</Titulo>
       <Descripcion>Introdución aos conceptos relacionados coas aplicacións web.
       Páxinas web estáticas e dinámicas. Introdución aos linguaxes
@@ -26,10 +26,10 @@
       </Descripcion>
     </UnidadeDidactica>
     
-    <UnidadeDidactica Numero="2" Sesions="50">
+    <UnidadeDidactica numero="2" sesions="50">
       <Titulo>Linguaxes de marcas para a transmisión de información a través da Web: HTML.</Titulo>
     </UnidadeDidactica>
-    <UnidadeDidactica Numero="3" Sesions="30">
+    <UnidadeDidactica numero="3" sesions="30">
       <Titulo>Linguaxes de marcas para a transmisión de información a través da Web: CSS</Titulo>
       <Descripcion>Separar o contido da presentación. Follas de estilo CSS.</Descripcion>
     </UnidadeDidactica>
