@@ -5,7 +5,7 @@
     <xs:sequence>
       <xs:element name="elementoSimple" type="xs:string"/>
 
-      <!-- Elemento declarado de forma anonima/local-->
+      <!-- Elemento declarado de forma anónima/local-->
       <xs:element name="elementoDeclaradoAnonimamente">
         <xs:complexType>
           <xs:sequence>
@@ -26,6 +26,11 @@
         </xs:complexType>
         <xs:element name="elementoDeclaradoAnonimamente" type ="tipoDeElemento"/>
       
+
+      <xs:element name="elementoVacio">
+        <xs:complexType>
+        </xs:complexType>
+      </xs:element>
 
       <xs:element name="elementoVacioSoloAtributos">
         <xs:complexType>
@@ -65,11 +70,6 @@
     </xs:sequence>
     <!-- Los atributos son opcionales por defecto, para hacerlos obligatorios debemos añadir 'used=requiered'-->
     <xs:attribute name="atributoElementoRaiz" type="xs:string"/>
-  </xs:complexType>
-</xs:element>
-
-<xs:element name="elementoVacio">
-  <xs:complexType>
   </xs:complexType>
 </xs:element>
 
