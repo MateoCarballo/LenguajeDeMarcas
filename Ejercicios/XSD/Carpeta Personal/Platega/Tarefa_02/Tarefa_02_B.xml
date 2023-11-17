@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> 
 <Modulo xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" 
-                xs:noNamespaceSchemaLocation="Tarefa_02_B.xsd"
+                xs:noNamespaceSchemaLocation="Tarefa_02_B_Con_Referencias.xsd"
                 codigo="MP0373">
 
 <Duracion horas="150" sesionsSemanais="3" sesionsAnuais="120"/>
@@ -25,7 +25,6 @@
       de marcas.
       </Descripcion>
     </UnidadeDidactica>
-    
     <UnidadeDidactica numero="2" sesions="50">
       <Titulo>Linguaxes de marcas para a transmisión de información a través da Web: HTML.</Titulo>
     </UnidadeDidactica>

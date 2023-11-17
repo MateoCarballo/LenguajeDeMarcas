@@ -63,7 +63,6 @@ v
 
 
 <!--Elementos referenciados por Elemento 'neno'-->
-
 <xs:element name="nome">
       <xs:simpleType>
           <xs:restriction base="xs:string">

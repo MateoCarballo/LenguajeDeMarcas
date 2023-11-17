@@ -3,8 +3,67 @@
 <xs:element name="elementoRaiz">
   <xs:complexType>
     <xs:sequence>
-      <xs:element ref="elementoVacio"/>
+      <xs:element name="elementoSimple" type="xs:string"/>
+
+      <!-- Elemento declarado de forma anonima/local-->
+      <xs:element name="elementoDeclaradoAnonimamente">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="elementoA" type="xs:string"/>
+            <xs:element name="elementoB" type="xs:string"/>
+          </xs:sequence>  
+          <xs:attribute name="nombreAtributo1" type="xs:unsignedShort"/>
+        </xs:complexType>
+      </xs:element>
+
+      <!-- Elemento declarado de forma global/definiendo tipo de dato y usandolo para el tipo del elemento -->
+        <xs:complexType name="tipoDeElemento">
+          <xs:sequence>
+            <xs:element name="elementoA" type="xs:string"/>
+            <xs:element name="elementoB" type="xs:string"/>
+          </xs:sequence>  
+          <xs:attribute name="nombreAtributo1" type="xs:unsignedShort"/>
+        </xs:complexType>
+        <xs:element name="elementoDeclaradoAnonimamente" type ="tipoDeElemento"/>
+      
+
+      <xs:element name="elementoVacioSoloAtributos">
+        <xs:complexType>
+          <xs:attribute name="atributoElementoVacio1" type = "xs:unsignedByte"/>
+          <xs:attribute name="atributoElementoVacio2" type = "xs:long"/>
+      </xs:complexType>
+
+      <xs:element name="elementoContenedorOtrosElementos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="elementoContenido1" type="xs:string"/>
+            <xs:element name="elementoContenido2" type="xs:string"/>
+          </xs:sequence>
+          <xs:attribute name="atributoElementoContenedorOtrosElementos" type = "xs:unsignedByte"/>
+      </xs:complexType>
+
+      <xs:element name="elementoSoloTextoYAtributo">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="string">
+              <xs:attribute name="unidades" type="xs:string"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+
+  <!-- El mixed puede contener tambien atributos -->
+      <xs:element name="elementoMixtoTextoYElementos">
+        <xs:complexType mixed="true">
+          <xs:sequence>
+            <xs:element name="elementoGrupoMixto1" type="xs:string"/>
+            <xs:element name="elementoGrupoMixto2" type="xs:string"/>
+          </xs:sequence>  
+        </xs:complexType>
+      </xs:element>
+
     </xs:sequence>
+    <!-- Los atributos son opcionales por defecto, para hacerlos obligatorios debemos añadir 'used=requiered'-->
     <xs:attribute name="atributoElementoRaiz" type="xs:string"/>
   </xs:complexType>
 </xs:element>
@@ -15,3 +74,50 @@
 </xs:element>
 
 </xs:schema>
+
+
+<!--EJEMPLO ' ALL '
+  <xs:element name="persona">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="nombreElemento1" type="xs:string"/>
+        <xs:element name="nombreElemento2" type="xs:string"/>
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+ -->
+
+<!--EJEMPLO 'CHOICE'
+  <xs:element name="persona">
+    <xs:complexType>
+      <xs:element name="nombreElemento0" type="xs:integer"/>
+      <xs:sequence>
+        <xs:element name="nombreElemento1" type="xs:string"/>
+        <xs:element name="nombreElemento2" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+ -->
+
+
+
+<!-- Partes para componer la plantilla
+  1. Como relacionar Documento XML .xml y SCHEMA .xsd.
+  2. Elemento simples (Con y sin restricciones). (DATOS PRIMITIVOS, INCLUIR TABLAS APUNTES)
+  3. Elementos complejos.
+    3.1 Elementos vacios
+    3.2 Elementos creadores de otros documentos.
+    3.3 Elementos de solo texto.
+    3.4 Elementos mixtos(Texto y elementos).
+  4. Definidores del orden
+    4.1 All  (Tienen que estar todos, no importa el orden)-DEBE APARECEN COMO UNICO HIJO DE SU ELEMENTO PADRE.
+    4.2 Choice(De la lista solo puede aparecer uno)
+    4.3 Sequence(Listado en orden de elementos)
+  5.Declaraciones de los elementos
+    5.1 Declaracion global
+    5.2 Declaracion local/anonima
+    5.3 Referenciar unos elementos a otros
+  6.Multiplicidad de los elementos.
+  7.Restricciones sobre elementos.(INCLUIR TABLAS APUNTES).
+
+-->
