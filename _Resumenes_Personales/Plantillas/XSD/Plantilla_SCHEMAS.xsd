@@ -1,4 +1,4 @@
-﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <xs:element name="elementoRaiz">
   <xs:complexType>
@@ -37,12 +37,16 @@
           <xs:attribute name="atributoElementoVacio1" type = "xs:unsignedByte"/>
           <xs:attribute name="atributoElementoVacio2" type = "xs:long"/>
       </xs:complexType>
-
+<!-- Cardinalidad
+· Si no introducimos nada es como tener minOcurrs =1 y maxOcurrs=1
+· Si queremos que sea opcional debemos especificar minOcurrs=0
+· Si queremos admitir cero o muchos minOcurrs=0 y maxOcurrs=unbounded
+· Es mas potente que en las DTD porque nos permite especificar rangos minOcurrs=5 maxOcurrs=25-->
       <xs:element name="elementoContenedorOtrosElementos">
         <xs:complexType>
           <xs:sequence>
-            <xs:element name="elementoContenido1" type="xs:string"/>
-            <xs:element name="elementoContenido2" type="xs:string"/>
+            <xs:element name="elementoContenido1" type="xs:string" minOcurrs="0"/>
+            <xs:element name="elementoContenido2" type="xs:string" minOcurrs="0" maxOcurrs="unbounded"/>
           </xs:sequence>
           <xs:attribute name="atributoElementoContenedorOtrosElementos" type = "xs:unsignedByte"/>
       </xs:complexType>
@@ -57,7 +61,7 @@
         </xs:complexType>
       </xs:element>
 
-  <!-- El mixed puede contener tambien atributos -->
+      <!-- El mixed puede contener tambien atributos -->
       <xs:element name="elementoMixtoTextoYElementos">
         <xs:complexType mixed="true">
           <xs:sequence>
@@ -66,13 +70,11 @@
           </xs:sequence>  
         </xs:complexType>
       </xs:element>
-
     </xs:sequence>
     <!-- Los atributos son opcionales por defecto, para hacerlos obligatorios debemos añadir 'used=requiered'-->
     <xs:attribute name="atributoElementoRaiz" type="xs:string"/>
   </xs:complexType>
 </xs:element>
-
 </xs:schema>
 
 
@@ -102,7 +104,7 @@
 
 
 <!-- Partes para componer la plantilla
-  1. Como relacionar Documento XML .xml y SCHEMA .xsd.
+  1. Como relacionar Documento XML .xml y SCHEMA .xsd.      !DONE!!
   2. Elemento simples (Con y sin restricciones). (DATOS PRIMITIVOS, INCLUIR TABLAS APUNTES)
   3. Elementos complejos.
     3.1 Elementos vacios
