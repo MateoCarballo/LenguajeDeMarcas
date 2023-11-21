@@ -6,7 +6,7 @@ xsi:noNamespaceSchemaLocation="Tarefa_03_A.xsd">
   <neno numeroExpedente="2344" codigo="P73-123">
     <sexo>M</sexo>
     <nome>Noa Blanco Coello</nome>
-    <dataNacemento>2010-10-12</dataNacemento>
+    <dataNacemento>2010-10-11</dataNacemento>
     <peso>13.5</peso>
     <altura>78</altura>
     <vacunas>true</vacunas>

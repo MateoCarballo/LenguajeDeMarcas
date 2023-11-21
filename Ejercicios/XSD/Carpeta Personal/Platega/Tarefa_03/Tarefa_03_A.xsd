@@ -105,12 +105,12 @@ v
     <xs:attribute name="relacion">
       <xs:simpleType>
         <xs:restriction base="xs:string">
-          <xs:enumeration value="pai"/>
-          <xs:enumeration value="nai"/>
-          <xs:enumeration value="avo"/>
-          <xs:enumeration value="avoa"/>
-          <xs:enumeration value="titor"/>
-          <xs:enumeration value="outra"/>
+            <xs:enumeration value="pai"/>
+            <xs:enumeration value="nai"/>
+            <xs:enumeration value="avo"/>
+            <xs:enumeration value="avoa"/>
+            <xs:enumeration value="titor"/>
+            <xs:enumeration value="outra"/>
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
