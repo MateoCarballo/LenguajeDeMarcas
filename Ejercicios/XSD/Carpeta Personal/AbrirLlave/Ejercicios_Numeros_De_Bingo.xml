@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bingo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            xsi:noNamespaceSchemaLocation="Ejercicios_Numeros_De_Bingo.xsd">
+
+<bola numero="1"/>
+<bola numero="2"/>
+<bola numero="3"/>
+<bola numero="4"/>
+<bola numero="5"/>
+</bingo>
+
+<!-- ENUNCIADO
+
+Ejercicio de XSD - Números del bingo (fuente: abrirllave)
+Dado el archivo "bingo.xsd":
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="bingo">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element name="bola" maxOccurs="unbounded">
+ <xs:complexType>
+ <xs:attribute name="numero" type="numeroDeBola"/>
+ </xs:complexType>
+ </xs:element>
+ </xs:sequence>
+ </xs:complexType>
+ </xs:element>
+ <xs:simpleType name="numeroDeBola">
+ <xs:restriction base="xs:positiveInteger">
+ <xs:minInclusive value="1"/>
+ <xs:maxExclusive value="90"/>
+ </xs:restriction>
+ </xs:simpleType>
+</xs:schema>
+• xs:positiveInteger es un tipo de dato predefinido derivado, que admite números enteros positivos mayores que 
+cero.
+Se pide: Escribir el código de un documento XML que pueda ser validado por "bingo.xsd" y almacene los números 17, 
+23 y 65
+
+-->

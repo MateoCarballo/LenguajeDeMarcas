@@ -43,6 +43,7 @@ v
     </xs:sequence>
   </xs:complexType>
 </xs:element>
+
 <!-- Declaracion de neno, desde aqui hacemos referencia a los demas o declaramos los tipos-->
 <xs:element name="neno">
   <xs:complexType>
@@ -60,7 +61,6 @@ v
     <xs:attribute name="codigo" type="typeCodigo"/>
   </xs:complexType>
 </xs:element>
-
 
 <!--Elementos referenciados por Elemento 'neno'-->
 <xs:element name="nome">
