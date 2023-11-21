@@ -102,17 +102,7 @@ v
     <xs:sequence>
       <xs:element ref="telefono"/>
     </xs:sequence>
-    <xs:attribute name="relacion">
-      <xs:simpleType>
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="pai"/>
-            <xs:enumeration value="nai"/>
-            <xs:enumeration value="avo"/>
-            <xs:enumeration value="avoa"/>
-            <xs:enumeration value="titor"/>
-            <xs:enumeration value="outra"/>
-        </xs:restriction>
-      </xs:simpleType>
+    <xs:attribute name="relacion" type="enumeracionRelaciones">
     </xs:attribute>
   </xs:complexType>
 </xs:element>
@@ -165,5 +155,24 @@ v
        <xs:pattern value="[HM]"/>
     </xs:restriction>
 </xs:simpleType>
+<!-- Version alternativa con enumeracion
+<xs:simpleType name="typeSexo">
+     <xs:restriction base="xs:string">
+       <xs:enumeration value="H"/>
+       <xs:enumeration value="M"/>
+    </xs:restriction>
+</xs:simpleType>
+-->
 
+<!-- Tipo de dato para enumeracion de los tipos de relaciones -->
+<xs:simpleType name="enumeracionRelaciones">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="pai"/>
+            <xs:enumeration value="nai"/>
+            <xs:enumeration value="avo"/>
+            <xs:enumeration value="avoa"/>
+            <xs:enumeration value="titor"/>
+            <xs:enumeration value="outra"/>
+        </xs:restriction>
+      </xs:simpleType>
 </xs:schema>
