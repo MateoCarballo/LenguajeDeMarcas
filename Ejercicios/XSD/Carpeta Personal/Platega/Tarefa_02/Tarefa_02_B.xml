@@ -5,20 +5,11 @@
 
 <Duracion horas="150" sesionsSemanais="3" sesionsAnuais="120"/>
 <Nome>Linguaxes de marcas e sistemas de xestión da información</Nome>
-<Ciclos>
-    <Ciclo codigo="CSIFC01">
-    <nombre>Administración de sistemas informáticos e redes</nombre>
-    </Ciclo>
-    <Ciclo codigo="CSIFC02">
-    <nombre>Desenvolvemento de aplicacións multiplataforma</nombre>
-    </Ciclo>
-    <Ciclo codigo="CSIFC03">
-    <nombre>  Desenvolvemento de aplicacións web</nombre>
-    </Ciclo>
-</Ciclos>
-  <Contidos>
-  
-    <UnidadeDidactica numero="1" sesions="40">
+<Ciclo codigo="CSIFC01">Administración de sistemas informáticos e redes</Ciclo>
+<Ciclo codigo="CSIFC02">Desenvolvemento de aplicacións multiplataforma</Ciclo>
+<Ciclo codigo="CSIFC03">Desenvolvemento de aplicacións web</Ciclo>
+<Contidos>
+  <UnidadeDidactica numero="1" sesions="40">
       <Titulo>Aplicacións web. Introdución aos linguaxes de marcas</Titulo>
       <Descripcion>Introdución aos conceptos relacionados coas aplicacións web.
       Páxinas web estáticas e dinámicas. Introdución aos linguaxes
@@ -32,6 +23,5 @@
       <Titulo>Linguaxes de marcas para a transmisión de información a través da Web: CSS</Titulo>
       <Descripcion>Separar o contido da presentación. Follas de estilo CSS.</Descripcion>
     </UnidadeDidactica>
-  </Contidos>
-
+</Contidos>
 </Modulo>

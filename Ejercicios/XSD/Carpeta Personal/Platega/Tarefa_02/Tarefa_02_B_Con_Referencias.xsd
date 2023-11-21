@@ -18,7 +18,7 @@
       <xs:sequence>
         <xs:element ref="Duracion"/>
         <xs:element name="Nome" type="xs:string"/>
-        <xs:element ref="Ciclos"/>
+        <xs:element ref="Ciclo" maxOccurs="unbounded"/>
         <xs:element ref="Contidos"/>
       </xs:sequence>
       <xs:attribute name="codigo" type="xs:string" use="required"/>
@@ -35,20 +35,13 @@
     </xs:complexType>
   </xs:element>
   
-  <xs:element name="Ciclos">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="Ciclo" maxOccurs="unbounded"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  
   <xs:element name="Ciclo">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element name="nombre" type="xs:string"/>
-      </xs:sequence>
-      <xs:attribute name="codigo" type="xs:string" use="required"/>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="codigo" type="xs:string" use="required"/>
+            </xs:extension>
+      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
   
