@@ -32,8 +32,6 @@ seguintes valores: nai, pai, avó/a, titor, outra.
 ▪ incluir un elemento idade baleiro en neno con dous atributos:
 – un atributo anos que pode tomar valores entre 0 e 3
 – un atributo meses que pode tomar valores entre 0 e 11
-  
-v
 -->
 <!-- Declaracion de elemento garderia, elemento PADRE/RAIZ -->
 <xs:element name="garderia">
@@ -54,7 +52,7 @@ v
       <xs:element ref="peso"/>
       <xs:element name="altura" type="xs:unsignedByte"/>
       <xs:element name="vacunas" type="xs:boolean" default="true"/>
-      <xs:element ref="contactos"/>
+      <xs:element ref="contacto" maxOccurs="4"/>
       <xs:element ref="idade"/> 
     </xs:sequence>
     <xs:attribute name="numeroExpedente" type="typeExpediente"/>
@@ -89,31 +87,15 @@ v
       </xs:simpleType>
 </xs:element> 
 
-<xs:element name="contactos">
-      <xs:complexType>
-          <xs:sequence>
-          <xs:element ref="contacto" maxOccurs="4"/>
-          </xs:sequence>
-      </xs:complexType>
-</xs:element> 
-
 <xs:element name="contacto">
   <xs:complexType>
-    <xs:sequence>
-      <xs:element ref="telefono"/>
-    </xs:sequence>
-    <xs:attribute name="relacion" type="enumeracionRelaciones">
-    </xs:attribute>
+    <xs:simpleContent>
+      <xs:extension base="typeTelefono">
+        <xs:attribute name="relacion" type="enumeracionRelaciones"/>
+      </xs:extension>
+    </xs:simpleContent>
   </xs:complexType>
 </xs:element>
-
-<xs:element name="telefono">
-      <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:maxLength value="9"/>
-          </xs:restriction>
-      </xs:simpleType>
-</xs:element> 
 
 <xs:element name="idade">
       <xs:complexType>
@@ -122,22 +104,23 @@ v
       </xs:complexType>
 </xs:element> 
 
-<!--Definiciones de tipos de dato -->
+<!--TIPOS DE DATOS CREADOS -->
+
 <!--Definicion de tipo de dato 'typeAnos' usado en 'idade'-->
 <xs:simpleType name="typeAnos">
-   <xs:restriction base="xs:short">
+   <xs:restriction base="xs:unsignedByte">
       <xs:minInclusive value="0"/>
       <xs:maxInclusive value="3"/>
    </xs:restriction>
 </xs:simpleType>
 <!--Definicion de tipo de dato 'typeMeses' usado en 'idade'-->
 <xs:simpleType name="typeMeses">
-   <xs:restriction base="xs:short">
+   <xs:restriction base="xs:unsignedByte">
       <xs:minInclusive value="0"/>
       <xs:maxInclusive value="11"/>
    </xs:restriction>
 </xs:simpleType>
-<!-- Definicion del tipo numeroExpediente usado en atributo de 'neno' -->
+<!-- Definicion del tipo typeExpediente usado en atributo de 'neno' -->
 <xs:simpleType name="typeExpediente">
     <xs:restriction base="xs:unsignedShort">
       <xs:pattern value="[0-9]{4}"/>
@@ -161,8 +144,14 @@ v
        <xs:enumeration value="H"/>
        <xs:enumeration value="M"/>
     </xs:restriction>
-</xs:simpleType>
--->
+</xs:simpleType>-->
+
+<!-- Definicion del tipo de dato telefono-->
+      <xs:simpleType  name="typeTelefono">
+          <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{9}"/>
+          </xs:restriction>
+      </xs:simpleType> 
 
 <!-- Tipo de dato para enumeracion de los tipos de relaciones -->
 <xs:simpleType name="enumeracionRelaciones">
