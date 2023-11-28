@@ -52,7 +52,9 @@
   </equipos>
   
   <!-- El sustantivo es primero que el verbo, El pilota puede existir sin pilotar -->
+  <!-- Nueva opcion las claves y referencias a clave no cuelgan del elemento raiz, debemos usar expresiones XPTAH-->
   <pilotos>
+  
     <piloto codigoPiloto="1">
       <nombre>Lewis Hamilton</nombre>
       <edad>37</edad>
