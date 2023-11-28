@@ -8,11 +8,13 @@
       </xs:sequence>
     </xs:complexType>
     <xs:key name="pertenece">
-        <xs:selector xpath="piloto" />
+    <!-- './/' -> Implica que debemos descender para encontrar el elemento que sera nuestro selector-->
+        <xs:selector xpath=".//piloto" />
         <xs:field xpath="@codigoPiloto" />
     </xs:key>
     <xs:keyref name="relacion" refer="pertenece">
-        <xs:selector xpath="pilota" />
+    <!-- Dice que busquemos un descenciente-->
+        <xs:selector xpath=".//pilota" />
         <xs:field xpath="@id" />
     </xs:keyref>
   </xs:element>
