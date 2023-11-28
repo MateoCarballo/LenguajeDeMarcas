@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--EJERCICIO 4  A CON DTD -->
+<!DOCTYPE instituto SYSTEM "Tarefa_4A.dtd">
+<instituto>
+  <alumno numExpedente="numeroExpediente1" nome="nombreAlumno1" apelido1="ap11" apelido2="ap12">
+  </alumno>
+  <alumno numExpedente="numeroExpediente2" nome="nombreAlumno2" apelido1="ap21" apelido2="ap22">
+  </alumno>
+  <profesor NRP="nrpProfesor1" nome="nomeProfesor1" apelido1="ap1Profesor1" apelido2="ap2Profesor1">
+  </profesor>
+  <profesor NRP="nrpProfesor2" nome="nomeProfesor2" apelido1="ap1Profesor2" apelido2="ap2Profesor2">
+  </profesor>
+  <profesor NRP="nrpProfesor3" nome="nomeProfesor3" apelido1="ap1Profesor3" apelido2="ap2Profesor3">
+  </profesor>
+</instituto>

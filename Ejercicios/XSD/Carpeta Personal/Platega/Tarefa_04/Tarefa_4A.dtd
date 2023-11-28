@@ -1,0 +1,13 @@
+<!ELEMENT instituto (alumno|profesor)+>
+<!ELEMENT alumno (#PCDATA)>
+<!ATTLIST alumno
+ numExpedente CDATA #REQUIRED
+ nome CDATA #REQUIRED
+ apelido1 CDATA #REQUIRED
+ apelido2 CDATA #REQUIRED>
+<!ELEMENT profesor (#PCDATA)>
+<!ATTLIST profesor
+ NRP CDATA #REQUIRED
+ nome CDATA #REQUIRED
+ apelido1 CDATA #REQUIRED
+ apelido2 CDATA #REQUIRED>
