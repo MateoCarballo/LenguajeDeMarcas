@@ -1,0 +1,11 @@
+
+<!ELEMENT musica ((cd|musico)*)>
+ <!ELEMENT cd EMPTY>
+ <!ATTLIST cd titulo NMTOKENS #REQUIRED>
+ <!ATTLIST cd ano CDATA #IMPLIED>
+ <!ATTLIST cd interprete IDREF #REQUIRED>
+ <!ELEMENT musico (nomeArtistico,tipo?, instrumento*)>
+ <!ELEMENT nomeArtistico (#PCDATA)>
+ <!ELEMENT tipo (#PCDATA)>
+ <!ELEMENT instrumento (#PCDATA)>
+ <!ATTLIST musico codigo ID #REQUIRED>

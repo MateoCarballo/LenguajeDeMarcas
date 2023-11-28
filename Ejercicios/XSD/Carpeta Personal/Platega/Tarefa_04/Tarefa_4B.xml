@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musica SYSTEM "Tarefa_4B.dtd">
+
+<musica>
+<cd titulo ="titulo1" ano="ano1" interprete="interprete1"/>
+<cd titulo ="titulo2" ano="ano2" interprete="interprete2"/>
+<cd titulo ="titulo3" ano="ano3" interprete="interprete3"/>
+<musico>
+  <nomeArtistico>
+  </nomeArtistico>
+</musico>
+</musica>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EjPag24Claves.xsd">
+<!-- PARA PONER EN CONTEXTO LA CLAVE DEFINIDA EN EL SCHEMA
+El selector es empregado contien el campo que es clave, field es el campo clave -->
+<!-- este es el selector-->  
+  <empregado>
+    <nome>Iria</nome>
+    <!-- este es el field-->
+    <departamento>IFC</departamento>
+  </empregado>
+  <empregado>
+    <nome>Xoel</nome>
+    <departamento>CON</departamento>
+  </empregado>
+  <departamento codigo="IFC">
+    <nome>Informática</nome>
+  </departamento>
+  <departamento codigo="CON">
+    <nome>Contabilidade</nome>
+  </departamento>
+</empresa>
