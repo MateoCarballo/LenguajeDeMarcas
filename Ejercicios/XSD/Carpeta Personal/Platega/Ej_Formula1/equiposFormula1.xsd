@@ -9,6 +9,7 @@
     </xs:complexType>
     <xs:key name="pertenece">
     <!-- './/' -> Implica que debemos descender para encontrar el elemento que sera nuestro selector-->
+    <!-- OJO ES MATAR MOSCAS A CAÑONAZOS, deberiamos pulirlo más-->
         <xs:selector xpath=".//piloto" />
         <xs:field xpath="@codigoPiloto" />
     </xs:key>
