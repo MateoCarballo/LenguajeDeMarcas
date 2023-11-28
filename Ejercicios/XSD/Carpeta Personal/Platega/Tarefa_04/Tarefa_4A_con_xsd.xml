@@ -2,7 +2,7 @@
 <!--EJERCICIO 4  A CON XSD -->
 
 <instituto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-              xsi:noNamespaceSchemaLocation="Tarefa_4B.xsd">
+              xsi:noNamespaceSchemaLocation="Tarefa_4A.xsd">
               
   <alumno numExpedente="numeroExpediente1" nome="nombreAlumno1" apelido1="ap11" apelido2="ap12">
   </alumno>
