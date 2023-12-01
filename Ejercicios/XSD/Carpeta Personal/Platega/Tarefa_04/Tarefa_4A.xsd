@@ -87,10 +87,10 @@ Restricciones para el numero de expediente
   </xs:attribute>  -->
   <xs:element name="instituto">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="alumno"  maxOccurs="unbounded"/>
-        <xs:element ref="profesor"  maxOccurs="unbounded"/>
-    </xs:sequence>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="alumno"/>
+        <xs:element ref="profesor"/>
+      </xs:choice>
     </xs:complexType>
   </xs:element>
   
