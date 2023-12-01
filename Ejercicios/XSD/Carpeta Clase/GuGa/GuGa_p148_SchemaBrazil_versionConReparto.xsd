@@ -8,10 +8,6 @@
           <element name="reparto">
               <complexType>
                  <sequence>
-                 <!-- Si no aparece el minimo de ocurrencias el minimo de ocurrencias es 1 y el maximo 1
-                 Si ponemos 0 en el minimo de ocurrencias "minOccurs= valor" hacemos que pueda no aparecer
-                 si solo especificamos el valor superior el minimo será 1 
-                 -->
                   <element name="interprete" maxOccurs="unbounded"/>
                  </sequence> 
               </complexType>

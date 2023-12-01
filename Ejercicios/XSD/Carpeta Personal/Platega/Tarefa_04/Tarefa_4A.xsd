@@ -25,6 +25,8 @@ Definicion del elemento alumno
   -->
   <!-- Primer intento OJO!! NO FUNCIONA
   
+  
+  
   <xs:element name="instituto">
     <xs:complexType>
       <xs:sequence>
