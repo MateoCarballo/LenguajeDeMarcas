@@ -1,17 +1,28 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!--EJERCICIO 4  A CON XSD -->
-
+<!--EJERCICIO 4  A CON XSD 
+Crea un documento XML que valide o DTD que se amosa a continuación e a continuación
+elabora un esquema XML equivalente que ademáis debe validar o seguinte:
+▪ Os nomes e apelidos deben ter como moito 50 caracteres, o primeiro deles en maiúscula,
+validando que os caracteres permitidos sexan letras, permitindo os nomes e apelidos
+compostos e que inclúan acentos e a letra ñ. Ademáis no caso de meter máis dun espazo
+en branco deberá convertilos nun espazo simple, eliminando os espazos iniciais e finais.
+▪ Crea un grupo de atributos para o nome e apelidos e utilízao tanto para os profesores
+como para os alumnos.
+▪ O número de expedente debe constar de 3 ou 4 díxitos.
+▪ O NRP debe comezar por 3 ou 4 díxitos, seguidos dunha letra entre a A e a E, e a
+continuación outros 3 díxitos.
+-->
 <instituto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
               xsi:noNamespaceSchemaLocation="Tarefa_4A.xsd">
               
-  <alumno numExpedente="numeroExpediente1" nome="nombreAlumno1" apelido1="ap11" apelido2="ap12">
+  <alumno nome="Nombre" apelido1="Apellido" apelido2="Apellidoñ" numeroExpediente="123" >
   </alumno>
-  <alumno numExpedente="numeroExpediente2" nome="nombreAlumno2" apelido1="ap21" apelido2="ap22">
+  <alumno nome="Nombre" apelido1="Apellido" apelido2="Apellido" numeroExpediente="890" >
   </alumno>
-  <profesor NRP="nrpProfesor1" nome="nomeProfesor1" apelido1="ap1Profesor1" apelido2="ap2Profesor1">
+  <profesor nome="Nombre" apelido1="Apellido" apelido2="Apellido" NRP="123A890" >
   </profesor>
-  <profesor NRP="nrpProfesor2" nome="nomeProfesor2" apelido1="ap1Profesor2" apelido2="ap2Profesor2">
+  <profesor nome="Nombre" apelido1="Apellido" apelido2="Apellido" NRP="456B567" >
   </profesor>
-  <profesor NRP="nrpProfesor3" nome="nomeProfesor3" apelido1="ap1Profesor3" apelido2="ap2Profesor3">
+  <profesor nome="Nombre" apelido1="Apellido" apelido2="Apellido" NRP="7890C123" >
   </profesor>
 </instituto>
