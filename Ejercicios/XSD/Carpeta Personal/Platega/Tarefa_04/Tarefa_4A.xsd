@@ -88,15 +88,15 @@ Restricciones para el numero de expediente
   <xs:element name="instituto">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="alumno" minOccurs="1" maxOccurs="unbounded"/>
-        <xs:element ref="profesor" minOccurs="1" maxOccurs="unbounded"/>
-      </xs:sequence>
+        <xs:element ref="alumno"  maxOccurs="unbounded"/>
+        <xs:element ref="profesor"  maxOccurs="unbounded"/>
+    </xs:sequence>
     </xs:complexType>
   </xs:element>
   
 <xs:simpleType name="typeRestriccionsNome">
   <xs:restriction base="xs:string">
-  <xs:pattern value="^[A-ZÁÉÍÓÚÑ]{1}[a-zéíóúñ]{1,49}"/> 
+  <xs:pattern value="[A-ZÁÉÍÓÚÑ]{1}[a-zéíóúñ]{1,49}"/> 
   <xs:whiteSpace value="collapse"/>
   <xs:maxLength value="50"/> 
   </xs:restriction>
@@ -104,28 +104,28 @@ Restricciones para el numero de expediente
 
   
 <xs:attributeGroup name="gaNomeCompleto">
-  <xs:attribute name="nome" type="typeRestriccionsNome"/>
-  <xs:attribute name="apelido1" type="typeRestriccionsNome"/>
-  <xs:attribute name="apelido2" type="typeRestriccionsNome"/>
+  <xs:attribute name="nome" type="typeRestriccionsNome" use="required"/>
+  <xs:attribute name="apelido1" type="typeRestriccionsNome"  use="required"/>
+  <xs:attribute name="apelido2" type="typeRestriccionsNome"  use="required"/>
 </xs:attributeGroup>  
   
   <xs:element name="profesor">
-  <xs:complexType>
-    <xs:attributeGroup ref="grupoAtributosNombreCompleto"/>
-    <xs:attribute name="NRP" type="typeNRP"/>
-  </xs:complexType>
+    <xs:complexType>
+      <xs:attribute name="NRP" type="typeNRP" use="required"/>
+      <xs:attributeGroup ref="gaNomeCompleto"/>
+    </xs:complexType>
   </xs:element>
   
   <xs:simpleType name="typeNRP">
       <xs:restriction base="xs:string">
-        <xs:pattern value="(\d{3}|\d{4})([A-E])\d{3}"/>
+        <xs:pattern value="\d{3,4}[A-E]\d{3}"/>
       </xs:restriction>  
     </xs:simpleType>
   
   <xs:element name="alumno">
   <xs:complexType>
-    <xs:attributeGroup ref="grupoAtributosNombreCompleto"/>
-    <xs:attribute name="numeroExpediente" type="typeNumExp"/>
+    <xs:attribute name="numeroExpediente" type="typeNumExp" use="required"/>
+    <xs:attributeGroup ref="gaNomeCompleto"/>
   </xs:complexType>
   </xs:element>
   

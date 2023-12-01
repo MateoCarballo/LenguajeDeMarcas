@@ -15,14 +15,11 @@ continuación outros 3 díxitos.
 <instituto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
               xsi:noNamespaceSchemaLocation="Tarefa_4A.xsd">
               
-  <alumno nome="Nombre" apelido1="Apellido" apelido2="Apellidoñ" numeroExpediente="123" >
-  </alumno>
-  <alumno nome="Nombre" apelido1="Apellido" apelido2="Apellido" numeroExpediente="890" >
-  </alumno>
-  <profesor nome="Nombre" apelido1="Apellido" apelido2="Apellido" NRP="123A890" >
-  </profesor>
-  <profesor nome="Nombre" apelido1="Apellido" apelido2="Apellido" NRP="456B567" >
-  </profesor>
-  <profesor nome="Nombre" apelido1="Apellido" apelido2="Apellido" NRP="7890C123" >
-  </profesor>
+  <alumno numeroExpediente="123" nome="Mateo" apelido1="Apellido" apelido2="Apellido" />
+  <alumno numeroExpediente="890"  nome="Nombree" apelido1="Apellidoo" apelido2="Apellidoo" />
+  
+  <profesor NRP="456B567" nome="Nombre" apelido1="Apellido" apelido2="Apellido" />
+  <profesor NRP="123A890"  nome="Nombree" apelido1="Apellidoo" apelido2="Apellidoo"/>
+  <profesor NRP="7890C123" nome="Nombreee" apelido1="Apellidooo" apelido2="Apellidooo" />
+  
 </instituto>
