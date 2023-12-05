@@ -3,26 +3,26 @@
   <!-- DEFINICIONES DE ELEMENTOS -->
   
 <!-- Definicion de alquiler -->
-<xs:element name="alquiler">
+<xs:element name="gestionAlquiler">
   <xs:complexType>
-    <xs:choice maxOcurrs="unbounded">
-      <xs:element ref="sucursal" />
+    <xs:sequence>
+      <xs:element ref="sucursal" maxOccurs="unbounded" />
       <xs:element ref="clientes" />
-    </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="cif" type="tipoCif"/>
+    <xs:attribute name="nombre" type="xs:string"/>
   </xs:complexType>
-  <xs:attribute name="cif" type="tipoCif">
-  <xs:attribute name="nombre" type="xs:String"/>
 </xs:element>
   
 <!--Definicion de sucursal -->
   <xs:element name="sucursal">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="vehiculo"/>
+        <xs:element ref="vehiculo" maxOccurs="unbounded"/>
       </xs:sequence>
+       <xs:attribute name="cantidadTotalvehiculos" type="xs:integer"/>
+      <xs:attribute name="direccion" type="xs:string"/>
     </xs:complexType>
-    <xs:attribute name="cantidadTotalvehiculos" type="xs:unsignedByte">
-    <xs:attribute name="direccion" type="xs:string">
   </xs:element>
   
           <!--Definicion de vehiculo-->
@@ -30,46 +30,53 @@
             <xs:complexType>
               <xs:sequence>
                 <xs:element ref="estado"/>
-                <xs:element name="tipoDevehiculo" type="tipovehiculo"/>
+                <xs:element name="tipoDevehiculo" type="tipoVehiculo"/>
                 <xs:element name="marca" type="xs:string"/>
-                <xs:element rname="modelo" type="xs:string"/>
-                <xs:element name="fechaMatriculacion"type="tipoFecha"/>
+                <xs:element name="modelo" type="xs:string"/>
+                <xs:element name="fechaMatriculacion" type="tipoFecha"/>
                 <xs:element name="kilometraje" type="xs:integer"/>
                 <xs:element name="matricula" type="tipoMatriculaES"/>
                 <xs:element ref="potencia"/>
-                <xs:element name="peso" type="xs:unsignedByte"/>
+                <xs:element name="peso" type="xs:integer"/>
                 <xs:element ref="precioDia"/>
                 <xs:element name="descripcion" type="xs:string"/>
               </xs:sequence>
+              <xs:attribute name="idVehiculo" type="tipoIdvehiculo"/>
             </xs:complexType>
-            <xs:attribute name="idvehiculo" type="tipoIdvehiculo"/>
+            
           </xs:element>
           
           <!--Definicion de estado-->
           <xs:element name="estado">
-            <xs:simpleContent>
-              <xs:extension base="xs:string">
-                <xs:attribute name="ocupado" type="tipoBooleanoSiNo"/>
-              </xs:extension>
-            </xs:simpleContent>
+          <xs:complexType>
+              <xs:simpleContent>
+                <xs:extension base="xs:string">
+                  <xs:attribute name="ocupado" type="tipoBooleanoSiNo"/>
+                </xs:extension>
+              </xs:simpleContent>
+            </xs:complexType>
           </xs:element>
           
-          <!--Definicion de estado-->
+          <!--Definicion de potencia-->
           <xs:element name="potencia">
+          <xs:complexType>
             <xs:simpleContent>
               <xs:extension base="xs:unsignedByte">
                 <xs:attribute name="unidades" type="xs:string"/>
               </xs:extension>
             </xs:simpleContent>
+            </xs:complexType>
           </xs:element>
           
-          <!--Definicion de estado-->
+          <!--Definicion de precioDia-->
           <xs:element name="precioDia">
+          <xs:complexType>
             <xs:simpleContent>
               <xs:extension base="xs:unsignedByte">
                 <xs:attribute name="moneda" type="xs:string"/>
               </xs:extension>
             </xs:simpleContent>
+            </xs:complexType>
           </xs:element>
   
   <!--Definicion de clientes -->
@@ -78,8 +85,9 @@
       <xs:sequence>
         <xs:element ref="cliente"/>
       </xs:sequence>
+      <xs:attribute name="cantidadTotalClientes" type="xs:unsignedByte"/>
     </xs:complexType>
-    <xs:attribute name="cantidadTotalClientes" type="xs:unsignedByte">
+    
   </xs:element>
   
             <!--Definicion de cliente -->
@@ -90,32 +98,37 @@
                   <xs:element ref="alquileresActivos"/>
                   <xs:element ref="alquileresTerminados"/>
                 </xs:sequence>
+                <xs:attribute name="idCliente" type="tipoIdCliente"/>
               </xs:complexType>
-              <xs:attribute name="idCliente" type="tipoIdCliente">
+              
             </xs:element>
   
           <xs:group name="grupoElementosCliente">
             <xs:sequence>
               <xs:element name="nombre" type="tipoNombre"/>
-              <xs:element name="apellido1"type="tipoNombre"/>
-              <xs:element name="apellido2"type="tipoNombre"/>
-              <xs:element name="fechaNacimiento"type="tipoFecha"/>
+              <xs:element name="apellido1" type="tipoNombre"/>
+              <xs:element name="apellido2" type="tipoNombre"/>
+              <xs:element name="fechaNacimiento" type="tipoFecha"/>
               <xs:element name="telefonoContacto" type="tipoTelefono"/>
               <xs:element name="correo" type="tipoCorreo"/>
             </xs:sequence>
           </xs:group>
 
 
-          <xs:element name="alquilerActivos">
-            <xs:sequence>
-              <xs:element name="alquiler" type="tipoAlquiler" maxOcurrs="unbounded"/>
+          <xs:element name="alquileresActivos">
+            <xs:complexType>
+              <xs:sequence>
+              <xs:element name="alquiler" type="tipoAlquiler" maxOccurs="unbounded"/>
             </xs:sequence>
+            </xs:complexType>
           </xs:element>
           
-          <xs:element name="alquilerTerminados">
-            <xs:sequence>
-              <xs:element name="alquiler" type="tipoAlquiler" maxOcurrs="unbounded"/>
+          <xs:element name="alquileresTerminados">
+            <xs:complexType>
+              <xs:sequence>
+              <xs:element name="alquiler" type="tipoAlquiler" maxOccurs="unbounded"/>
             </xs:sequence>
+            </xs:complexType>
           </xs:element>
 <!--DEFINICIONES DE TIPOS CON Y SIN RESTRICCIONES-->
   <!-- Restricciones para el CIF
@@ -134,41 +147,52 @@ El algoritmo es mas complejo y se puede comprobar su validez pero por ahora nos 
   <!--Definicion tipoIdCliente-->
   <xs:simpleType name="tipoIdCliente">
     <xs:restriction base="xs:string">
-      <xs:patter value="CL[0-9]{4}"/>
+      <xs:pattern value="CL[0-9]{4}"/>
     </xs:restriction>
   </xs:simpleType>
 
 <!--Definicion tipoIdvehiculo-->
   <xs:simpleType name="tipoIdvehiculo">
     <xs:restriction base="xs:string">
-      <xs:patter value="FU[0-9]{4}|CO[0-9]{4}|CA[0-9]{4}|MO[0-9]{4}"/>
+      <xs:pattern value="FU[0-9]{4}|CO[0-9]{4}|CA[0-9]{4}|MO[0-9]{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <!--Definicion tipoNombre-->
+  <xs:simpleType name="tipoNombre">
+    <xs:restriction base="xs:string">
+      <xs:pattern value=" [A-Z]{1}[a-z]{20}"/>
     </xs:restriction>
   </xs:simpleType>
   
   <!-- Definicion tipoBooleanoSiNo-->
-  <xs:simpletype name="tipoBooleanoSiNo">
+  <xs:simpleType name="tipoBooleanoSiNo">
     <xs:restriction base="xs:string">
       <xs:enumeration value="S"/>
       <xs:enumeration value="s"/>
       <xs:enumeration value="N"/>
       <xs:enumeration value="n"/>
+      <xs:enumeration value="Si"/>
+      <xs:enumeration value="si"/>
+      <xs:enumeration value="No"/>
+      <xs:enumeration value="no"/>
     </xs:restriction>
-  </xs:simpletype>
+  </xs:simpleType>
   
-   <!-- Definicion tipovehiculo-->
-  <xs:simpletype name="tipovehiculo">
+   <!-- Definicion tipoVehiculo-->
+  <xs:simpleType name="tipoVehiculo">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Coche"/>
       <xs:enumeration value="Moto"/>
       <xs:enumeration value="Furgoneta"/>
       <xs:enumeration value="Caravana"/>
     </xs:restriction>
-  </xs:simpletype>
+  </xs:simpleType>
   
    <!--Definicion de tipo fecha-->
             <xs:simpleType name="tipoFecha">
               <xs:restriction base="xs:string">
-                <xs:pattern value="[1900-2100]{4}/(0[1-9]{1}|[10-12]{1})/(0[1-9]{1}|[10-31]{1})"/>
+                <xs:pattern value="20[0-99]{2}/(0[1-9]{1}|[1-2]{2})/(0[1-9]{1}|[10-31]{1})"/>
               </xs:restriction>
             </xs:simpleType>
             
