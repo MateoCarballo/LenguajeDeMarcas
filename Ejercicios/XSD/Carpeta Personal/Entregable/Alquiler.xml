@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<alquiler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:noNamespaceSchemaLocation="Alquiler.xsd"
+              cif="A12345678" nombre="nombre compania">
+
+  <sucursal cantidadTotalvehiculos="345" direccion="C/ sucursal 1, numero 1">
+    <vehiculo idvehiculo="Co1000">
+      <estado ocupado="No"/>
+      <tipo>Coche</tipo>
+      <marca>marcaDeCoche</marca>
+      <modelo>modeloDeCoche</modelo>
+      <fechamatriculacion>2023/11/07</fechamatriculacion>
+      <kilometraje>210000</kilometraje>
+      <matricula>1234ABC</matricula>
+      <potencia unidades="cv">100</potencia>
+      <peso>1450</peso>
+      <precioDia moneda="euros">100</precioDia>
+      <descripcion>Este modelo en concreto viene equipado con la tecnologia S&amp;S (Start and Stop) 
+      que apaga el motor cuando nos detenemos para ahorar combustible y evitar contaminar innecesariamente</descripcion>
+    </vehiculo>
+    
+    <vehiculo idvehiculo="Fu1000">
+      <estado ocupado="No"/>
+      <tipo>Furgoneta</tipo>
+      <marca>marcaDeFurgoneta</marca>
+      <modelo>modeloDeFurgoneta</modelo>
+      <fechamatriculacion ano="2018" mes="Febrero" dia="10"/>
+      <kilometraje>167548</kilometraje>
+      <matricula>2346JGF</matricula>
+      <potencia unidades="cv">150</potencia>
+      <peso unidades="kg">1750</peso>
+      <precioDia moneda="euros">100</precioDia>
+      <descripcion>Breve descripcion del vehiculo</descripcion>
+    </vehiculo>
+    
+    <vehiculo idvehiculo="Ca1000">
+      <estado ocupado="No"/>
+      <tipo>Caravana</tipo>
+      <marca>marcaDeCaravana</marca>
+      <modelo>modeloDeCaravana</modelo>
+      <fechamatriculacion ano="2019" mes="Enero" dia="1"/>
+      <kilometraje>50000</kilometraje>
+      <matricula>9012GHI</matricula>
+      <potencia unidades="cv">200</potencia>
+      <peso>3500</peso>
+      <precioDia moneda="euros">100</precioDia>
+      <descripcion>Breve descripcion del vehiculo</descripcion>
+    </vehiculo>
+  </sucursal>
+
+  <sucursal cantidadTotalvehiculos="345" direccion="C/ sucursal 2 , numero 2">
+  
+    <vehiculo idvehiculo="Co2000">
+      <estado ocupado="No"/>
+      <tipo>Coche</tipo>
+      <marca>marcaDeCoche</marca>
+      <modelo>modeloDeCoche</modelo>
+      <fechamatriculacion ano="2023" mes="Enero" dia="1"/>
+      <kilometraje>210000</kilometraje>
+      <matricula>1234ABC</matricula>
+      <potencia unidades="cv">100</potencia>
+      <peso>1450</peso>
+      <precioDia moneda="euros">100</precioDia>
+      <descripcion>Este modelo en concreto viene equipado con la tecnologia S&amp;S (Start and Stop) 
+      que apaga el motor cuando nos detenemos para ahorar combustible y evitar contaminar innecesariamente</descripcion>
+    </vehiculo>
+    
+    <vehiculo idvehiculo="Fu2000">
+      <estado ocupado="No"/>
+      <tipo>Furgoneta</tipo>
+      <marca>marcaDeFurgoneta</marca>
+      <modelo>modeloDeFurgoneta</modelo>
+      <fechamatriculacion ano="2023" mes="Febrero" dia="10"/>
+      <kilometraje>167548</kilometraje>
+      <matricula>2346JGF</matricula>
+      <potencia unidades="cv">150</potencia>
+      <peso>1750</peso>
+      <precioDia moneda="euros">100</precioDia>
+      <descripcion>Breve descripcion del vehiculo</descripcion>
+    </vehiculo>
+    
+    <vehiculo idvehiculo="Ca2000">
+    <estado ocupado="Si"/>
+      <tipo>Caravana</tipo>
+      <marca>marcaDeCaravana</marca>
+      <modelo>modeloDeCaravana</modelo>
+      <fechamatriculacion ano="2023" mes="Enero" dia="1"/>
+      <kilometraje>50000</kilometraje>
+      <matricula>9012GHI</matricula>
+      <potencia unidades="cv">200</potencia>
+      <peso>3500</peso>
+      <precioDia moneda="euros">100</precioDia>
+      <descripcion>Breve descripcion del vehiculo</descripcion>
+    </vehiculo>
+  </sucursal>
+
+  <clientes cantidadTotalclientes="543">
+    <cliente idcliente="CL1001">
+      <nombre>nombreclientesuno</nombre>
+      <apellido1>Apellidouno</apellido1>
+      <apellido2>Apellidodos</apellido2>
+      <fechaNacimiento>1990/04/21</fechaNacimiento>
+      <telefonoContacto>111111111</telefonoContacto>
+      <correo>correo@clientes1.com</correo>
+      <Activo>
+        <Alquiler idvehiculo="Ca2000">
+          <Inicio>2023/11/1</Inicio>
+          <Fin>2023/11/1</Fin>
+        </Alquiler>
+      </Activo>
+    </cliente>
+    
+    <cliente idcliente="CL2002">
+      <nombre>nombreclientesuno</nombre>
+      <apellido1>Apellidouno</apellido1>
+      <apellido2>Apellidodos</apellido2>
+      <telefonoContacto>222222222</telefonoContacto>
+      <correo>correo@clientes2.com</correo>
+      <fechaNacimiento>2023/11/1</fechaNacimiento>
+    </cliente>
+  </clientes>
+
+</alquiler>

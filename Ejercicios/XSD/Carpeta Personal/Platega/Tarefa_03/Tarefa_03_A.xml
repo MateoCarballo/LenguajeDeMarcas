@@ -1,8 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<!-- tarefa 1 UD7 -->
-<garderia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:noNamespaceSchemaLocation="Tarefa_03_A.xsd">
-
+﻿<?xml version="1.0" encoding="UTF-8"?><!-- tarefa 1 UD7 -->
+<garderia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Tarefa_03_A.xsd">
   <neno numeroExpedente="2344" codigo="P73-123">
     <sexo>M</sexo>
     <nome>Noa Blanco Coello</nome>
@@ -11,6 +8,6 @@ xsi:noNamespaceSchemaLocation="Tarefa_03_A.xsd">
     <altura>78</altura>
     <vacunas>true</vacunas>
     <contacto relacion="pai">123456789</contacto>
-    <idade anos="0" meses="11"/>
+    <idade anos="1" meses="11" />
   </neno>
 </garderia>
