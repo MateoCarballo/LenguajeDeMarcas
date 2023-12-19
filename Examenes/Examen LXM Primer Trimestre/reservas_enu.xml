@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documento: reservas_enu.xml-->
+<reservas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:noNamespaceSchemaLocation="reservas_enu.xsd">
+   <reserva cliente="P-324" local="localSocial">
+    <fecha mes="10" dia="15" horario="tarde"/>
+    <evento>Cumpleaños</evento>
+  </reserva>
+  <reserva cliente="E-107" local="polideportivo">
+    <fecha mes="10" dia="15" horario="dia"/>
+    <evento>Torneo pádel</evento>
+  </reserva>
+  <cliente codCliente="P-324">
+    <dni>25652358-Z-P</dni>
+    <nombreCliente>Juan Torres Pardo</nombreCliente>
+  </cliente>
+  <cliente codCliente="E-107">
+    <dni>45789545-P</dni>
+    <nombreCliente>Jacinto Zarra Viñas</nombreCliente>
+  </cliente>
+  <cliente codCliente="S-86">
+    <dni>47878452-A</dni>
+    <nombreCliente>Isabel Parra</nombreCliente>
+  </cliente>
+</reservas>

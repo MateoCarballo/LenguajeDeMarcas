@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documento: reservas_v4.xml-->
+<reservas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                  xsi:noNamespaceSchemaLocation="reservas_res.xsd">
+
+  <reserva cliente="P-324">
+    <local>localSocial</local>
+    <fecha>
+      <mes>10</mes>
+      <dia>15</dia>
+      <horario>tarde</horario>
+    </fecha>
+    <evento>Cumpleaños</evento>
+  </reserva>
+  
+  <reserva cliente="E-107">
+    <local>polideportivo</local>
+    <fecha>
+      <mes>10</mes>
+      <dia>15</dia>
+      <horario>dia</horario>
+    </fecha>
+    <evento>Torneo pádel</evento>
+  </reserva>
+  
+  <cliente codCliente="P-324">
+    <dni>25652358-Z</dni>
+    <nombreCliente>
+      <nombre>Juan</nombre>
+      <apellido1>Torres</apellido1>
+      <apellido2>Pardo</apellido2>
+    </nombreCliente>
+    <tasaDescuento>0.25</tasaDescuento>
+  </cliente>
+  
+  <cliente codCliente="E-107">
+    <dni>45789545-P</dni>
+    <nombreCliente>
+      <nombre>Jacinto</nombre>
+      <apellido1>Zarra</apellido1>
+      <apellido2>Viñas</apellido2>
+    </nombreCliente>
+    <tasaDescuento>0.15</tasaDescuento>
+  </cliente>
+  
+  <cliente codCliente="S-86">
+    <dni>47878452-a</dni>
+    <nombreCliente>
+    <nombre>Isabel</nombre>
+    <apellido1>Parra</apellido1>
+    <apellido2>Parra</apellido2>
+    </nombreCliente>
+    <tasaDescuento>0.30</tasaDescuento>
+  </cliente>
+  
+  <!-- Lo creo para comprobar que si añado un cliente no tiene porque aparecer referenciado en las reservas-->
+  <cliente codCliente="S-861">
+    <dni>47878452-a</dni>
+    <nombreCliente>
+    <nombre>Isabel</nombre>
+    <apellido1>Parra</apellido1>
+    </nombreCliente>
+    <tasaDescuento>0.30</tasaDescuento>
+  </cliente>
+</reservas>

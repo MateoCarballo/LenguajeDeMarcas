@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Documento: reservas_conDTD_enu.xml-->
+<!DOCTYPE reservas [
+<!ELEMENT reservas (reserva | cliente)*>
+<!ELEMENT reserva (fecha , evento)>
+<!ATTLIST reserva cliente CDATA #REQUIRED>
+<!ATTLIST reserva local (polideportivo | localSocial | auditorio) #REQUIRED>
+<!ELEMENT fecha EMPTY>
+<!ATTLIST fecha mes CDATA #REQUIRED>
+<!ATTLIST fecha dia CDATA #REQUIRED>
+<!ATTLIST fecha horario (maña | tarde | dia) "tarde">
+<!ELEMENT evento (#PCDATA)>
+<!ELEMENT cliente (dni , nombreCliente)>
+<!ATTLIST cliente codCliente CDATA #REQUIRED>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT nombreCliente (#PCDATA)>
+]>
+<reservas>
+  <reserva cliente="P-324" local="localSocial">
+    <fecha mes="10" dia="15" horario="tarde"/>
+    <evento>Cumpleaños</evento>
+  </reserva>
+  <reserva cliente="E-107" local="polideportivo">
+    <fecha mes="10" dia="15" horario="dia"/>
+    <evento>Torneo pádel</evento>
+  </reserva>
+  <cliente codCliente="P-324">
+    <dni>25652358-Z-P</dni>
+    <nombreCliente>Juan Torres Pardo</nombreCliente>
+  </cliente>
+  <cliente codCliente="E-107">
+    <dni>45789545-P</dni>
+    <nombreCliente>Jacinto Zarra Viñas</nombreCliente>
+  </cliente>
+  <cliente codCliente="S-86">
+    <dni>47878452-A</dni>
+    <nombreCliente>Isabel Parra</nombreCliente>
+  </cliente>
+</reservas>

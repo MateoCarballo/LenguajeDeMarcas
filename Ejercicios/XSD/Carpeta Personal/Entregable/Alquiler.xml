@@ -28,7 +28,7 @@
       <kilometraje>167548</kilometraje>
       <matricula>2346JGF</matricula>
       <potencia unidades="cv">150</potencia>
-      <peso unidades="kg">1750</peso>
+      <peso>1750</peso>
       <precioDia moneda="euros">100</precioDia>
       <descripcion>Breve descripcion del vehiculo</descripcion>
     </vehiculo>
@@ -49,12 +49,12 @@
   </sucursal>
   
   <sucursal cantidadTotalvehiculos="346" direccion="C/  2 , numero 2">
-    <vehiculo idvehiculo="CO2000">
+    <vehiculo idVehiculo="CO2000">
       <estado ocupado="No"/>
       <tipoDevehiculo>Coche</tipoDevehiculo>
       <marca>marcaDeCoche</marca>
       <modelo>modeloDeCoche</modelo>
-      <fechamatriculacion ano="2023" mes="Enero" dia="1"/>
+      <fechaMatriculacion>2023/11/07</fechaMatriculacion>
       <kilometraje>210000</kilometraje>
       <matricula>1234ABC</matricula>
       <potencia unidades="cv">100</potencia>
@@ -64,12 +64,12 @@
       que apaga el motor cuando nos detenemos para ahorar combustible y evitar contaminar innecesariamente</descripcion>
     </vehiculo>
     
-    <vehiculo idvehiculo="FU2000">
+    <vehiculo idVehiculo="FU2000">
       <estado ocupado="No"/>
       <tipoDevehiculo>Furgoneta</tipoDevehiculo>
       <marca>marcaDeFurgoneta</marca>
       <modelo>modeloDeFurgoneta</modelo>
-      <fechamatriculacion ano="2023" mes="Febrero" dia="10"/>
+      <fechaMatriculacion>2021/01/04</fechaMatriculacion>
       <kilometraje>167548</kilometraje>
       <matricula>2346JGF</matricula>
       <potencia unidades="cv">150</potencia>
@@ -78,12 +78,12 @@
       <descripcion>Breve descripcion del vehiculo</descripcion>
     </vehiculo>
     
-    <vehiculo idvehiculo="CA2000">
+    <vehiculo idVehiculo="CA2000">
     <estado ocupado="Si"/>
       <tipoDevehiculo>Caravana</tipoDevehiculo>
       <marca>marcaDeCaravana</marca>
       <modelo>modeloDeCaravana</modelo>
-      <fechamatriculacion ano="2023" mes="Enero" dia="1"/>
+      <fechaMatriculacion>2001/06/21</fechaMatriculacion>
       <kilometraje>50000</kilometraje>
       <matricula>9012GHI</matricula>
       <potencia unidades="cv">200</potencia>
@@ -93,9 +93,9 @@
     </vehiculo>
   </sucursal>
 
-  <clientes cantidadTotalclientes="543">
-    <cliente idcliente="CL1001">
-      <nombre>nombreclientesuno</nombre>
+  <clientes cantidadTotalClientes="543">
+    <cliente idCliente="CL1001">
+      <nombre>Nombreclientesuno</nombre>
       <apellido1>Apellidouno</apellido1>
       <apellido2>Apellidodos</apellido2>
       <fechaNacimiento>1990/04/21</fechaNacimiento>
@@ -110,7 +110,7 @@
     </cliente>
     
     <cliente idcliente="CL2002">
-      <nombre>nombreclientesuno</nombre>
+      <nombre>Nombreclientesuno</nombre>
       <apellido1>Apellidouno</apellido1>
       <apellido2>Apellidodos</apellido2>
       <telefonoContacto>222222222</telefonoContacto>

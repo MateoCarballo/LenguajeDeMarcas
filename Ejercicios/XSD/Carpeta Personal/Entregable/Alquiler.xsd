@@ -85,7 +85,7 @@
       <xs:sequence>
         <xs:element ref="cliente"/>
       </xs:sequence>
-      <xs:attribute name="cantidadTotalClientes" type="xs:unsignedByte"/>
+      <xs:attribute name="cantidadTotalClientes" type="xs:integer"/>
     </xs:complexType>
     
   </xs:element>
@@ -161,7 +161,7 @@ El algoritmo es mas complejo y se puede comprobar su validez pero por ahora nos 
   <!--Definicion tipoNombre-->
   <xs:simpleType name="tipoNombre">
     <xs:restriction base="xs:string">
-      <xs:pattern value=" [A-Z]{1}[a-z]{20}"/>
+      <xs:pattern value=" [A-Z]{1}[a-z]{1,20}"/>
     </xs:restriction>
   </xs:simpleType>
   
