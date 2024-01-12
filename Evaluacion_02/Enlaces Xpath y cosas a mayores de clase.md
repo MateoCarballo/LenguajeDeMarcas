@@ -171,3 +171,25 @@ Tutorial de XPath, en https://spa.myservername.com/comprehensive-xpath-tutorial-
 Microsoft: Referencia de XPath, en https://learn.microsoft.com/es-es/previous-versions/dotnet/netframework-2.0/ms256115(v=vs.80) 
 
 Online XPATH Tester, en https://www.online-toolz.com/tools/xpath-tester-online.php . Probamos copiando y pegando el ejemplo de biblioteca y experimentamos expresiones xpath.
+
+
+
+Recursos:
+
+XPath Tutorial (w3schols), en https://www.w3schools.com/xml/xpath_intro.asp . Dispone de ejemplos (Try it yourself).
+
+Tutorial de Xpath para principiantes, en https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/tutorial-de-xpath/ 
+
+XPath 1.0 Tutorial (de ZVON.org), en http://www.zvon.org/comp/r/tut-XPath_1.html
+
+Tutorial de XPath, en https://spa.myservername.com/comprehensive-xpath-tutorial-xml-path-language 
+
+Microsoft: Referencia de XPath, en https://learn.microsoft.com/es-es/previous-versions/dotnet/netframework-2.0/ms256115(v=vs.80) 
+
+Online XPATH Tester, en https://www.online-toolz.com/tools/xpath-tester-online.php . Probamos copiando y pegando el ejemplo de biblioteca y experimentamos expresiones xpath.
+
+Viernes, 12.01.2024 (2pl)
+Contenidos: XML Path language.
+Actividades didácticas:
+    • Continuación de ejercicio de la sesión anterior.
+    • Lectura y experimentación de " Platega_XML_Xpath_actividades_verAlumno.pdf".
