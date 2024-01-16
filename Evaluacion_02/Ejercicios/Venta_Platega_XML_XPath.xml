@@ -14,3 +14,8 @@
  </produtos>
  <importe>16,34€</importe>
 </venda>
+<!--
+/venda/cliente/@cod
+/child::venda/child::cliente/attribute::cod
+/descendant::cliente/attribute::cod
+ -->

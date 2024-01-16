@@ -6,6 +6,9 @@ Páxina 21 de 37
  <gateway>192.168.20.1</gateway>
  </config></máquina></equipos>
 <!-- ENUNCIADO Y SOLUCIONES EJ 2
+
+*** Estas son en su forma abreviada**
+
 Tarefa 2. Rutas de localización con diversos eixos
 Sobre o mesmo documento XML da tarefa anterior, escribir as expresións XPath para obter 
 os seguintes conxuntos de nodos.
@@ -15,11 +18,37 @@ os seguintes conxuntos de nodos.
 
  Os nomes das máquinas que teñan gravadora óptica.
 //gravadora/../../@nome
+    Con predicado== /equipos/máquina[hardware/gravadora]/@nome
 Encontramos el elemento grabadora subimos por el arbol y sacamos el nombre.
 
  O sistema operativo das máquinas nas que figure o "role".
 //role/../OS
 
  //role/../../@nome | //role/../OS 
+
+**SOLUCIONES CON LA COMPLETA
+
+ Os nomes das máquinas.
+/child::equipos/child::máquina/attribute::nome
+/descendant::máquina/attribute::nome
+/descendant-or-self::máquina/attribute::nome
+
+
+ Os nomes das máquinas que teñan gravadora óptica.
+/descendant::gravadora/ancestor::máquina/attribute::nome
+//gravadora/../../@nome
+Encontramos el elemento grabadora subimos por el arbol y sacamos el nombre.
+
+ O sistema operativo das máquinas nas que figure o "role".
+//role/../OS
+CON PREDICADO === /equipos/máquina/config[role]/OS
+/descendant::role/parent::config/child::OS
+
+/descendant::role/following::OS
+
+
+ //role/../../@nome | //role/../OS 
+
+
 
 -->
