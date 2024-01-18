@@ -294,3 +294,7 @@ Resultado
 	<titulo>Pantaleón y las visitadoras</titulo>
 	<titulo>Conversación en la catedral</titulo>
 	```
+
+
+> [!NOTE]
+> Este es un resumen basado en el que econtramos en [mclibre](https://www.mclibre.org/consultar/xml/lecciones/xml-xpath.html).
