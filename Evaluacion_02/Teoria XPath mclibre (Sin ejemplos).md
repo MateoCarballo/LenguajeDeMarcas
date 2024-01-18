@@ -23,10 +23,9 @@ Un documento XML puede representarse como un árbol dirigido, considerando por e
 > [!NOTE]
 > La declaración DOCTYPE no se considera como nodo.
 
-Los nodos atributos y de texto no son 
-como los nodos elemento. Por ejemplo, los nodos atributo y de texto no pueden tener descendientes.
- En realidad el nodo atributo ni siquiera se considera como hijo, sino como una etiqueta adosada al elemento. El texto contenido por una etiqueta sí que se considera hijo del elemento, aunque las expresiones XPath suelen trabajar con
-nodos elemento y para referirse a los atributos o al texto se utilizan notaciones especiales.
+**Los nodos atributos y de texto no son como los nodos elemento.**  
+Por ejemplo, los nodos atributo y de texto no pueden tener descendientes.
+En realidad el nodo atributo ni siquiera se considera como hijo, sino como una etiqueta adosada al elemento. El texto contenido por una etiqueta sí que se considera hijo del elemento, aunque las expresiones XPath suelen trabajar con nodos elemento y para referirse a los atributos o al texto se utilizan notaciones especiales.
 
 ## Sintaxis de la expresiones XPath
 Una expresión XPath es una cadena de texto que representa un recorrido en el árbol del documento. Las expresiones más simples se parecen a las rutas de los archivos en el explorador de Windows o en la shell de GNU/Linux.
@@ -35,95 +34,115 @@ Evaluar una expresión XPath es buscar si hay nodos en el documento que se ajust
 
 Las expresiones XPath se pueden escribir de dos formas distintas:
 
-sintaxis abreviada: más compacta y fácil de leer, que se explica en esta lección
-sintaxis completa: más larga pero con más opciones disponibles
+- sintaxis abreviada: más compacta y fácil de leer, que se explica en esta lección
+- sintaxis completa: más larga pero con más opciones disponibles
 Las expresiones XPath se pueden dividir en pasos de búsqueda. Cada paso de búsqueda se puede a su vez dividir en tres partes:
 
-eje: selecciona nodos elemento o atributo basándose en sus nombres.
-predicado: restringe la selección del eje a que los nodos cumplan ciertas condiciones.
-selección de nodos: de los nodos seleccionados por el eje y predicado, selecciona los elementos, el texto que contienen o ambos.
+- eje: selecciona nodos elemento o atributo basándose en sus nombres.
+- predicado: restringe la selección del eje a que los nodos cumplan ciertas condiciones.
+- selección de nodos: de los nodos seleccionados por el eje y predicado, selecciona los elementos, el texto que contienen o ambos.
+
+![Alt text](image.png)
 
 ### Sintaxis abreviada
-Veamos unos ejemplos de expresiones XPath de sintaxis abreviada y el resultado de su evaluación en el documento de ejemplo anterior:
 
 #### Eje (en inglés, axis)
-El eje nos permite seleccionar un subconjunto de nodos del documento y corresponde a recorridos en el árbol del documento. Los nodos elemento se indican mediante el nombre del elemento. Los nodos atributo se indican mediante @ y el nombre del atributo.
+El eje nos permite seleccionar un subconjunto de nodos del documento y **corresponde a recorridos en el árbol del documento**. Los nodos elemento se indican mediante el nombre del elemento. Los nodos atributo se indican mediante @ y el nombre del atributo.
 
 - /: si está al principio de la expresión, indica el nodo raíz, si no, indica "hijo". Debe ir seguida del nombre de un elemento.
-Nota: En XPath 1.0 no se puede seleccionar únicamente el valor del atributo, sino que se obtienen respuestas del tipo nombreDelAtributo=ValorDelAtributo
 
 - //: indica "descendiente" (hijos, hijos de hijos, etc.).
 
 - /..: indica el elemento padre.
-Nota: En el resultado de los ejemplos siguientes se obtienen únicamente los nodos que tienen el atributo fechaNacimiento.
 
 - |: permite indicar varios recorridos
 
+> [!NOTE]
+> En XPath 1.0 no se puede seleccionar únicamente el valor del atributo, sino que se obtienen 
+> respuestas del tipo nombreDelAtributo=ValorDelAtributo
 
 #### Predicado (en inglés, predicate)
 El predicado se escribe entre corchetes, a continuación del eje. Si el eje ha seleccionado unos nodos, el predicado permite restringir esa selección a los que cumplan determinadas condiciones.
 
 - [@atributo]: selecciona los elementos que tienen el atributo.
 
-- [número]: si hay varios resultados selecciona uno de ellos por número de orden; last() selecciona el último de ellos
+```
+//autor[@fechaNacimiento]
+```
+
+- [número]: si hay varios resultados selecciona uno de ellos por número de orden; last() selecciona el último de ellos.
+
+```
+//libro[1]
+//libro[last()]
+//libro[last()-1]
+```
 
 - [condicion]: selecciona los nodos que cumplen la condición.
 
-		Los predicados permiten definir condiciones sobre los valores de los atributos. En las condiciones se pueden utilizar los operadores siguientes:
+Los predicados permiten definir condiciones sobre los valores de los atributos. En las condiciones se pueden utilizar los operadores siguientes:
 
-		operadores lógicos: and, or, not()
-		operadores aritméticos: +, -, *, div, mod
-		operadores de comparación: =, !=, <, >, <=, >=
-		Las comparaciones se pueden hacer entre valores de nodos y atributos o con 
-		cadenas de texto o numéricas. Las cadenas de texto deben escribirse entre 
-		comillas simples o dobles. En el caso de las cadenas numéricas, las comillas son optativas.
-
-		La condición puede utilizar el valor de un atributo (utilizando @) o el texto que contiene el elemento.
-		En los ejemplos siguientes se obtienen respectivamente los elementos <fechaPublicacion> cuyo atributo año es posterior/mayor a 
-		1970 y los elementos <libro> cuyo subelemento <autor> tiene como contenido "Mario Vargas Llosa":
-
-		```
-		Expresion XPath
-		//fechaPublicacion[@año>1970]
-		```
-		```
-		Resultado
-		<fechaPublicacion año="1973"/>
-		<fechaPublicacion año="1973"/>
-		```
-		Para hacer referencia al propio valor del elemento seleccionado se utiliza el punto (.)
+operadores lógicos: and, or, not()
+operadores aritméticos: +, -, *, div, mod
+operadores de comparación: =, !=, <, >, <=, >=
 		
-		Un predicado puede contener condiciones compuestas.
-		En los ejemplos siguientes se seleccionan, respectivamente , los libros escritos por Mario Vargas Llosa 
-		y publicados en 1973 (primer ejemplo) y los libros escritos por Mario Vargas Llosa o publicados en 1973 
-		(segundo ejemplo):
+Las comparaciones se pueden hacer entre valores de nodos y atributos o con 
+cadenas de texto o numéricas. Las cadenas de texto deben escribirse entre 
+comillas simples o dobles. En el caso de las cadenas numéricas, las comillas son optativas.
 
-		Se pueden escribir varios predicados seguidos, cada uno de los cuales restringe los resultados del anterior,
-		como si estuvieran encadenados por la operación lógica and.
-		En el ejemplo siguiente se seleccionan los libros escritos por Mario Vargas Llosa y publicados en 1973:
+La condición puede utilizar el valor de un atributo (utilizando @) o el texto que contiene el elemento.
+En los ejemplos siguientes se obtienen respectivamente los elementos <fechaPublicacion> cuyo atributo año es posterior/mayor a 
+1970 y los elementos <libro> cuyo subelemento <autor> tiene como contenido "Mario Vargas Llosa":
+
+```
+Expresion XPath
+//fechaPublicacion[@año>1970]
+```
+```
+Resultado
+<fechaPublicacion año="1973"/>
+<fechaPublicacion año="1973"/>
+```
+Para hacer referencia al propio valor del elemento seleccionado se utiliza el punto (.)
+```
+//@año[.>1970]
+//autor[.="Mario Vargas Llosa"]
+```
+Un predicado puede contener condiciones compuestas.
+```
+//libro[autor="Mario Vargas Llosa" and fechaPublicacion/@año="1973"]
+```
+
+```
+//libro[autor="Mario Vargas Llosa" or fechaPublicacion/@año="1973"]
+```
+
+Se pueden escribir varios predicados seguidos.
+```
+//libro[autor="Mario Vargas Llosa"][fechaPublicacion/@año="1973"]
+```
 		
 #### 	Selección de nodos (en inglés, node test)
 La selección de nodos se escribe a continuación del eje y el predicado. Si el eje y el predicado han seleccionado unos nodos, la selección de nodos indica con qué parte de esos nodos nos quedamos.
 
-- 	/node(): selecciona todos los hijos (elementos o texto) del nodo.
-	//node(): selecciona todos los descendientes (elementos o texto) del nodo.	
-	
--	/text(): selecciona únicamente el texto contenido en el nodo.
-	//text(): selecciona únicamente el texto contenido en el nodo y todos sus descendientes.	
-	
--	/*: selecciona todos los hijos (sólo elementos) del nodo.
-	//*: selecciona todos los descendientes (sólo elementos) del nodo.	
-	
--	/@*: selecciona todos los atributos del nodo.
-	//@*: selecciona todos los atributos de los descendientes del nodo.	
+- /node(): selecciona todos los hijos (elementos o texto) del nodo.
+- //node(): selecciona todos los descendientes (elementos o texto) del nodo.
 
-Nota: En XPath 1.0 no se puede seleccionar únicamente el valor del atributo, 
-sino que se obtienen respuestas del tipo nombreDelAtributo=ValorDelAtributo	
+- /text(): selecciona únicamente el texto contenido en el nodo.
+- //text(): selecciona únicamente el texto contenido en el nodo y todos sus descendientes.	
+	
+- /*: selecciona todos los hijos (sólo elementos) del nodo.
+- //*: selecciona todos los descendientes (sólo elementos) del nodo.	
+	
+- /@*: selecciona todos los atributos del nodo.
+- //@*: selecciona todos los atributos de los descendientes del nodo.	
+
+> [!NOTE]
+> En XPath 1.0 no se puede seleccionar únicamente el valor del atributo, sino que se obtienen respuestas del tipo nombreDelAtributo=ValorDelAtributo	
 
 #### Pasos de búsqueda consecutivos
 Una expresión XPath puede contener varios pasos de búsqueda consecutivos. 
-Cada uno incluirá su eje (y en su caso, su predicado) y el último paso de búsqueda incluirá en su caso una 
-selección de nodos. Cada paso de búsqueda trabaja a partir de los nodos seleccionados por el paso de búsqueda anterior.
+Cada uno incluirá su eje (y en su caso, su predicado) y el último paso de búsqueda incluirá en su caso una selección de nodos. Cada paso de búsqueda trabaja a partir de los nodos seleccionados por el paso de búsqueda anterior.
 
 En el ejemplo siguiente se obtienen los títulos de los libros publicados después de 1970, mediante dos pasos de búsqueda:
 
