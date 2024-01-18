@@ -9,9 +9,6 @@ dividiendolos en un esquema en funcion del contenido de cada uno de ellos
 Repositorio para tener un backup de las tareas y conceptos de la materia. Encontraremos los ejercicios hechos en clase
 y aspectos teoricos relevantes.
 
-[Resumenes personales](https://github.com/MateoCarballo/LenguajeDeMarcas/tree/main/_Resumenes_Personales)
-
-
 ## Atajos de Teclado para XML Copy Editor
 
 ### Acciones Generales:
