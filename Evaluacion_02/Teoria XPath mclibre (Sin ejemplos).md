@@ -150,82 +150,34 @@ en el primer paso (//fechaPublicacion[@año>1970]) se seleccionan los elementos 
 en el segundo paso (/../titulo), se seleccionan primero los elementos padre (/..) de los <fechaPublicacion> seleccionados en el primer paso de búsqueda (es decir, elementos <libro>) y a continuación sus subelementos <titulo>.
 
 ```
-Expresion XPath
-
 //fechaPublicacion[@año>1970]/../titulo
 ```
-
-```
-Resultado de la busqueda
-
-<titulo>La vida está en otra parte</titulo>
-<titulo>Pantaleón y las visitadoras</titulo>
-```
-
 Un determinado resultado se puede obtener mediante un sólo paso de búsqueda o mediante varios pasos.
 
 En los ejemplos siguientes se obtienen los libros escritos por Mario Vargas Llosa de dos formas distintas:
 mediante un sólo paso de búsqueda. Se seleccionan los elementos <libro> cuyo subelemento <autor> tiene como contenido la cadena "Mario Vargas Llosa".
 
 ```
-Expresion XPath
-
 //libro[autor="Mario Vargas Llosa"]
 ```
 
-```
-Resultado de la busqueda
-
-<libro>
-  <titulo>Pantaleón y las visitadoras</titulo>
-  <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
-  <fechaPublicacion año="1973"/>
-</libro>
-<libro>
-  <titulo>Conversación en la catedral</titulo>
-  <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
-  <fechaPublicacion año="1969"/>
-</libro>
-
-```
 mediante dos pasos de búsqueda. En el primer paso se seleccionan los elementos <autor> cuyo contenido es la cadena "Mario Vargas Llosa". En el segundo paso de búsqueda se seleccionan los elementos padre (es decir, los elementos <libro>).
 
 ```
-Expresion XPath
-
 //autor[.="Mario Vargas Llosa"]/..
 ```
-
-```
-Resultado de la busqueda
-<libro>
-  <titulo>Pantaleón y las visitadoras</titulo>
-  <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
-  <fechaPublicacion año="1973"/>
-</libro>
-<libro>
-  <titulo>Conversación en la catedral</titulo>
-  <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
-  <fechaPublicacion año="1969"/>
-</libro>
-```
-
 En los ejemplos siguientes se obtiene el autor que ha publicado libros en 1969 de varias formas distintas:
 
-```Expresiones XPath
-
+```
 1. //@año[.=1969]/../../autor
 2. //libro[fechaPublicacion/@año=1969]/autor
 3. //fechaPublicacion[@año=1969]/../autor
 4. //fechaPublicacion[@año=1969]/../autor
 ```
 
-```
-Resultado <autor fechaNacimiento="28/03/1936">Mario Vargas Llosa</autor>
-```
-
 #### Expresiones anidadas
 Las expresiones XPath pueden anidarse, lo que permite definir expresiones más complicadas. Por ejemplo, en el documento utilizado anteriormente:
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <biblioteca>
@@ -247,69 +199,98 @@ Las expresiones XPath pueden anidarse, lo que permite definir expresiones más c
 </biblioteca>
 ```
 Un ejemplo de expresión anidada sería, por ejemplo, obtener los títulos de los libros publicados el mismo año que la novela "La vida está en otra parte". Esta información no está directamente almacenada en el documento, pero se puede obtener la respuesta en dos pasos:
+- Ejemplo A:
+	1. Obtener primero el año en que se publicó la novela "La vida está en otra parte":
 
-obtener primero el año en que se publicó la novela "La vida está en otra parte":
-```
-//libro[titulo="La vida está en otra parte"]/fechaPublicacion/@año
-```
-```
-año="1973"
-```
-y obtener después los títulos de los libros publicados en 1973:
-```
-//libro[fechaPublicacion/@año=1973]/titulo
-```
-```
-<titulo>La vida está en otra parte</titulo>
-<titulo>Pantaleón y las visitadoras</titulo>
-```
-Estas dos expresiones se pueden unir en una única expresión, sustituyendo en la segunda expresión el valor 1973 por la primera expresión:
-```
-//libro[fechaPublicacion/@año=//libro[titulo="La vida está en otra parte"]/fechaPublicacion/@año]/titulo
-```
-```
-<titulo>La vida está en otra parte</titulo>
-<titulo>Pantaleón y las visitadoras</titulo>
-```
+		Expresion XPath
+		```
+		//libro[titulo="La vida está en otra parte"]/fechaPublicacion/@año
+		```
+		Resultado
+		```
+		año="1973"
+		```
+	2. Obtener después los títulos de los libros publicados en 1973:
+		Expresion XPath
+		```
+		//libro[fechaPublicacion/@año=1973]/titulo
+		```
+		Resultado
+		```
+		<titulo>La vida está en otra parte</titulo>
+		<titulo>Pantaleón y las visitadoras</titulo>
+		```
+
+	3. Estas dos expresiones se pueden unir en una única expresión, sustituyendo en la segunda 		expresión el valor 1973 por la primera expresión:
+		Expresión XPath
+		```
+		//libro[fechaPublicacion/@año=//libro[titulo="La vida está en otra parte"]/fechaPublicacion/@año]/titulo
+		```
+		Resultado
+		```
+		<titulo>La vida está en otra parte</titulo>
+		<titulo>Pantaleón y las visitadoras</titulo>
+		```
+
+- Ejemplo B.
+
 Como cada una de las expresiones puede escribirse de varias maneras, en realidad hay muchas formas de encontrar la respuesta. Por ejemplo, en la solución siguiente los predicados se encuentran al final del eje en cada subexpresión:
+
+Expresion XPath
 ```
 //titulo[../fechaPublicacion/@año=//@año[../../titulo="La vida está en otra parte"]]
 ```
+
+Resultado
 ```
 <titulo>La vida está en otra parte</titulo>
 <titulo>Pantaleón y las visitadoras</titulo>
 ```
-Otro ejemplo de expresión anidada sería obtener los títulos de los libros del mismo autor que la novela "Pantaleón y las visitadoras". Como en el ejemplo anterior, la respuesta puede obtenerse en dos pasos:
 
-obtener primero el autor de la novela "Pantaleón y las visitadoras":
-```
-//libro[titulo="Pantaleón y las visitadoras"]/autor/text()
-```
-```
-Mario Vargas Llosa
-```
-y obtener después los títulos de los libros escritos por Mario Vargas Llosa:
-```
-//libro[autor="Mario Vargas Llosa"]/titulo
-```
-```
-<titulo>Pantaleón y las visitadoras</titulo>
-<titulo>Conversación en la catedral</titulo>
-```
-Estas dos expresiones se pueden unir en una única expresión, sustituyendo en la segunda expresión el valor "Mario Vargas Llosa" por la primera expresión:
-```
-//libro[autor=//libro[titulo="Pantaleón y las visitadoras"]/autor/text()]/titulo
-<titulo>Pantaleón y las visitadoras</titulo>
-<titulo>Conversación en la catedral</titulo>
-```
-Un detalle importante es que no hay que escribir la primera expresión entre comillas.
 
-Incluso se puede omitir la selección de nodos /text() de la segunda expresión y escribir la expresión XPath así:
-```
-//libro[autor=//libro[titulo="Pantaleón y las visitadoras"]/autor]/titulo
-```
-```
 
-<titulo>Pantaleón y las visitadoras</titulo>
-<titulo>Conversación en la catedral</titulo>
-```
+- Ejemplo C.
+
+	1. Obtener primero el autor de la novela "Pantaleón y las visitadoras":
+
+	Expresión XPath
+	```
+	//libro[titulo="Pantaleón y las visitadoras"]/autor/text()
+	```
+	Resultado
+	```
+	Mario Vargas Llosa
+	```
+	2. Obtener después los títulos de los libros escritos por Mario Vargas Llosa:
+	```
+	//libro[autor="Mario Vargas Llosa"]/titulo
+	```
+	```
+	<titulo>Pantaleón y las visitadoras</titulo>
+	<titulo>Conversación en la catedral</titulo>
+	```
+
+	3. Unir en una única expresión, sustituyendo en la segunda expresión el valor "Mario Vargas Llosa" por la primera expresión:
+
+	Expresión XPath
+	```
+	//libro[autor=//libro[titulo="Pantaleón y las visitadoras"]/autor/text()]/titulo
+	```
+	Resultado
+	```
+	<titulo>Pantaleón y las visitadoras</titulo>
+	<titulo>Conversación en la catedral</titulo>
+	```
+
+- Ejemplo C (Segunda versión).
+
+	Expresion XPath
+	```
+	//libro[autor=//libro[titulo="Pantaleón y las visitadoras"]/autor]/titulo
+	```
+	Resultado
+	```
+
+	<titulo>Pantaleón y las visitadoras</titulo>
+	<titulo>Conversación en la catedral</titulo>
+	```
