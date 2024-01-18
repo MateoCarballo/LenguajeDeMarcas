@@ -10,3 +10,44 @@ Repositorio para tener un backup de las tareas y conceptos de la materia. Encont
 y aspectos teoricos relevantes.
 
 [Resumenes personales](https://github.com/MateoCarballo/LenguajeDeMarcas/tree/main/_Resumenes_Personales)
+
+
+## Atajos de Teclado para XML Copy Editor
+
+### Acciones Generales:
+
+- **Nuevo documento:** `Ctrl + N`
+- **Abrir archivo:** `Ctrl + O`
+- **Guardar:** `Ctrl + S`
+- **Guardar como:** `Ctrl + Shift + S`
+- **Cerrar documento:** `Ctrl + W`
+- **Salir:** `Alt + F4`
+
+### Acciones de Edición:
+
+- **Deshacer:** `Ctrl + Z`
+- **Rehacer:** `Ctrl + Y`
+- **Cortar:** `Ctrl + X`
+- **Copiar:** `Ctrl + C`
+- **Pegar:** `Ctrl + V`
+- **Seleccionar todo:** `Ctrl + A`
+
+### Acciones de Visualización:
+
+- **Aumentar zoom:** `Ctrl + +`
+- **Disminuir zoom:** `Ctrl + -`
+- **Restablecer zoom al 100%:** `Ctrl + 0`
+- **Alternar barra de herramientas:** `Ctrl + T`
+- **Alternar barra de estado:** `Ctrl + E`
+
+### Acciones de Formato:
+
+- **Indentar XML:** `Ctrl + I`
+
+### Acciones de Validación:
+
+- **Validar XML:** `F5`
+
+### Acciones de Ayuda:
+
+- **Abrir ayuda:** `F1`

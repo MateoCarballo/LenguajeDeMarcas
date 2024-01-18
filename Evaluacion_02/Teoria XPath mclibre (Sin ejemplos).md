@@ -12,14 +12,16 @@ marzo de 2017: XML Path Language (XPath) 3.1
 ## Tipos de nodos
 Un documento XML puede representarse como un árbol dirigido, considerando por ejemplo los elementos como nodos y que un elemento es padre de los elementos que contiene. Pero en XPath no sólo los elementos son nodos, en realidad hay siete tipos de nodos:
 
-Raíz
-Elemento
-Atributo
-Texto
-Comentario
-Instrucción de procesamiento
-Espacio de nombres
-Nota: La declaración DOCTYPE no se considera como nodo.
+- Raíz
+- Elemento
+- Atributo
+- Texto
+- Comentario
+- Instrucción de procesamiento
+- Espacio de nombres
+
+> [!NOTE]
+> La declaración DOCTYPE no se considera como nodo.
 
 Los nodos atributos y de texto no son 
 como los nodos elemento. Por ejemplo, los nodos atributo y de texto no pueden tener descendientes.
