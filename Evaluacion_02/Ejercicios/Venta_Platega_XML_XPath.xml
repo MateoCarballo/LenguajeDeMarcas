@@ -14,8 +14,12 @@
  </produtos>
  <importe>16,34€</importe>
 </venda>
+
 <!--
 /venda/cliente/@cod
 /child::venda/child::cliente/attribute::cod
 /descendant::cliente/attribute::cod
+
+//produto[child::descrición]
+Devuelve elementos producto que tengan un hijo descrición
  -->

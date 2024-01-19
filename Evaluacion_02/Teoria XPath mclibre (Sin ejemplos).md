@@ -118,7 +118,7 @@ Expresion Simple
 
 Expresion XPath completa
 /descendant::fechaPublicacion/attribute:: año[self::=1970]
-/descendant::autor[self::="Mario Vargas Llosa"]
+/descendant::autor[self::node()="Mario Vargas Llosa"]
 
 ```
 Un predicado puede contener condiciones compuestas.
