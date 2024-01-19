@@ -93,10 +93,14 @@ comillas simples o dobles. En el caso de las cadenas numéricas, las comillas so
 La condición puede utilizar el valor de un atributo (utilizando @) o el texto que contiene el elemento.
 En los ejemplos siguientes se obtienen respectivamente los elementos <fechaPublicacion> cuyo atributo año es posterior/mayor a 
 1970 y los elementos <libro> cuyo subelemento <autor> tiene como contenido "Mario Vargas Llosa":
-
+<!--TODO revisar estas expresiones completas-->
 ```
-Expresion XPath
+Expresion XPath simplificada
 //fechaPublicacion[@año>1970]
+
+Expresion XPath completa
+/descendant::fechaPublicacion[attribute::año>1970]
+
 ```
 ```
 Resultado
@@ -104,13 +108,27 @@ Resultado
 <fechaPublicacion año="1973"/>
 ```
 Para hacer referencia al propio valor del elemento seleccionado se utiliza el punto (.)
+
+<!-- TODO Revisar esta version completa, duda en como escribir un descendiente que es un atributo -->
+
 ```
+Expresion Simple
 //@año[.>1970]
 //autor[.="Mario Vargas Llosa"]
+
+Expresion XPath completa
+/descendant::fechaPublicacion/attribute:: año[self::=1970]
+/descendant::autor[self::="Mario Vargas Llosa"]
+
 ```
 Un predicado puede contener condiciones compuestas.
+<!-- TODO como definir los atributos en la forma completa cuando los estamos usando en un predicado. Son los predicados iguales para ambas formas(Simplificada y completa ?)-->
+
 ```
 //libro[autor="Mario Vargas Llosa" and fechaPublicacion/@año="1973"]
+
+/descendant::libro[child::autor="Mario Vargas Llosa" and descendant::fechaPublicacion/atttribute::año=1973]
+
 ```
 
 ```
