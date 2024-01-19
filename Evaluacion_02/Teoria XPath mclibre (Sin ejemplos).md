@@ -42,7 +42,7 @@ Las expresiones XPath se pueden dividir en pasos de búsqueda. Cada paso de bús
 - predicado: restringe la selección del eje a que los nodos cumplan ciertas condiciones.
 - selección de nodos: de los nodos seleccionados por el eje y predicado, selecciona los elementos, el texto que contienen o ambos.
 
-![Alt text](image.png)
+![Alt text](/Evaluacion_02/img/image.png)
 
 ### Sintaxis abreviada
 
