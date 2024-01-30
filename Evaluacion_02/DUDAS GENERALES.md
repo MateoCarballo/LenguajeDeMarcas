@@ -17,3 +17,10 @@ Esta expresion no la entiendo, entiendo mejor la dos.
 
 
 
+# Transformaciones xslt
+
+Lo más común es pasar de xml a xhtml dandole mejor aspecto con css
+
+
+
+
