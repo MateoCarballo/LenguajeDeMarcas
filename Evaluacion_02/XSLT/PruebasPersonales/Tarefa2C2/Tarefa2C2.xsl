@@ -12,12 +12,12 @@
                   
                   <xsl:element name="body">
                           <xsl:element name="p">
-                          <xsl:text>Cliente: </xsl:text>
-                          <xsl:value-of select="//cliente/@cod"/> 
+                                  <xsl:text>Cliente: </xsl:text>
+                                  <xsl:value-of select="//cliente/@cod"/> 
                           </xsl:element>
                           <xsl:element name="p">
-                          <xsl:text>Numero de productos: </xsl:text>
-                          <xsl:value-of select="count(venda/produtos/produto)"/> 
+                                  <xsl:text>Numero de productos: </xsl:text>
+                                  <xsl:value-of select="count(venda/produtos/produto)"/> 
                           </xsl:element>
                   </xsl:element>
                   
