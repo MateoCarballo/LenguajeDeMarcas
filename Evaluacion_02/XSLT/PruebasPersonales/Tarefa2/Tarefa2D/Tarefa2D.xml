@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="file:/C:/Users/a22mateoca/Desktop/LenguajeDeMarcas/Evaluacion_02/XSLT/PruebasPersonales/Tarefa2/Tarefa2C2/Tarefa2C2.xsl"?>
+<?xml-stylesheet type="text/xsl" href="Tarefa2D.xsl"?>
 <venda>
   <cliente cod="CL09384" />
-    <produtos>
+  <produtos>
       <produto cod="LACT093" />
       <produto cod="LACT012" />
       <produto cod="ACEI015" />

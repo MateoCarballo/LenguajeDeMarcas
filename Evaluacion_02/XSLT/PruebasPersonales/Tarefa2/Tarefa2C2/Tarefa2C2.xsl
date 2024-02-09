@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-<xsl:output method="html" omit-xml-declaration="yes"/>
+<xsl:output method="html" omit-xml-declaration="no"/>
   <xsl:template match="/">
           <xsl:element name="HTML">
+          
                   <xsl:element name="head">
                         <xsl:element name="title">
                             <xsl:text>Cliente </xsl:text>
@@ -63,6 +64,29 @@ Version 1 matando moscas a cañonazos
         </body>
         </html>
   </xsl:template>
+
+<td valign="top">
+            <br/><br/>
+            <h2>Dogs</h2>
+            <dir>
+            <p><a class="LeftLink" href="DogsMale.xml">Male</a></p>
+            <p><a class="LeftLink" href="DogsFemale.xml">Female</a></p>
+            </dir>
+            <h2>Cats</h2>
+            <dir>
+            <p><a class="LeftLink" href="CatsMale.xml">Male</a></p>
+            <p><a class="LeftLink" href="CatsFemale.xml">Female</a></p>
+            </dir>
+</td>
+         <td align="center">
+            <table border="0" cellspacing="5" cellpadding="3">
+               <tr>
+                  <td colspan="{$cellsPerRow}" align="center">
+                     <h2><xsl:value-of select="PetList/Title"/></h2></td>
+               </tr>
+               <xsl:apply-templates select="PetList"/>
+            </table>
+</td>
 
 
 -->

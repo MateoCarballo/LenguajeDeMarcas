@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:output method="html" omit-xml-declaration="yes"/>
-  <xsl:template match="venda">
+  <xsl:template match="/">
         <html>
         <head>
-          <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
             <title><xsl:text>Cliente </xsl:text><xsl:value-of select="cliente/@cod"/></title>
         </head>
         <body>
