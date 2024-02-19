@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Mateo Carballo</title>
+  <!-- Estilo creado para todas las "instancias" de un elemento ejemplo con los <h2> 
+    <style>
+    h2{
+      color:blue
+    }
+  </style>
+  -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Proyecto F1</h1>
+  <main>
+    <!-- Para un elemento en linea deberemos escribirlo para cada etiqueta, mismo ejemplo para la etiqueta <h2>
+      <h2 style="color: red">Descripción</h2>-->
+    <h2>Descripción</h2>
+    <p>Idea de juego basado en la F1. Es un proyecto sin animo de 
+    lucro para realizar una concurso por cada carrera entre un numero de jugadores que 
+    podrá oscialar entre 2 y 5 jugadores.
+    </p>
+    <div>
+      
+    <form action="/enviarRespuesta">
+      <!-- CASILLAS DE VERIFICACIÓN-->
+      <div></div>
+      <!--Al añadir el id en input con el mismo nombre en chekbox nos permite pulsar el texto para marcar la casilla-->
+      <label for="Casilla checkbox 1">
+        <!-- El atributo checked lo marca por defecto-->
+        <input type="checkbox" id="Casilla checkbox 1" value="Casilla checkbox 1">Casilla checkbox 1
+      </label>
+      <br>
+      <label for="Casilla checkbox 2">
+        <input type="checkbox" id="Casilla checkbox 2" value="Casilla checkbox 2">Casilla checkbox 2
+      </label>
+      <br>
+      <label for="Casilla checkbox 3">
+        <input type="checkbox" id="Casilla checkbox 3" value="Casilla checkbox 3">Casilla checkbox 3
+      </label>
+      <br>
+      <!-- la etiqueta <br/> solo introduce un salto de linea entre elementos-->
+      <br>
+
+      <!-- BOTONES DE RADIO -->
+
+
+      <label for="Boton de radio 1">
+        <!-- El atributo value es el valor que le pasara este fragmento al servidor. 
+          Sirve para saber que opcion está marcada y que valor pasa en funcion de cual esté marcada-->
+        <input type="radio" id="Boton de radio 1" name="grupoCasillasRadio" value="Boton de radio 1" checked>Casilla radio 1
+      </label>
+      <br>
+      <label for="Boton de radio 2">
+        <input type="radio" id="Boton de radio 2" name="grupoCasillasRadio" value="Boton de radio 2">Casilla radio 2
+      </label>
+      <br>
+      <label for="Boton de radio 3">
+        <input type="radio" id="Boton de radio 3" name="grupoCasillasRadio" value="Boton de radio 3">Casilla radio 3
+      </label>
+      <br>
+      <input type="text" placeholder="Lo que debe contener" required>
+      <button type="submit"></button>
+    </form>
+
+    <hr>
+    </div>
+    <h2>Lista<strong> NO</strong> ordenada</h2>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 1</li>
+      <li>Elemento 1</li>
+      <li>Elemento 1</li>
+      <li>Elemento 1</li>
+    </ul>
+    <hr>
+    <h2>Lista<strong> SI</strong> ordenada</h2>
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 1</li>
+      <li>Elemento 1</li>
+      <li>Elemento 1</li>
+      <li>Elemento 1</li>
+    </ol>
+    <hr>
+    <p>
+      <a href="https://github.com/MateoCarballo/BasesdeDatos" target="_blank" rel="noopener noreferrer">
+        <img src="img/basesDatos.jpg" width="300" height="300" title="Base de datos" alt="Base de datos"/>
+      </a>
+    </p>
+    <p>
+      <a href="https://github.com/MateoCarballo/Contronos-de-desarrollo" target="_blank" rel="noopener noreferrer">
+        <img src="img/contornosDesarrollo.jpg" width="300" height="300" title="Contronos de desarrollo" alt="Contronos de desarrollo" />
+      </a>
+    </p>
+    <p>
+      <a href="https://github.com/MateoCarballo/LenguajeDeMarcas" target="_blank" rel="noopener noreferrer">
+        <img src="img/lenguajeMarcas.jpg" width="300" height="300" title="Lenguaje de marcas" alt="Lenguaje de marcas"/>
+      </a>
+    </p>
+    <p>
+      
+      <a href="https://github.com/MateoCarballo/Programacion" target="_blank" rel="noopener noreferrer">
+        <img src="img/programacion.jpg" width="300" height="300" title="Programación" alt="Programación"/>
+      </a>
+    </p>
+    <p>
+      
+      <a href="https://github.com/MateoCarballo/SistemasInformaticos" target="_blank" rel="noopener noreferrer">
+        <img src="img/sistemasInformaticos.jpg" width="300" height="300" title="Sistemas informáticos" alt="Sistemas informáticos"/>
+      </a>
+    </p>
+    
+  </main>
+  <footer>
+    <p>
+      <small>Este un parrafo de mi pié de pagina 
+        <a href="https://google.com" target="_blank" rel="noopener noreferrer">google</a>
+      </small>
+    </p>
+  </footer>
+</body>
+</html>
