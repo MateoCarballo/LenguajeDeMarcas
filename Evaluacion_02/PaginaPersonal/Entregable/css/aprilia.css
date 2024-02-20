@@ -1,0 +1,15 @@
+body{
+    background: #9c9c9c;
+}
+
+#fotos-motos{
+    background-color: black;
+}
+
+img{
+    width: 800px;
+}
+
+.pulser:hover {
+    scale: 1.25;
+}
