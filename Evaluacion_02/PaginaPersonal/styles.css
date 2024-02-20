@@ -1,12 +1,91 @@
+/*
+El nombre para elementos (etiquetas)
+
+Empezando por punto para clases creadas(definirlas con '-' entre las palabras
+
+El simbolo '#' es para definir los estilos por id
+
+A tener en cuenta que como el nombre indica CSS ( cascade...) las definiciones 
+de estilo de un elemento padre afecta al estilo del elemento hijo.
+
+*/
+
 h1{
   color: blue;
-  border-radius: 15%;
+  font-size: 50px;
+  font-family: monospace;
 }
 h2{
-color: red
-b
+color: red;
+font-stretch: condensed ;
+font-family: "Kode Mono", monospace;
 }
 h3{
-  color: purple
+  color: purple;
   }
 
+.lista-ordenada{
+  color: brown;
+  }
+
+.lista-no-ordenada{
+  color: darkseagreen;
+  }
+
+.imagenes-materias{
+  width: 200px;
+  border-radius: 5%;
+  border-width: 3px;
+  border-color: black;
+  border-style:solid;
+}
+
+.contenedor-listas{
+  background-color: aquamarine;
+}
+
+.principal{
+  background-color: lawngreen;
+}
+
+#id-lista-ordenada{
+  font-size: 60px;
+}
+
+div{
+  background-color: rgba(70, 70, 70, 0.425);
+}
+
+img{
+  background-color: yellow;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+input[type="radio"]{
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+input[type="chekbox"]{
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+a[href="https://google.com"]{
+  color:green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*
+Para poder agrupar caracteristicas en varios elementos deberiamos usar el siguiente formato
+
+p,
+ul,
+ol{
+  font-size: 20px;
+}
+
+*/

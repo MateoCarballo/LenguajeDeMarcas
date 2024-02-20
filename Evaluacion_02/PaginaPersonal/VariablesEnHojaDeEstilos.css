@@ -1,0 +1,190 @@
+/* Para poder tener variables globales lo introducimos en el ':root'*/
+:root{
+    --pinguino-barriga: pink;
+    --pinguino-pico: orange;
+    --pinguino-piel:black;
+    --pinguino-mejillas: pink;
+}
+
+body{
+    background: var(--pinguino-barriga,#c6faf1);
+}
+.pinguino {
+    --pinguino-barriga: white;
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+    border-width: 5px;
+  }
+  
+.pinguino-superior {
+  top: 10%;
+  left: 25%;
+  background: black;
+  background: var( --pinguino-piel, black) ;
+  width: 50%;
+  height: 45%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.pinguino-inferior {
+  top: 40%;
+  left: 23.5%;
+  background: black;
+  background:var( --pinguino-piel, black) ;
+  width: 53%;
+  height: 45%;
+  border-radius: 70% 70% 100% 100%;
+}
+
+.mano-dch {
+  top: 0%;
+  left: -5%;
+  background: black;
+  background: var( --pinguino-piel, black) ;
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 120% 30%;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.mano-izq {
+  top: 0%;
+  left: 75%;
+  background: black;
+  background: var( --pinguino-piel, black) ;
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 30% 120%;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.cara-dch {
+  top: 15%;
+  left: 35%;
+  background: white;
+  background: var(--pinguino-barriga, white);
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.cara-izq {
+  top: 15%;
+  left: 5%;
+  background: white;
+  background: var(--pinguino-barriga, white);
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.barriga {
+  top: 60%;
+  left: 2.5%;
+  background: white;
+  background: var(--pinguino-barriga, white);
+  width: 95%;
+  height: 100%;
+  border-radius: 120% 120% 100% 100%;
+}
+
+.pie-dch {
+  top: 85%;
+  left: 60%;
+  background: orange;
+  background: var(--pinguino-pico, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(-80deg);
+  z-index: -2222;
+}
+
+.pie-izq {
+  top: 85%;
+  left: 25%;
+  background: orange;
+  background: var(--pinguino-pico, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(80deg);
+  z-index: -2222;
+}
+
+.ojo-dch {
+  top: 45%;
+  left: 60%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.ojo-izq {
+  top: 45%;
+  left: 25%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.reflejo-ojo {
+  top: 25%;
+  left: 15%;
+  background: white;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+
+.color-mejilla-dch {
+  top: 65%;
+  left: 15%;
+  background: pink;
+  background:var( --pinguino-mejillas, pink);
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.color-mejilla-izq {
+  top: 65%;
+  left: 70%;
+  background: pink;
+  background:var( --pinguino-mejillas, pink) ;
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.pico-superior {
+  top: 60%;
+  left: 40%;
+  background: orange;
+  background: var(--pinguino-pico, orange);
+  width: 20%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.pico-inferior {
+  top: 65%;
+  left: 42%;
+  background: orange;
+  background: var(--pinguino-pico, orange);
+  width: 16%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.pinguino * {
+  position: absolute;
+}

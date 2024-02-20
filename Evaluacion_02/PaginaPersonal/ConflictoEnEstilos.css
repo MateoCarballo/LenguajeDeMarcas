@@ -1,0 +1,75 @@
+/* CONFLICTOS PARA EL PRIMER TITULO Y ENLACE*/
+
+.texto-azul{
+    color: blue;
+}
+.texto-morado{
+    color: purple;
+}
+
+a{
+text-decoration: purple wavy underline;
+}
+
+
+#titulodos{
+    color: red;
+}
+
+.texto-verde{
+    color: green;
+}
+
+/* CONFLICTOS PARA EL SEGUNDO TITULO TITULO*/
+
+#enlace-principal{
+    color:red;
+    text-decoration: red wavy underline;
+}
+
+.sin-subrayadodos{
+    color: blue;
+    text-decoration: none;
+}
+
+/* CONFLICTOS PARA EL TERCER TITULO TITULO*/
+
+
+.texto-rojo{
+    color:green;
+}
+
+/* 
+.texto-rojo{
+    color:green !important;
+}
+*/
+
+#titulotres{
+    color:black ;
+}
+
+/* COLORES EN HEXADECIAMAL*/
+
+
+#titulocuatro{
+    /*REPRESENTACION HEXADECIMAL
+    LOS COLORES SE REPRESENTAN CON SEIS 6 DIGITOS
+          R          G          B
+        00-FF      00-FF      00-FF
+
+        #000000 -> BLACK
+        #FFFFFF -> WHITE
+    */
+    color:#f00; /*equivalente a #f00*/
+}
+
+#titulocinco{
+    /*REPRESENTACION RGB
+    CADA UNA DE LOS COMPONENETES (R,G,B)
+    PUEDEN TENER VALORES ENTRE 0 Y 255
+
+
+    */
+    color:rgb(0, 255, 0) ;
+}

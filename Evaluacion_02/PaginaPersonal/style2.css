@@ -1,0 +1,90 @@
+div{
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+}
+img[alt]{
+   border-radius: 50%; 
+}
+#red-bull{
+    margin: 25px;
+    padding: 25px; 
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+}
+#mercedes{
+    padding: 5px;
+}
+#ferrari{
+    padding: 10px;
+}
+#mclaren{
+    padding: 15px;
+}
+#aston-martin{
+    padding: 20px;
+}
+
+
+/* CON PADDING 
+div{
+    background-color: black;
+}
+img{
+    background-color: purple;
+}
+#red-bull{
+    padding: 2px;
+    
+}
+#mercedes{
+    padding: 5px;
+}
+#ferrari{
+    padding: 10px;
+}
+#mclaren{
+    padding: 15px;
+}
+#aston-martin{
+    padding: 20px;
+}
+*/
+
+/* CON MARGIN 
+
+div{
+    background-color: black;
+}
+img{
+    background-color: purple;
+}
+#red-bull{
+    margin: 2px; 
+}
+#mercedes{
+    margin: 5px;
+}
+#ferrari{
+    margin: 10px;
+}
+#mclaren{
+    margin: 15px;
+}
+#aston-martin{
+    margin: 20px;
+}
+
+*/
+
+
+
+/* 
+
+    Padding -> Dentro del borde del elemento. Ajusta el espacio DENTRO 
+    del borde de un elemento.
+
+    Margin -> Fuera del borde del elemento. Ajusta el espacio FUERA 
+    del borde de un elemento.   
+*/  

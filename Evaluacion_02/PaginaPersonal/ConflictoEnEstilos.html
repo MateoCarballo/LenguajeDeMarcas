@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <title>Conflictos en estilos</title>
+    <link rel="stylesheet" href="ConflictoEnEstilos.css">
+</head>
+<body>
+    <!--El orden del contenido de 'class' no influye es el orden en el .css
+    La última clase será la que tenga prioridad-->
+    <h1 class="texto-azul texto-morado">Primer título</h1>
+    <!-- Si el conflicto es esntre el selector de clase y tipo. El mas concreto
+    predomina sobre el generico(ver .css asociado)-->
+    <a class="sin-subrayadouno" href="https://www.google.com" target="_blank" rel="noopener noreferrer">Primer enlace</a>
+    <!-- PRIORIDADES
+        ESTILO-EN-LINEA>ID>CLASE>TIPO
+    -->  
+    <hr>
+
+    <h1 id="titulodos" class="texto-verde">Segundo título</h1>
+    <a id="enlace-principal" class="sin-subrayadodos" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">Segundo enalce</a>
+    <hr>
+
+    <!-- El estilo en linea se prioriza por encima de los id (SALVO ESPECIFICAR !important en el .css)-->
+    <h1 id="titulotres" style="color: purple;" class="texto-verde">Tercer título</h1>
+    <a id="enlace-principal" class="sin-subrayadodos" href="https://www.amazon.com" target="_blank" rel="noopener noreferrer">Tercer enalce</a>
+    <hr>
+
+    <h1 id="titulocuatro" class="texto-verde">Cuarto título</h1>
+    <a id="enlace-principal" href="https://www.github.com" target="_blank" rel="noopener noreferrer">Tercer enalce</a>
+    <hr>
+
+    <h1 id="titulocinco" class="texto-verde">Quinto título</h1>
+    <a id="enlace-principal" href="https://www.github.com" target="_blank" rel="noopener noreferrer">Tercer enalce</a>
+    <hr>
+
+</body>
+</html>
