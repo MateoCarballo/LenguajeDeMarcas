@@ -8,3 +8,16 @@ Recursos:
     • HTML Element Reference, en < https://www.w3schools.com/tags/default.asp >
     • Internet Archive < https://archive.org/ >, WayBack Machine < https://web.archive.org/ >
 [quedamos en página 25]
+
+
+
+Para el examen. 
+
+    recordar las funciones base:
+
+        contar, concatenar, cortar cadena, funcion 'name()' para sacar el nombre del elemento del propio elemento.
+
+        apply templates ->  Especificando cual o dejando que vaya buscando.
+                            Muy potente si creamos una buena ruta
+
+        Crear elementos, atributo y contenido. Creando elementos y no embebido
