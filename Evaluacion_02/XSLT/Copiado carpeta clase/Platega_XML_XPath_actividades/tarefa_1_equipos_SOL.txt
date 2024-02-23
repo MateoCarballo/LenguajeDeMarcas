@@ -1,0 +1,29 @@
+Solución a tarefa 1.
+
+1)As máquinas que contén o documento:
+/equipos/máquina
+También: //máquina
+si queremos obtener sus nombres: //máquina/@nome
+
+2)A información correspondente ao hardware das máquinas:
+/equipos/máquina/hardware
+También://hardware
+variante asociando el nombre de la máquina: //máquina/@nome|//máquina//hardware
+
+3) A información de configuración das máquinas:
+/equipos/máquina/config
+también //config ; //máquina/config
+
+4) A lista de fabricantes dos equipos:
+/equipos/máquina/hardware/fabricante
+también: /equipos/máquina/hardware/fabricante/text()
+	//fabricante
+
+5)A lista de discos que conteñen:
+/equipos/máquina/hardware/disco
+también: //disco
+
+6)As direccións IP:
+/equipos/máquina/config/IP
+también: /equipos/máquina/config/IP/text()
+	
