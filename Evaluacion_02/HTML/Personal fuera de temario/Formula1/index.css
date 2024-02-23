@@ -1,0 +1,70 @@
+body{
+    margin:0;
+}
+
+.estadisticas p{
+    font-size: 25px;
+}
+
+/*Estilos equipos*/
+.lista-horizontal {
+    display: flex;
+    justify-content: space-between; /* Otra opción puede ser 'space-around' o 'space-evenly' según tus preferencias */
+}
+
+/*Estilos pareja de pilotos de cada equipo */
+.Pilotos-Equipo {
+    display:flex;
+    justify-content: space-around; /* Otra opción puede ser 'space-around' o 'space-evenly' según tus preferencias */
+    width: 2000px;
+    border: black solid 1px;
+    margin: 10px;
+}
+
+
+
+/*Estilos para cada piloto */
+
+.fotoNombre-estadisticas {
+    margin: 15px;
+    border: yellow solid 1px;
+    
+    display: flex;
+}
+ 
+.Piloto{
+    border: red solid 1px;
+
+    margin: 15px;
+}
+ 
+.foto-nombre{
+    margin: 15px;
+    border: black dashed 1px;
+
+    margin: 15px;
+}
+.foto{
+    border: black solid 10px;
+    border-radius: 5%;
+    margin: 15px;
+    background-color: rgb(0, 55, 255);
+}
+
+.nombre-dorsal{
+    border: red dotted 1px;
+    margin: 15px;
+    
+}
+
+.dorsal{
+    margin: 10px;
+    border: black solid 1px;
+    font-size: 50px;;
+    align-items:center;
+}
+
+.estadisticas {
+    padding: 30px; /* Ajusta el margen entre la foto y las estadísticas según sea necesario */
+}
+
