@@ -1,0 +1,452 @@
+###################################
+######## EJERCICIOS XPATH #########
+###################################
+
+
+TAREFA 1
+
+	Tomando como base o seguinte documento XML:
+		<?xml version="1.0" encoding="utf-8"?>
+		<equipos>
+		<máquina nome="PC017">
+		<hardware>
+		<tipo>PC Sobremesa</tipo>
+		<fabricante>Dell</fabricante>
+		<procesador marca="Intel" num_nucleos="4" velocida-de="3,1">i7</procesador>
+		<memoria tecnoloxía="DDR3">8</memoria>
+		<disco tecnoloxía="SATA" capacidade="2000"/>
+		<gravadora tipo="DVD"/>
+		</hardware>
+		<config>
+		<OS>Windows 7</OS>
+		<IP>192.168.20.105</IP>
+		<gateway>192.168.20.1</gateway>
+		</config>
+		</máquina>
+		<máquina nome="GALILEO">
+		<hardware>
+		<tipo>Torre</tipo>
+		<fabricante>Fujitsu-Siemens</fabricante>
+		<procesador marca="Intel" num_nucleos="4" velocida-de="3">Xeon</procesador>
+		<memoria tecnoloxía="DDR2">2</memoria>
+		<disco tecnoloxía="SCSI" capacidade="200"/>
+		<disco tecnoloxía="SCSI" capacidade="200"/>
+		<disco tecnoloxía="SCSI" capacidade="200"/>
+		<lectora tipo="DVD"/>
+		</hardware>
+		<config>
+		<role>Servidor de dominio</role>
+		<OS>Windows 2008 Server R2</OS>
+		<IP>192.168.20.10</IP>
+		<gateway>192.168.20.1</gateway>
+		</config>
+		</máquina>
+		</equipos>
+
+Obtén as rutas de localización para obter os seguintes conxuntos de nodos:
+ As máquinas que contén o documento.
+ A información correspondente ao hardware das máquinas.
+ A información de configuración das máquinas.
+ A lista de fabricantes dos equipos.
+ A lista de discos que conteñen.
+ As direccións IP.
+
+TAREFA 2
+
+	Sobre o mesmo documento XML da tarefa anterior, escribir as expresións XPath para obter os seguintes conxuntos de nodos.
+		 Os nomes das máquinas.
+		 Os nomes das máquinas que teñan gravadora óptica.
+		 O sistema operativo das máquinas nas que figure o "role".
+
+
+TAREFA 3
+
+
+	Tomando como base o seguinte documento XML:
+<?xml version="1.0" encoding="utf-8"?>
+<equipos>
+<máquina nome="PC017">
+<hardware>
+<tipo>PC Sobremesa</tipo>
+<fabricante>Dell</fabricante>
+<procesador marca="Intel" num_nucleos="4" velocida-de="3.1">i7</procesador>
+<memoria tecnoloxía="DDR3">8</memoria>
+<disco tecnoloxía="SATA" capacidade="2000"/>
+<gravadora tipo="DVD"/>
+</hardware>
+<config>
+<OS>Windows 7</OS>
+<IP>192.168.20.105</IP>
+<gateway>192.168.20.1</gateway>
+</config>
+</máquina>
+<máquina nome="PC053">
+<hardware>
+<tipo>Semitorre</tipo>
+<memoria>0.5</memoria>
+<disco capacidade="40"/>
+<lectora tipo="CD"/>
+</hardware>
+<config>
+<OS>Windows XP</OS>
+</config>
+</máquina>
+<máquina nome="PC007">
+<hardware>
+<tipo>Semitorre</tipo>
+<memoria tecnoloxía="DDR">0.5</memoria>
+<disco capacidade="40"/>
+<lectora tipo="CD"/>
+</hardware>
+<config>
+<OS>Windows XP</OS>
+</config>
+<notas>Sin tarxeta de rede</notas>
+</máquina>
+<máquina nome="PR003">
+<hardware>
+<tipo>Impresora Inyección</tipo>
+<fabricante>Lexmark</fabricante>
+</hardware>
+<config/>
+</máquina>
+<máquina nome="PC011">
+<hardware>
+<tipo>Semitorre</tipo>
+<memoria>1</memoria>
+<disco capacidade="80"/>
+<lectora tipo="CD"/>
+</hardware>
+<config>
+<OS>Windows 2000 SP4</OS>
+<IP>192.168.10.221</IP>
+</config>
+</máquina>
+<máquina nome="PC019">
+<hardware>
+<tipo>Semitorre</tipo>
+<procesador marca="AMD" velocidade="1.4">Athlon</procesador>
+<memoria>0.5</memoria>
+<disco capacidade="40"/>
+<gravadora tipo="CD"/>
+</hardware>
+<config>
+<OS>Mandriva 2007</OS>
+<IP>192.168.10.45</IP>
+<gateway>192.168.10.1</gateway>
+</config>
+</máquina>
+<máquina nome="PR007">
+<hardware>
+<tipo>Impresora Láser</tipo>
+<fabricante>OKI</fabricante>
+</hardware>
+<config/>
+<notas>Monocromo, dúplex, red</notas>
+</máquina>
+<máquina nome="COPERNICO">
+<hardware>
+<tipo>Torre</tipo>
+<fabricante>Fujitsu-Siemens</fabricante>
+<procesador marca="Intel" num_nucleos="4" velocida-de="3">Xeon</procesador>
+<memoria tecnoloxía="DDR">2</memoria>
+<disco tecnoloxía="SCSI" capacidade="500"/>
+<disco tecnoloxía="SCSI" capacidade="500"/>
+<gravadora tipo="DVD"/>
+</hardware>
+<config>
+<role>Servidor de dominio</role>
+<OS>Windows 2003 Server R2</OS>
+<IP>192.168.20.11</IP>
+<gateway>192.168.20.1</gateway>
+</config>
+</máquina>
+<máquina nome="GALILEO">
+<hardware>
+<tipo>Torre</tipo>
+<fabricante>Fujitsu-Siemens</fabricante>
+<procesador marca="Intel" num_nucleos="4" velocida-de="3">Xeon</procesador>
+<memoria tecnoloxía="DDR2">2</memoria>
+<disco tecnoloxía="SCSI" capacidade="200"/>
+<disco tecnoloxía="SCSI" capacidade="200"/>
+<disco tecnoloxía="SCSI" capacidade="200"/>
+<lectora tipo="DVD"/>
+</hardware>
+<config>
+<role>Servidor de dominio</role>
+<OS>Windows 2008 Server R2</OS>
+<IP>192.168.20.10</IP>
+<gateway>192.168.20.1</gateway>
+</config>
+</máquina>
+<máquina nome="KEPLER">
+<hardware>
+<tipo>Rack</tipo>
+<fabricante>HP</fabricante>
+<procesador marca="Intel" num_nucleos="2" velocidade="3">Core2 Duo</procesador>
+<memoria tecnoloxía="DDR2">4</memoria>
+<disco tecnoloxía="SATA" capacidade="500"/>
+<disco tecnoloxía="SATA" capacidade="500"/>
+<disco tecnoloxía="SATA" capacidade="500"/>
+<gravadora tipo="DVD"/>
+</hardware>
+<config>
+<role>Servidor de arquivos</role>
+<OS>Ubuntu 8.04 Server</OS>
+<IP>192.168.10.10</IP>
+<gateway>192.168.10.1</gateway>
+</config>
+</máquina>
+<máquina nome="NEWTON">
+<hardware>
+<tipo>Rack</tipo>
+<fabricante>HP</fabricante>
+<procesador marca="Intel" num_nucleos="2" velocidade="3">Core2 Duo</procesador>
+<memoria tecnoloxía="DDR2">4</memoria>
+<disco tecnoloxía="SATA" capacidade="500"/>
+<disco tecnoloxía="SATA" capacidade="500"/>
+<gravadora tipo="DVD"/>
+</hardware>
+<config>
+<role>Servidor web</role>
+<OS>Ubuntu 8.04 Server</OS>
+<IP>192.168.10.11</IP>
+<gateway>192.168.10.1</gateway>
+</config>
+</máquina>
+</equipos>
+
+Escribir as expresións XPath para obter os seguintes conxuntos de nodos.
+ Os discos de tecnoloxía "SCSI".
+ O nome do sistema operativo da máquina con IP "192.168.10.45".
+ Os atributos que figuran nos procesadores da marca "AMD".
+ Os textos (soamente) que figuran na configuración (elemento "config") do equipo de nome "COPERNICO".
+ As máquinas de tipo "Semitorre" con sistema operativo "Windows XP".
+ Os fabricantes das máquinas que teñan 4GB de memoria "DDR2".
+ O sistema operativo das máquinas nas que figure o número de núcleos do procesador.
+ Os nomes das máquinas que empreguen memoria con tecnoloxía "DDR2".
+ As máquinas con procesador da marca "Intel" e gravadora de DVD.
+ A configuración daquelas máquinas nas que figura un gateway.
+
+
+
+TAREFA 4
+
+		Tomando como base o seguinte documento XML:
+		<?xml version="1.0" encoding="utf-8"?>
+		<videoteca data_creación="24/02/2009">
+		<película id="1">
+		<importe moneda="dólar">13.56</importe>
+		<título>El santo</título>
+		<títuloorixinal>The Saint</títuloorixinal>
+		<ano>1997</ano>
+		<director>Phillip Noyce</director>
+		<xénero>Acción</xénero>
+		<duración>111</duración>
+		<!-- Elisabeth Shue -->
+		<actúa id="51"/>
+		<!-- Val Kilmer -->
+		<actúa id="156"/>
+		</película>
+		<película id="3">
+		<importe moneda="euro">22.18</importe>
+		<título>Leaving Las Vegas</título>
+		<títuloorixinal>Leaving Las Vegas</títuloorixinal>
+		<ano>1995</ano>
+		<director>Mike Figgis</director>
+		<xénero>Drama</xénero>
+		<duración>107</duración>
+		<!-- Nicolas Cage -->
+		<actúa id="187"/>
+		<!-- Elisabeth Shue -->
+		<actúa id="51"/>
+		</película>
+		<película id="4">
+		<importe moneda="dólar">11.52</importe>
+		<título>¿A quién ama Gilbert Grape?</título>
+		<títuloorixinal>What's Eating Gilbert Grape?</títuloorixinal>
+		<ano>1993</ano>
+		<director>Lasse Hallström</director>
+		<xénero>Drama</xénero>
+		<duración>118</duración>
+		<!-- Johnny Depp -->
+		<actúa id="139"/>
+		</película>
+		<actor id="51">
+		<nome>Elisabeth Shue</nome>
+		<sexo>muller</sexo>
+		<datanacemento>06/10/1963</datanacemento>
+		<url>http://www.imdb.com/name/nm0000223/</url>
+		</actor>
+		<actor id="139">
+		<nome>Johnny Depp</nome>
+		<sexo>home</sexo>
+		<datanacemento>09/06/1963</datanacemento>
+		<url>http://www.imdb.com/name/nm0000136/</url>
+		</actor>
+		<actor id="156">
+		<nome>Val Kilmer</nome>
+		<sexo>home</sexo>
+		<datanacemento>31/12/1959</datanacemento>
+		</actor>
+		<actor id="187">>
+		<nome>Nicolas Cage</nome>
+		<sexo>home</sexo>
+		<datanacemento>07/01/1964</datanacemento>
+		</actor>
+		</videoteca>
+
+		Escribir as expresións XPath para obter os seguintes conxuntos de nodos.
+			 Os comentarios.
+			 Os comentarios da película "Leaving Las Vegas".
+			Páxina 30 de 37
+			 As películas de xénero "Drama".
+			 Os nomes das actrices.
+			 Os elementos non baleiros (conteñen algún texto).
+
+TAREFA 5
+
+		Tomando como base o mesmo documento XML da tarefa 3, escribir as expresións XPath para obter:
+			 As máquinas con nome comezando por "PC".
+			 O nome das máquinas con máis de un disco duro.
+			 A suma dos GB de memoria RAM de todas as máquinas.
+			 A suma das capacidades dos discos duros de tipo "SCSI".
+			 Os nomes das máquinas das que se coñeza a súa cantidade de memoria, pero non a tecno-loxía desta.
+			 As máquinas con sistema operativo da familia Windows e gravadora de DVD.
+			 As máquinas nas que non figure o sistema operativo.
+			 O nome da máquina e do SO daquelas máquinas con máis de un disco duro.
+			 A configuración daquelas máquinas nas que figura unha dirección IP pero non o gate-way.
+			 Os elementos baleiros (non conteñen texto).
+			 As direccións IP dentro da rede 192.168.10.0/24.
+			 Os nomes das máquinas con procesador multinúcleo e 2GB ou menos de memoria.
+			 As máquinas que teñan disco duro (un ou varios) con capacidade total maior de 1000GB.
+			Páxina 31 de 37
+			 As máquinas que teñan disco duro (un ou varios) con capacidade total menor de 80GB.
+
+
+
+TAREFA 6
+
+	Tomando como base o mesmo documento XML da tarefa 4, escribir as expresións XPath para obter:
+		 As películas nas que o título sexa igual ao título orixinal.
+		 O atributo "id" correspondente á actriz "Elisabeth Shue".
+		 Os títulos das películas nas que participou o actor con atributo id=51.
+		 Baseándote nos dous resultados anteriores, escribe a expresión correspondente aos títulos das películas nas que participou a actriz de nome "Elisabeth Shue".
+		 O título da última película que aparece no documento.
+		 A suma dos importes daquelas películas nas que o mesmo figura en dólares.
+		 A suma en euros dos importes das películas, considerando un cambio de 1€ = 1,4$.			
+
+#####################################################
+######## EJERCICIOS XSLT (TRANSFORMACIONES) #########
+#####################################################	
+
+TAREFA 1
+
+	Trátase de crear unha transformación XSLT que busque a existencia dun nodo específico no documento XML orixe. En concreto, tomando como orixe o seguinte documento XML:
+		<?xml version="1.0" encoding="utf-8"?>
+		<venda>
+		<cliente cod="CL09384" />
+		<produtos>
+		<produto cod="LACT093" />
+		<produto cod="LACT012" />
+		<produto cod="ACEI015" />
+		<produto cod="AUGA005" />
+		<produto cod="CONS121" />
+		</produtos>
+		</venda>
+		Deberás crear un documento XSLT que ao procesalo obteña como resultado un documento de texto. Cando no documento orixe existe o produto co atributo "cod="LACT012"", o do-cumento de saída deberá conter o texto "Atopado!!".
+
+TAREFA 2
+	
+			Partindo do mesmo documento XML da tarefa anterior, imos crear algunhas transforma-cións que obteñan documentos de saída de diversos tipos.
+
+
+			a) Tarefa 2_a
+			Nesta tarefa obteremos como saída un novo documento XML. Este novo documento XML deberá conter soamente un nodo raíz no que o nome obterase a partires do atributo "cod" do cliente. Tamén teremos que crear un atributo para ese elemento con nome "num_produtos" que conteña como valor o número de produtos que figuren no documento orixe.
+			Por exemplo, a transformación deberá transformar o documento anterior no seguinte:
+			<?xml version="1.0" encoding="utf-8"?>
+			<CL09384 num_produtos="5"/>
+
+
+			b) Tarefa 2_b
+			Agora trátase de obter como saída un documento de texto que conteña unha lista cos códi-gos dos produtos do documento orixe. Por exemplo:
+			LACT093
+			LACT012
+			ACEI015
+			AUGA005
+			CONS121
+			De momento é normal que no documento de saída aparezan espazos ou saltos de liña non desexados.
+
+			Tarefa 2_c
+			Crear unha especificación de transformación XSLT para obter, a partires do documento XML dado, unha páxina web como a seguinte:
+			Facer a tarefa de dúas formas:
+
+			** VER PAGINA 19 DEL DOCUMENTO 'PALTEGA_XML_XSLT_SINXELAS_VERALUMNO'**
+
+			d) Tarefa 2_d
+			Crear unha transformación que obteña un documento de texto como saída, que transforme cada produto do documento orixe nunha liña co seguinte formato:
+			Produto da familia FAML con código CCC para o cliente de código CL0000
+			
+			Isto é, deberemos obter como documento de saída (ademais de liñas en branco e outros es-pazos):
+			Produto da familia LACT con código 093 para o cliente de código CL09384
+			Produto da familia LACT con código 012 para o cliente de código CL09384
+			Produto da familia ACEI con código 015 para o cliente de código CL09384
+			Produto da familia AUGA con código 005 para o cliente de código CL09384
+			Produto da familia CONS con código 121 para o cliente de código CL09384
+
+TAREFA 3
+
+
+Tomando como base o seguinte documento XML:
+	<?xml version="1.0" encoding="UTF-8"?>
+	<equipos>
+	<máquina nome="PC017">
+	<hardware>
+	<tipo>PC Sobremesa</tipo>
+	<fabricante>Dell</fabricante>
+	<procesador marca="Intel" num_nucleos="4" velocida-de="3,1">i7</procesador>
+	<memoria tecnoloxía="DDR3">8</memoria>
+	<disco tecnoloxía="SATA" capacidade="2000"/>
+	<gravadora tipo="DVD"/>
+	</hardware>
+	<config>
+	<OS>Windows 7</OS>
+	<IP>192.168.20.105</IP>
+	<gateway>192.168.20.1</gateway>
+	</config>
+	</máquina>
+	<máquina nome="GALILEO">
+	<hardware>
+	<tipo>Torre</tipo>
+	<fabricante>Fujitsu-Siemens</fabricante>
+	<procesador marca="Intel" num_nucleos="4" velocida-de="3">Xeon</procesador>
+	<memoria tecnoloxía="DDR2">2</memoria>
+	<disco tecnoloxía="SCSI" capacidade="200"/>
+	<disco tecnoloxía="SCSI" capacidade="200"/>
+	<disco tecnoloxía="SCSI" capacidade="200"/>
+	<lectora tipo="DVD"/>
+	</hardware>
+	<config>
+	<role>Servidor de dominio</role>
+	<OS>Windows 2008 Server R2</OS>
+	<IP>192.168.20.10</IP>
+	<gateway>192.168.20.1</gateway>
+	</config>
+	</máquina>
+	</equipos>
+
+
+	a) Tarefa 3_a
+	Obter un listado en formato XML dos discos que figuran no documento XML orixe, enga-díndolles un atributo co nome da máquina no que se atopan. Por exemplo:
+	<?xml version="1.0" encoding="UTF-8"?>
+	<discos>
+	<disco tecnoloxía="SATA" capacidade="2000" máquina="PC017"/>
+	<disco tecnoloxía="SCSI" capacidade="200" máquina="GALILEO"/>
+	<disco tecnoloxía="SCSI" capacidade="200" máquina="GALILEO"/>
+	<disco tecnoloxía="SCSI" capacidade="200" máquina="GALILEO"/>
+	</discos>
+
+	Tarefa 3_b
+	Obter un documento HTML como o seguinte como saída da transformación.
+
+	** COMIENZO TRANSFORMACIONES A HTML**
