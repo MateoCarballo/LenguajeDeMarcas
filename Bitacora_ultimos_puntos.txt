@@ -1,0 +1,10 @@
+Contenidos:  Fundamentos de HTML. Estructura del documento HTML: etiquetas: <html>, <head> y <body>. Algunas etiquetas para presentación: <strong>, <em>, <b>, <i>, <del>, etc. Editores HTML On-line.
+Actividades:
+    • Instalación de NotePad++
+    • Lectura y experimentación de ejemplos del documento “EGUI2013_Librosweb_Introduccion_xhtml.pdf”, de Javier Eguiluz (en adelante EGUI2013), descargado de http://www.librosweb.es/.
+Recursos:
+    • Codificación ASCII, en https://es.wikipedia.org/wiki/ASCII 
+    • HTML <https://www.w3schools.com/ >, Learn HTML < https://www.w3schools.com/html/default.asp >. Dispone de simulador on-line (Try HTML) < https://www.w3schools.com/html/tryit.asp?filename=tryhtml_default >
+    • HTML Element Reference, en < https://www.w3schools.com/tags/default.asp >
+    • Internet Archive < https://archive.org/ >, WayBack Machine < https://web.archive.org/ >
+[quedamos en página 25]
