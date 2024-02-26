@@ -44,12 +44,12 @@ TAREFA 1
 		</equipos>
 
 Obtén as rutas de localización para obter os seguintes conxuntos de nodos:
- As máquinas que contén o documento.
- A información correspondente ao hardware das máquinas.
- A información de configuración das máquinas.
- A lista de fabricantes dos equipos.
- A lista de discos que conteñen.
- As direccións IP.
+	 As máquinas que contén o documento.
+	 A información correspondente ao hardware das máquinas.
+	 A información de configuración das máquinas.
+	 A lista de fabricantes dos equipos.
+	 A lista de discos que conteñen.
+	 As direccións IP.
 
 TAREFA 2
 
@@ -299,7 +299,6 @@ TAREFA 4
 		Escribir as expresións XPath para obter os seguintes conxuntos de nodos.
 			 Os comentarios.
 			 Os comentarios da película "Leaving Las Vegas".
-			Páxina 30 de 37
 			 As películas de xénero "Drama".
 			 Os nomes das actrices.
 			 Os elementos non baleiros (conteñen algún texto).
@@ -354,22 +353,31 @@ TAREFA 1
 		<produto cod="CONS121" />
 		</produtos>
 		</venda>
-		Deberás crear un documento XSLT que ao procesalo obteña como resultado un documento de texto. Cando no documento orixe existe o produto co atributo "cod="LACT012"", o do-cumento de saída deberá conter o texto "Atopado!!".
+		Deberás crear un documento XSLT que ao procesalo obteña como resultado un documento de texto. 
+		Cando no documento orixe existe o produto co atributo "cod="LACT012"", 
+		o do-cumento de saída deberá conter o texto "Atopado!!".
 
 TAREFA 2
 	
-			Partindo do mesmo documento XML da tarefa anterior, imos crear algunhas transforma-cións que obteñan documentos de saída de diversos tipos.
+			Partindo do mesmo documento XML da tarefa anterior,
+			imos crear algunhas transforma-cións que obteñan documentos de saída de diversos tipos.
 
 
 			a) Tarefa 2_a
-			Nesta tarefa obteremos como saída un novo documento XML. Este novo documento XML deberá conter soamente un nodo raíz no que o nome obterase a partires do atributo "cod" do cliente. Tamén teremos que crear un atributo para ese elemento con nome "num_produtos" que conteña como valor o número de produtos que figuren no documento orixe.
+			Nesta tarefa obteremos como saída un novo documento XML. Este novo documento XML 
+			deberá conter soamente un nodo raíz no que o nome obterase a partires 
+			do atributo "cod" do cliente. Tamén teremos que crear un atributo para ese elemento con nome 
+			"num_produtos" que conteña como valor o número de produtos que figuren no documento orixe.
+			
 			Por exemplo, a transformación deberá transformar o documento anterior no seguinte:
 			<?xml version="1.0" encoding="utf-8"?>
 			<CL09384 num_produtos="5"/>
 
 
 			b) Tarefa 2_b
-			Agora trátase de obter como saída un documento de texto que conteña unha lista cos códi-gos dos produtos do documento orixe. Por exemplo:
+			Agora trátase de obter como saída un documento de texto que conteña unha lista 
+			cos códi-gos dos produtos do documento orixe. Por exemplo:
+			
 			LACT093
 			LACT012
 			ACEI015
@@ -437,7 +445,9 @@ Tomando como base o seguinte documento XML:
 
 
 	a) Tarefa 3_a
-	Obter un listado en formato XML dos discos que figuran no documento XML orixe, enga-díndolles un atributo co nome da máquina no que se atopan. Por exemplo:
+	Obter un listado en formato XML dos discos que figuran no documento XML orixe, 
+	enga-díndolles un atributo co nome da máquina no que se atopan. Por exemplo:
+	
 	<?xml version="1.0" encoding="UTF-8"?>
 	<discos>
 	<disco tecnoloxía="SATA" capacidade="2000" máquina="PC017"/>

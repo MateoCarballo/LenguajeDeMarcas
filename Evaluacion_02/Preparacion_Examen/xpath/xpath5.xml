@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+  <máquina nome="PC017">
+    <hardware>
+      <tipo>PC Sobremesa</tipo>
+      <fabricante>Dell</fabricante>
+      <procesador marca="Intel" num_nucleos="4" velocida-de="3.1">i7</procesador>
+      <memoria tecnoloxía="DDR3">8</memoria>
+      <disco tecnoloxía="SATA" capacidade="2000"/>
+      <gravadora tipo="DVD"/>
+    </hardware>
+    <config>
+      <OS>Windows 7</OS>
+      <IP>192.168.20.105</IP>
+      <gateway>192.168.20.1</gateway>
+    </config>
+  </máquina>
+  <máquina nome="PC053">
+    <hardware>
+      <tipo>Semitorre</tipo>
+      <memoria>0.5</memoria>
+      <disco capacidade="40"/>
+      <lectora tipo="CD"/>
+    </hardware>
+    <config>
+      <OS>Windows XP</OS>
+    </config>
+  </máquina>
+  <máquina nome="PC007">
+    <hardware>
+      <tipo>Semitorre</tipo>
+      <memoria tecnoloxía="DDR">0.5</memoria>
+      <disco capacidade="40"/>
+      <lectora tipo="CD"/>
+    </hardware>
+    <config>
+      <OS>Windows XP</OS>
+    </config>
+    <notas>Sin tarxeta de rede</notas>
+  </máquina>
+  <máquina nome="PR003">
+    <hardware>
+      <tipo>Impresora Inyección</tipo>
+      <fabricante>Lexmark</fabricante>
+    </hardware>
+    <config/>
+  </máquina>
+  <máquina nome="PC011">
+    <hardware>
+      <tipo>Semitorre</tipo>
+      <memoria>1</memoria>
+      <disco capacidade="80"/>
+      <lectora tipo="CD"/>
+    </hardware>
+    <config>
+      <OS>Windows 2000 SP4</OS>
+      <IP>192.168.10.221</IP>
+    </config>
+  </máquina>
+  <máquina nome="PC019">
+    <hardware>
+      <tipo>Semitorre</tipo>
+      <procesador marca="AMD" velocidade="1.4">Athlon</procesador>
+      <memoria>0.5</memoria>
+      <disco capacidade="40"/>
+      <gravadora tipo="CD"/>
+    </hardware>
+    <config>
+      <OS>Mandriva 2007</OS>
+      <IP>192.168.10.45</IP>
+      <gateway>192.168.10.1</gateway>
+    </config>
+  </máquina>
+  <máquina nome="PR007">
+    <hardware>
+      <tipo>Impresora Láser</tipo>
+      <fabricante>OKI</fabricante>
+    </hardware>
+    <config/>
+    <notas>Monocromo, dúplex, red</notas>
+  </máquina>
+  <máquina nome="COPERNICO">
+    <hardware>
+      <tipo>Torre</tipo>
+      <fabricante>Fujitsu-Siemens</fabricante>
+      <procesador marca="Intel" num_nucleos="4" velocida-de="3">Xeon</procesador>
+      <memoria tecnoloxía="DDR">2</memoria>
+      <disco tecnoloxía="SCSI" capacidade="500"/>
+      <disco tecnoloxía="SCSI" capacidade="500"/>
+      <gravadora tipo="DVD"/>
+    </hardware>
+    <config>
+      <role>Servidor de dominio</role>
+      <OS>Windows 2003 Server R2</OS>
+      <IP>192.168.20.11</IP>
+      <gateway>192.168.20.1</gateway>
+    </config>
+  </máquina>
+  <máquina nome="GALILEO">
+    <hardware>
+      <tipo>Torre</tipo>
+      <fabricante>Fujitsu-Siemens</fabricante>
+      <procesador marca="Intel" num_nucleos="4" velocida-de="3">Xeon</procesador>
+      <memoria tecnoloxía="DDR2">2</memoria>
+      <disco tecnoloxía="SCSI" capacidade="200"/>
+      <disco tecnoloxía="SCSI" capacidade="200"/>
+      <disco tecnoloxía="SCSI" capacidade="200"/>
+      <lectora tipo="DVD"/>
+    </hardware>
+    <config>
+      <role>Servidor de dominio</role>
+      <OS>Windows 2008 Server R2</OS>
+      <IP>192.168.20.10</IP>
+      <gateway>192.168.20.1</gateway>
+    </config>
+  </máquina>
+  <máquina nome="KEPLER">
+    <hardware>
+      <tipo>Rack</tipo>
+      <fabricante>HP</fabricante>
+      <procesador marca="Intel" num_nucleos="2" velocidade="3">Core2 Duo</procesador>
+      <memoria tecnoloxía="DDR2">4</memoria>
+      <disco tecnoloxía="SATA" capacidade="500"/>
+      <disco tecnoloxía="SATA" capacidade="500"/>
+      <disco tecnoloxía="SATA" capacidade="500"/>
+      <gravadora tipo="DVD"/>
+    </hardware>
+    <config>
+      <role>Servidor de arquivos</role>
+      <OS>Ubuntu 8.04 Server</OS>
+      <IP>192.168.10.10</IP>
+      <gateway>192.168.10.1</gateway>
+    </config>
+  </máquina>
+  <máquina nome="NEWTON">
+    <hardware>
+      <tipo>Rack</tipo>
+      <fabricante>HP</fabricante>
+      <procesador marca="Intel" num_nucleos="2" velocidade="3">Core2 Duo</procesador>
+      <memoria tecnoloxía="DDR2">4</memoria>
+      <disco tecnoloxía="SATA" capacidade="500"/>
+      <disco tecnoloxía="SATA" capacidade="500"/>
+      <gravadora tipo="DVD"/>
+    </hardware>
+    <config>
+      <role>Servidor web</role>
+      <OS>Ubuntu 8.04 Server</OS>
+      <IP>192.168.10.11</IP>
+      <gateway>192.168.10.1</gateway>
+    </config>
+  </máquina>
+</equipos>
+<!-- ##
+ As máquinas con nome comezando por "PC".
+
+//máquina[starts-with(@nome,'PC')]
+
+ O nome das máquinas con máis de un disco duro.
+
+//máquina[count (hardware/disco)>1]/@nome 
+
+ A suma dos GB de memoria RAM de todas as máquinas.
+
+sum(//memoria)
+
+ A suma das capacidades dos discos duros de tipo "SCSI".
+sum(//disco[@tecnoloxía="SCSI"]/@capacidade)
+
+ Os nomes das máquinas das que se coñeza a súa cantidade de memoria, pero non a tecnoloxía desta.
+
+//máquina[hardware/memoria] [not(hardware/memoria/@tecnoloxía)]/@nome
+
+ As máquinas con sistema operativo da familia Windows e gravadora de DVD.
+
+//máquina[starts-with(config/OS,"Windows")][hardware/gravadora/@tipo="DVD"]
+
+ As máquinas nas que non figure o sistema operativo.
+
+//máquina[not(config/OS)]
+
+ O nome da máquina e do SO daquelas máquinas con máis de un disco duro.
+
+//máquina[count(hardware/disco)>1]/@nome | //máquina[count(hardware/disco)>1]/config/OS
+
+ A configuración daquelas máquinas nas que figura unha dirección IP pero non o gate-way.
+
+//máquina/config[IP][not(gateway)]
+
+//máquina[config/IP][not(config/gateway)]/@nome | //máquina/config[IP][not(gateway)]
+
+ Os elementos baleiros (non conteñen texto).
+
+//*[not(node())]
+
+ As direccións IP dentro da rede 192.168.10.0/24.
+
+//máquina/config[starts-with(IP,"192.168.10")]/IP/text()
+
+ Os nomes das máquinas con procesador multinúcleo e 2GB ou menos de memoria.
+
+//máquina[hardware/procesador/@num_nucleos>1 ][ hardware/memoria<=2]
+
+ As máquinas que teñan disco duro (un ou varios) con capacidade total maior de 1000GB.
+
+//máquina[sum(hardware/disco/@capacidade)>1000]
+
+ As máquinas que teñan disco duro (un ou varios) con capacidade total menor de 80GB.
+
+//máquina[sum(hardware/disco/@capacidade)<80]
+
+-->
