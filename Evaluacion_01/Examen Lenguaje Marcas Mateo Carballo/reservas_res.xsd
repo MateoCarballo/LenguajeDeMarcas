@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documento: resolucion reservas_enu Mateo-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- DEFINICION DE LOS ELEMENTOS-->
+  <xs:element name="reservas">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="reserva"/>
+        <xs:element ref="cliente"/>
+      </xs:choice>
+    </xs:complexType>
+    <xs:key name="codigoCliente">
+        <xs:selector xpath="cliente" />
+        <xs:field xpath="@codCliente" />
+    </xs:key>
+    <xs:keyref name="claveReferenciada" refer="codigoCliente">
+        <xs:selector xpath="reserva" />
+        <xs:field xpath="@cliente" />
+    </xs:keyref> 
+  </xs:element>
+  
+        <xs:element name="reserva">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="local" type="tipoLocal"/>
+              <xs:element ref="fecha"/>
+              <xs:element name="evento" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="cliente" type="tipoCliente" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+                  <xs:element name="fecha">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="mes" type="xs:string"/>
+                        <xs:element name="dia" type="xs:string"/>
+                        <xs:element name="horario" type="tipoHorario"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>  
+  
+        <xs:element name="cliente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dni" type="tipoDNI"/>
+              <xs:element ref="nombreCliente"/>
+              <xs:element name="tasaDescuento" type="tipoTasa"/>
+            </xs:sequence>
+            <xs:attribute name="codCliente" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+  
+               <xs:element name="nombreCliente">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="apellido1" type="xs:string"/>
+                    <xs:element name="apellido2" type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element> 
+  
+  
+  <!--TIPOS DE DATOS DECLARADOS-->
+  <xs:simpleType name="tipoDNI">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[0-9]{8}-[A-Za-z]{1}"/>
+  </xs:restriction>
+</xs:simpleType>
+  
+  <xs:simpleType name="tipoTasa">
+  <xs:restriction base="xs:decimal">
+    <xs:fractionDigits value="2"/>
+  </xs:restriction>
+</xs:simpleType>
+  
+<xs:simpleType name="tipoCliente">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[PES]{1}-[0-9]{2,3}"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tipoLocal">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="polideportivo"/>
+    <xs:enumeration value="localSocial"/>
+    <xs:enumeration value="auditorio"/>
+  </xs:restriction>
+</xs:simpleType> 
+
+<xs:simpleType name="tipoHorario">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="maña"/>
+    <xs:enumeration value="tarde"/>
+    <xs:enumeration value="dia"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
