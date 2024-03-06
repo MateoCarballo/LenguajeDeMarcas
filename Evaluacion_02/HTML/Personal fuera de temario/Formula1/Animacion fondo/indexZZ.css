@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    position: relative;
+    height: 100%;
+}
+
+#video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    max-width: 600px; /* Ajusta según sea necesario */
+    width: 100%; /* Garantiza que no exceda el 100% del ancho del contenedor */
+    padding: 20px; /* Ajusta según sea necesario */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5em;
+}

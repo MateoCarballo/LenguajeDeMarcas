@@ -1,94 +1,20 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-}
-
-.Seccion-principal {
-    display: grid;
-    grid-template-rows: repeat(3, 100vh); /* Tres filas con altura 100vh */
-    grid-template-columns: 1fr; /* Una columna que se expande */
-}
-
-.Seccion-equipos,
-.Seccion-pilotos,
-.Seccion-circuitos {
+section{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
+    width: 600px;
+    height: 200px;
 }
 
-.Seccion-equipos {
-    background-color: #f0f0f0; /* Color de fondo para la sección de Logos de Equipos */
-    grid-row: 1 / 3; /* Ocupa las dos primeras filas */
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
 }
 
-.Seccion-pilotos {
-    background-color: #d0d0d0; /* Color de fondo para la sección de Pilotos de Equipos */
-    grid-row: 2 / 4; /* Ocupa las filas 2 y 3 */
+section img:hover{
+   cursor: crosshair;
+   width: 200px;
+   opacity: 1;
+   filter: contrast(120%);
 }
-
-.Seccion-circuitos {
-    background-color: #a0a0a0; /* Color de fondo para la sección de Circuitos del Calendario */
-    grid-row: 3 / 5; /* Ocupa las filas 3 y 4 */
-}
-
-/* Añade estilos adicionales para la disposición de equipos en dos filas */
-.Seccion-equipos {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Filas automáticas, con un mínimo de 150px */
-    gap: 20px; /* Espacio entre los elementos */
-}
-
-.Seccion-equipos, img {
-    width: 100%; /* Ajusta el ancho de las imágenes al 100% */
-    height: auto; /* Mantén la proporción de aspecto */
-}
-
-/*Estilos para cada piloto */
-
-.fotoNombre-estadisticas {
-    margin: 15px;
-    border: yellow solid 1px;
-    
-    display: flex;
-}
- 
-.Piloto{
-    border: red solid 1px;
-
-    margin: 15px;
-}
- 
-.foto-nombre{
-    margin: 15px;
-    border: black dashed 1px;
-
-    margin: 15px;
-}
-.foto{
-    border: black solid 10px;
-    border-radius: 5%;
-    margin: 15px;
-    background-color: rgb(0, 55, 255);
-}
-
-.nombre-dorsal{
-    border: red dotted 1px;
-    margin: 15px;
-    
-}
-
-.dorsal{
-    margin: 10px;
-    border: black solid 1px;
-    font-size: 50px;;
-    align-items:center;
-}
-
-.estadisticas {
-    padding: 30px; /* Ajusta el margen entre la foto y las estadísticas según sea necesario */
-}
-
