@@ -1,0 +1,99 @@
+html{
+    font-family: 'Roboto','sans-serif';
+}
+
+body{
+    background-color: #efefef;
+    margin:0;
+}
+
+ul{
+    list-style: none;
+}
+
+.Encabezado-Principal{
+    /*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
+    position: sticky;
+    top: 0;
+    background-color: #003399;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.Encabezado-Principal a{
+    background-color: #003399;
+    color: white;   
+}
+
+
+.Tabla{
+    /* Estos valores deben ser identicos a los elementos que queramos ver a su misma altura*/ 
+    border-width: 2px;
+    margin: 20px;
+    float: left;
+}
+
+.Tabla-estadisticas tr,td {
+    background-color: grey;
+    margin: 40px;
+    padding: 10px;
+    font-size: larger;
+}
+
+.Pilotos-DatosEquipo{
+display: flex;
+}
+
+.Pilotos-DatosEquipo header{
+    text-align: center;
+}
+
+.Pilotos{
+display:flex;
+overflow: hidden;
+float: right;
+}
+
+.Pilotos a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.Piloto{
+border-style: solid;
+border-color: red;
+border-width: 2px;
+width: 200px;
+margin: 20px;
+overflow: hidden;
+transition: box-shadow 0.5s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+.Piloto:hover{
+    box-shadow: 8px 5px 5px rgba(0, 0, 255, 0.859);
+} 
+
+.Enlace-Pagina-Piloto :hover{
+    text-shadow: 3px 5px 7px  grey;
+}
+
+.Foto-Piloto{
+    background-color: black;
+    aspect-ratio: 1/1; 
+    width: 200px;
+}
+
+.Bandera-Dorsal{
+    font-size: 50px;
+   
+}
+
+.Nombre{
+    font-size: 30px;
+}
+    
+
+

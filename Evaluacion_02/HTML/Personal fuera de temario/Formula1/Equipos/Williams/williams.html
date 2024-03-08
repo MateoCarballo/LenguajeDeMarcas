@@ -4,47 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Williams Racing</title>
-    <link rel="stylesheet" href="equipo.css">
-    <link rel="shortcut icon" href="img/logo-williams-f1-2021.png" type="image/x-icon">
+    <link rel="stylesheet" href="../equipo.css">
+    <link rel="shortcut icon" href="img/logo-williams-f1-2021.png" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
-    <header>
-        <h1>Williams Racing</h1>
-        <img src="img/logo-williams-f1-2021.png" alt="">
-        <img src="img/williams.avif" alt="" width="300">
+    <header class="Encabezado-Principal">
+        <h1>WILLIAMS RACING</h1>
+        <ul>
+            <li>      
+                <a href="">Pilotos</a>
+                <ul>
+                    <li><a href="">Alexander Albon</a></li>
+                    <li><a href="">Logan Sargeant</a></li>
+                </ul>
+            </li>
+            <li><a href="">Galeria</a></li>
+        </ul>
     </header>
     <main>
 
-        <section>
-            <header>Datos del equipo</header>
-            <table border="1">
-                <tr>
-                    <td>Sede</td>
-                    <td>Grove, United Kingdom</td>
-                </tr>
-                <tr>
-                    <td>Jefe de equipo</td>
-                    <td>James Vowles</td>
-                </tr>
-                <tr>
-                    <td>chasis</td>
-                    <td>FW46</td>
-                </tr>
-                <tr>
-                    <td>Unidad de potencia</td>
-                    <td>Mercedes</td>
-                </tr>
-                <tr>
-                    <td>Primera participación</td>
-                    <td>1978</td>
-                </tr>
-                <tr>
-                    <td>Campeonatos del mundo</td>
-                    <td>9</td>
-                </tr>
-            </table>
-        </section>
+        <div class="Pilotos-DatosEquipo">
+            <section class="Tabla">
+                <header>
+                    <h1>Datos del equipo</h1>
+                </header>
+                <table class="Tabla-estadisticas">
+                    <tr>
+                        <td>Sede</td>
+                        <td>Grove, United Kingdom</td>
+                    </tr>
+                    <tr>
+                        <td>Jefe de equipo</td>
+                        <td>James Vowles</td>
+                    </tr>
+                    <tr>
+                        <td>Chasis</td>
+                        <td>FW46</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad de potencia</td>
+                        <td>Mercedes</td>
+                    </tr>
+                    <tr>
+                        <td>Primera participación</td>
+                        <td>1978</td>
+                    </tr>
+                    <tr>
+                        <td>Campeonatos del mundo</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+            </section>
+    
+            <section>
+                <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
+                <header>
+                    <h1>Pilotos</h1>
+                </header>
+                <div class="Pilotos">
+                    <a href="pilotos/alexanderalbon.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="img/alexander-albon-2023.png" class="Foto-Piloto" title="A.Albon" alt="ALB">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    23
+                                    <img src="../ZZ_Banderas/thailand-flag.avif" width="50" alt="Bandera_Tailandia">
+                                </div>
+                                <div class="Nombre">
+                                    Alexander <strong>ALBON</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="pilotos/logansargeant.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="img/logan-sargeant-2023.png" class="Foto-Piloto" title="L.Sargeant" alt="SAR">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    2
+                                    <img src="../ZZ_Banderas/united-states-of-america-flag.avif" width="50" alt="Bandera_Tailandia">
+                                </div>
+                                <div class="Nombre">
+                                    Logan <strong>SARGEANT</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+
 
         <section>
             <header>
@@ -92,44 +145,13 @@
             </p>
         </section>
         
-        <section class="Pilotos">
-            <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
-            <header>
-                <h1>Pilotos</h1>
-            </header>
-            <div class="Piloto">
-                <img src="img/alexander-albon-2023.png" title="A.Albon" alt="ALB">
-                <div class="Bandera-Dorsal-Nombre">
-                    <div class="Bandera-Dorsal">
-                        23
-                        <img src="../ZZ_Banderas/thailand-flag.avif" width="50" alt="Bandera_Tailandia">
-                    </div>
-                    <div class="Nombre">
-                        Alexander <strong>ALBON</strong>
-                    </div>
-                </div>
-            </div>
-            <div class="Piloto">
-                <img src="img/logan-sargeant-2023.png" title="L.Sargeant" alt="SAR">
-                <div class="Bandera-Dorsal-Nombre">
-                    <div class="Bandera-Dorsal">
-                        2
-                        <img src="../ZZ_Banderas/united-states-of-america-flag.avif" width="50" alt="Bandera_Tailandia">
-                    </div>
-                    <div class="Nombre">
-                        Logan <strong>SARGEANT</strong>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="Palmarés">
             <header>
                 <h1>Palmarés</h1>
                 <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
             </header>
         </section>
-        
+
 
         <section>
             <h1>Galería</h1>
