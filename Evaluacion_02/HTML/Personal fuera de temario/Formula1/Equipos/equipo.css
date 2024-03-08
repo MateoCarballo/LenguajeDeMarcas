@@ -19,14 +19,9 @@ main{
    margin: 0 auto;
 }
 
-
-ul{
-
-    list-style: none;
-}
-
 .Encabezado-Principal{
     /*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
+    box-sizing: border-box;
     position: sticky;
     top: 0;
     background-color: #003399;
@@ -35,16 +30,16 @@ ul{
     z-index: 1000;
     font-size: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
 }
 
 .Encabezado-Principal img{
+    margin-right: 150px;
     height: 75px;
     width: auto;
-    transition: all 0.3s;
 }
 
 .Encabezado-Principal a{
@@ -52,19 +47,49 @@ ul{
     color: white; 
 }
 
+.Encabezado-Principal .Enlaces-Navegacion{
+    list-style: none;
+    margin-left: 50px;
+}
+.Encabezado-Principal .Enlaces-Navegacion li{
+    transition: all 0.5s;
+    display: inline-block;
+    padding: 0 20px; 
+}
+
+.Encabezado-Principal .Enlaces-Navegacion li:hover{
+    transform: scale(1.05);
+}
+
+.Encabezado-Principal .Enlaces-Navegacion a{
+    font-size: 700;
+    color: white;
+    text-decoration: none ;
+}
+
+.Pilotos-DatosEquipo{
+    margin: 30px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+    padding-top: 30px;
+}
+
+.Pilotos-DatosEquipo header{
+    margin-bottom: 20px;
+}
 
 .Tabla{
-    /* Estos valores deben ser identicos a los elementos que queramos ver a su misma altura*/ 
-    border-width: 2px;
-    margin: 20px;
-    float: left;
+/* Estos valores deben 
+ser identicos a los elementos que queramos ver a su misma altura*/ 
+margin-left: 30px;
+margin-bottom: 30px;
+float: left;
 }
 
 .Tabla-estadisticas tr,td {
-    background-color: grey;
-    margin: 40px;
-    padding: 10px;
-    font-size: larger;
+background-color: grey;
+margin: 40px;
+padding: 10px;
+font-size: larger;
 }
 
 .Pilotos-DatosEquipo{
@@ -72,7 +97,7 @@ display: flex;
 }
 
 .Pilotos-DatosEquipo header{
-    text-align: center;
+text-align: center;
 }
 
 .Pilotos{
@@ -82,34 +107,44 @@ float: right;
 }
 
 .Pilotos a{
-    text-decoration: none;
-    color: inherit;
+text-decoration: none;
+color: inherit;
 }
 
 .Piloto{
 transition: all 0.5s ease;
 border-style: solid;
-border-color: #003399;
+/* border-color: #003399; */
 border-width: 2px;
-width: 200px;
-margin: 20px;
+width: 220px;
+margin: 0px 20px 20px 20px;
+padding: 20px;
 overflow: hidden;
+align-items: center;
+box-shadow: 1px 1px 1px #003399;
+} 
 
+.Piloto:hover .Foto-Piloto{
+    transition: all 0.5s ease;
+    transform: scale(1.05);
 } 
 
 .Piloto:hover{
     box-shadow: 8px 5px 5px #003399;
-    transform: scale(1.05);
+    background-color: black;
+    color:white;
 } 
+
+/* 
+Esto aplica sombra solo a los nombres
 
 .Enlace-Pagina-Piloto :hover{
     text-shadow: 3px 5px 7px  grey;
 }
-
+ */
 .Foto-Piloto{
-    background-color: black;
     aspect-ratio: 1/1; 
-    width: 200px;
+    width: 180px;
 }
 
 .Bandera-Dorsal{
