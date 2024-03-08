@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
 html{
     font-family: 'Roboto','sans-serif';
 }
@@ -14,6 +21,7 @@ main{
 
 
 ul{
+
     list-style: none;
 }
 
@@ -26,12 +34,22 @@ ul{
     width: 100%;
     z-index: 1000;
     font-size: 1.5rem;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.Encabezado-Principal img{
+    height: 75px;
+    width: auto;
+    transition: all 0.3s;
 }
 
 .Encabezado-Principal a{
     background-color: #003399;
-    color: white;   
+    color: white; 
 }
 
 
@@ -69,7 +87,7 @@ float: right;
 }
 
 .Piloto{
-transition: box-shadow 0.5s ease;
+transition: all 0.5s ease;
 border-style: solid;
 border-color: #003399;
 border-width: 2px;
@@ -81,6 +99,7 @@ overflow: hidden;
 
 .Piloto:hover{
     box-shadow: 8px 5px 5px #003399;
+    transform: scale(1.05);
 } 
 
 .Enlace-Pagina-Piloto :hover{
