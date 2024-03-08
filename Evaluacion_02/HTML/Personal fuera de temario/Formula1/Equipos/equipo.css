@@ -71,10 +71,12 @@ main{
     margin: 30px;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
     padding-top: 30px;
+    display: flex;
 }
 
 .Pilotos-DatosEquipo header{
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .Tabla{
@@ -90,14 +92,6 @@ background-color: grey;
 margin: 40px;
 padding: 10px;
 font-size: larger;
-}
-
-.Pilotos-DatosEquipo{
-display: flex;
-}
-
-.Pilotos-DatosEquipo header{
-text-align: center;
 }
 
 .Pilotos{
@@ -173,5 +167,27 @@ Esto aplica sombra solo a los nombres
     width: 1024px;
 
 }
+
+.Historia{
+  margin: 30px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.Historia header,p{
+    padding-bottom: 30px;
+}
+
+.Palmares{
+    margin: 30px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+    padding: 30px
+}
+
+.Palmares header,p{
+    padding-bottom: 30px;
+}
+
+
 
 
