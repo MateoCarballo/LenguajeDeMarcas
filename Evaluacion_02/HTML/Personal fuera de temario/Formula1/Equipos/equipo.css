@@ -1,3 +1,5 @@
+/*CSS ELEMENTOS GENERALES*/
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -19,72 +21,70 @@ main{
    margin: 0 auto;
 }
 
+/*CSS PARA LA CREACION DE LA BARRA DE NAVEGACION*/
+
 .Encabezado-Principal{
-    /*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    background-color: #003399;
-    color: white;
-    width: 100%;
-    z-index: 100;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+/*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
+position: sticky;
+top: 0;
+background-color: #003399;
+color: white;
+width: 100%;
+z-index: 100;
+font-size: 1.5rem;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+height: 85px;
+padding: 5px 10%;
+box-sizing: border-box;
 }
 
 .Encabezado-Principal img{
-    margin-right: 150px;
-    height: 75px;
-    width: auto;
+height: 95%;
+width: auto;
 }
 
-.Encabezado-Principal a{
-    background-color: #003399;
-    color: white; 
+.Encabezado-Principal nav{
+width: 700px;
 }
 
 .Encabezado-Principal .Enlaces-Navegacion{
-    list-style: none;
+list-style: none;
+display: flex;
+justify-content: space-between;
 }
-.Encabezado-Principal .Enlaces-Navegacion li{
-    transition: all 0.5s;
-    display: inline-flex;
-    border-radius: 2px;
 
-    margin-right: 3px; 
-    margin-bottom: 3px;
-    padding-right: 2px; 
-    padding-bottom: 2px; 
+.Encabezado-Principal .Enlaces-Navegacion li{
+transition: all 0.5s ease;
 }
 
 .Encabezado-Principal .Enlaces-Navegacion li:hover{
-    transform: scale(1.05);
-    background-color: white;
+transform: scale(1.15);
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Difuminado del texto */
 }
 
 .Encabezado-Principal .Enlaces-Navegacion a{
-    font-size: 700;
-    color: white;
-    text-decoration: none ;
+font-size: 700;
+color: white;
+text-decoration: none ;
 }
 
+/* CSS PARA LA SECCION DE LOS PILOTOS Y LA TABLA DE DATOS DEL EQUIPO*/
+
 .Pilotos-DatosEquipo{
-    box-sizing: border-box;
-    display: flex;
-    margin:30px;
-    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
-    padding: 30px;
+box-sizing: border-box;
+display: flex;
+margin:30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px;
 }
 
 .Pilotos-DatosEquipo header{
-    box-sizing: border-box;
-    height: 30px;
-    margin-bottom: 20px;
-    text-align: center;
+box-sizing: border-box;
+height: 30px;
+margin-bottom: 20px;
+text-align: center;
 }
 
 .Tabla{
@@ -129,29 +129,21 @@ box-shadow: 1px 1px 1px #003399;
 } 
 
 .Piloto .Foto-Piloto{
-    transition: all 0.5s ease;
-    transform: scale(1.0);
+transition: all 0.5s ease;
+transform: scale(1.0);
 } 
 
 
 .Piloto:hover .Foto-Piloto{
-    transition: all 0.5s ease;
-    transform: scale(1.05);
+transition: all 0.5s ease;
+transform: scale(1.05);
 } 
 
 .Piloto:hover{
-    box-shadow: 8px 5px 5px #003399;
-    background-color: grey;
-    color:white;
+box-shadow: 8px 5px 5px #003399;
+background-color: grey;
+color:white;
 } 
-
-/* 
-Esto aplica sombra solo a los nombres
-
-.Enlace-Pagina-Piloto :hover{
-    text-shadow: 3px 5px 7px  grey;
-}
- */
 
 .Bandera-Dorsal-Nombre{
 padding:8px;
@@ -169,16 +161,6 @@ width: 80px;
 .Nombre{
 font-size: 30px;
 }
-
-
-/*
-.ContainerImagenes{
-display: flex;
-flex-flow: row wrap;
-justify-content: center;
-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
-}
-*/
 
 .Galeria{
 margin: 30px;
