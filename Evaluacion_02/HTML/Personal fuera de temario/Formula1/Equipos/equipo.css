@@ -81,6 +81,10 @@ main{
     text-align: center;
 }
 
+.Tabla{
+    margin: 10px;
+}
+
 .Tabla-estadisticas tr,td {
 background-color: grey;
 margin: 40px;
@@ -92,7 +96,11 @@ font-size: larger;
 box-sizing: border-box;
 position: relative;
 width: 450px;
-height: 40px;
+height: 400px;
+}
+
+.Pilotos{
+    margin: 10px;
 }
 
 .Pilotos a{
@@ -103,7 +111,7 @@ display: flex;
 
 #Piloto1{
 position: absolute;
-left: 20px ;
+left: 0px ;
 }
 
 #Piloto2{
