@@ -190,13 +190,13 @@ img{
 
 .row{
     display: flex;
-    padding: 25px;
     flex-wrap: wrap;
+   margin: 10px;
 }
 
 .column{
     flex: 25%;
-    padding: 5px;
+    margin: 10px;
 }
 
 .Historia{
