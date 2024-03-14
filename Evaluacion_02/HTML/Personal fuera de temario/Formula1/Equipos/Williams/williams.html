@@ -2,13 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=.01">
     <title>Williams Racing</title>
     <link rel="stylesheet" href="../equipo.css">
     <link rel="shortcut icon" href="img/logo-williams-f1-2021.png" type="image/x-icon">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Agrega jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Agrega LightgalleryJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.2/css/lightgallery.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.2/js/lightgallery.min.js"></script>
+
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
@@ -158,38 +165,52 @@
         <section class="Galeria">
             <!--TODO pendiente de dar un mejor formato a la parte de la galeria de cada equipo-->
             <h1>Galería</h1>
-            <div class="ContainerImagenes">
-                <img src="img/Galeria/1978.avif" alt="">
-                <img src="img/Galeria/1979.avif" alt="">
-                <img src="img/Galeria/1980.avif" alt="">
-                <img src="img/Galeria/1986.avif" alt="">
-                <img src="img/Galeria/1992.avif" alt="">
-                <img src="img/Galeria/1993.avif" alt="">
-                <img src="img/Galeria/1994.avif" alt="">
-                <img src="img/Galeria/1996.avif" alt="">
-                <img src="img/Galeria/1997.avif" alt="">
-                <img src="img/Galeria/2000-2002.avif" alt="">
-                <img src="img/Galeria/2003.avif" alt="">
-                <img src="img/Galeria/2004.avif" alt="">
-                <img src="img/Galeria/2005.avif" alt="">
-                <img src="img/Galeria/2006.avif" alt="">
-                <img src="img/Galeria/2007.avif" alt="">
-                <img src="img/Galeria/2008.avif" alt="">
-                <img src="img/Galeria/2009.avif" alt="">
-                <img src="img/Galeria/2010.avif" alt="">
-                <img src="img/Galeria/2011.avif" alt="">
-                <img src="img/Galeria/2012.avif" alt="">
-                <img src="img/Galeria/2013.avif" alt="">
-                <img src="img/Galeria/2014.avif" alt="">
-                <img src="img/Galeria/2015.avif" alt="">
-                <img src="img/Galeria/2016.avif" alt="">
-                <img src="img/Galeria/2017.avif" alt="">
-                <img src="img/Galeria/2018.avif" alt="">
-                <img src="img/Galeria/2019.avif" alt="">
-                <img src="img/Galeria/2020.avif" alt="">
-                <img src="img/Galeria/2021.avif" alt="">
-                <img src="img/Galeria/2022.avif" alt="">
-                <img src="img/Logan-Sargeant-Rodando.avif"  alt="">
+            <div class="row">
+                <div class="column">
+                    <img src="img/Galeria/1978.avif" alt="">
+                    <img src="img/Galeria/1979.avif" alt="">
+                    <img src="img/Galeria/1980.avif" alt="">
+                    <img src="img/Galeria/1986.avif" alt="">
+                    <img src="img/Galeria/1992.avif" alt="">
+                </div>
+                <div class="column">
+                    <img src="img/Galeria/1993.avif" alt="">
+                    <img src="img/Galeria/1994.avif" alt="">
+                    <img src="img/Galeria/1996.avif" alt="">
+                    <img src="img/Galeria/1997.avif" alt="">
+                    <img src="img/Galeria/2000-2002.avif" alt="">
+                    
+                </div>
+                <div class="column">
+                    <img src="img/Galeria/2003.avif" alt="">
+                    <img src="img/Galeria/2004.avif" alt="">
+                    <img src="img/Galeria/2005.avif" alt="">
+                    <img src="img/Galeria/2006.avif" alt="">
+                    <img src="img/Galeria/2007.avif" alt="">
+                </div>
+                <div class="column">
+                    <img src="img/Galeria/2008.avif" alt="">
+                    <img src="img/Galeria/2009.avif" alt="">
+                    <img src="img/Galeria/2010.avif" alt="">
+                    <img src="img/Galeria/2011.avif" alt="">
+                    <img src="img/Galeria/2012.avif" alt="">
+                </div>
+                <div class="column">
+                    <img src="img/Galeria/2013.avif" alt="">
+                    <img src="img/Galeria/2014.avif" alt="">
+                    <img src="img/Galeria/2015.avif" alt="">
+                    <img src="img/Galeria/2016.avif" alt="">
+                    <img src="img/Galeria/2017.avif" alt="">
+                </div>
+                <div class="column">
+                    <img src="img/Galeria/2018.avif" alt="">
+                    <img src="img/Galeria/2019.avif" alt="">
+                    <img src="img/Galeria/2020.avif" alt="">
+                    <img src="img/Galeria/2021.avif" alt="">
+                    <img src="img/Logan-Sargeant-Rodando.avif" alt="">               
+                    <img src="img/Galeria/2022.avif" alt="">
+                </div>
+
             </div>
             <!--1024x576 16:9-->
         </section>
@@ -205,3 +226,12 @@
         </small>
     </footer>
 </body>
+<script>
+    $(document).ready(function(){
+        $(".ContainerImagenes").lightGallery({
+            selector: '.lg-item',
+            // Otras opciones de configuración
+        });
+    });
+</script>
+</html>

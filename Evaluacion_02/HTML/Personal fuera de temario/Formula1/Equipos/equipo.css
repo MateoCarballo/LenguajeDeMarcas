@@ -168,16 +168,35 @@ box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
 padding: 30px;
 }
 
-.ContainerImagenes img{
-display: flex;
-justify-content: center;
-object-fit: cover;/* Para que las imágenes se envuelvan si no caben en una sola fila */
+
+/*
+
+.Galeria{
+margin: 30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px;
 }
 
 .ContainerImagenes img{
-width: 100%;/* Para que las imágenes ocupen todo el ancho del contenedor */
-height: auto;/* Para mantener la proporción original de la imagen */
-margin: 5px;/* Espacio entre las imágenes */
+display: flex;
+justify-content: center;
+object-fit: cover;/* Para que las imágenes se envuelvan si no caben en una sola fila 
+}
+*/
+
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
 }
 
 .Historia{
