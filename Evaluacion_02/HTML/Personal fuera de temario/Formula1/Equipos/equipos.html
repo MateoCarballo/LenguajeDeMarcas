@@ -4,63 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="equipos.css">
 </head>
 <body>
     <!-- Revisar pagina oficial F1-->
-    <header>
-        <h1>Equipos</h1>
+    <header class="Encabezado-Principal">
+        <p>Equipos</p>
+        <nav>
+            <ul class="Enlaces-Navegacion">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="pilotos/alexanderalbon.html">Alexander Albon</a></li>
+                <li><a href="pilotos/logansargeant.html">Logan Sargeant</a></li>
+                <li><a href="#001">Galería</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="Equipo">
-        <img src="/Equipos/Red-Bull/img/logos-redbull-f1-2021.png" title="Red-Bull" alt="RBR">
-        <p><strong>Red bull</strong></p>
-    </div>
+    <main>
+        <section class="columna">
+            <section class="Equipo" id="redbull">
+                <img src="/Equipos/Red-Bull/img/RB20.avif" title="Red-Bull" alt="RBR">
+                <p>Red Bull</p>
+                <!--
+                Tamaño intrinseco 1920x1080 
+                <img src="/Equipos/Red-Bull/img/red bull.avif" title="logo-Red-Bull"alt="RBR">
+                <p>Oracle Red Bull Racing</p>
 
-    <div class="Equipo">
-        <img src="/Equipos/Mercedes/img/logo-mercedes-f1-2021.png" title="Mercedes" alt="AMG">
-        <p><strong>Merces AMG Petronas</strong></p>
-    </div>
 
-    <div class="Equipo">
-        <img src="/Equipos/Ferrari/img/logo-ferrari-f1-2021.png" title="Ferrari" alt="SFR">
-        <p><strong>Ferrari</strong></p>
-    </div>
+                Tamaño intrinseco foto coche 432x128
+                -->
+            </section>
+        
+            <section class="Equipo" id="mercedes">
+                <img src="/Equipos/Mercedes/img/W15.avif" title="W15" alt="AMG">
+                <p>MERCEDES</p>
+            </section>
+        
+            <section class="Equipo" id="ferrari">
+                <img src="/Equipos/Ferrari/img/SF24.avif" title="Ferrari" alt="SFR">
+                <p>FERRARI</p>
+            </section>
+        
+            <section class="Equipo" id="mclaren">
+                <img src="/Equipos/Mclaren/img/MCL38.avif" title="Mclaren" alt="MCL">
+                <p>MCLAREN</p>
+            </section>
+        
+            <section class="Equipo" id="astonmartin">
+                <img src="/Equipos/Aston-Martin/img/AMR24.avif" title="Aston-Martin" alt="AMR">
+                <P>ASTON MARTIN</P>
+            </section>
+        </section>
 
-    <div class="Equipo">
-        <img src="/Equipos/Mclaren/img/logo-mclaren-f1-2021.png" title="Mclaren" alt="MCL">
-        <p><strong>Mclaren</strong></p>
-    </div>
-
-    <div class="Equipo">
-        <img src="/Equipos/Aston-Martin/img/logo-aston-martin-f1-2021.png" title="Aston-Martin" alt="AMR">
-        <p><strong>Aston Martin Aramco </strong></p>
-    </div>
-
-    <div class="Equipo">
-        <img src="/Equipos/Alpine/img/logo-alpine-f1-2021.png" title="Alpine" alt="ALP">
-        <p><strong>Alpine</strong></p>
-    </div>
-
-    <div class="Equipo">
-        <img src="/Equipos/Stake/img/stake-logo-2024.jpeg" title="Sauber Stake" alt="SAU">
-        <p><strong>sauber Stake</strong></p>
-    </div>
-
-    <div class="Equipo">
-        <img src="/Equipos/Visa-RB/img/visa-rb-soymotor.2024.png" title="Visa-RB" alt="VRB">
-        <p><strong>Visa RB Cash App</strong></p>
-    </div>
-
-    <div class="Equipo">
-        <img src="Williams/img/logo-williams-f1-2021.png" title="Williams Racing" alt="WRT">
-        <img src="Williams/img/FW46.avif" alt="" width="300">
-        <img src="Williams/img/williams.avif" alt="" width="300">
-        <p><strong>Williams Racing</strong></p>
-    </div>
-
-    <div class="Equipo">
-        <img src="/Equipos/Haas/img/logo-haas-f1-2021.png" title="Hass Automation" alt="HAT">
-        <p><strong>Hass Automation Team</strong></p>
-    </div>
-
+        <section class="columna">
+            <section class="Equipo" id="alpine">
+                <img src="/Equipos/Alpine/img/A524.avif" title="Alpine" alt="ALP">
+                <p>ALPINE</p>
+            </section>
+        
+            <section class="Equipo" id="sauber">
+                <img src="/Equipos/Stake/img/C44.avif" title="Sauber Stake" alt="SAU">
+                <P>STAKE KICK SAUBER</P>
+            </section>
+        
+            <section class="Equipo" id="visarb">
+                <img src="/Equipos/Visa-RB/img/VCARB-01.avif" title="Visa-RB" alt="VRB">
+                <P>VISA RB CASH APP</P>
+            </section>
+        
+            <section class="Equipo" id="williams">
+                <img src="Williams/img/FW46.avif" title="FW46" alt="WILL" >
+                <P>WILLIAMS RACING</P>
+            </section>
+        
+            <section class="Equipo" id="hass">
+                <img src="/Equipos/Haas/img/VF-24.avif" title="Hass Automation" alt="HAT">
+                <P>MONEY GRAM HASS F1 TEAM</P>
+            </section>
+        </section>
+    </main>
 </body>
 </html>

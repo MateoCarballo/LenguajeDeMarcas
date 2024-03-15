@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html{
+    font-family: 'Roboto','sans-serif';
+}
+
+body{
+    background-color: #efefef;
+    margin:0;
+    
+}
+
+main{
+    width: 100%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+img{
+    width: 100%; 
+}
+
+.Encabezado-Principal{
+    /*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
+position: sticky;
+top: 0;
+background-color: #003399;
+color: white;
+width: 100%;
+z-index: 100;
+font-size: 1.5rem;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+height: 85px;
+padding: 5px 10%;
+box-sizing: border-box;
+}
+    
+.Encabezado-Principal img{
+    height: 95%;
+    width: auto;
+}
+    
+.Encabezado-Principal nav{
+    width: 700px;
+}
+    
+.Encabezado-Principal .Enlaces-Navegacion{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.Encabezado-Principal .Enlaces-Navegacion li{
+    transition: all 0.5s ease;
+    }
+    
+.Encabezado-Principal .Enlaces-Navegacion li:hover{
+    transform: scale(1.15);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Difuminado del texto */
+}
+    
+.Encabezado-Principal .Enlaces-Navegacion a{
+    font-size: 700;
+    color: white;
+    text-decoration: none ;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columna .Equipo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding:15px;
+}
+
+.Equipo{
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 100%;
+    height: 228px;
+}
+/* 
+.Equipo:hover p{
+    opacity: 1;
+    text-align: center;
+    transform: scale(1.05);
+} */
+
+/*EFECTO SOBRE LA IMAGEN AL PASAR SOBRE LA SECCION*/
+
+.Equipo img{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.0);
+    width: 432px;
+    height: 128px;
+}
+.Equipo p{
+    opacity: 0.01;
+    position: relative;
+    left: 0;
+    top: 0;
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    width: 432px;
+    height: 100px;
+}
+.Equipo:hover p{
+    opacity: 0.8;
+    transition: all 1s ease-in-out;
+}
+
+.Equipo:hover img{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+
+/*GRADIENTES DE FONDO PARA CADA EQUIPO*/
+
+#redbull:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg, #0600EF, #ff0101, #FF8700);
+    opacity: 0.85;
+}
+
+#mercedes:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg, #000000, #00D2BE);
+    opacity: 0.85;
+}
+
+#ferrari:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg,#DC0000,#fff, #fff700);
+    opacity: 0.85;
+}   
+
+#mclaren:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg, #000, #FF8700);
+    opacity: 0.85;
+}
+
+#astonmartin:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(35deg, #000 0%, #006F62 5%,#006F62 45%, #FFD700 50%, #006F62 55%, #fff 95%);
+    opacity: 0.85;
+}
+
+#alpine:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg, #000 0%, #0090FF 25%, #fd9cff 55%, #fff 95%);
+    opacity: 0.85;
+}
+
+#sauber:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg, #000,#00ff51);
+    opacity: 0.85;
+}
+
+#visarb:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(15deg, #000 0%, #0090FF 25%, #fff 55%, #ff0000 95%);
+    opacity: 0.85;
+}
+
+#williams:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(15deg, #000 0%, #0090FF 65%, #835c07 85%);
+    opacity: 0.85;
+}
+
+#hass:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(15deg, #000 0%, #ffffff 65%, #ff0000 95%);
+    opacity: 0.85;
+}
+
+
+/* Red Bull:
+Max Verstappen: #0600EF
+Sergio Pérez: #0600E
+Ferrari:
+Charles Leclerc: #DC0000
+Carlos Sainz: #DC0000
+Mercedes:
+Lewis Hamilton: #00D2BE
+George Russell: #00D2BE
+McLaren:
+Lando Norris: #FF8700
+Oscar Piastri: #FF8700
+Aston Martin:
+Fernando Alonso: #006F62
+Lance Stroll: #006F62
+Alpine:
+Pierre Gasly: #0090FF
+Esteban Ocon: #0090FF
+Williams:
+Alex Albon: #005AFF
+Logan Sargeant: #005AFF 
+
+background: linear-gradient(45deg, #0600EF, #DC0000, #00D2BE, #FF8700,
+ #006F62, #0090FF, #005AFF);
+*/

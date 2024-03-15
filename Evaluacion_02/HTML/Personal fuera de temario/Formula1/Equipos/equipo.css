@@ -21,6 +21,10 @@ main{
    margin: 0 auto;
 }
 
+img{
+    width: 100%;
+}
+
 /*CSS PARA LA CREACION DE LA BARRA DE NAVEGACION*/
 
 .Encabezado-Principal{
@@ -166,6 +170,7 @@ font-size: 30px;
 margin: 30px;
 box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
 padding: 30px;
+overflow: hidden;
 }
 
 
@@ -184,19 +189,85 @@ object-fit: cover;/* Para que las imágenes se envuelvan si no caben en una sola
 }
 */
 
-img{
+.Galeria{
+    margin: 0;
+    padding: 0;
+
+}
+
+.marco-slider{
+    width: 1024px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.marco-slider ul {
+    display: flex;
+    padding:0;
+    width: 3100%;
+    animation: slide 124s infinite alternate ease-in-out;
+}
+
+.marco-slider li {
+   list-style: none;
+   width: 100%;
+}
+
+.marco-slider img {
     width: 100%;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-   margin: 10px;
-}
-
-.column{
-    flex: 25%;
-    margin: 10px;
+@keyframes slide{
+        0% { margin-left: 0%; }
+        3.225806% { margin-left: 0%; }
+        
+        6.451613% { margin-left: -100%; }
+        9.677419% { margin-left: -100%; }
+        
+        12.903226% { margin-left: -200%; }
+        16.129032% { margin-left: -200%; }
+        
+        19.354839% { margin-left: -300%; }
+        22.580645% { margin-left: -300%; }
+        
+        25.806452% { margin-left: -400%; }
+        29.032258% { margin-left: -400%; }
+        
+        32.258065% { margin-left: -500%; }
+        35.483871% { margin-left: -500%; }
+        
+        38.709677% { margin-left: -600%; }
+        41.935484% { margin-left: -600%; }
+        
+        45.161290% { margin-left: -700%; }
+        48.387097% { margin-left: -700%; }
+        
+        51.612903% { margin-left: -800%; }
+        54.838710% { margin-left: -800%; }
+        
+        58.064516% { margin-left: -900%; }
+        61.290323% { margin-left: -900%; }
+        
+        64.516129% { margin-left: -1000%; }
+        67.741935% { margin-left: -1000%; }
+        
+        70.967742% { margin-left: -1100%; }
+        74.193548% { margin-left: -1100%; }
+        
+        77.419355% { margin-left: -1200%; }
+        80.645161% { margin-left: -1200%; }
+        
+        83.870968% { margin-left: -1300%; }
+        87.096774% { margin-left: -1300%; }
+        
+        90.322581% { margin-left: -1400%; }
+        93.548387% { margin-left: -1400%; }
+        
+        96.774194% { margin-left: -1500%; }
+        100% { margin-left: -1500%; }
 }
 
 .Historia{
