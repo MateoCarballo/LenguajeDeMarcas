@@ -1,0 +1,3 @@
+Sintaxis de la etiqueta <blockquote>
+La sintaxis de la etiqueta <blockquote>; se muestra a continuación: 
+<blockquote cite="...direccion original de la cita...">Texto que se cita</blockquote>
