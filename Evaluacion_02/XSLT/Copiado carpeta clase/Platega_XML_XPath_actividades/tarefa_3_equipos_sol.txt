@@ -9,7 +9,7 @@ derivadas:
 //disco[@tecnoloxía="SCSI"] [@capacidade=500]
 sum(//disco[@tecnoloxía="SCSI"]/@capacidade)
 obtenemos el nombre de la máquina: //disco[@tecnoloxía="SCSI"]/../../@nome
-	//disco[@tecnoloxía="SCSI"]/ancestor::máquina/@nome
+//disco[@tecnoloxía="SCSI"]/ancestor::máquina/@nome
 obtenemos cuántos discos SCSI: count(//disco[@tecnoloxía="SCSI"])
 
 2. O nome do sistema operativo da máquina con IP "192.168.10.45".

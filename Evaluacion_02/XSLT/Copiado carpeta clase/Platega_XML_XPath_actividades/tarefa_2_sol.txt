@@ -9,7 +9,7 @@
 
 2) Os nomes das máquinas que teñan gravadora óptica:
 /equipos/máquina/hardware/gravadora/../../@nome
-	/equipos/máquina[hardware/gravadora]/@nome
+/equipos/máquina[hardware/gravadora]/@nome
 /equipos/máquina/hardware/gravadora/ancestor::máquina/attribute::nome
 /equipos/máquina/hardware/gravadora/parent::hardware/parent::máquina/attribute::nome
 
