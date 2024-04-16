@@ -31,7 +31,7 @@ main{
 /*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
 position: sticky;
 top: 0;
-background-color: #003399;
+background-color: #0299fd;
 color: white;
 width: 100%;
 z-index: 100;
@@ -129,7 +129,7 @@ border-width: 2px;
 width: 206px;
 overflow: hidden;
 align-items: center;
-box-shadow: 1px 1px 1px #003399;
+box-shadow: 1px 1px 1px #0299fd;
 } 
 
 .Piloto .Foto-Piloto{
@@ -144,7 +144,7 @@ transform: scale(1.05);
 } 
 
 .Piloto:hover{
-box-shadow: 8px 5px 5px #003399;
+box-shadow: 8px 5px 5px #0299fd;
 background-color: grey;
 color:white;
 } 
@@ -297,39 +297,6 @@ padding: 30px;
         99.90% { margin-left: -3000%; }      
 }
 
-
-/* 0% { margin-left: 0; }
-3.33% { margin-left: -100%; }
-6.66% { margin-left: -200%; }
-9.99% { margin-left: -300%; }
-13.32% { margin-left: -400%; }
-16.65% { margin-left: -500%; }
-19.98% { margin-left: -600%; }
-23.31% { margin-left: -700%; }
-26.64% { margin-left: -800%; }
-29.97% { margin-left: -900%; }
-33.30% { margin-left: -1000%; }
-36.63% { margin-left: -1100%; }
-39.96% { margin-left: -1200%; }
-43.29% { margin-left: -1300%; }
-46.62% { margin-left: -1400%; }
-49.95% { margin-left: -1500%; }
-53.28% { margin-left: -1600%; }
-56.61% { margin-left: -1700%; }
-59.94% { margin-left: -1800%; }
-63.27% { margin-left: -1900%; }
-66.60% { margin-left: -2000%; }
-69.93% { margin-left: -2100%; }
-73.26% { margin-left: -2200%; }
-76.59% { margin-left: -2300%; }
-79.92% { margin-left: -2400%; }
-83.25% { margin-left: -2500%; }
-86.58% { margin-left: -2600%; }
-89.91% { margin-left: -2700%; }
-93.24% { margin-left: -2800%; }
-96.57% { margin-left: -2900%; }
-99.90% { margin-left: -3000%; }  */
-
 .Historia{
 margin: 30px;
 box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
@@ -352,7 +319,7 @@ padding-bottom: 30px;
 
 /*CSS PARA EL PIE DE PAGINA*/
 .site-footer {
-    background-color: #003399;
+    background-color: #0299fd;
     color: white;
     padding: 20px 0;
     text-align: center;

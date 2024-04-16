@@ -2,87 +2,245 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visa Cash App RB Formula One Team</title>
-    <link rel="stylesheet" href="equipo.css">
-    <link rel="shortcut icon" href="img/visa-rb-soymotor.2024.png" type="image/x-icon">
+    <title>Visa RB CashApp</title>
+    <link rel="stylesheet" href="visarb.css">
+    <link rel="shortcut icon" href="img/logo-williams-f1-2021.png" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
-    <header>
-        <h1>Visa Cash App RB Formula One Team</h1>
-        <img src="img/visa-rb-soymotor.2024.png" alt="">
-        <img src="img/rb.avif" alt="" width="300">
+    <header class="Encabezado-Principal">
+        <img class="Logo-Equipo" src="./img/rb.avif" width="200" alt="logo-williams">
+        <nav>
+            <ul class="Enlaces-Navegacion">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="./pilotos/danielricciardo.html">Daniel Ricciardo</a></li>
+                <li><a href="./pilotos/yukitsunoda.html">Yuki Tsunoda</a></li>
+                <li><a href="#001">Galería</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-
-        <section>
-            <header>Datos del equipo</header>
-            <table border="1">
-                <tr>
-                    <td>Sede</td>
-                    <td>Faenza, Italy</td>
-                </tr>
-                <tr>
-                    <td>Jefe de equipo</td>
-                    <td>Laurent Mekies</td>
-                </tr>
-                <tr>
-                    <td>chasis</td>
-                    <td>VCARB 01</td>
-                </tr>
-                <tr>
-                    <td>Unidad de potencia</td>
-                    <td>Honda RBPT</td>
-                </tr>
-                <tr>
-                    <td>Primera participación</td>
-                    <td>1985</td>
-                </tr>
-                <tr>
-                    <td>Campeonatos del mundo</td>
-                    <td>0</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
+        <div class="Pilotos-DatosEquipo">
+            <section class="Tabla">
+                <header>
+                    <h1>Datos del equipo</h1>
+                </header>
+                <table class="Tabla-estadisticas">
+                    <tr>
+                        <td>Sede</td>
+                        <td>Faenza, Italia</td>
+                    </tr>
+                    <tr>
+                        <td>Jefe de equipo</td>
+                        <td>Laurent Mekies</td>
+                    </tr>
+                    <tr>
+                        <td>Chasis</td>
+                        <td>VCARB 01</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad de potencia</td>
+                        <td>Honda RBPT</td>
+                    </tr>
+                    <tr>
+                        <td>Primera participación</td>
+                        <td>1985</td>
+                    </tr>
+                    <tr>
+                        <td>Campeonatos del mundo</td>
+                        <td>N/A</td>
+                    </tr>
+                </table>
+            </section>
+    
+            <section class="Pilotos">
+                <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
+                <header>
+                    <h1>Pilotos</h1>
+                </header>
+                <div class="ContenedorPilotos">
+                    <a id="Piloto1" href="pilotos/alexanderalbon.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Daniel Ricciardo(nofondo).avif" class="Foto-Piloto" title="D.Ricciardo" alt="RIC">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Daniel Ricciardo(dorsal).avif" alt="Dorsal-Ricciardo">
+                                    <img src="../ZZ_Banderas/Australia.avif"  alt="Bandera_Australia">
+                                </div>
+                                <div class="Nombre">
+                                    Daniel <strong>RICCIARDO</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="Piloto2" href="./pilotos/yukitsunoda.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Yuki Tsunoda(nofondo).avif" class="Foto-Piloto" title="Y.Tsunoda" alt="TSU">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Yuki Tsunoda(dorsal).avif"  alt="Dorsal-Logan">
+                                    <img src="../ZZ_Banderas/Japan.avif" alt="Bandera_Japon">
+                                </div>
+                                <div class="Nombre">
+                                    Yuki <strong>TSUNODA</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="Historia">
             <header>
                 <h1>Historia</h1>
             </header>
-            <p>Historia del equipo</p>
-        </section>
-        
-        <section>
-            <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
-            <header>
-                <h1>Pilotos</h1>
-            </header>
-            <img src="img/daniel-riccirado-alphatauri.png" title="M.Verstappen" alt="VER">
-            <img src="img/yuki-tsunoda-2023.png" title="S.Pérez" alt="PER">
-            <p>Pilotos del equipo</p>
-        </section>
+            <p>
+                Establecido en 2006 como un equipo en el que los jóvenes pilotos 
+                del prolífico grupo de talentos de Red Bull podían adquirir experiencia 
+                en la Fórmula 1, RB, originalmente llamado Toro Rosso y luego AlphaTauri,
+                 se formó a partir de las cenizas del valiente equipo Minardi. Sebastian 
+                 Vettel validó esta estrategia casi de inmediato al lograr una victoria de
+                  cuento de hadas en 2008, antes de disfrutar del éxito en el campeonato 
+                  mundial con el equipo principal, Red Bull Racing. Hoy en día, el ethos 
+                  de fomentar el talento sigue siendo válido, aunque el equipo italiano ya 
+                  no es simplemente un "equipo B", sino un constructor por derecho propio..
+            </p>
+            <p>
+                2023
+            La campaña final bajo el nombre de AlphaTauri culmina con un octavo lugar en la clasificación. 
+            El recién llegado Nyck de Vries fue reemplazado a mitad de temporada por el experimentado 
+            Daniel Ricciardo, quien luego se perdió cinco Grandes Premios debido a una fractura en la 
+            mano tras un accidente en los entrenamientos.
+            </p>
+            <p>
+                2022
+            El impulso se estanca y pierden terreno frente a equipos como Alfa Romeo y Haas, 
+            cayendo al noveno lugar en la clasificación final, con solo 35 puntos en comparación 
+            con los 142 puntos de 2021. Pierre Gasly logra su mejor resultado de la temporada 
+            con un quinto lugar en Bakú, pero abandona el equipo al final del año.
+            </p>
+            <p>
+                2021
+            Avanzan un lugar más hasta el sexto puesto en la clasificación,
+            mientras el cada vez mejor Pierre Gasly logra un podio en Azerbaiyán
+            y puntos en casi todas las carreras que termina. Su compañero de 
+            equipo novato, Yuki Tsunoda, tarda en adaptarse, pero asegura un excelente 
+            cuarto lugar en la última carrera de la temporada.  
+            </p>
+            <p>
+                2021
+            Avanzan un lugar más hasta el sexto puesto en la clasificación, 
+            mientras el cada vez mejor Pierre Gasly logra un podio en Azerbaiyán 
+            y puntos en casi todas las carreras que termina. Su compañero de equipo 
+            novato, Yuki Tsunoda, tarda en adaptarse, pero asegura un excelente cuarto 
+            lugar en la última carrera de la temporada.
+            </p>
+            <p>
+                2020
+            Un nuevo nombre trae nuevo impulso y AlphaTauri emerge como una verdadera fuerza en 
+            la zona media, anotando más de un centenar de puntos, 27 de ellos en suelo local en Monza,
+            donde Pierre Gasly logra su primera victoria y la del equipo.
+                
+            </p>
+            <p>2019
+            En su última temporada bajo el nombre de Toro Rosso, disfrutan de su campaña más exitosa 
+            hasta la fecha, anotando 85 puntos y asegurando el sexto lugar en la clasificación. 
+            Un cambio de piloto a mitad de temporada trae de vuelta a Pierre Gasly desde Red Bull Racing, 
+            y el francés responde a su "descenso" con un espectacular podio en Brasil.
+            </p>
 
-        <section>
+        </section>
+        <section class="Palmares">
             <header>
                 <h1>Palmarés</h1>
-                <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
             </header>
+            <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
+            <p>Esto</p>
+            <p>es</p>
+            <p>para</p>
+            <p>darle</p>
+            <p>estilo</p>
         </section>
-        
-
-        <section>
+        <section class="Galeria">
             <h1>Galería</h1>
-            <img src="img/Daniel-Ricciardo-Rodando.avif"  alt="">
-        </section>
-        </main>
-    <footer>
-        <small>
-            Fuentes
-            <ul>
-                <li><a href="periodismoodelmotor.com">periodismoodelmotor</a></li>
-                <li><a href="es.wikipedia.org">wikipedia</a></li>
+            <div class="slider-box">
+                <ul>
+                    <li><img src="./img/" alt=""></li>
+                    <li><img src="img/Galeria/1979.avif" alt=""></li>
+                    <li><img src="img/Galeria/1980.avif" alt=""></li>
+                    <li><img src="img/Galeria/1986.avif" alt=""></li>
+                    <li><img src="img/Galeria/1992.avif" alt=""></li>
+                    <li><img src="img/Galeria/1993.avif" alt=""></li>
+                    <li><img src="img/Galeria/1994.avif" alt=""></li>
+                    <li><img src="img/Galeria/1996.avif" alt=""></li>
+                    <li><img src="img/Galeria/1997.avif" alt=""></li>
+                    <li><img src="img/Galeria/2000-2002.avif" alt=""></li>
+                    <li><img src="img/Galeria/2003.avif" alt=""></li>
+                    <li><img src="img/Galeria/2004.avif" alt=""></li>
+                    <li><img src="img/Galeria/2005.avif" alt=""></li>
+                    <li><img src="img/Galeria/2006.avif" alt=""></li>
+                    <li><img src="img/Galeria/2007.avif" alt=""></li>
+                    <li><img src="img/Galeria/2008.avif" alt=""></li>
+                    <li><img src="img/Galeria/2009.avif" alt=""></li>
+                    <li><img src="img/Galeria/2010.avif" alt=""></li>
+                    <li><img src="img/Galeria/2011.avif" alt=""></li>
+                    <li><img src="img/Galeria/2012.avif" alt=""></li>
+                    <li><img src="img/Galeria/2013.avif" alt=""></li>
+                    <li><img src="img/Galeria/2014.avif" alt=""></li>
+                    <li><img src="img/Galeria/2015.avif" alt=""></li>
+                    <li><img src="img/Galeria/2016.avif" alt=""></li>
+                    <li><img src="img/Galeria/2017.avif" alt=""></li>
+                    <li><img src="img/Galeria/2018.avif" alt=""></li>
+                    <li><img src="img/Galeria/2020.avif" alt=""></li>
+                    <li><img src="img/Galeria/2021.avif" alt=""></li>
+                    <li><img src="img/Logan-Sargeant-Rodando.avif" alt=""></li>
+                    <li><img src="img/Galeria/2022.avif" alt=""></li>
+                </ul>
+            </div>
+            <!--1024x576 16:9-->
+        </section> 
+    </main>
+
+
+<!--
+    <header class="Encabezado-Principal">
+        <img class="Logo-Equipo" src="img/williams.avif" width="200" alt="logo-williams">
+        <nav>
+            <ul class="Enlaces-Navegacion">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="pilotos/alexanderalbon.html">Alexander Albon</a></li>
+                <li><a href="pilotos/logansargeant.html">Logan Sargeant</a></li>
+                <li><a href="#001">Galería</a></li>
             </ul>
-        </small>
+        </nav>
+    </header>
+-->
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre nosotros</h3>
+                <p>Esto es solo un ejemplo para una materia de DAM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: email@lenmguajeDeMarcas.com</p>
+                <p>Phone: +34 670 633 975</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sígueme en </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="/IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
     </footer>
 </body>
+</html>

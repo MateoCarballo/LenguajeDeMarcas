@@ -181,7 +181,7 @@ box-sizing: border-box;
 
 #visarb:hover{
     transition: all 1s ease-in-out;
-    background: linear-gradient(15deg, #000 0%, #0090FF 25%, #fff 55%, #ff0000 95%);
+    background: linear-gradient(15deg, #000 0%, #0299fd 25%, #fff 55%, #ff0000 95%);
     opacity: 0.85;
 }
 
