@@ -21,9 +21,9 @@ main{
    margin: 0 auto;
 }
 
-img{
+/* img{
     width: 100%;
-}
+} */
 
 /*CSS PARA LA CREACION DE LA BARRA DE NAVEGACION*/
 
@@ -170,78 +170,161 @@ font-size: 30px;
 margin: 30px;
 box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
 padding: 30px;
-overflow: hidden;
 }
 
-.gallery {
-    --s: 130px; /* control the size of the images*/
-    
-    display: grid;
-    gap: 5px;
-    position: relative;
-  }
-  .gallery input {
-    position: absolute;
-    z-index: 1;
-    border-radius: 50%;
-    inset: calc(50% - var(--s)/3);
-    cursor: pointer;
-    --g: linear-gradient(#fff 0 0) no-repeat;
-    background: var(--g) 50%/60% 3px,var(--g) 50%/3px 60%,#222;
-    transition: 1.5s;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-  .gallery > img {
-    width: var(--s);
-    aspect-ratio: 1;
-    grid-area: 1/1;
-    border-radius: 50%;
-    object-fit: cover;
-    transform: scale(.5);
-    transition: 1s calc((var(--i) - 1)*.1s);
-  }
-  .gallery > img:nth-of-type(1) {--i:1;}
-  .gallery > img:nth-of-type(2) {--i:2;}
-  .gallery > img:nth-of-type(3) {--i:3;}
-  .gallery > img:nth-of-type(4) {--i:4;}
-  .gallery > img:nth-of-type(5) {--i:5;}
-  .gallery > img:nth-of-type(6) {--i:6;}
-  .gallery > img:nth-of-type(7) {--i:7;}
-  .gallery > img:nth-of-type(8) {--i:8;}
-  .gallery > img:nth-of-type(9) {--i:9;}
-  
-  .gallery > input:checked ~ img {
-    transform: 
-      rotate(calc(var(--i)* 360deg/8)) translate(calc(1.5*var(--s))) 
-      rotate(calc(var(--i)*-360deg/8));
-  }
-  .gallery > input:checked {
-    transform: rotate(135deg)
-  }
-  
-
-/*
-
-.Galeria{
-margin: 30px;
-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
-padding: 30px;
+.slider-box{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
 }
 
-.ContainerImagenes img{
-display: flex;
-justify-content: center;
-object-fit: cover;/* Para que las imágenes se envuelvan si no caben en una sola fila 
-}
-*/
-
-.Galeria{
-    margin: 0;
+.slider-box ul{
+    display: flex;
     padding: 0;
-
+    width: 3000%;
+    animation: slide 180s infinite alternate ease-in-out;
 }
+
+.slider-box li {
+    width: 3.3333333%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide {
+    /*El porcentaje de la izquierda es el momento dentro de la animacion
+    el de la derecha en el porcentaje dentro de la "tira" de fotos.
+    Sabiendo que tenemos 30 fotos en total le damos un ancho de 3000% en 'ul' 
+    cada foto ocupara un 3,333333% del ancho en la pantalla cuando se visualiza*/
+        0% { margin-left: 0; }
+        2% { margin-left: -100%; }
+        3.33% { margin-left: -100%; }
+
+        5% { margin-left: -200%; }
+        6.66% { margin-left: -200%; }
+
+        8% { margin-left: -300%; }
+        9.99% { margin-left: -300%; }
+
+        11% { margin-left: -400%; }
+        13.32% { margin-left: -400%; }
+
+        15% { margin-left: -500%; }
+        16.65% { margin-left: -500%; }
+
+        18% { margin-left: -600%; }
+        19.98% { margin-left: -600%; }
+
+        21% { margin-left: -700%; }
+        23.31% { margin-left: -700%; }
+
+        25% { margin-left: -800%; }
+        26.64% { margin-left: -800%; }
+
+        28% { margin-left: -900%; }
+        29.97% { margin-left: -900%; }
+
+        31% {margin-left: -1000%;}
+        33.30% { margin-left: -1000%; }
+
+        35% { margin-left: -1100%; }
+        36.63% { margin-left: -1100%; }
+
+        39.96% { margin-left: -1200%; }
+        39.96% { margin-left: -1200%; }
+
+        41% { margin-left: -1300%; }
+        43.29% { margin-left: -1300%; }
+
+        45% { margin-left: -1400%; }
+        46.62% { margin-left: -1400%; }
+
+        48% { margin-left: -1500%; }
+        49.95% { margin-left: -1500%; }
+
+        51% { margin-left: -1600%; }
+        53.28% { margin-left: -1600%; }
+
+        54% { margin-left: -1700%; }
+        56.61% { margin-left: -1700%; }
+
+        57% { margin-left: -1800%; }
+        59.94% { margin-left: -1800%; }
+
+        61% { margin-left: -1900%; }
+        63.27% { margin-left: -1900%; }
+
+        64% { margin-left: -2000%; }
+        66.60% { margin-left: -2000%; }
+
+        67% { margin-left: -2100%; }
+        69.93% { margin-left: -2100%; }
+
+        71% { margin-left: -2200%; }
+        73.26% { margin-left: -2200%; }
+
+        75% { margin-left: -2300%; }
+        76.59% { margin-left: -2300%; }
+
+        77% { margin-left: -2400%; }
+        79.92% { margin-left: -2400%; }
+
+        81% { margin-left: -2500%; }
+        83.25% { margin-left: -2500%; }
+
+        84% { margin-left: -2600%; }
+        86.58% { margin-left: -2600%; }
+
+        87% { margin-left: -2700%; }
+        89.91% { margin-left: -2700%; }
+
+        91% { margin-left: -2800%; }
+        93.24% { margin-left: -2800%; }
+
+        94% { margin-left: -2900%; }
+        96.57% { margin-left: -2900%; }
+
+        98% { margin-left: -3000%; } 
+        99.90% { margin-left: -3000%; }      
+}
+
+
+/* 0% { margin-left: 0; }
+3.33% { margin-left: -100%; }
+6.66% { margin-left: -200%; }
+9.99% { margin-left: -300%; }
+13.32% { margin-left: -400%; }
+16.65% { margin-left: -500%; }
+19.98% { margin-left: -600%; }
+23.31% { margin-left: -700%; }
+26.64% { margin-left: -800%; }
+29.97% { margin-left: -900%; }
+33.30% { margin-left: -1000%; }
+36.63% { margin-left: -1100%; }
+39.96% { margin-left: -1200%; }
+43.29% { margin-left: -1300%; }
+46.62% { margin-left: -1400%; }
+49.95% { margin-left: -1500%; }
+53.28% { margin-left: -1600%; }
+56.61% { margin-left: -1700%; }
+59.94% { margin-left: -1800%; }
+63.27% { margin-left: -1900%; }
+66.60% { margin-left: -2000%; }
+69.93% { margin-left: -2100%; }
+73.26% { margin-left: -2200%; }
+76.59% { margin-left: -2300%; }
+79.92% { margin-left: -2400%; }
+83.25% { margin-left: -2500%; }
+86.58% { margin-left: -2600%; }
+89.91% { margin-left: -2700%; }
+93.24% { margin-left: -2800%; }
+96.57% { margin-left: -2900%; }
+99.90% { margin-left: -3000%; }  */
 
 .Historia{
 margin: 30px;
