@@ -166,6 +166,8 @@ width: 80px;
 font-size: 30px;
 }
 
+/*CSS PARA EL CARRUSEL DE FOTOGRAFIAS A MODO DE GALERÍA*/
+
 .Galeria{
 margin: 30px;
 box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
@@ -195,6 +197,8 @@ padding: 30px;
 .slider-box img{
     width: 100%;
 }
+
+/*PERSONALIZACION DE LOS TIEMPOS PARA LAS ANIMACIONES*/
 
 @keyframes slide {
     /*El porcentaje de la izquierda es el momento dentro de la animacion
@@ -346,6 +350,57 @@ padding: 30px
 padding-bottom: 30px;
 }
 
+/*CSS PARA EL PIE DE PAGINA*/
+/* Footer */
+.site-footer {
+    background-color: #003399;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Copyright */
+.copyright {
+    font-size: 12px;
+    margin-top: 20px;
+}
 
 
