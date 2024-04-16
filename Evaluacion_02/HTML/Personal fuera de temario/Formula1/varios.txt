@@ -1,158 +1,201 @@
-<header>
-        <h1>DATOS F1 </h1>
-        <nav>
-            <a href="#Pilotos">Pilotos</a>
-            <a href="#Equipos">Equipos</a>
-            <a href="#Circuitos">Circuitos</a>
-        </nav>
-    </header>
-    <main>
-        <body>
-            <!-- Listado de equipos en horizontal
-                 
-            <div class="Seccion-fotos-equipos">
-                     <div class="Fila-equipos">
-                         <div class="Equipo">
-                             <span><h2>Red-Bull</h2></span>
-                             <img src="Equipos\Red-Bull\img\logos-redbull-f1-2021.png" alt="redbull" class="Foto-equipo">
-                         </div>
-                         <div class="Equipo">
-                             <span><h2>Mercedes</h2></span>
-                             <img src="Equipos\Mercedes\img\logo-mercedes-f1-2021.png" alt="Mercedes" class="Foto-equipo">
-                         </div>
-                         <div class="Equipo">
-                             <span><h2>Ferrari</h2></span>
-                             <img src="Equipos\Ferrari\img\logo-ferrari-f1-2021.png" alt="Ferrari" class="Foto-equipo">
-                         </div>
-                         <div class="Equipo">
-                             <span><h2>Mclaren</h2></span>
-                             <img src="Equipos\Mclaren\img\logo-mclaren-f1-2021.png" alt="Mclaren" class="Foto-equipo">
-                         </div>
-                         <div class="Equipo">
-                             <span><h2>Aston-Martin</h2></span>
-                             <img src="Equipos\Aston-Martin\img\logo-aston-martin-f1-2021.png" alt="Aston-Martin" class="Foto-equipo">
-                         </div>
-                     </div>
-                     <div class="Fila-equipos">
-                         <div class="Equipo">
-                             <span><h2>Alpine</h2></span>
-                             <img src="Equipos\Alpine\img\logo-alpine-f1-2021.png" alt="Alpine" class="Foto-equipo">
-                         </div>
-                         <div class="Equipo">
-                             <span><h2>Visa RB</h2></span>
-                             <img src="Equipos\Visa-RB\img\visa-rb-soymotor.2024.png" alt="Visa RB"class="Foto-equipo">
-                         </div>
-                         <div class="Equipo">
-                             <span><h2>Williams</h2></span>
-                             <img src="Equipos\Williams\img\logo-williams-f1-2021.png" alt="Williams"class="Foto-equipo">
-                         </div>
-                         <div class="Equipo">
-                             <span><h2>Stake</h2></span>
-                             <img src="Equipos\Stake\img\stake-logo-2024.jpeg" alt="Stake" class="Foto-equipo">
-                         </div>
-                         <div class="Equipo">
-                             <span><h2>Haas</h2></span>
-                             <img src="Equipos\Haas\img\logo-haas-f1-2021.png" alt="Haas" class="Foto-equipo">
-                             
-                         </div>
-                     </div>
-                 </div>
-             </div>
-     
-                 -->
-            <h2 id="Equipos">EQUIPOS</h2>
-             <section >
-                 <img src="Equipos\Red-Bull\img\logos-redbull-f1-2021.png" title="Red-Bull" alt="Red-Bull" class="Foto-equipo">
-                 <img src="Equipos\Mercedes\img\logo-mercedes-f1-2021.png" title="Mercedes" alt="Mercedes" class="Foto-equipo">
-                 <img src="Equipos\Ferrari\img\logo-ferrari-f1-2021.png" title="Ferrari" alt="Ferrari" class="Foto-equipo">
-                 <img src="Equipos\Mclaren\img\logo-mclaren-f1-2021.png" title="Mclaren" alt="Mclaren" class="Foto-equipo">
-                 <img src="Equipos\Aston-Martin\img\logo-aston-martin-f1-2021.png" title="Aston-Martin" alt="Aston-Martin" class="Foto-equipo">
-                 <img src="Equipos\Alpine\img\logo-alpine-f1-2021.png" title="Alpine" alt="Alpine" class="Foto-equipo">
-                 <img src="Equipos\Visa-RB\img\visa-rb-soymotor.2024.png" title="Visa RB" alt="Visa RB"class="Foto-equipo">
-                 <img src="Equipos\Williams\img\logo-williams-f1-2021.png" title="Williams" alt="Williams"class="Foto-equipo">
-                 <img src="Equipos\Stake\img\stake-logo-2024.jpeg" title="Stake" alt="Stake" class="Foto-equipo">
-                 <img src="Equipos\Haas\img\logo-haas-f1-2021.png" title="Haas" alt="Haas" class="Foto-equipo">
-             </section>
+/*CSS ELEMENTOS GENERALES*/
 
-             <h2 id="Pilotos">PILOTOS</h2>
-       
-             <h2 id="Circuitos">CIRCUITOS</h2>  
-        
-            <h2>CLASIFICACION</h2>
-            <img src="/IMG/Bandera cuadros.png" alt="bcuadros" width="250">
-           
-            <h2>RESULTADOS</h2>
-            <img src="/IMG/Bandera cuadros.png" alt="bcuadros" width="250">
-
-            <h2>Formulario de inscripcion al juego</h2>
-            <section  >
-                <form method="post" action="/" >
-                <fieldset >
-                    <legend>Informacion personal</legend>
-                    <label>Nombre: 
-                        <input type="text" id="name" name="nombre" required placeholder="Nombre Apellido1 Apellido2">
-                    </label>
-                    <label>Email: 
-                        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
-                    </label>
-                    <label>Fecha de nacimiento: 
-                        <input type="date" id="fecha" name="fecha" required placeholder="01/01/2024">
-                    </label>
-                    <label>Teléfono: 
-                        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}" placeholder="123456789">
-                    </label>
-                    
-                </fieldset>
-                <button type="submit">Enviar</button>
-                </form>
-            </section>
-
-            <section style="display:block">
-                <details open >
-                    <summary>Opcion desplegable numero 1 </summary>
-                    <p>Contenido de la seccion desplegable 1</p>
-                </details>
-                <details>
-                    <summary open>Opcion desplegable numero 2 </summary>
-                    <p>Contenido de la seccion desplegable 2</p>
-                </details>
-                <details>
-                    <summary open>Opcion desplegable numero 3 </summary>
-                    <p>Contenido de la seccion desplegable 3</p>
-                </details>
-                
-            </section>
-        </body>
-    </main>
-    <video autoplay loop muted loading="lazy" src="/Animacion fondo/future_-_2319 (Original).mp4"></video>
-
-    <footer>
-        Copyright © Mateo Carballo Alonso
-    </footer>
-    <hr>
-	
-	
-	
-	
-	
-	section{
-    display: flex;
-    width: 600px;
-    height: 200px;
-}
-
-section img{
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 0.8;
-    transition: .5s ease;
-}
-
-section img:hover{
-   cursor: crosshair;
-   width: 200px;
-   opacity: 1;
-   filter: contrast(120%);
-}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
     
+}
+
+html{
+    font-family: 'Roboto','sans-serif';
+}
+
+body{
+    background-color: #efefef;
+    margin:0;
+}
+
+main{
+   width: 1000px; 
+   margin: 0 auto;
+}
+
+/*CSS PARA LA CREACION DE LA BARRA DE NAVEGACION*/
+
+.Encabezado-Principal{
+/*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
+position: sticky;
+top: 0;
+background-color: #003399;
+color: white;
+width: 100%;
+z-index: 100;
+font-size: 1.5rem;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+height: 85px;
+padding: 5px 10%;
+box-sizing: border-box;
+}
+
+.Encabezado-Principal img{
+height: 95%;
+width: auto;
+}
+
+.Encabezado-Principal nav{
+width: 700px;
+}
+
+.Encabezado-Principal .Enlaces-Navegacion{
+list-style: none;
+display: flex;
+justify-content: space-between;
+}
+
+.Encabezado-Principal .Enlaces-Navegacion li{
+transition: all 0.5s ease;
+}
+
+.Encabezado-Principal .Enlaces-Navegacion li:hover{
+transform: scale(1.15);
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Difuminado del texto */
+}
+
+.Encabezado-Principal .Enlaces-Navegacion a{
+font-size: 700;
+color: white;
+text-decoration: none ;
+}
+
+/* CSS PARA LA SECCION DE LOS PILOTOS Y LA TABLA DE DATOS DEL EQUIPO*/
+
+.Pilotos-DatosEquipo{
+box-sizing: border-box;
+display: flex;
+margin:30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px;
+}
+
+.Pilotos-DatosEquipo header{
+box-sizing: border-box;
+height: 30px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.Tabla{
+    padding: 10px;
+}
+
+.Pilotos{
+    padding: 10px;
+}
+
+.Tabla-estadisticas tr,td {
+background-color: grey;
+margin: 40px;
+padding: 10px;
+font-size: larger;
+}
+
+.ContenedorPilotos{
+box-sizing: border-box;
+position: relative;
+display: flex;
+justify-content: space-between;
+width: 450px;
+height: 400px;
+}
+
+.Pilotos a{
+text-decoration: none;
+color: inherit;
+display: flex;
+}
+
+.Piloto{
+transition: all 0.5s ease;
+border-style: solid;
+/* border-color: #003399; */
+border-width: 2px;
+width: 206px;
+overflow: hidden;
+align-items: center;
+box-shadow: 1px 1px 1px #003399;
+} 
+
+.Piloto .Foto-Piloto{
+transition: all 0.5s ease;
+transform: scale(1.0);
+} 
+
+
+.Piloto:hover .Foto-Piloto{
+transition: all 0.5s ease;
+transform: scale(1.05);
+} 
+
+.Piloto:hover{
+box-shadow: 8px 5px 5px #003399;
+background-color: grey;
+color:white;
+} 
+
+.Bandera-Dorsal-Nombre{
+padding:8px;
+ }
+
+.Bandera-Dorsal{
+font-size: 50px;
+}
+
+.Bandera-Dorsal img{
+font-size: 50px;
+width: 80px;  
+}
+
+.Nombre{
+font-size: 30px;
+}
+
+.Galeria{
+margin: 30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px;
+}
+
+
+.ContainerImagenes img{
+display: flex;
+justify-content: center;
+object-fit: cover;/* Para que las imágenes se envuelvan si no caben en una sola fila */
+}
+
+
+.Historia{
+margin: 30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px;
+}
+
+.Historia header,p{
+padding-bottom: 30px;
+}
+
+.Palmares{
+margin: 30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px
+}
+
+.Palmares header,p{
+padding-bottom: 30px;
+}
+
+
+
+
