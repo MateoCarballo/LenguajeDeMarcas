@@ -2,86 +2,170 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aston Martin Aramco F1 Team</title>
-    <link rel="stylesheet" href="equipo.css">
-    <link rel="shortcut icon" href="img/logo-aston-martin-f1-2021.png" type="image/x-icon">
+    <link rel="stylesheet" href="astonmartin.css">
+    <link rel="shortcut icon" href="img/aston martin 2024.avif" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
-    <header>
-        <h1>Aston Martin Aramco F1 Team</h1>
-        <img src="/Equipos/Aston-Martin/img/logo-aston-martin-f1-2021.png" alt="">
-        <img src="/Equipos/Aston-Martin/img/aston martin 2024.avif" alt="" width="300">
+    <header class="Encabezado-Principal">
+        <img class="Logo-Equipo" src="./img/aston martin 2024.avif" width="200" alt="logo-aston-martin">
+        <nav>
+            <ul class="Enlaces-Navegacion">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="./pilotos/fernandoalonso.html">Fernando Alonso</a></li>
+                <li><a href="./pilotos/lancestroll.html">Lance Stroll</a></li>
+                <li><a href="#001">Galería</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-
-        <section>
-            <header>Datos del equipo</header>
-            <table border="1">
-                <tr>
-                    <td>Sede</td>
-                    <td>Silverstone, United Kingdom</td>
-                </tr>
-                <tr>
-                    <td>Jefe de equipo</td>
-                    <td>Mike Krack</td>
-                </tr>
-                <tr>
-                    <td>chasis</td>
-                    <td>AMR24</td>
-                </tr>
-                <tr>
-                    <td>Unidad de potencia</td>
-                    <td>Mercedes</td>
-                </tr>
-                <tr>
-                    <td>Primera participación</td>
-                    <td>2018</td>
-                </tr>
-                <tr>
-                    <td>Campeonatos del mundo</td>
-                    <td>0</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
+        <div class="Pilotos-DatosEquipo">
+            <section class="Tabla">
+                <header>
+                    <h1>Datos del equipo</h1>
+                </header>
+                <table class="Tabla-estadisticas">
+                    <tr>
+                        <td>Sede</td>
+                        <td>Silverstone, Reino Unido</td>
+                    </tr>
+                    <tr>
+                        <td>Jefe de equipo</td>
+                        <td>Mike Krack</td>
+                    </tr>
+                    <tr>
+                        <td>Chasis</td>
+                        <td>AMR24</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad de potencia</td>
+                        <td>Mercedes</td>
+                    </tr>
+                    <tr>
+                        <td>Primera participación</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                        <td>Campeonatos del mundo</td>
+                        <td>N/A</td>
+                    </tr>
+                </table>
+            </section>
+    
+            <section class="Pilotos">
+                <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
+                <header>
+                    <h1>Pilotos</h1>
+                </header>
+                <div class="ContenedorPilotos">
+                    <a id="Piloto1" href="pilotos/fernandoalonso.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Fernando-Alonso.avif" class="Foto-Piloto" title="F.Alonso" alt="ALO">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Fernando-Alonso(dorsal).avif" alt="Dorsal-Alonso">
+                                    <img src="../ZZ_Banderas/Spain.avif"  alt="Bandera_España">
+                                </div>
+                                <div class="Nombre">
+                                    Fernando 🐐 <strong>ALONSO</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="Piloto2" href="./pilotos/lancestroll.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Lance-Stroll.avif" class="Foto-Piloto" title="L.Stroll" alt="STR">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Lance-Stroll(dorsal).avif"  alt="Dorsal-Stroll">
+                                    <img src="../ZZ_Banderas/Canada.avif" alt="Bandera_Canada">
+                                </div>
+                                <div class="Nombre">
+                                    Lance <br><strong>STROLL</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="Historia">
             <header>
                 <h1>Historia</h1>
             </header>
-            <p>Historia del equipo</p>
-        </section>
-        
-        <section>
-            <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
-            <header>
-                <h1>Pilotos</h1>
-            </header>
-            <img src="/Equipos/Aston-Martin/img/fernando-alonso-2023.png" title="F. Alonso" alt="ALO">
-            <img src="/Equipos/Aston-Martin/img/lance-stroll-2023.png" title="L.Stroll" alt="STR">
-            <p>Pilotos del equipo</p>
-        </section>
+            Aston Martin’s original Formula 1 foray – over half a century ago – lasted just five races. This time, though, it’s serious. This F1 squad are no strangers to success, having won in their original guise of Jordan and most recently as Racing Point in 2020. Renowned for their ability to punch above their weight, and now with a two-time champion leading their driver line-up, Aston Martin are very much a team to watch…
 
-        <section>
+
+
+2023
+Hugely impressive start to season sees Fernando Alonso on the podium six times in first eight races. Fall back as campaign progresses, ending the year fifth overall in constructors’ championship.
+
+Official Aston Martin memorabilia >
+2022
+Low-key season sees team retain seventh in the standings, with P6 their best race finish – for Sebastian Vettel in Azerbaijan and Japan, and Lance Stroll in Singapore. Vettel announces his F1 retirement, with fellow champion Fernando Alonso swiftly signed as his 2023 replacement.
+
+2021
+Fail to keep pace with midfield rivals and drop to P7 in the standings, scoring less than half their 2020 points tally. Highlights are Sebastian Vettel’s podium in Azerbaijan plus fifth places at Spa and Monaco. Low point is his disqualification from P2 in Hungary for a fuel infringement.
+
+2020
+With the team firmly back on their feet, the Racing Point name scores a first race win en route to fourth in the standings courtesy of Sergio Perez, who is replaced by Sebastian Vettel for 2021 and the squad’s transformation to Aston Martin.
+
+2019
+The hangover from 2018’s turmoil takes its toll, and the team's recovery is a slow one, despite some gutsy drives from the ever-reliable Sergio Perez, who scores 52 of their 73 points, ensuring they retain seventh in the constructors' table.
+
+2018
+As the tight intra-team rivalry between stalwart Sergio Perez and Mercedes protege Esteban Ocon continues, drop toward the rear of the midfield amid financial uncertainty, culminating in new ownership, the new Racing Point name – and a new championship entry – from August’s Belgian GP onwards. Recover well to finish seventh overall, despite losing 59 points accrued prior to Spa.
+        </section>
+        <section class="Palmares">
             <header>
                 <h1>Palmarés</h1>
             </header>
+            <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
+            <p>Esto</p>
+            <p>es</p>
+            <p>para</p>
+            <p>darle</p>
+            <p>estilo</p>
         </section>
-        
-
-        <section>
+        <section class="Galeria">
             <h1>Galería</h1>
-            <img src="img/amr24-rodando.avif"  alt="">
-        </section>
-        </main>
-    <footer>
-        <small>
-            Fuentes
-            <ul>
-                <li><a href="periodismoodelmotor.com">periodismoodelmotor</a></li>
-                <li><a href="es.wikipedia.org">wikipedia</a></li>
-            </ul>
-        </small>
+            <div class="slider-box">
+                <ul>
+                    <li><img src="./img/Galeria/00001.avif" alt=""></li>
+                    <li><img src="./img/Galeria/00002.avif" alt=""></li>
+                    <li><img src="./img/Galeria/00003.avif" alt=""></li>
+                </ul>
+            </div>
+            <!--1024x576 16:9-->
+        </section> 
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre nosotros</h3>
+                <p>Esto es solo un ejemplo para una materia de DAM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: email@lenmguajeDeMarcas.com</p>
+                <p>Phone: +34 670 633 975</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sígueme en </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="/IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
     </footer>
 </body>
+</html>
