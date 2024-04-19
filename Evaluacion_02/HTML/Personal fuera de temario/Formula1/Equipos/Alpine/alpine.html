@@ -2,101 +2,238 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BWT Alpine F1 Team</title>
-    <link rel="stylesheet" href="equipo.css">
-    <link rel="shortcut icon" href="img/logo-alpine-f1-2021.png" type="image/x-icon">
+    <link rel="stylesheet" href="alpine.css">
+    <link rel="shortcut icon" href="img/alpine.avif" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
-    <header>
-        <h1>BWT ALPINE F1 TEAM</h1>
-        <img src="/Equipos/Alpine/img/logo-alpine-f1-2021.png" alt="">
-        <img src="/Equipos/Alpine/img/alpine.avif" alt="" width="300">
+    <header class="Encabezado-Principal">
+        <img class="Logo-Equipo" src="./img/alpine.avif" width="200" alt="logo-williams">
+        <nav>
+            <ul class="Enlaces-Navegacion">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="./pilotos/pierregasly.html">Pierre Gasly</a></li>
+                <li><a href="./pilotos/estebanocon.html">Esteban Ocon</a></li>
+                <li><a href="#001">Galería</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-
-        <section>
-            <header>Datos del equipo</header>
-            <table border="1">
-                <tr>
-                    <td>Sede</td>
-                    <td>Enstone, United Kingdom</td>
-                </tr>
-                <tr>
-                    <td>Jefe de equipo</td>
-                    <td>Bruno Famin</td>
-                </tr>
-                <tr>
-                    <td>chasis</td>
-                    <td>A524</td>
-                </tr>
-                <tr>
-                    <td>Unidad de potencia</td>
-                    <td>Renault</td>
-                </tr>
-                <tr>
-                    <td>Primera participación</td>
-                    <td>1986</td>
-                </tr>
-                <tr>
-                    <td>Campeonatos del mundo</td>
-                    <td>2</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
+        <div class="Pilotos-DatosEquipo">
+            <section class="Tabla">
+                <header>
+                    <h1>Datos del equipo</h1>
+                </header>
+                <table class="Tabla-estadisticas">
+                    <tr>
+                        <td>Sede</td>
+                        <td>Enstone, United Kingdom</td>
+                    </tr>
+                    <tr>
+                        <td>Jefe de equipo</td>
+                        <td>Bruno Famin</td>
+                    </tr>
+                    <tr>
+                        <td>Chasis</td>
+                        <td>A524</td>
+                    </tr>
+                    <tr>
+                        <td>Unidad de potencia</td>
+                        <td>Renault</td>
+                    </tr>
+                    <tr>
+                        <td>Primera participación</td>
+                        <td>1986</td>
+                    </tr>
+                    <tr>
+                        <td>Campeonatos del mundo</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </section>
+    
+            <section class="Pilotos">
+                <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
+                <header>
+                    <h1>Pilotos</h1>
+                </header>
+                <div class="ContenedorPilotos">
+                    <a id="Piloto1" href="pilotos/pierregasly.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Pierre-Gasly(nofondo).avif" class="Foto-Piloto" title="P.Gasly" alt="GAS">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Pierre-Gasly(dorsal).avif" alt="Dorsal-Gasly">
+                                    <img src="../ZZ_Banderas/France.webp"  alt="Bandera_Francia">
+                                </div>
+                                <div class="Nombre">
+                                    Pierre<strong>GASLY</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="Piloto2" href="./pilotos/estebanocon.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Esteban-Ocon(nofondo).avif" class="Foto-Piloto" title="E.Ocon" alt="OCO">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Esteban-Ocon(dorsal).avif"  alt="Dorsal-Ocon">
+                                    <img src="../ZZ_Banderas/France.webp" alt="Bandera_Francia">
+                                </div>
+                                <div class="Nombre">
+                                    Esteban <strong>OCON</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="Historia">
             <header>
                 <h1>Historia</h1>
             </header>
-            <p>Alpine fue fundada en 1955 por Jean Rédélé, 
-            un apasionado del automovilismo. Inicialmente, se dedicaba a preparar vehículos de Renault para 
-            competición, logrando notoriedad a nivel internacional. En 1970, con las actualizaciones del 
-            Alpine A110, la marca alcanzó fama mundial por su competitividad en los rallys. En 2014, 
-            Renault tomó el control total de Alpine con el objetivo de relanzar la marca.</p>
-        </section>
-        
-        <section>
-            <header>
-                <h1>Pilotos</h1>
-            </header>
-            <img src="/Equipos/Alpine/img/esteban.ocon_.2023.png" title="Esteeban Ocon" alt="ocon">
-            <img src="/Equipos/Alpine/img/pierre-gasly-2023.png" title="pierre-gasly-2023" alt="">
-            <p>En la temporada 2023, los pilotos de Alpine F1 Team fueron Pierre Gasly y Esteban Ocon
-                . A lo largo de su historia, Alpine ha contado con pilotos destacados como Fernando Alonso, 
-                Daniel Ricciardo, y Nico Hülkenberg, entre otros.</p>
-        </section>
+            Everything you need to know about Alpine's F1 history. Follow your favourite Alpine and Renault drivers through the years and celebrate top moments.
+            2023
+            
+            
+            Fall to a lonely sixth in the standings amid some major mid-season management changes. Esteban Ocon and Pierre Gasly prove closely matched, each scoring a podium in Monaco and Zandvoort respectively.
+            
+            
+            2022
+            
+            
+            No podiums, but outperform arch rivals McLaren to rise to P4 in the final standings. Fernando Alonso, frustrated by reliability woes, departs at season's end for Aston Martin, to be replaced in 2023 by Pierre Gasly, forming all-French driver line-up with Esteban Ocon.
+            
+            
+            2021
+            
+            
+            A maiden F1 win for the Alpine name comes in Hungary courtesy of Esteban Ocon, aided by a staunch defence against a charging Lewis Hamilton from team mate Fernando Alonso, who also finishes on the podium in Qatar.
+            
+            
+            2020
+            
+            
+            Three podium finishes – the first since Renault’s works return – signal a significant step forward ahead of the team’s Alpine rebrand, and Fernando Alonso’s comeback, for 2021.
+            
+            
+            2019
+            
+            
+            Progress up the championship order is halted, ironically by new Renault customers McLaren, who demote them to fifth in the standings, despite Daniel Ricciardo securing their best result to date with P4 in Italy.
+            
+            
+            2018
+            
+            Enlarge
+            Rise up the grid continues apace, as the team see off Haas to become ‘best of the rest’ behind the top three teams. Not quite podium contenders yet – fifth places in Azerbaijan and Germany are their best results – but their obvious potential lures Daniel Ricciardo away from Red Bull for 2019, replacing Carlos Sainz.
+            
+            2017
+            
+            Enlarge
+            Huge strides are made with the team’s first car designed around their own powerplant, resulting in a sevenfold increase in points scored and a four-place leap in the standings. Jolyon Palmer replaced as Nico Hulkenberg’s team mate mid-season, with Carlos Sainz joining to form one of the grid’s strongest driver line-ups.
+            
+            2016
+            
+            Enlarge
+            A tough year of transition, as the R.S.16 car - originally designed around a Mercedes engine - proves far from competitive in the hands of former McLaren racer Kevin Magnussen and former Lotus tester Jolyon Palmer. Score on just three occasions, with a best of seventh for Magnussen in Russia, and finish a lowly ninth in the final standings.
+            
+            2015
+            
+            Enlarge
+            Final season under Lotus name before Renault takeover. Form much improved over 2014, with the Mercedes-powered E23 accumulating 78 points in the hands of Grosjean and Maldonado, the former’s fine third in Belgium being the team’s best result.
+            
+            2014
+            
+            Plummet down the order to eighth overall as team struggle to make E22 and its hybrid Renault power unit reliable or competitive. Grosjean scores eight points and Maldonado just two, with the former's eighth places in Spain and Monaco their best results of the year.
+            
+            2013
+            
+            Burst out of the gates with Raikkonen winning in Australia in the quick and tyre-friendly E21. Car proves a good match for most circuits and conditions, helping Raikkonen and Grosjean to a further 13 podiums between them, taking team to a strong fourth place overall.
+            
+            2012
+            
+            Team name officially changes to Lotus from Renault (formerly Benetton, 1986-2001). F1 returnee Kimi Raikkonen and Romain Grosjean score several podiums over course of season and are consistently on leading pace, but team has to wait until Abu Dhabi for sole Raikkonen-inspired victory.
 
-        <section>
+        </section>
+        <section class="Palmares">
             <header>
                 <h1>Palmarés</h1>
             </header>
-            
-            <p>Alpine ha tenido un notable palmarés en competiciones de automovilismo. En 1973, 
-            se convirtió en el primer constructor coronado Campeón Mundial de Rally. En las 24 Horas de 
-            Le Mans, Alpine acumuló varias victorias. En la Fórmula 1, debutó en la temporada 2021 y 
-            ha obtenido buenos resultados, incluyendo podios.</p>
-        <h1>Galería</h1>
+            <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
+            <p>Esto</p>
+            <p>es</p>
+            <p>para</p>
+            <p>darle</p>
+            <p>estilo</p>
         </section>
-        
+        <section class="Galeria">
+            <h1>Galería</h1>
+            <div class="slider-box">
+                <ul>
+                    <li><img src="./img/Galeria/2012.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2013.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2014.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2015.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2016.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2017.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2018.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2019.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2020.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2021.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2022.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2023.avif" alt=""></li>
+                    <!-- <li><img src="img/Galeria/2005.avif" alt=""></li>
+                    <li><img src="img/Galeria/2006.avif" alt=""></li>
+                    <li><img src="img/Galeria/2007.avif" alt=""></li>
+                    <li><img src="img/Galeria/2008.avif" alt=""></li>
+                    <li><img src="img/Galeria/2009.avif" alt=""></li>
+                    <li><img src="img/Galeria/2010.avif" alt=""></li>
+                    <li><img src="img/Galeria/2011.avif" alt=""></li>
+                    <li><img src="img/Galeria/2012.avif" alt=""></li>
+                    <li><img src="img/Galeria/2013.avif" alt=""></li>
+                    <li><img src="img/Galeria/2014.avif" alt=""></li>
+                    <li><img src="img/Galeria/2015.avif" alt=""></li>
+                    <li><img src="img/Galeria/2016.avif" alt=""></li>
+                    <li><img src="img/Galeria/2017.avif" alt=""></li>
+                    <li><img src="img/Galeria/2018.avif" alt=""></li>
+                    <li><img src="img/Galeria/2020.avif" alt=""></li>
+                    <li><img src="img/Galeria/2021.avif" alt=""></li>
+                    <li><img src="img/Logan-Sargeant-Rodando.avif" alt=""></li>
+                    <li><img src="img/Galeria/2022.avif" alt=""></li> -->
+                </ul>
+            </div>
+            <!--1024x576 16:9-->
+        </section> 
+    </main>
 
-        <section>
-            <img src="https://media.formula1.com/image/upload/content/dam/fom-website/manual/Misc/2023manual/Pre-season/February/Alpine%202.jpg" width="500" alt="">
-            <img src="https://storage.googleapis.com/assets.lemans.org/assets/fileuploads/60/50/6050c2f022e6c.jpg" width="500" alt="">
-            <img src="https://th.bing.com/th/id/OIP.WTTRhGKyqit2jwSTWPAYCAAAAA?rs=1&pid=ImgDetMain" width="500" alt="">
-            <img src="https://th.bing.com/th/id/R.1ed5188fff35bddabd40b78299f906dd?rik=JyqNAilTPELZXg&riu=h
-            ttp%3a%2f%2fhowbarmotorsports.com%2fwp-content%2fuploads%2f2021%2f10%2falpine-to-race-in-wec-with-new
-            -lmdh-hypercar-from-2024.jpg&ehk=fuSqf2%2bm6se76wRzsHq7oCWeeAyvDldpV2Ro3IhFek8%3d&risl=&pid=ImgRaw&r=0" width="500" alt="">
-        </section>
-        </main>
-    <footer>
-        <small>
-            Fuentes
-            <ul>
-                <li><a href="periodismoodelmotor.com">periodismoodelmotor</a></li>
-                <li><a href="es.wikipedia.org">wikipedia</a></li>
-            </ul>
-        </small>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre nosotros</h3>
+                <p>Esto es solo un ejemplo para una materia de DAM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: email@lenmguajeDeMarcas.com</p>
+                <p>Phone: +34 670 633 975</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sígueme en </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="/IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
     </footer>
 </body>
+</html>
