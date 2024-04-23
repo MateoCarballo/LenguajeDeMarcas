@@ -100,6 +100,7 @@ main{
     justify-content: space-around;
     margin: 30px;
     padding: 30px;
+    
     border-bottom: none; /* Eliminamos el borde inferior actual */
     border-right: none; /* Eliminamos el borde derecho actual */
     border-radius: 0 0 8px 0; /* Borde curvo solo en la esquina inferior derecha */
