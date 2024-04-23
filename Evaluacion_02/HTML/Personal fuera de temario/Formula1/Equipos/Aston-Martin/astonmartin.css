@@ -17,70 +17,139 @@ body{
 }
 
 main{
-   width: 2000px; 
+   width: 1400px; 
    margin: 0 auto;
 } 
-/* img{
+
+/* Estilos para el encabezado */
+.Encabezado-Principal {
+    background-color: rgb(30, 29, 29); /* Fondo negro */
+    text-align: center; /* Centrar el contenido */
+    height: 100px;
     width: 100%;
-} */
-
-/*CSS PARA LA CREACION DE LA BARRA DE NAVEGACION*/
-
-.Encabezado-Principal{
-/*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
-position: sticky;
-top: 0;
-background-color: #003399;
-color: white;
-width: 100%;
-z-index: 100;
-font-size: 1.5rem;
-display: flex;
-justify-content:space-evenly;
-align-items: center;
-height: 85px;
-padding: 5px 10%;
+    font-size: 30px;
+    position: sticky; /* Para mantener el encabezado fijo */
+    top: 0; /* Anclarlo en la parte superior */
+    z-index: 1000;
 }
 
-.Encabezado-Principal img{
-height: 95%;
-width: auto;
+/* Estilos para la navegación principal */
+.navegacion {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    display: inline-block; /* Para que la navegación se centre y no se extienda horizontalmente */
+    position: relative; /* Ajuste para el posicionamiento relativo */
 }
 
-.Encabezado-Principal nav{
-width: 700px;
+.navegacion > li {
+    list-style-type: none;
+    position: relative;
+    display: inline-block; /* Para que los elementos de primer nivel se muestren en línea */
 }
 
-.Encabezado-Principal .Enlaces-Navegacion{
-list-style: none;
-display: flex;
-justify-content: space-between;
+.navegacion > li > a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
 }
 
-.Encabezado-Principal .Enlaces-Navegacion li{
-transition: all 0.5s ease;
+/* Estilos para los submenús */
+.navegacion ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000; /* Color de fondo negro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 440px; /* Ancho total del submenú */
+    padding: 10px 20px; /* Espaciado interno */
+    z-index: 999; /* Asegura que los submenús estén por encima de otros elementos */
+    column-count: 2; /* Divide el contenido en dos columnas */
+    column-gap: 60px; /* Espacio entre las columnas */
+    text-align: center;
 }
 
-.Encabezado-Principal .Enlaces-Navegacion li:hover{
-transform: scale(1.15);
-text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Difuminado del texto */
+.navegacion ul li {
+    width: 100%; /* Ancho completo del elemento */
+    margin-bottom: 10px; /* Margen inferior para separar los elementos */
+
 }
 
-.Encabezado-Principal .Enlaces-Navegacion a{
-font-size: 700;
-color: white;
-text-decoration: none ;
+.navegacion ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none;
 }
 
-/* CSS PARA LA SECCION DE LOS PILOTOS Y LA TABLA DE DATOS DEL EQUIPO*/
-
-.Pilotos-DatosEquipo{
-display: flex;
-margin:30px;
-background-image: url(./img/Galeria/00001.avif);
-/* box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3); */
-padding: 30px;
+/* Estilos para desplegar los submenús al pasar el ratón sobre los elementos principales */
+.navegacion > li:hover > ul {
+    display: block;
 }
+
+/* Estilos para los submenús en dos líneas */
+.navegacion ul li a:hover {
+    background-color: #333; /* Color de fondo al pasar el ratón */
+}
+
+.Pilotos-DatosEquipo {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 30px;
+    border-bottom: none; /* Eliminamos el borde inferior actual */
+    border-right: none; /* Eliminamos el borde derecho actual */
+    border-radius: 0 0 8px 0; /* Borde curvo solo en la esquina inferior derecha */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Sombreado en los bordes derecho e inferior */
+}
+
+.tabla-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tabla {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    padding: 20px;
+}
+
+.tabla header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabla img.logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tabla-estadisticas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-estadisticas td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-estadisticas td:first-child {
+    font-weight: bold;
+}
+
+.tabla-estadisticas tr:last-child td {
+    border-bottom: none;
+}
+
 
 .Pilotos-DatosEquipo header{
 box-sizing: border-box;
@@ -89,22 +158,11 @@ margin-bottom: 20px;
 text-align: center;
 }
 
-.Tabla{
-    padding: 10px;
-    float: left;
-}
-
 .Pilotos{
     padding: 10px;
     float: right;
 }
 
-.Tabla-estadisticas tr,td {
-background-color: grey;
-margin: 40px;
-padding: 10px;
-font-size: larger;
-}
 
 .ContenedorPilotos{
 display: flex;
@@ -182,7 +240,7 @@ padding: 30px;
     display: flex;
     padding: 0;
     width: 3000%;
-    animation: slide 180s infinite alternate ease-in-out;
+    animation: slide 30s infinite alternate ease-in-out;
 }
 
 .slider-box li {
@@ -198,10 +256,21 @@ padding: 30px;
 /*PERSONALIZACION DE LOS TIEMPOS PARA LAS ANIMACIONES*/
 
 @keyframes slide {
-    /*El porcentaje de la izquierda es el momento dentro de la animacion
+    0% { margin-left: 0; }
+    0% { margin-left: 0; }  
+    15.33% { margin-left: -100%; }
+    33.33% { margin-left: -100%; }
+    48.48% { margin-left: -200%; }
+    66.66% { margin-left: -200%; } /* Mueve a la tercera imagen después de 2/3 de la animación */
+    100% { margin-left: 0; } /* Reinicia la animación */
+}
+
+
+/* @keyframes slide {
+    El porcentaje de la izquierda es el momento dentro de la animacion
     el de la derecha en el porcentaje dentro de la "tira" de fotos.
     Sabiendo que tenemos 30 fotos en total le damos un ancho de 3000% en 'ul' 
-    cada foto ocupara un 3,333333% del ancho en la pantalla cuando se visualiza*/
+    cada foto ocupara un 3,333333% del ancho en la pantalla cuando se visualiza
         0% { margin-left: 0; }
         2% { margin-left: -100%; }
         3.33% { margin-left: -100%; }
@@ -292,7 +361,7 @@ padding: 30px;
 
         98% { margin-left: -3000%; } 
         99.90% { margin-left: -3000%; }      
-}
+} */
 
 
 /* 0% { margin-left: 0; }
