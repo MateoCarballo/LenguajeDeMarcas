@@ -17,72 +17,140 @@ body{
 }
 
 main{
-   width: 1000px; 
+   width: 1400px; 
    margin: 0 auto;
-}
+} 
 
-/* img{
+/* Estilos para el encabezado */
+.Encabezado-Principal {
+    background-color: rgb(30, 29, 29); /* Fondo negro */
+    text-align: center; /* Centrar el contenido */
+    height: 100px;
     width: 100%;
-} */
-
-/*CSS PARA LA CREACION DE LA BARRA DE NAVEGACION*/
-
-.Encabezado-Principal{
-/*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
-position: sticky;
-top: 0;
-background-color: #003399;
-color: white;
-width: 100%;
-z-index: 100;
-font-size: 1.5rem;
-display: flex;
-justify-content:space-evenly;
-align-items: center;
-height: 85px;
-padding: 5px 10%;
-box-sizing: border-box;
+    font-size: 30px;
+    position: sticky; /* Para mantener el encabezado fijo */
+    top: 0; /* Anclarlo en la parte superior */
+    z-index: 1000;
 }
 
-.Encabezado-Principal img{
-height: 95%;
-width: auto;
+/* Estilos para la navegación principal */
+.navegacion {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    display: inline-block; /* Para que la navegación se centre y no se extienda horizontalmente */
+    position: relative; /* Ajuste para el posicionamiento relativo */
 }
 
-.Encabezado-Principal nav{
-width: 700px;
+.navegacion > li {
+    list-style-type: none;
+    position: relative;
+    display: inline-block; /* Para que los elementos de primer nivel se muestren en línea */
 }
 
-.Encabezado-Principal .Enlaces-Navegacion{
-list-style: none;
-display: flex;
-justify-content: space-between;
+.navegacion > li > a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
 }
 
-.Encabezado-Principal .Enlaces-Navegacion li{
-transition: all 0.5s ease;
+/* Estilos para los submenús */
+.navegacion ul {
+    list-style-type: none;
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(30, 29, 29); /* Color de fondo negro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 440px; /* Ancho total del submenú */
+    padding: 10px 20px; /* Espaciado interno */
+    z-index: 999; /* Asegura que los submenús estén por encima de otros elementos */
+    column-count: 2; /* Divide el contenido en dos columnas */
+    column-gap: 60px; /* Espacio entre las columnas */
+    text-align: center;
 }
 
-.Encabezado-Principal .Enlaces-Navegacion li:hover{
-transform: scale(1.15);
-text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Difuminado del texto */
+.navegacion ul li {
+    width: 100%; /* Ancho completo del elemento */
+    margin-bottom: 10px; /* Margen inferior para separar los elementos */
+
 }
 
-.Encabezado-Principal .Enlaces-Navegacion a{
-font-size: 700;
-color: white;
-text-decoration: none ;
+.navegacion ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none;
 }
 
-/* CSS PARA LA SECCION DE LOS PILOTOS Y LA TABLA DE DATOS DEL EQUIPO*/
-
-.Pilotos-DatosEquipo{
-box-sizing: border-box;
-display: flex;
-margin:30px;
-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
-padding: 30px;
+/* Estilos para desplegar los submenús al pasar el ratón sobre los elementos principales */
+.navegacion > li:hover > ul {
+    display: block;
 }
+
+/* Estilos para los submenús en dos líneas */
+.navegacion ul li a:hover {
+    background-color: #333; /* Color de fondo al pasar el ratón */
+}
+
+
+/*TODO pendiente de cambiar coloroces para marcar bordes redondeados en logos equipo*/
+.Pilotos-DatosEquipo {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 30px;
+    border-bottom: none; /* Eliminamos el borde inferior actual */
+    border-right: none; /* Eliminamos el borde derecho actual */
+    border-radius: 0 0 8px 0; /* Borde curvo solo en la esquina inferior derecha */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Sombreado en los bordes derecho e inferior */
+}
+
+.tabla-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tabla {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.tabla header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabla img.logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tabla-estadisticas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-estadisticas td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-estadisticas td:first-child {
+    font-weight: bold;
+}
+
+.tabla-estadisticas tr:last-child td {
+    border-bottom: none;
+}
+
 
 .Pilotos-DatosEquipo header{
 box-sizing: border-box;
@@ -91,28 +159,17 @@ margin-bottom: 20px;
 text-align: center;
 }
 
-.Tabla{
-    padding: 10px;
-}
-
 .Pilotos{
     padding: 10px;
+    float: right;
 }
 
-.Tabla-estadisticas tr,td {
-background-color: grey;
-margin: 40px;
-padding: 10px;
-font-size: larger;
-}
 
 .ContenedorPilotos{
-box-sizing: border-box;
-position: relative;
 display: flex;
 justify-content: space-between;
-width: 450px;
-height: 400px;
+width: 800px;
+height: 640px;
 }
 
 .Pilotos a{
@@ -123,18 +180,19 @@ display: flex;
 
 .Piloto{
 transition: all 0.5s ease;
-border-style: solid;
+border-style: none;
 /* border-color: #003399; */
 border-width: 2px;
-width: 206px;
+width: 380px;
 overflow: hidden;
 align-items: center;
-box-shadow: 1px 1px 1px #003399;
+box-shadow: 1px 1px 1px #006F62;
 } 
 
 .Piloto .Foto-Piloto{
 transition: all 0.5s ease;
 transform: scale(1.0);
+width: 380px;
 } 
 
 
@@ -144,9 +202,7 @@ transform: scale(1.05);
 } 
 
 .Piloto:hover{
-box-shadow: 8px 5px 5px #003399;
-background-color: grey;
-color:white;
+box-shadow: 8px 5px 5px #0090FF;
 } 
 
 .Bandera-Dorsal-Nombre{
@@ -154,7 +210,7 @@ padding:8px;
  }
 
 .Bandera-Dorsal{
-font-size: 50px;
+font-size: 0px;
 }
 
 .Bandera-Dorsal img{
@@ -163,7 +219,7 @@ width: 80px;
 }
 
 .Nombre{
-font-size: 30px;
+font-size: 50px;
 }
 
 /*CSS PARA EL CARRUSEL DE FOTOGRAFIAS A MODO DE GALERÍA*/
@@ -185,7 +241,7 @@ padding: 30px;
     display: flex;
     padding: 0;
     width: 3000%;
-    animation: slide 180s infinite alternate ease-in-out;
+    animation: slide 60s infinite alternate ease-in-out;
 }
 
 .slider-box li {
@@ -201,10 +257,51 @@ padding: 30px;
 /*PERSONALIZACION DE LOS TIEMPOS PARA LAS ANIMACIONES*/
 
 @keyframes slide {
-    /*El porcentaje de la izquierda es el momento dentro de la animacion
+    0% { margin-left: -0%; } /* 1ª imagen (0s) */
+    4.16667% { margin-left: -0%; } /* 1ª imagen (2s) */
+    8.33333% { margin-left: -100%; } /* 2ª imagen (0s) */
+    12.5% { margin-left: -100%; } /* 2ª imagen (2s) */
+    16.66667% { margin-left: -200%; } /* 3ª imagen (0s) */
+    20.83333% { margin-left: -200%; } /* 3ª imagen (2s) */
+    25% { margin-left: -300%; } /* 4ª imagen (0s) */
+    29.16667% { margin-left: -300%; } /* 4ª imagen (2s) */
+    33.33333% { margin-left: -400%; } /* 5ª imagen (0s) */
+    37.5% { margin-left: -400%; } /* 5ª imagen (2s) */
+    41.66667% { margin-left: -500%; } /* 6ª imagen (0s) */
+    45.83333% { margin-left: -500%; } /* 6ª imagen (2s) */
+    50% { margin-left: -600%; } /* 7ª imagen (0s) */
+    54.16667% { margin-left: -600%; } /* 7ª imagen (2s) */
+    58.33333% { margin-left: -700%; } /* 8ª imagen (0s) */
+    62.5% { margin-left: -700%; } /* 8ª imagen (2s) */
+    66.66667% { margin-left: -800%; } /* 9ª imagen (0s) */
+    70.83333% { margin-left: -800%; } /* 9ª imagen (2s) */
+    75% { margin-left: -900%; } /* 10ª imagen (0s) */
+    79.16667% { margin-left: -900%; } /* 10ª imagen (2s) */
+    83.33333% { margin-left: -1000%; } /* 11ª imagen (0s) */
+    87.5% { margin-left: -1000%; } /* 11ª imagen (2s) */
+    91.66667% { margin-left: -1100%; } /* 12ª imagen (0s) */
+    95.83333% { margin-left: -1100%; } /* 12ª imagen (2s) */
+    100% { margin-left: -1100%; } /* Detiene la animación al final */
+  }
+  
+
+/* @keyframes slide {
+    0% { margin-left: 0; }
+    0% { margin-left: 0; }  
+    15.33% { margin-left: -100%; }
+    33.33% { margin-left: -100%; }
+    48.48% { margin-left: -200%; }
+    66.66% { margin-left: -200%; }
+     Mueve a la tercera imagen después de 2/3 de la animación 
+    100% { margin-left: 0; } Reinicia la animación 
+} */
+
+
+/* @keyframes slide {
+    El porcentaje de la izquierda es el momento dentro de la animacion
     el de la derecha en el porcentaje dentro de la "tira" de fotos.
     Sabiendo que tenemos 30 fotos en total le damos un ancho de 3000% en 'ul' 
-    cada foto ocupara un 3,333333% del ancho en la pantalla cuando se visualiza*/
+    cada foto ocupara un 3,333333% del ancho en la pantalla cuando se visualiza
         0% { margin-left: 0; }
         2% { margin-left: -100%; }
         3.33% { margin-left: -100%; }
@@ -295,7 +392,7 @@ padding: 30px;
 
         98% { margin-left: -3000%; } 
         99.90% { margin-left: -3000%; }      
-}
+} */
 
 
 /* 0% { margin-left: 0; }
@@ -352,7 +449,7 @@ padding-bottom: 30px;
 
 /*CSS PARA EL PIE DE PAGINA*/
 .site-footer {
-    background-color: #003399;
+    background-color: rgb(30, 29, 29);
     color: white;
     padding: 20px 0;
     text-align: center;
