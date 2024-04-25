@@ -4,84 +4,310 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scuderia Ferrari</title>
-    <link rel="stylesheet" href="equipo.css">
-    <link rel="shortcut icon" href="img/logo-ferrari-f1-2021.png" type="image/x-icon">
+    <link rel="stylesheet" href="ferrari.css">
+    <link rel="shortcut icon" href="img/logo-ferrari-18 .avif" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
-    <header>
-        <h1>Scuderia Ferrari</h1>
-        <img src="img/logo-ferrari-f1-2021.png" alt="">
-        <img src="img/logo-ferrari-18 .avif" alt="" width="300">
+    <header class="Encabezado-Principal">
+        <nav id="menu">
+            <ul class="navegacion">
+                <li><a href="../equipos.html">Inicio</a></li>
+                <li><a href="#">Circuitos</a>
+                    <ul>
+                        <li class="Enlace-Navegacion"><a href="#">Bahrain</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Arabia Saudi</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Australia</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Japón</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">China</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Miami</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Imola</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monaco</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Canadá</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">España</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Austria</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Silverstone</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Hungría</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Bélgica</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Zandvort</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monza</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Singapore</a></li> 
+                        <li class="Enlace-Navegacion"><a href="#">Austin</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Brasil</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Las Vegas</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Qatar</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">abu Dhabi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Equipos</a>
+                    <ul>
+                        <li><a href="../Alpine/alpine.html">Alpine</a></li>
+                        <li><a href="../Aston-Martin/astonmartin.html">Aston-Martin</a></li>
+                        <li><a href="../Ferrari/ferrari.html">Ferrari</a></li>
+                        <li><a href="../Haas/haas.html">Haas</a></li>
+                        <li><a href="../Mclaren/mclaren.html">Mclaren</a></li>
+                        <li><a href="../Mercedes/mercedes.html">Mercedes</a></li>
+                        <li><a href="../Red-Bull/redbull.html">Red-Bull</a></li>
+                        <li><a href="../Stake/stake.html">Stake</a></li>
+                        <li><a href="../Visa-RB/visarb.html">Visa-RB</a></li>
+                        <li><a href="../Williams/williams.html">Williams</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pilotos</a>
+                    <ul>
+                        <li><a href="#">Pierre Gasly</a></li>
+                        <li><a href="#">Esteban Ocon</a></li>
+                        <li><a href="#">Fernano Alonso</a></li>
+                        <li><a href="#">Lance Stroll</a></li>
+                        <li><a href="#">Carlos Sainz</a></li>
+                        <li><a href="#">Charles Leclerc</a></li>
+                        <li><a href="#">Kevin Magnusen</a></li>
+                        <li><a href="#">Nico Hulkenberg</a></li>
+                        <li><a href="#">Lando Norris</a></li>
+                        <li><a href="#">Oscar Piastri</a></li>
+                        <li><a href="#">Lewis Hamilton</a></li>
+                        <li><a href="#">George Russell</a></li>
+                        <li><a href="#">Max Verstapen</a></li>
+                        <li><a href="#">Sergio Pérrez</a></li>
+                        <li><a href="#">Valtteri Bottas</a></li>
+                        <li><a href="#">Huangyu Zhou</a></li>
+                        <li><a href="#">Daniel Ricciardo</a></li>
+                        <li><a href="#">Yuki Tsunoda</a></li>
+                        <li><a href="#">Logan Sargeant</a></li>
+                        <li><a href="#">Alexander Albon</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+
     </header>
     <main>
+        <div class="Pilotos-DatosEquipo">
+            <section class="tabla-container">
+                <div class="tabla">
+                    <header>
+                        <h1>Datos del equipo</h1>
+                    </header>
+                    <div class="contenido">
+                        <img src="./img/logo-ferrari-f1-2021.png" alt="Logo-SF" class="logo">
+                        <table class="tabla-estadisticas">
+                            <tr>
+                                <td>Sede</td>
+                                <td>Maranello, Italia</td>
+                            </tr>
+                            <tr>
+                                <td>Jefe de equipo</td>
+                                <td>Frédéric Vasseur</td>
+                            </tr>
+                            <tr>
+                                <td>Chasis</td>
+                                <td>SF-24</td>
+                            </tr>
+                            <tr>
+                                <td>Unidad de potencia</td>
+                                <td>Ferrari</td>
+                            </tr>
+                            <tr>
+                                <td>Primera participación</td>
+                                <td>1950</td>
+                            </tr>
+                            <tr>
+                                <td>Campeonatos del mundo</td>
+                                <td>16</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
 
-        <section>
-            <header>Datos del equipo</header>
-            <table border="1">
-                <tr>
-                    <td>Sede</td>
-                    <td>Maranello, Italy</td>
-                </tr>
-                <tr>
-                    <td>Jefe de equipo</td>
-                    <td>Frédéric Vasseur</td>
-                </tr>
-                <tr>
-                    <td>chasis</td>
-                    <td>SF-24</td>
-                </tr>
-                <tr>
-                    <td>Unidad de potencia</td>
-                    <td>Ferrari</td>
-                </tr>
-                <tr>
-                    <td>Primera participación</td>
-                    <td>1950</td>
-                </tr>
-                <tr>
-                    <td>Campeonatos del mundo</td>
-                    <td>16</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
+            <section class="Pilotos">
+                <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
+                <div class="ContenedorPilotos">
+                    <a id="Piloto1" href="pilotos/charleslecrec.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Charles-Leclerc.avif" class="Foto-Piloto" title="C.Lecrec" alt="LEC">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Charles-Leclerc(dorsal).avif" alt="Dorsal-Lecrec">
+                                    <img src="../ZZ_Banderas/Monaco.avif"  alt="Bandera_Francia">
+                                </div>
+                                <div class="Nombre">
+                                    Crales <br><strong>LECREC</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="Piloto2" href="./pilotos/carlossainz.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Carlos-Sainz.avif" class="Foto-Piloto" title="C.Sainz" alt="SAI">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Carlos-Sainz(Dorsal).avif"  alt="Dorsal-Sainz">
+                                    <img src="../ZZ_Banderas/Spain.avif" alt="Bandera_Espanha">
+                                </div>
+                                <div class="Nombre">
+                                    Carlos <br><strong>Sainz</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="Historia">
             <header>
                 <h1>Historia</h1>
             </header>
-            <p>Historia del equipo</p>
-        </section>
-        
-        <section>
-            <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
-            <header>
-                <h1>Pilotos</h1>
-            </header>
-            <img src="img/charles-leclerc-2023.png" title="C.Leclerc" alt="LEC">
-            <img src="img/carlos-sainz-2023.png" title="C.Sainz" alt="SAI">
-            <p>Pilotos del equipo</p>
-        </section>
-
-        <section>
+                <p>2023</p>
+                <p>Único equipo además de Red Bull en ganar una carrera - Carlos Sainz en Singapur - pero una campaña frustrante de fortunas mixtas ve al equipo perder por poco el P2 en la tabla de constructores frente a Mercedes, a pesar de seis pole positions y nueve podios.</p>
+                <p>2022</p>
+                <p>Lidera la carrera por el título al principio de la temporada, con Charles Leclerc ganando dos de las tres primeras carreras. Sin embargo, una combinación de errores de los pilotos, problemas de fiabilidad y malas decisiones estratégicas finalmente los relega a un distante segundo lugar detrás de Red Bull. Carlos Sainz logra su primera victoria en su carrera, en Silverstone.</p>
+                <p>2021</p>
+                <p>Aún no hay señales de un desafío por el título, pero una fuerte mejora de un año a otro los aleja de McLaren para el P3 en general, con más del doble de su puntaje de puntos en 2020. La nueva llegada Carlos Sainz supera a Charles Leclerc, el español logra cuatro podios frente al uno de su compañero de equipo.</p>
+                <p>2020</p>
+                <p>Caen a su peor rendimiento en cuatro décadas, sin ganar una carrera, logrando solo tres podios y cayendo al sexto lugar en la clasificación. A Sebastian Vettel se le dice desde temprano que su contrato no se renovará para 2021, y es Charles Leclerc quien asegura 98 de los 131 puntos del equipo.</p>
+                <p>2019</p>
+                <p>El patrón de los últimos años continúa, ya que no ganan una carrera hasta el Gran Premio de Bélgica de agosto, a pesar de ser claros favoritos en pretemporada y tener a menudo el coche más rápido. Una tensa (y a veces costosa) rivalidad ve al recién llegado Charles Leclerc superar al veterano compañero de equipo Sebastian Vettel, con dos victorias frente a una del campeón cuatro veces.</p>
+                <p>2018</p>
+                <p>Un caso de déjà vu, ya que Ferrari produce lo que es durante gran parte del año el paquete más rápido en la parrilla, y sin embargo son superados en carrera, estrategia y desarrollo por los campeones reinantes de Mercedes. Sebastian Vettel suministra sus cinco victorias de la temporada, pero también algunos errores bastante costosos.</p>
+                <p>2017</p>
+                <p>Un coche innovador reanima al equipo y los pone a la par con los campeones del mundo de Mercedes, al menos durante la primera mitad de la temporada. Pero problemas técnicos exasperantes (además de los errores ocasionales de los pilotos) en la segunda mitad los sacan de la contención por el título, con un total eventual de cinco victorias en carrera frente a las 12 de sus rivales.</p>
+                <p>2016</p>
+                <p>La promesa de la temporada anterior se evapora rápidamente cuando el equipo se encuentra incapaz de competir con Mercedes o Red Bull. Vettel y Raikkonen terminan en el podio siete y cuatro veces respectivamente, pero malas decisiones estratégicas les impiden aprovechar las raras oportunidades de victoria que se presentan.</p>
+                <p>2015</p>
+                <p>Fernando Alonso da paso a Sebastian Vettel y el equipo reestructurado mejora para convertirse en el único rival serio de los campeones reinantes de Mercedes. Gracias a Vettel, logran su objetivo de tres victorias en el Gran Premio, mientras que Kimi Raikkonen lucha por igualar los resultados de su nuevo compañero de equipo.</p>
+                <p>2014</p>
+                <p>Caen al cuarto lugar en la clasificación, sin ganar por primera vez desde 1993, ya que el F14 T resulta poco competitivo incluso en manos de Alonso y Raikkonen. Domenicali deja el cargo de director del equipo en abril, reemplazado por Mattiaci y luego - el día después de que termine la temporada - Arrivabene.</p>
+                <p>2013</p>
+                <p>Comienzan más fuertes que en años recientes, con Alonso compitiendo al frente desde el principio, a pesar de que el F138 lucha por el ritmo en la clasificación. El español gana en China y España, antes de que las revisiones de neumáticos a mitad de temporada perjudiquen la forma del equipo, que los lleva al tercer lugar en general, detrás de RBR y Mercedes.</p>
+                <p>2012</p>
+                <p>El F2012 inicialmente reticente está muy por detrás en las primeras rondas, pero mejora rápidamente en manos de Alonso, quien lidera el campeonato durante gran parte del año. Vettel supera a Alonso en la corona de pilotos, pero la mejoría de Massa ayuda al equipo a quedar segundo en la clasificación de constructores.</p>
+                <p>2011</p>
+                <p>Un comienzo lento, detrás de McLaren y Red Bull y luchando con los nuevos neumáticos Pirelli. La forma mejora constantemente y algunas espectaculares carreras de Alonso, incluyendo la victoria en Silverstone, lo mantienen en la pelea por el título durante más tiempo de lo esperado. Massa decepciona, no logrando terminar en el podio ni una vez.</p>
+                <p>2010</p>
+                <p>Un buen comienzo con una victoria en Bahréin, pero pronto tienen que recuperarse ante Red Bull y McLaren. Una reactivación a mediados de temporada trae un impulso al título, pero las órdenes de equipo en Hockenheim ensombrecen el éxito. Se pierden el título de constructores y Alonso es vencido en el título de pilotos, a pesar de comenzar la última carrera como favorito.</p>
+                <p>2009</p>
+                <p>Nunca en la contienda por el título debido al progreso superior de sus rivales, el accidente potencialmente mortal de Massa (y la falta de ritmo de los suplentes) y la falta de desarrollo ya que optan por centrarse temprano en 2010. Más competitivo a mediados de año, con una victoria en Spa para Raikkonen, quien es reemplazado por Alonso para 2010.</p>
+                <p>2008</p>
+                <p>Ocho victorias los ayudan a conseguir su 16º título de constructores, venciendo a McLaren por 21 puntos. Felipe Massa se queda a un solo punto del campeonato de pilotos frente a Lewis Hamilton, a pesar de ganar más carreras.</p>
+                <p>2007</p>
+                <p>Ganan una intensa batalla con McLaren, tanto en pista como en los tribunales. Kimi Raikkonen se lleva el título de pilotos después de un aumento en su forma al final de la temporada. También se aseguran el título de constructores después de que McLaren sea encontrado culpable de beneficiarse de la posesión de datos confidenciales de Ferrari.</p>
+                <p>2006</p>
+                <p>Al principio juegan un papel secundario frente a Renault, pero Michael Schumacher lidera la recuperación con siete victorias. El equipo se adelanta a Renault con solo tres rondas por disputarse, pero problemas de confiabilidad poco frecuentes los hacen perder el título por solo cinco puntos.</p>
+                <p>2005</p>
+                <p>Problemas con las nuevas regulaciones, en particular aquellas que requieren que los neumáticos duren tanto la clasificación como la carrera. Siete podios, incluida una victoria en Indianápolis, donde la retirada de Michelin deja un campo de seis coches. Terminan tercero en la clasificación de constructores.</p>
+                <p>2004</p>
+                <p>Pierden solo tres veces en 18 carreras para llevarse la corona de constructores por sexto año consecutivo. Increíbles 13 victorias para Michael Schumacher lo llevan a conseguir su séptimo campeonato.</p>
+                <p>2003</p>
+                <p>Una temporada mucho más difícil, pero aún así imbatible. Un quinto título consecutivo de constructores, con Michael Schumacher siendo el primer hombre en conseguir seis campeonatos de pilotos.</p>
+                <p>2000 - 2002</p>
+                <p>Ferrari entra en un período de dominio total, ganando tanto el título de pilotos como el de constructores durante tres años seguidos.</p>
+                <p>1999</p>
+                <p>Michael Schumacher se pierde seis rondas después de romperse la pierna en Silverstone. El equipo se lleva el título de constructores en la última carrera, pero Eddie Irvine queda justo fuera del título de pilotos.</p>
+                <p>1983</p>
+                <p>Ferrari gana su octavo título de constructores.</p>
+                <p>1979</p>
+                <p>Jody Scheckter gana el campeonato de pilotos: será el último título de pilotos del equipo durante 21 años.</p>
+                <p>1975 - 1977</p>
+                <p>Niki Lauda se lleva el campeonato de pilotos de 1975 y vuelve de su horrible accidente en 1976 para ganar un segundo título para el equipo en 1977.</p>
+                <p>1964</p>
+                <p>John Surtees, un antiguo campeón mundial de motociclismo, se lleva el título de pilotos. Es el único hombre que logra el título tanto en dos ruedas como en cuatro.</p>
+                <p>1961</p>
+                <p>Phil Hill lleva a Ferrari a ganar tanto el campeonato de pilotos como el de constructores.</p>
+                <p>1958</p>
+                <p>Mike Hawthorn se convierte en el tercer piloto de Ferrari en ganar el campeonato de pilotos.</p>
+                <p>1956</p>
+                <p>Juan Manuel Fangio gana su cuarto campeonato de pilotos con la Scuderia.</p>
+                <p>1952</p>
+                <p>Alberto Ascari gana el primero de dos campeonatos consecutivos de pilotos en un Ferrari.</p>
+                <p>1951</p>
+                <p>José Froilán González registra la primera victoria de Ferrari en el Gran Premio de Gran Bretaña.</p>              </section>
+        <section class="Palmares">
             <header>
                 <h1>Palmarés</h1>
             </header>
+            <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
         </section>
-        
-
-        <section>
+        <section class="Galeria">
             <h1>Galería</h1>
-            <img src="img/Carlos-Sainz-Rodando.avif"  alt="">
-        </section>
-        </main>
-    <footer>
-        <small>
-            Fuentes
-            <ul>
-                <li><a href="periodismoodelmotor.com">periodismoodelmotor</a></li>
-                <li><a href="es.wikipedia.org">wikipedia</a></li>
-            </ul>
-        </small>
+            <div class="slider-box">
+                <ul>
+                    <!-- 
+                        TODO solucionar que este tamaño de imagen no se escale correctamente
+
+                        <li><img src="./img/Galeria/1951.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1952.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1956.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1958.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1961.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1964.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1975-1977.avif" alt=""></li> -->
+                    <li><img src="./img/Galeria/1979.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1983.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1999.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2000-2002.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2003.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2004.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2005.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2006.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2007.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2008.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2009.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2010.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2011.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2012.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2013.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2014.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2015.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2016.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2017.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2018.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2019.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2020.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2021.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2022.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2023.avif" alt=""></li>
+                </ul>
+            </div>
+            <!--1024x576 16:9-->
+        </section> 
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre nosotros</h3>
+                <p>Esto es solo un ejemplo para una materia de DAM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: email@lenmguajeDeMarcas.com</p>
+                <p>Phone: +34 670 633 975</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sígueme en </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="/IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
     </footer>
 </body>
+</html>
