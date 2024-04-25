@@ -58,11 +58,13 @@ main{
 
 /* Estilos para los submenús */
 .navegacion ul {
+    list-style-type: none;
+    font-size: 20px;
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #000; /* Color de fondo negro */
+    background-color: rgb(30, 29, 29); /* Color de fondo negro */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
     width: 440px; /* Ancho total del submenú */
     padding: 10px 20px; /* Espaciado interno */
@@ -100,7 +102,6 @@ main{
     justify-content: space-around;
     margin: 30px;
     padding: 30px;
-    
     border-bottom: none; /* Eliminamos el borde inferior actual */
     border-right: none; /* Eliminamos el borde derecho actual */
     border-radius: 0 0 8px 0; /* Borde curvo solo en la esquina inferior derecha */
@@ -419,7 +420,7 @@ padding-bottom: 30px;
 
 /*CSS PARA EL PIE DE PAGINA*/
 .site-footer {
-    background-color: #003399;
+    background-color: rgb(30, 29, 29);
     color: white;
     padding: 20px 0;
     text-align: center;
