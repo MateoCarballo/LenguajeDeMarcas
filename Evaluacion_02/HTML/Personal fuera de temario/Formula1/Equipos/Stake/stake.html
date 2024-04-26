@@ -3,85 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stake F1 Team Kick Sauber</title>
-    <link rel="stylesheet" href="equipo.css">
-    <link rel="shortcut icon" href="img/stake-logo-2024.jpeg" type="image/x-icon">
+    <title>Kick Stake Sauber</title>
+    <link rel="stylesheet" href="stake.css">
+    <link rel="shortcut icon" href="img/stake-logo-2024.jpeg" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
-    <header>
-        <h1>Stake F1 Team Kick Sauber</h1>
-        <img src="img/stake-logo-2024.jpeg" alt="">
-        <img src="img/kick sauber.avif" alt="" width="300">
+    <header class="Encabezado-Principal">
+        <nav id="menu">
+            <ul class="navegacion">
+                <li><a href="../equipos.html">Inicio</a></li>
+                <li><a href="#">Circuitos</a>
+                    <ul>
+                        <li class="Enlace-Navegacion"><a href="#">Bahrain</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Arabia Saudi</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Australia</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Japón</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">China</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Miami</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Imola</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monaco</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Canadá</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">España</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Austria</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Silverstone</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Hungría</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Bélgica</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Zandvort</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monza</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Singapore</a></li> 
+                        <li class="Enlace-Navegacion"><a href="#">Austin</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Brasil</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Las Vegas</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Qatar</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">abu Dhabi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Equipos</a>
+                    <ul>
+                        <li><a href="../Alpine/alpine.html">Alpine</a></li>
+                        <li><a href="../Aston-Martin/astonmartin.html">Aston-Martin</a></li>
+                        <li><a href="../Ferrari/ferrari.html">Ferrari</a></li>
+                        <li><a href="../Haas/haas.html">Haas</a></li>
+                        <li><a href="../Mclaren/mclaren.html">Mclaren</a></li>
+                        <li><a href="../Mercedes/mercedes.html">Mercedes</a></li>
+                        <li><a href="../Red-Bull/redbull.html">Red-Bull</a></li>
+                        <li><a href="../Stake/stake.html">Stake</a></li>
+                        <li><a href="../Visa-RB/visarb.html">Visa-RB</a></li>
+                        <li><a href="../Williams/williams.html">Williams</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pilotos</a>
+                    <ul>
+                        <li><a href="#">Pierre Gasly</a></li>
+                        <li><a href="#">Esteban Ocon</a></li>
+                        <li><a href="#">Fernano Alonso</a></li>
+                        <li><a href="#">Lance Stroll</a></li>
+                        <li><a href="#">Carlos Sainz</a></li>
+                        <li><a href="#">Charles Leclerc</a></li>
+                        <li><a href="#">Kevin Magnusen</a></li>
+                        <li><a href="#">Nico Hulkenberg</a></li>
+                        <li><a href="#">Lando Norris</a></li>
+                        <li><a href="#">Oscar Piastri</a></li>
+                        <li><a href="#">Lewis Hamilton</a></li>
+                        <li><a href="#">George Russell</a></li>
+                        <li><a href="#">Max Verstapen</a></li>
+                        <li><a href="#">Sergio Pérrez</a></li>
+                        <li><a href="#">Valtteri Bottas</a></li>
+                        <li><a href="#">Huangyu Zhou</a></li>
+                        <li><a href="#">Daniel Ricciardo</a></li>
+                        <li><a href="#">Yuki Tsunoda</a></li>
+                        <li><a href="#">Logan Sargeant</a></li>
+                        <li><a href="#">Alexander Albon</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+
     </header>
     <main>
+        <div class="Pilotos-DatosEquipo">
+            <section class="tabla-container">
+                <div class="tabla">
+                    <header>
+                        <h1>Datos del equipo</h1>
+                    </header>
+                    <div class="contenido">
+                        <img src="./img/kick sauber.avif" alt="Logo-Kick-Sauber" class="logo">
+                        <table class="tabla-estadisticas">
+                            <tr>
+                                <td>Sede</td>
+                                <td>Hinwil, Switzerland</td>
+                            </tr>
+                            <tr>
+                                <td>Jefe de equipo</td>
+                                <td>Alessandro Alunni Bravi</td>
+                            </tr>
+                            <tr>
+                                <td>chasis</td>
+                                <td>C44</td>
+                            </tr>
+                            <tr>
+                                <td>Unidad de potencia</td>
+                                <td>Ferrari</td>
+                            </tr>
+                            <tr>
+                                <td>Primera participación</td>
+                                <td>1993</td>
+                            </tr>
+                            <tr>
+                                <td>Campeonatos del mundo</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
 
-        <section>
-            <header>Datos del equipo</header>
-            <table border="1">
-                <tr>
-                    <td>Sede</td>
-                    <td>Hinwil, Switzerland</td>
-                </tr>
-                <tr>
-                    <td>Jefe de equipo</td>
-                    <td>Alessandro Alunni Bravi</td>
-                </tr>
-                <tr>
-                    <td>chasis</td>
-                    <td>C44</td>
-                </tr>
-                <tr>
-                    <td>Unidad de potencia</td>
-                    <td>Ferrari</td>
-                </tr>
-                <tr>
-                    <td>Primera participación</td>
-                    <td>1993</td>
-                </tr>
-                <tr>
-                    <td>Campeonatos del mundo</td>
-                    <td>0</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
+            <section class="Pilotos">
+                <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
+                <div class="ContenedorPilotos">
+                    <a id="Piloto1" href="pilotos/valteribottas.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Valtteri-Bottas.avif" class="Foto-Piloto" title="Valtteri-Bottas" alt="BOT">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Valtteri-Bottas(dorsal).avif" alt="Dorsal">
+                                    <img src="../ZZ_Banderas/Finland.webp"  alt="Bandera">
+                                </div>
+                                <div class="Nombre">
+                                    Valtteri <br><strong>BOTTAS</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="Piloto2" href="./pilotos/zhou.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Zhou-Guanyu.avif" class="Foto-Piloto" title="G.Zhou" alt="ZOU">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Zhou-Guanyu(dorsal).avif"  alt="Dorsal">
+                                    <img src="../ZZ_Banderas/China.avif" alt="Bandera">
+                                </div>
+                                <div class="Nombre">
+                                    Guanyu<br><strong>ZHOU</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="Historia">
             <header>
                 <h1>Historia</h1>
             </header>
-            <p>Historia del equipo</p>
-        </section>
-        
-        <section>
-            <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
-            <header>
-                <h1>Pilotos</h1>
-            </header>
-            <img src="img/valtteri-bottas-2023.png" title="M.Verstappen" alt="VER">
-            <img src="img/guanyu-zhou-2023.png" title="S.Pérez" alt="PER">
-            <p>Pilotos del equipo</p>
-        </section>
+            <p>Descubre la historia de Kick Sauber en la Fórmula 1 desde 1993 hasta hoy. 
+                Sigue a tus pilotos favoritos de Kick Sauber a lo largo de los años y 
+                celebra los momentos más destacados.</p>
 
-        <section>
+            <p>En 2023, la última temporada compitiendo bajo el nombre de Alfa Romeo 
+                resulta decepcionante, ya que el equipo cae al noveno lugar en la tabla
+                 de constructores. Los mejores resultados son los P8 de Valtteri Bottas 
+                 en Baréin y Catar.</p>
+            <p>En 2022, suben tres lugares en la clasificación, con Valtteri Bottas disfrutando 
+                de su papel de líder del equipo y el novato Zhou Guanyu ganándose su lugar. 
+                Hacen titulares al final de la temporada con la noticia de que el equipo se 
+                convertirá en el equipo de fábrica de Audi a partir de 2026.</p>
+
+            <p>En 2021, caen al noveno lugar en la tabla detrás de Williams, con 10 de sus 13
+                 puntos anotados por el ex campeón Kimi Raikkonen, quien se retira de su carrera
+                  en la F1 al final de la temporada. Preparan una alineación completamente nueva 
+                  con el ex piloto de Mercedes Valtteri Bottas y el nuevo talento chino 
+                  Zhou Guanyu para 2022.</p>
+
+            <p>En 2020, otra temporada de altibajos - ambos autos suman puntos en su carrera 
+            local en Imola, y ambos llegan a la Q3 en Turquía - nuevamente termina con un P8
+             en general, con Kimi Raikkonen y Antonio Giovinazzi sumando solo ocho puntos entre ellos.</p>
+
+            <p>En 2019, el progreso se ralentiza, ya que el C38 resulta frustrantemente inconsistente,
+                 incluso con el experimentado Kimi Raikkonen al volante. Sin embargo, retienen el P8 
+                 en la clasificación, 22 de sus 57 puntos llegan en la penúltima ronda de la 
+                 temporada en Brasil.</p>
+
+            <p>En 2018, el Director del Equipo, Fred Vasseur, dirige a su equipo en un camino hacia 
+                arriba sorprendentemente rápido, su C37 con motor Ferrari demostrando ser cada vez 
+                más competitivo, especialmente en manos de la estrella novata Charles Leclerc, quien 
+                anota 39 de sus 48 puntos, casi diez veces su total de 2017.</p>
+
+            <p>En 2017, otra campaña difícil termina con solo cinco puntos en el campeonato. Sin 
+                embargo, la llegada a mitad de temporada de Frederic Vasseur como director del equipo,
+                 seguida de un acuerdo de patrocinio principal con Alfa Romeo para 2017 y la firma del 
+                 protegido de Ferrari, Charles Leclerc, auguran un futuro más brillante.</p>
+
+            <p>En 2016, la falta de financiamiento en la primera parte del año significa un desarrollo 
+                limitado, dejando al equipo muy por debajo del ritmo. Las cosas mejoran después de la 
+                llegada de nuevos propietarios a mitad de temporada, y Felipe Nasr anota los únicos dos
+                puntos de su campaña en la penúltima ronda en Brasil, dándoles un último esfuerzo en 
+                el top-ten en la clasificación final por delante de Manor.</p>
+
+            <p>En 2015, se recuperan al octavo lugar en la clasificación con el C34 mucho mejorado. 
+                El piloto novato Felipe Nasr resulta ser una revelación, su asociación con Marcus Ericsson 
+                obteniendo puntos en nueve de las 19 rondas de la temporada.</p>
+
+            <p>En 2014, sufren la peor temporada en la historia del equipo, terminando una campaña sin 
+                puntos por primera vez. A pesar de los mejores esfuerzos de Sutil y Gutiérrez, el C33 
+                poco competitivo resulta difícil de dominar y los 11º lugares de Sutil en Australia y 
+                Hungría son sus mejores resultados.</p>
+
+            <p>En 2013, el C32 es notable en su lanzamiento por su diseño único de pontones estrechos,
+                pero inicialmente no cumple con las expectativas. Se beneficia significativamente de las 
+                revisiones de neumáticos a mitad de temporada, con Hulkenberg calificando tercero y 
+                terminando quinto en Italia, ya que el equipo anota 50 de los 57 puntos de la temporada 
+                en las últimas ocho rondas.</p>
+
+            <p>En 2012, la temporada comienza bien, con Pérez ganándose altos elogios por impresionantes 
+                podios en Malasia y Canadá. El C31 resulta ser un paquete competente y, aunque inconsistente,
+                 Pérez y Kobayashi suman más podios en Italia y Japón en la segunda mitad de la temporada.</p>
+
+            <p>En 2011, una primera mitad fuerte de la temporada de Kobayashi y Pérez, con presencias 
+                regulares en la Q3 y finales en el top-ten. Pérez se pierde Mónaco después de un accidente 
+                en la clasificación, luego se pierde Canadá donde Pedro de la Rosa entra en su lugar. Un 
+                final difícil para el año, pero Pérez y Kobayashi se quedan para 2012.</p>
+
+            <p>En 2010, la C29 con motor Ferrari decepciona inicialmente en ritmo y fiabilidad. El director 
+                técnico a largo plazo, Willy Rampf, es reemplazado por James Key, ex Force India. El rendimiento 
+                mejora gradualmente, con apariciones regulares en el top-ten. Nick Heidfeld reemplaza a Pedro
+                 de la Rosa para las últimas cinco rondas.</p>
+
+            <p>En 2009, se adaptan lentamente a las nuevas regulaciones. Podios en Malasia y Brasil son destacados
+                 raros en un año difícil en el que caen al sexto lugar en la clasificación. BMW anuncia su retiro
+                  de la F1 al final de la temporada y en noviembre vende el equipo de regreso al fundador Peter Sauber.</p>
+
+            <p>En 2008, el F1.08 radical resulta muy efectivo, llevando a Robert Kubica a la primera victoria del
+                 equipo en Canadá y convirtiéndolos en contendientes genuinos al título, con podios en otras nueve
+                  carreras. Los desarrollos tardíos de la temporada son menos efectivos, pero aún terminan terceros
+                   con impresionantes 135 puntos.</p>
+
+            </section>
+        <section class="Palmares">
             <header>
                 <h1>Palmarés</h1>
             </header>
-        </section>
-        
+            <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
+            
 
-        <section>
-            <h1>Galería</h1>
-            <img src="img/Valtteri-Bottas-Rodando.avif"  alt="">
         </section>
-        </main>
-    <footer>
-        <small>
-            Fuentes
-            <ul>
-                <li><a href="periodismoodelmotor.com">periodismoodelmotor</a></li>
-                <li><a href="es.wikipedia.org">wikipedia</a></li>
-            </ul>
-        </small>
+        <section class="Galeria">
+            <h1>Galería</h1>
+            <div class="slider-box">
+                <ul>
+                    <li><img src="./img/Galeria/2010.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2011.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2014.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2015.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2016.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2017.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2018.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2019.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2020.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2021.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2022.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2023.avif" alt=""></li>
+                </ul>
+            </div>
+            <!--1024x576 16:9-->
+        </section> 
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre nosotros</h3>
+                <p>Esto es solo un ejemplo para una materia de DAM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: email@lenmguajeDeMarcas.com</p>
+                <p>Phone: +34 670 633 975</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sígueme en </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="/IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
     </footer>
 </body>
+</html>
