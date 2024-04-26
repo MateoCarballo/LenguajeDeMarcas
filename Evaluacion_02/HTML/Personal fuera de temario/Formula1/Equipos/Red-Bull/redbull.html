@@ -3,85 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oracle Red Bull Racing</title>
-    <link rel="stylesheet" href="equipo.css">
-    <link rel="shortcut icon" href="img/logos-redbull-f1-2021.png" type="image/x-icon">
+    <title>Oracle Red-Bull Racing</title>
+    <link rel="stylesheet" href="redbull.css">
+    <link rel="shortcut icon" href="img/logos-redbull-f1-2021.png" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
-    <header>
-        <h1>Oracle Red Bull Racing</h1>
-        <img src="img/logos-redbull-f1-2021.png" alt="">
-        <img src="img/red bull.avif" alt="" width="300">
+    <header class="Encabezado-Principal">
+        <nav id="menu">
+            <ul class="navegacion">
+                <li><a href="../equipos.html">Inicio</a></li>
+                <li><a href="#">Circuitos</a>
+                    <ul>
+                        <li class="Enlace-Navegacion"><a href="#">Bahrain</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Arabia Saudi</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Australia</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Japón</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">China</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Miami</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Imola</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monaco</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Canadá</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">España</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Austria</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Silverstone</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Hungría</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Bélgica</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Zandvort</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monza</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Singapore</a></li> 
+                        <li class="Enlace-Navegacion"><a href="#">Austin</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Brasil</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Las Vegas</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Qatar</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">abu Dhabi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Equipos</a>
+                    <ul>
+                        <li><a href="../Alpine/alpine.html">Alpine</a></li>
+                        <li><a href="../Aston-Martin/astonmartin.html">Aston-Martin</a></li>
+                        <li><a href="../Ferrari/ferrari.html">Ferrari</a></li>
+                        <li><a href="../Haas/haas.html">Haas</a></li>
+                        <li><a href="../Mclaren/mclaren.html">Mclaren</a></li>
+                        <li><a href="../Mercedes/mercedes.html">Mercedes</a></li>
+                        <li><a href="../Red-Bull/redbull.html">Red-Bull</a></li>
+                        <li><a href="../Stake/stake.html">Stake</a></li>
+                        <li><a href="../Visa-RB/visarb.html">Visa-RB</a></li>
+                        <li><a href="../Williams/williams.html">Williams</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pilotos</a>
+                    <ul>
+                        <li><a href="#">Pierre Gasly</a></li>
+                        <li><a href="#">Esteban Ocon</a></li>
+                        <li><a href="#">Fernano Alonso</a></li>
+                        <li><a href="#">Lance Stroll</a></li>
+                        <li><a href="#">Carlos Sainz</a></li>
+                        <li><a href="#">Charles Leclerc</a></li>
+                        <li><a href="#">Kevin Magnusen</a></li>
+                        <li><a href="#">Nico Hulkenberg</a></li>
+                        <li><a href="#">Lando Norris</a></li>
+                        <li><a href="#">Oscar Piastri</a></li>
+                        <li><a href="#">Lewis Hamilton</a></li>
+                        <li><a href="#">George Russell</a></li>
+                        <li><a href="#">Max Verstapen</a></li>
+                        <li><a href="#">Sergio Pérrez</a></li>
+                        <li><a href="#">Valtteri Bottas</a></li>
+                        <li><a href="#">Huangyu Zhou</a></li>
+                        <li><a href="#">Daniel Ricciardo</a></li>
+                        <li><a href="#">Yuki Tsunoda</a></li>
+                        <li><a href="#">Logan Sargeant</a></li>
+                        <li><a href="#">Alexander Albon</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+
     </header>
     <main>
+        <div class="Pilotos-DatosEquipo">
+            <section class="tabla-container">
+                <div class="tabla">
+                    <header>
+                        <h1>Datos del equipo</h1>
+                    </header>
+                    <div class="contenido">
+                        <img src="./img/red bull.avif" alt="Logo-Hass" class="logo">
+                        <table class="tabla-estadisticas">
+                            <tr>
+                                <td>Sede</td>
+                                <td>Milton Keynes, United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <td>Jefe de equipo</td>
+                                <td>Christian Horner</td>
+                            </tr>
+                            <tr>
+                                <td>chasis</td>
+                                <td>RB20</td>
+                            </tr>
+                            <tr>
+                                <td>Unidad de potencia</td>
+                                <td>Honda RBPT</td>
+                            </tr>
+                            <tr>
+                                <td>Primera participación</td>
+                                <td>1997</td>
+                            </tr>
+                            <tr>
+                                <td>Campeonatos del mundo</td>
+                                <td>6</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
 
-        <section>
-            <header>Datos del equipo</header>
-            <table border="1">
-                <tr>
-                    <td>Sede</td>
-                    <td>Milton Keynes, United Kingdom</td>
-                </tr>
-                <tr>
-                    <td>Jefe de equipo</td>
-                    <td>Christian Horner</td>
-                </tr>
-                <tr>
-                    <td>chasis</td>
-                    <td>RB20</td>
-                </tr>
-                <tr>
-                    <td>Unidad de potencia</td>
-                    <td>Honda RBPT</td>
-                </tr>
-                <tr>
-                    <td>Primera participación</td>
-                    <td>1997</td>
-                </tr>
-                <tr>
-                    <td>Campeonatos del mundo</td>
-                    <td>6</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
+            <section class="Pilotos">
+                <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
+                <div class="ContenedorPilotos">
+                    <a id="Piloto1" href="pilotos/maxverstapen.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Max-Verstappen.avif" class="Foto-Piloto" title="Max-Verstappen" alt="VER">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Max-Verstappen(dorsal).avif" alt="Dorsal">
+                                    <img src="../ZZ_Banderas/Netherlands.webp"  alt="Bandera">
+                                </div>
+                                <div class="Nombre">
+                                    Max <br><strong>Verstappen</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="Piloto2" href="./pilotos/sergioperez.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Sergio-Perez.avif" class="Foto-Piloto" title="S.Perez" alt="PER">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Sergio-Perez(dorsal).avif"  alt="Dorsal">
+                                    <img src="../ZZ_Banderas/Mexico.webp" alt="Bandera">
+                                </div>
+                                <div class="Nombre">
+                                    George<br><strong>RUSSELL</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="Historia">
             <header>
                 <h1>Historia</h1>
             </header>
-            <p>Historia del equipo</p>
-        </section>
-        
-        <section>
-            <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
-            <header>
-                <h1>Pilotos</h1>
-            </header>
-            <img src="img/max-verstappen-2023.png" title="M.Verstappen" alt="VER">
-            <img src="img/sergio-perez-2023.png" title="S.Pérez" alt="PER">
-            <p>Pilotos del equipo</p>
-        </section>
+            <p>Descubre la fascinante historia de Red Bull en la Fórmula 1 desde 2005 hasta hoy. 
+                Acompaña a tus pilotos favoritos de Red Bull a lo largo de los años y celebra los 
+                momentos más destacados.</p>
 
-        <section>
+            <p>En 2023, el RB19, pilotado por Max Verstappen, se muestra prácticamente invencible, 
+                llevando al equipo a ganar todas las carreras menos una en su camino hacia un segundo 
+                doblete consecutivo de campeonato. Esta campaña récord también resulta en su primer 
+                doblete en la clasificación de pilotos.</p>
+            
+            <p>Después de superar el temprano desafío de Ferrari en 2022, Red Bull domina para
+                 llevarse su primer doblete de títulos desde 2013. Max Verstappen asegura un 
+                 récord de 15 victorias para retener la corona de pilotos, aunque una multa de 
+                 $7 millones y una reducción en las pruebas futuras en el túnel de viento por 
+                 exceder el límite de presupuesto de 2021 empañan el logro.</p>
+            
+            <p>En 2021, Red Bull asegura su primer campeonato de pilotos desde 2013, ganando 11 d
+                e 22 carreras y presionando a Mercedes hasta el final en una intensa - y, a veces,
+                 amarga - lucha de constructores. El nuevo compañero de equipo, Sergio Pérez, brinda 
+                 un apoyo invaluable para el exitoso intento de título de Max Verstappen.</p>
+            
+            <p>En 2020, Red Bull se encuentra en un solitario segundo lugar en la clasificación, 
+                consistentemente por delante del pelotón pero raramente capaz de igualar el ritmo 
+                de los campeones Mercedes. Max Verstappen brilla con dos victorias y otros nueve 
+                podios, pero la falta de rendimiento de Alex Albon lo lleva a ser reemplazado para 2021.</p>
+            
+            <p>La transición de Renault a Honda en 2019 es notablemente suave para Red Bull. Las 
+                cuatro victorias de Max Verstappen aseguran una cantidad casi idéntica de puntos 
+                a la de 2018. Cambiar a Pierre Gasly a mitad de año en favor del novato Alex Albon, 
+                junto con el progreso tardío en la temporada, eleva las esperanzas de un verdadero 
+                desafío por el título en 2020.</p>
+            
+            <p>En 2018, la falta de rendimiento y confiabilidad de sus unidades de potencia Renault
+                 significa que solo ocasionalmente están en genuina contienda por las victorias. 
+                 A pesar de esto, Daniel Ricciardo y Max Verstappen aseguran algunas victorias y un tercer 
+                 lugar en la clasificación, con la esperanza de mejorar cortesía de Honda en 2019.</p>
+            
+            <p>En 2017, incapaces de seguir el ritmo de Mercedes y Ferrari, Red Bull cae al tercer 
+                lugar en la clasificación. Sin embargo, Daniel Ricciardo y Max Verstappen demuestran 
+                su calidad estelar al llevarse tres victorias entre ellos.</p>
+            
+            <p>La combinación del excelente chasis RB12 y la unidad de potencia Renault mucho 
+                mejorada en 2016 hace que Red Bull vuelva a ser los únicos rivales serios de Mercedes 
+                para las victorias en las carreras. Daniel Ricciardo y la estrella ascendente Max Verstappen
+                 se llevan una victoria cada uno.</p>
+            
+            <p>En 2015, los problemas con la unidad de potencia los hacen caer en la clasificación,
+                 pero Daniel Ricciardo y Daniil Kvyat logran tres podios y un cuarto lugar, 
+                 sus peores resultados desde 2008.</p>
+            
+            <p>Después de una pretemporada desastrosa en 2014, Red Bull termina segundos detrás
+                 de Mercedes, con Daniel Ricciardo dominando a Sebastian Vettel. Esto marca el 
+                 comienzo de un período de éxito para el equipo.</p>
+            
+            <p>En 2013, el RB9 con motor Renault es nuevamente rápido desde el principio, y el 
+                equipo asegura su cuarto título de constructores consecutivo en India.</p>
+            
+            <p>En 2012, a pesar de la prohibición de los difusores soplados por el escape, Red Bull 
+                sigue siendo competitivo y gana su tercer título de constructores.</p>
+            
+            <p>El RB7 y Sebastian Vettel dominan en 2011, asegurando ambos títulos antes del final de la temporada.</p>
+            
+            <p>En 2010, Red Bull gana su primer título de constructores, con Mark Webber y Sebastian Vettel como pilotos.</p>
+            
+            <p>El rápido RB5 y las grandes actuaciones de Vettel y Webber llevan a Red Bull al 
+                gran escenario en 2009, convirtiéndolos en los rivales más cercanos de Brawn GP.</p>
+            
+            <p>En 2008, Red Bull enfrenta dificultades con el RB4, terminando en el séptimo lugar.</p>
+            
+            <p>Con un comienzo difícil en 2007, Red Bull mejora a lo largo de la temporada, 
+                logrando su mejor resultado en el Gran Premio de Europa.</p>
+            
+            <p>En 2006, la temporada es más difícil que la primera, pero Red Bull sigue mejorando.</p>
+            
+            <p>En su primera campaña en 2005, Red Bull demuestra un gran desempeño, superando las
+                 expectativas y terminando en un sólido séptimo lugar.</p>
+                         
+            </section>
+        <section class="Palmares">
             <header>
                 <h1>Palmarés</h1>
             </header>
-        </section>
-        
+            <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
+            
 
-        <section>
-            <h1>Galería</h1>
-            <img src="img/Sergio-Perez-Rodando.avif"  alt="">
         </section>
-        </main>
-    <footer>
-        <small>
-            Fuentes
-            <ul>
-                <li><a href="periodismoodelmotor.com">periodismoodelmotor</a></li>
-                <li><a href="es.wikipedia.org">wikipedia</a></li>
-            </ul>
-        </small>
+        <section class="Galeria">
+            <h1>Galería</h1>
+            <div class="slider-box">
+                <ul>
+                    <li><img src="./img/Galeria/2010.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2011.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2014.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2015.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2016.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2017.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2018.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2019.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2020.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2021.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2022.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2023.avif" alt=""></li>
+                </ul>
+            </div>
+            <!--1024x576 16:9-->
+        </section> 
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre nosotros</h3>
+                <p>Esto es solo un ejemplo para una materia de DAM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: email@lenmguajeDeMarcas.com</p>
+                <p>Phone: +34 670 633 975</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sígueme en </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="/IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
     </footer>
 </body>
+</html>
