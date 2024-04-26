@@ -13,59 +13,123 @@
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
     <header class="Encabezado-Principal">
-        <img class="Logo-Equipo" src="./img/rb.avif" width="200" alt="logo-williams">
-        <nav>
-            <ul class="Enlaces-Navegacion">
-                <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="./pilotos/danielricciardo.html">Daniel Ricciardo</a></li>
-                <li><a href="./pilotos/yukitsunoda.html">Yuki Tsunoda</a></li>
-                <li><a href="#001">Galería</a></li>
+        <nav id="menu">
+            <ul class="navegacion">
+                <li><a href="../equipos.html">Inicio</a></li>
+                <li><a href="#">Circuitos</a>
+                    <ul>
+                        <li class="Enlace-Navegacion"><a href="#">Bahrain</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Arabia Saudi</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Australia</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Japón</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">China</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Miami</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Imola</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monaco</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Canadá</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">España</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Austria</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Silverstone</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Hungría</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Bélgica</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Zandvort</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monza</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Singapore</a></li> 
+                        <li class="Enlace-Navegacion"><a href="#">Austin</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Brasil</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Las Vegas</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Qatar</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">abu Dhabi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Equipos</a>
+                    <ul>
+                        <li><a href="../Alpine/alpine.html">Alpine</a></li>
+                        <li><a href="../Aston-Martin/astonmartin.html">Aston-Martin</a></li>
+                        <li><a href="../Ferrari/ferrari.html">Ferrari</a></li>
+                        <li><a href="../Haas/haas.html">Haas</a></li>
+                        <li><a href="../Mclaren/mclaren.html">Mclaren</a></li>
+                        <li><a href="../Mercedes/mercedes.html">Mercedes</a></li>
+                        <li><a href="../Red-Bull/redbull.html">Red-Bull</a></li>
+                        <li><a href="../Stake/stake.html">Stake</a></li>
+                        <li><a href="../Visa-RB/visarb.html">Visa-RB</a></li>
+                        <li><a href="../Williams/williams.html">Williams</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pilotos</a>
+                    <ul>
+                        <li><a href="#">Pierre Gasly</a></li>
+                        <li><a href="#">Esteban Ocon</a></li>
+                        <li><a href="#">Fernano Alonso</a></li>
+                        <li><a href="#">Lance Stroll</a></li>
+                        <li><a href="#">Carlos Sainz</a></li>
+                        <li><a href="#">Charles Leclerc</a></li>
+                        <li><a href="#">Kevin Magnusen</a></li>
+                        <li><a href="#">Nico Hulkenberg</a></li>
+                        <li><a href="#">Lando Norris</a></li>
+                        <li><a href="#">Oscar Piastri</a></li>
+                        <li><a href="#">Lewis Hamilton</a></li>
+                        <li><a href="#">George Russell</a></li>
+                        <li><a href="#">Max Verstapen</a></li>
+                        <li><a href="#">Sergio Pérrez</a></li>
+                        <li><a href="#">Valtteri Bottas</a></li>
+                        <li><a href="#">Huangyu Zhou</a></li>
+                        <li><a href="#">Daniel Ricciardo</a></li>
+                        <li><a href="#">Yuki Tsunoda</a></li>
+                        <li><a href="#">Logan Sargeant</a></li>
+                        <li><a href="#">Alexander Albon</a></li>
+                    </ul>
+                </li>
             </ul>
-        </nav>
+    </nav>
     </header>
     <main>
         <div class="Pilotos-DatosEquipo">
-            <section class="Tabla">
-                <header>
-                    <h1>Datos del equipo</h1>
-                </header>
-                <table class="Tabla-estadisticas">
-                    <tr>
-                        <td>Sede</td>
-                        <td>Faenza, Italia</td>
-                    </tr>
-                    <tr>
-                        <td>Jefe de equipo</td>
-                        <td>Laurent Mekies</td>
-                    </tr>
-                    <tr>
-                        <td>Chasis</td>
-                        <td>VCARB 01</td>
-                    </tr>
-                    <tr>
-                        <td>Unidad de potencia</td>
-                        <td>Honda RBPT</td>
-                    </tr>
-                    <tr>
-                        <td>Primera participación</td>
-                        <td>1985</td>
-                    </tr>
-                    <tr>
-                        <td>Campeonatos del mundo</td>
-                        <td>N/A</td>
-                    </tr>
-                </table>
+            <section class="tabla-container">
+                <div class="tabla">
+                    <header>
+                        <h1>Datos del equipo</h1>
+                    </header>
+                    <div class="contenido">
+                        <img src="./img/rb.avif" alt="Logo-RB" class="logo">
+                        <table class="tabla-estadisticas">
+                            <tr>
+                                <td>Sede</td>
+                                <td>Faenza, Italia</td>
+                            </tr>
+                            <tr>
+                                <td>Jefe de equipo</td>
+                                <td>Laurent Mekies</td>
+                            </tr>
+                            <tr>
+                                <td>Chasis</td>
+                                <td>VCARB 01</td>
+                            </tr>
+                            <tr>
+                                <td>Unidad de potencia</td>
+                                <td>Honda RBPT</td>
+                            </tr>
+                            <tr>
+                                <td>Primera participación</td>
+                                <td>1985</td>
+                            </tr>
+                            <tr>
+                                <td>Campeonatos del mundo</td>
+                                <td>N/A</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </section>
-    
             <section class="Pilotos">
                 <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
                 <header>
                     <h1>Pilotos</h1>
                 </header>
                 <div class="ContenedorPilotos">
-                    <a id="Piloto1" href="pilotos/alexanderalbon.html" class="Enlace-Pagina-Piloto">
+                    <a id="Piloto1" href="pilotos/danielricciardo.html" class="Enlace-Pagina-Piloto">
                         <div class="Piloto">
-                            <img src="./img/Daniel Ricciardo(nofondo).avif" class="Foto-Piloto" title="D.Ricciardo" alt="RIC">
+                            <img src="./img/Daniel Ricciardo.avif" class="Foto-Piloto" title="D.Ricciardo" alt="RIC">
                             <div class="Bandera-Dorsal-Nombre">
                                 <div class="Bandera-Dorsal">
                                     <img src="./img/Daniel Ricciardo(dorsal).avif" alt="Dorsal-Ricciardo">
@@ -79,14 +143,14 @@
                     </a>
                     <a id="Piloto2" href="./pilotos/yukitsunoda.html" class="Enlace-Pagina-Piloto">
                         <div class="Piloto">
-                            <img src="./img/Yuki Tsunoda(nofondo).avif" class="Foto-Piloto" title="Y.Tsunoda" alt="TSU">
+                            <img src="./img/Yuki Tsunoda.avif" class="Foto-Piloto" title="Y.Tsunoda" alt="TSU">
                             <div class="Bandera-Dorsal-Nombre">
                                 <div class="Bandera-Dorsal">
                                     <img src="./img/Yuki Tsunoda(dorsal).avif"  alt="Dorsal-Logan">
                                     <img src="../ZZ_Banderas/Japan.avif" alt="Bandera_Japon">
                                 </div>
                                 <div class="Nombre">
-                                    Yuki <strong>TSUNODA</strong>
+                                    Yuki <br><strong>TSUNODA</strong>
                                 </div>
                             </div>
                         </div>
@@ -169,57 +233,17 @@
             <h1>Galería</h1>
             <div class="slider-box">
                 <ul>
-                    <li><img src="./img/" alt=""></li>
-                    <li><img src="img/Galeria/1979.avif" alt=""></li>
-                    <li><img src="img/Galeria/1980.avif" alt=""></li>
-                    <li><img src="img/Galeria/1986.avif" alt=""></li>
-                    <li><img src="img/Galeria/1992.avif" alt=""></li>
-                    <li><img src="img/Galeria/1993.avif" alt=""></li>
-                    <li><img src="img/Galeria/1994.avif" alt=""></li>
-                    <li><img src="img/Galeria/1996.avif" alt=""></li>
-                    <li><img src="img/Galeria/1997.avif" alt=""></li>
-                    <li><img src="img/Galeria/2000-2002.avif" alt=""></li>
-                    <li><img src="img/Galeria/2003.avif" alt=""></li>
-                    <li><img src="img/Galeria/2004.avif" alt=""></li>
-                    <li><img src="img/Galeria/2005.avif" alt=""></li>
-                    <li><img src="img/Galeria/2006.avif" alt=""></li>
-                    <li><img src="img/Galeria/2007.avif" alt=""></li>
-                    <li><img src="img/Galeria/2008.avif" alt=""></li>
-                    <li><img src="img/Galeria/2009.avif" alt=""></li>
-                    <li><img src="img/Galeria/2010.avif" alt=""></li>
-                    <li><img src="img/Galeria/2011.avif" alt=""></li>
-                    <li><img src="img/Galeria/2012.avif" alt=""></li>
-                    <li><img src="img/Galeria/2013.avif" alt=""></li>
-                    <li><img src="img/Galeria/2014.avif" alt=""></li>
-                    <li><img src="img/Galeria/2015.avif" alt=""></li>
-                    <li><img src="img/Galeria/2016.avif" alt=""></li>
-                    <li><img src="img/Galeria/2017.avif" alt=""></li>
-                    <li><img src="img/Galeria/2018.avif" alt=""></li>
-                    <li><img src="img/Galeria/2020.avif" alt=""></li>
-                    <li><img src="img/Galeria/2021.avif" alt=""></li>
-                    <li><img src="img/Logan-Sargeant-Rodando.avif" alt=""></li>
-                    <li><img src="img/Galeria/2022.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1.avif" alt=""></li>
+                    <li><img src="img/Galeria/2.avif" alt=""></li>
+                    <li><img src="img/Galeria/3.avif" alt=""></li>
+                    <li><img src="img/Galeria/4.avif" alt=""></li>
+                    <li><img src="img/Galeria/5.avif" alt=""></li>
+                    <li><img src="img/Galeria/6.avif" alt=""></li>
                 </ul>
             </div>
             <!--1024x576 16:9-->
         </section> 
     </main>
-
-
-<!--
-    <header class="Encabezado-Principal">
-        <img class="Logo-Equipo" src="img/williams.avif" width="200" alt="logo-williams">
-        <nav>
-            <ul class="Enlaces-Navegacion">
-                <li><a href="../../index.html">Inicio</a></li>
-                <li><a href="pilotos/alexanderalbon.html">Alexander Albon</a></li>
-                <li><a href="pilotos/logansargeant.html">Logan Sargeant</a></li>
-                <li><a href="#001">Galería</a></li>
-            </ul>
-        </nav>
-    </header>
--->
-
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-column">

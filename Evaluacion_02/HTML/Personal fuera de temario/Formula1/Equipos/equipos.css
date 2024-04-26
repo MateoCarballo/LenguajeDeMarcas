@@ -22,57 +22,95 @@ main{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background-color: rgb(230, 230, 230);
+    background-position: center center;
+    background-image: url(./f1_logo.svg);
+    background-size: 1500px;
+    background-repeat: no-repeat;
 }
 
 img{
     width: 100%; 
 }
 
-.Encabezado-Principal{
-    /*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
-position: sticky;
-top: 0;
-background-color: #003399;
-color: white;
-width: 100%;
-z-index: 100;
-font-size: 1.5rem;
-display: flex;
-justify-content:space-evenly;
-align-items: center;
-height: 85px;
-padding: 5px 10%;
-box-sizing: border-box;
+a{
+   text-decoration: none; 
 }
-    
-.Encabezado-Principal img{
-    height: 95%;
-    width: auto;
+
+/* Estilos para el encabezado */
+.Encabezado-Principal {
+    background-color: rgb(30, 29, 29); /* Fondo negro */
+    text-align: center; /* Centrar el contenido */
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    position: sticky; /* Para mantener el encabezado fijo */
+    top: 0; /* Anclarlo en la parte superior */
+    z-index: 1000;
 }
-    
-.Encabezado-Principal nav{
-    width: 700px;
+
+/* Estilos para la navegación principal */
+.navegacion {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    display: inline-block; /* Para que la navegación se centre y no se extienda horizontalmente */
+    position: relative; /* Ajuste para el posicionamiento relativo */
 }
-    
-.Encabezado-Principal .Enlaces-Navegacion{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+
+.navegacion > li {
+    list-style-type: none;
+    position: relative;
+    display: inline-block; /* Para que los elementos de primer nivel se muestren en línea */
 }
-    
-.Encabezado-Principal .Enlaces-Navegacion li{
-    transition: all 0.5s ease;
-    }
-    
-.Encabezado-Principal .Enlaces-Navegacion li:hover{
-    transform: scale(1.15);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Difuminado del texto */
+
+.navegacion > li > a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff; /* Color de texto blanco */
 }
-    
-.Encabezado-Principal .Enlaces-Navegacion a{
-    font-size: 700;
-    color: white;
-    text-decoration: none ;
+
+/* Estilos para los submenús */
+.navegacion ul {
+    list-style-type: none;
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(30, 29, 29); /* Color de fondo negro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 440px; /* Ancho total del submenú */
+    padding: 10px 20px; /* Espaciado interno */
+    z-index: 999; /* Asegura que los submenús estén por encima de otros elementos */
+    column-count: 2; /* Divide el contenido en dos columnas */
+    column-gap: 60px; /* Espacio entre las columnas */
+    text-align: center;
+}
+
+.navegacion ul li {
+    width: 100%; /* Ancho completo del elemento */
+    margin-bottom: 10px; /* Margen inferior para separar los elementos */
+
+}
+
+.navegacion ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff; /* Color de texto blanco */
+    text-decoration: none;
+}
+
+/* Estilos para desplegar los submenús al pasar el ratón sobre los elementos principales */
+.navegacion > li:hover > ul {
+    display: block;
+}
+
+/* Estilos para los submenús en dos líneas */
+.navegacion ul li a:hover {
+    background-color: #333; /* Color de fondo al pasar el ratón */
 }
 
 .columna{
@@ -115,7 +153,7 @@ box-sizing: border-box;
     height: 128px;
 }
 .Equipo p{
-    opacity: 0.01;
+    opacity: 0.00001;
     position: relative;
     left: 0;
     top: 0;
