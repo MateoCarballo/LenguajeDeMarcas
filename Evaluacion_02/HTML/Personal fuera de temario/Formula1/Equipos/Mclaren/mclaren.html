@@ -3,85 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>McLaren Formula 1 Team</title>
-    <link rel="stylesheet" href="equipo.css">
-    <link rel="shortcut icon" href="img/logo-mclaren-f1-2021.png" type="image/x-icon">
+    <title>Mclaren</title>
+    <link rel="stylesheet" href="mclaren.css">
+    <link rel="shortcut icon" href="img/logo-mclaren-f1-2021.png" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
-    <header>
-        <h1>McLaren Formula 1 Team</h1>
-        <img src="img/logo-mclaren-f1-2021.png" alt="">
-        <img src="img/mclaren.avif" alt="" width="300">
+    <header class="Encabezado-Principal">
+        <nav id="menu">
+            <ul class="navegacion">
+                <li><a href="../equipos.html">Inicio</a></li>
+                <li><a href="#">Circuitos</a>
+                    <ul>
+                        <li class="Enlace-Navegacion"><a href="#">Bahrain</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Arabia Saudi</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Australia</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Japón</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">China</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Miami</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Imola</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monaco</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Canadá</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">España</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Austria</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Silverstone</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Hungría</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Bélgica</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Zandvort</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Monza</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Singapore</a></li> 
+                        <li class="Enlace-Navegacion"><a href="#">Austin</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Brasil</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Las Vegas</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">Qatar</a></li>
+                        <li class="Enlace-Navegacion"><a href="#">abu Dhabi</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Equipos</a>
+                    <ul>
+                        <li><a href="../Alpine/alpine.html">Alpine</a></li>
+                        <li><a href="../Aston-Martin/astonmartin.html">Aston-Martin</a></li>
+                        <li><a href="../Ferrari/ferrari.html">Ferrari</a></li>
+                        <li><a href="../Haas/haas.html">Haas</a></li>
+                        <li><a href="../Mclaren/mclaren.html">Mclaren</a></li>
+                        <li><a href="../Mercedes/mercedes.html">Mercedes</a></li>
+                        <li><a href="../Red-Bull/redbull.html">Red-Bull</a></li>
+                        <li><a href="../Stake/stake.html">Stake</a></li>
+                        <li><a href="../Visa-RB/visarb.html">Visa-RB</a></li>
+                        <li><a href="../Williams/williams.html">Williams</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pilotos</a>
+                    <ul>
+                        <li><a href="#">Pierre Gasly</a></li>
+                        <li><a href="#">Esteban Ocon</a></li>
+                        <li><a href="#">Fernano Alonso</a></li>
+                        <li><a href="#">Lance Stroll</a></li>
+                        <li><a href="#">Carlos Sainz</a></li>
+                        <li><a href="#">Charles Leclerc</a></li>
+                        <li><a href="#">Kevin Magnusen</a></li>
+                        <li><a href="#">Nico Hulkenberg</a></li>
+                        <li><a href="#">Lando Norris</a></li>
+                        <li><a href="#">Oscar Piastri</a></li>
+                        <li><a href="#">Lewis Hamilton</a></li>
+                        <li><a href="#">George Russell</a></li>
+                        <li><a href="#">Max Verstapen</a></li>
+                        <li><a href="#">Sergio Pérrez</a></li>
+                        <li><a href="#">Valtteri Bottas</a></li>
+                        <li><a href="#">Huangyu Zhou</a></li>
+                        <li><a href="#">Daniel Ricciardo</a></li>
+                        <li><a href="#">Yuki Tsunoda</a></li>
+                        <li><a href="#">Logan Sargeant</a></li>
+                        <li><a href="#">Alexander Albon</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+
     </header>
     <main>
+        <div class="Pilotos-DatosEquipo">
+            <section class="tabla-container">
+                <div class="tabla">
+                    <header>
+                        <h1>Datos del equipo</h1>
+                    </header>
+                    <div class="contenido">
+                        <img src="./img/mclaren.avif" alt="Logo-Mclaren" class="logo">
+                        <table class="tabla-estadisticas">
+                            <tr>
+                                <td>Sede</td>
+                                <td>Woking, United Kingdom</td>
+                            </tr>
+                            <tr>
+                                <td>Jefe de equipo</td>
+                                <td>Andrea Stella</td>
+                            </tr>
+                            <tr>
+                                <td>chasis</td>
+                                <td>MCL38</td>
+                            </tr>
+                            <tr>
+                                <td>Unidad de potencia</td>
+                                <td>Mercedes</td>
+                            </tr>
+                            <tr>
+                                <td>Primera participación</td>
+                                <td>1966</td>
+                            </tr>
+                            <tr>
+                                <td>Campeonatos del mundo</td>
+                                <td>8</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
 
-        <section>
-            <header>Datos del equipo</header>
-            <table border="1">
-                <tr>
-                    <td>Sede</td>
-                    <td>Woking, United Kingdom</td>
-                </tr>
-                <tr>
-                    <td>Jefe de equipo</td>
-                    <td>Andrea Stella</td>
-                </tr>
-                <tr>
-                    <td>chasis</td>
-                    <td>MCL38</td>
-                </tr>
-                <tr>
-                    <td>Unidad de potencia</td>
-                    <td>Mercedes</td>
-                </tr>
-                <tr>
-                    <td>Primera participación</td>
-                    <td>1966</td>
-                </tr>
-                <tr>
-                    <td>Campeonatos del mundo</td>
-                    <td>8</td>
-                </tr>
-            </table>
-        </section>
-
-        <section>
+            <section class="Pilotos">
+                <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
+                <div class="ContenedorPilotos">
+                    <a id="Piloto1" href="pilotos/landonorris.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Lando-Norris.avif" class="Foto-Piloto" title="Lando-Norris" alt="NOR">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Lando-Norris(dorsal).avif" alt="Dorsal">
+                                    <img src="../ZZ_Banderas/Great-Britain.avif"  alt="Bandera">
+                                </div>
+                                <div class="Nombre">
+                                    Lando<br><strong>NORRIS</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a id="Piloto2" href="./pilotos/oscarpiastri.html" class="Enlace-Pagina-Piloto">
+                        <div class="Piloto">
+                            <img src="./img/Oscar-Piastri.avif" class="Foto-Piloto" title="O.Piastri" alt="PIA">
+                            <div class="Bandera-Dorsal-Nombre">
+                                <div class="Bandera-Dorsal">
+                                    <img src="./img/Oscar-Piastri(dorsal).avif"  alt="Dorsal">
+                                    <img src="../ZZ_Banderas/Australia.avif" alt="Bandera">
+                                </div>
+                                <div class="Nombre">
+                                    Oscar<br><strong>PIASTRI</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="Historia">
             <header>
                 <h1>Historia</h1>
             </header>
-            <p>Historia del equipo</p>
-        </section>
-        
-        <section>
-            <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
-            <header>
-                <h1>Pilotos</h1>
-            </header>
-            <img src="img/lando-norris-2023.png" title="L.Norris" alt="NOR">
-            <img src="img/oscar-piastri-2023.png" title="O.Piastri" alt="PIA">
-            <p>Pilotos del equipo</p>
-        </section>
+            <p>Descubre la fascinante historia de McLaren en la Fórmula 1, desde sus humildes inicios en
+                 1963 hasta sus momentos de gloria y desafíos en las últimas décadas. Acompaña a tus 
+                 pilotos favoritos a través de los años y revive los momentos más emocionantes de la escudería.</p>
 
-        <section>
+            <p>Desde su fundación en 1963 por Bruce McLaren, el equipo ha pasado por altibajos, desde 
+                victorias impresionantes hasta desafíos inesperados. En 1968, McLaren logró su primera 
+                victoria en Bélgica, marcando el inicio de una carrera llena de éxitos y tragedias.</p>
+            
+            <p>En 1970, Bruce McLaren perdió la vida en un trágico accidente mientras probaba un c
+                oche en el circuito de Goodwood. Sin embargo, el legado de McLaren continuó, y en 1976, 
+                James Hunt ganó el campeonato de pilotos para el equipo, en una temporada llena de emoción y drama.</p>
+            
+            <p>La década de 1980 fue testigo del ascenso de McLaren como uno de los equipos más 
+                dominantes en la historia de la F1. Con pilotos legendarios como Niki Lauda y 
+                Alain Prost al volante, McLaren ganó múltiples campeonatos de pilotos y constructores, 
+                estableciendo su lugar en la cima del deporte.</p>
+            
+            <p>En las décadas siguientes, McLaren enfrentó nuevos desafíos y cambios en el deporte, 
+                desde asociaciones exitosas con fabricantes de motores hasta temporadas difíciles 
+                con problemas de fiabilidad y rendimiento. Sin embargo, el espíritu de McLaren nunca 
+                se desvaneció, y el equipo continuó compitiendo con valentía en cada carrera.</p>
+            
+            <p>Hoy en día, McLaren sigue siendo una fuerza a tener en cuenta en la Fórmula 1, 
+                con una historia rica y emocionante que continúa inspirando a fanáticos de todo 
+                el mundo. Ya sea celebrando victorias o superando obstáculos, McLaren sigue siendo 
+                un símbolo de pasión, determinación y excelencia en el automovilismo deportivo.</p>
+                
+            </section>
+        <section class="Palmares">
             <header>
                 <h1>Palmarés</h1>
             </header>
+            <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
+                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
         </section>
-        
-
-        <section>
+        <section class="Galeria">
             <h1>Galería</h1>
-            <img src="img/Lando-Norris_Rodando.avif"  alt="">
-        </section>
-        </main>
-    <footer>
-        <small>
-            Fuentes
-            <ul>
-                <li><a href="periodismoodelmotor.com">periodismoodelmotor</a></li>
-                <li><a href="es.wikipedia.org">wikipedia</a></li>
-            </ul>
-        </small>
+            <div class="slider-box">
+                <ul>
+                    <li><img src="./img/Galeria/1976.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1984.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1985-1986.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1988-1991.avif" alt=""></li>
+                    <li><img src="./img/Galeria/1998-1999.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2000-2001.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2002.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2003.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2004.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2005.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2006.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2007.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2008.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2009.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2010.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2011.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2012.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2013.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2014.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2015.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2016.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2017.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2018.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2019.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2020.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2021.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2022.avif" alt=""></li>
+                    <li><img src="./img/Galeria/2023.avif" alt=""></li>
+
+                </ul>
+            </div>
+            <!--1024x576 16:9-->
+        </section> 
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre nosotros</h3>
+                <p>Esto es solo un ejemplo para una materia de DAM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: email@lenmguajeDeMarcas.com</p>
+                <p>Phone: +34 670 633 975</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sígueme en </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="/IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
     </footer>
 </body>
+</html>
