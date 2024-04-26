@@ -23,7 +23,7 @@ main{
     align-items: center;
     gap: 10px;
     background-color: rgb(230, 230, 230);
-    background-position: center center;
+    background-position: center;
     background-image: url(./f1_logo.svg);
     background-size: 1500px;
     background-repeat: no-repeat;
