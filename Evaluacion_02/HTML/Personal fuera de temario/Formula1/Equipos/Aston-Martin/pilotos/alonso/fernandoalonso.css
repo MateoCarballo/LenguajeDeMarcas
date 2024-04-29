@@ -21,6 +21,7 @@ main{
    margin: 0 auto;
 } 
 
+
 /* Estilos para el encabezado */
 .Encabezado-Principal {
     background-color: rgb(30, 29, 29); /* Fondo negro */
@@ -96,19 +97,58 @@ main{
 .navegacion ul li a:hover {
     background-color: #333; /* Color de fondo al pasar el ratón */
 }
-
-
-/*TODO pendiente de cambiar coloroces para marcar bordes redondeados en logos equipo*/
-.Pilotos-DatosEquipo {
+/************************************************************************/
+.Piloto{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     margin: 30px;
-    padding: 30px;
-    border-bottom: none; /* Eliminamos el borde inferior actual */
-    border-right: none; /* Eliminamos el borde derecho actual */
-    border-radius: 0 0 8px 0; /* Borde curvo solo en la esquina inferior derecha */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Sombreado en los bordes derecho e inferior */
+    padding:30px;
 }
+
+.containerPilotoDorsalBandera{
+    overflow: hidden;
+}
+
+.containerPilotoDorsalBandera p{
+    font-size: 50px;
+    font-family: 'Roboto','sans-serif';
+    text-indent: 20px; /* Añade sangría al texto*/
+}
+
+.containerDorsalBandera{
+    padding: 10px;
+}
+
+.containerDorsalBandera .imagenDorsal{
+    width: 10%;
+}
+
+.containerDorsalBandera .imagenBandera{
+    width: 10%;
+}
+
+.containerImagenPiloto{
+    overflow: hidden;
+    width: 600px;
+    height: 500px;
+}
+
+.imagenPiloto{
+    width: 600px;
+    padding: 10px;
+}
+
+.DatosPersonales {
+    margin: 30px;
+    width: 400px;
+}
+
+.DatosPersonales img{
+    width: 300px;
+}
+
+/*Tabla datos personales piloto*/
 
 .tabla-container {
     display: flex;
@@ -152,152 +192,6 @@ main{
 }
 
 
-.Pilotos-DatosEquipo header{
-box-sizing: border-box;
-height: 30px;
-margin-bottom: 20px;
-text-align: center;
-}
-
-.Pilotos{
-    padding: 10px;
-    float: right;
-}
-
-
-.ContenedorPilotos{
-display: flex;
-justify-content: space-between;
-width: 800px;
-height: 640px;
-}
-
-.Pilotos a{
-text-decoration: none;
-color: inherit;
-display: flex;
-}
-
-.Piloto{
-transition: all 0.5s ease;
-border-style: none;
-/* border-color: #003399; */
-border-width: 2px;
-width: 380px;
-overflow: hidden;
-align-items: center;
-box-shadow: 1px 1px 1px  #0600EF;
-} 
-
-.Piloto .Foto-Piloto{
-transition: all 0.5s ease;
-transform: scale(1.0);
-width: 380px;
-} 
-
-
-.Piloto:hover .Foto-Piloto{
-transition: all 0.5s ease;
-transform: scale(1.05);
-} 
-
-.Piloto:hover{
-box-shadow: 8px 5px 5px #0600EF;
-} 
-
-.Bandera-Dorsal-Nombre{
-padding:8px;
- }
-
-.Bandera-Dorsal{
-font-size: 0px;
-}
-
-.Bandera-Dorsal img{
-font-size: 50px;
-width: 80px;  
-}
-
-.Nombre{
-font-size: 50px;
-}
-
-/*CSS PARA EL CARRUSEL DE FOTOGRAFIAS A MODO DE GALERÍA*/
-
-.Galeria{
-margin: 30px;
-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
-padding: 30px;
-}
-
-.slider-box{
-    width: 100%;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-}
-
-.slider-box ul{
-    display: flex;
-    padding: 0;
-    width: 3000%;
-    animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-box li {
-    width: 3.3333333%;
-    list-style: none;
-    position: relative;
-}
-
-.slider-box img{
-    width: 100%;
-}
-
-/*PERSONALIZACION DE LOS TIEMPOS PARA LAS ANIMACIONES*/
-
-@keyframes slide {
-    0% { margin-left: -0%; } /* 1ª imagen (0s) */
-    8% { margin-left: -0%; } /* 1ª imagen (2s) */
-    16% { margin-left: -100%; } /* 2ª imagen (0s) */
-    25% { margin-left: -100%; } /* 2ª imagen (2s) */
-    32% { margin-left: -200%; } /* 3ª imagen (0s) */
-    41% { margin-left: -200%; } /* 3ª imagen (2s) */
-    50% { margin-left: -300%; } /* 4ª imagen (0s) */
-    60% { margin-left: -300%; } /* 4ª imagen (2s) */
-    66% { margin-left: -400%; } /* 5ª imagen (0s) */
-    70% { margin-left: -400%; } /* 5ª imagen (2s) */
-    81% { margin-left: -500%; } /* 6ª imagen (0s) */
-    91% { margin-left: -500%; } /* 6ª imagen (2s) */
-    100% { margin-left: 0%; } /* 7ª imagen (0s) */
-  }
-
-/* @keyframes slide {
-    El porcentaje de la izquierda es el momento dentro de la animacion
-    el de la derecha en el porcentaje dentro de la "tira" de fotos.
-    Sabiendo que tenemos 30 fotos en total le damos un ancho de 3000% en 'ul' 
-    cada foto ocupara un 3,333333% del ancho en la pantalla cuando se visualiza
- */
-.Historia{
-margin: 30px;
-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
-padding: 30px;
-}
-
-.Historia header,p{
-padding-bottom: 30px;
-}
-
-.Palmares{
-margin: 30px;
-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
-padding: 30px
-}
-
-.Palmares header,p{
-padding-bottom: 30px;
-}
-
 /*CSS PARA EL PIE DE PAGINA*/
 .site-footer {
     background-color: rgb(30, 29, 29);
@@ -307,7 +201,7 @@ padding-bottom: 30px;
 }
 
 .footer-content {
-    display: flex;
+    display: flex; 
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -349,4 +243,3 @@ padding-bottom: 30px;
     font-size: 12px;
     margin-top: 20px;
 }
-
