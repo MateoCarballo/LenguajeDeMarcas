@@ -25,13 +25,15 @@ main{
 .Piloto{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 30px;
     padding:30px;
-}
-
-.containerPilotoDorsalBandera{
     overflow: hidden;
+    border-bottom-right-radius: 10px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
 }
 
 .containerPilotoDorsalBandera p{
@@ -50,6 +52,7 @@ main{
 
 .containerDorsalBandera .imagenBandera{
     width: 10%;
+    border-radius: 5px ;
 }
 
 .containerImagenPiloto{
