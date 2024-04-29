@@ -4,86 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hass Money Gram F1</title>
+    <!--CONEXION CON TODOS LOS ARCHIVOS DE ESTILO-->
     <link rel="stylesheet" href="hass.css">
+    <link rel="stylesheet" href="../../Comunes/header.css">
+    <link rel="stylesheet" href="../../Comunes/footer.css">
     <link rel="shortcut icon" href="img/logo-haas-f1-2021.png" type="image/x-icon">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
+    <script src="../../Comunes/cargarContenido.js" defer></script>
+    <!--
+
+    <header class="Encabezado-Principal" id="header-container"></header>
+    <footer class="site-footer" id="footer-container"></footer>
+    -->
 </head>
 <body>
     <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
-    <header class="Encabezado-Principal">
-        <nav id="menu">
-            <ul class="navegacion">
-                <li><a href="../equipos.html">Inicio</a></li>
-                <li><a href="#">Circuitos</a>
-                    <ul>
-                        <li class="Enlace-Navegacion"><a href="#">Bahrain</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Arabia Saudi</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Australia</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Japón</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">China</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Miami</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Imola</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Monaco</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Canadá</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">España</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Austria</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Silverstone</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Hungría</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Bélgica</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Zandvort</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Monza</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Singapore</a></li> 
-                        <li class="Enlace-Navegacion"><a href="#">Austin</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Brasil</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Las Vegas</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">Qatar</a></li>
-                        <li class="Enlace-Navegacion"><a href="#">abu Dhabi</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Equipos</a>
-                    <ul>
-                        <li><a href="../Alpine/alpine.html">Alpine</a></li>
-                        <li><a href="../Aston-Martin/astonmartin.html">Aston-Martin</a></li>
-                        <li><a href="../Ferrari/ferrari.html">Ferrari</a></li>
-                        <li><a href="../Haas/haas.html">Haas</a></li>
-                        <li><a href="../Mclaren/mclaren.html">Mclaren</a></li>
-                        <li><a href="../Mercedes/mercedes.html">Mercedes</a></li>
-                        <li><a href="../Red-Bull/redbull.html">Red-Bull</a></li>
-                        <li><a href="../Stake/stake.html">Stake</a></li>
-                        <li><a href="../Visa-RB/visarb.html">Visa-RB</a></li>
-                        <li><a href="../Williams/williams.html">Williams</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Pilotos</a>
-                    <ul>
-                        <li><a href="#">Pierre Gasly</a></li>
-                        <li><a href="#">Esteban Ocon</a></li>
-                        <li><a href="#">Fernano Alonso</a></li>
-                        <li><a href="#">Lance Stroll</a></li>
-                        <li><a href="#">Carlos Sainz</a></li>
-                        <li><a href="#">Charles Leclerc</a></li>
-                        <li><a href="#">Kevin Magnusen</a></li>
-                        <li><a href="#">Nico Hulkenberg</a></li>
-                        <li><a href="#">Lando Norris</a></li>
-                        <li><a href="#">Oscar Piastri</a></li>
-                        <li><a href="#">Lewis Hamilton</a></li>
-                        <li><a href="#">George Russell</a></li>
-                        <li><a href="#">Max Verstapen</a></li>
-                        <li><a href="#">Sergio Pérrez</a></li>
-                        <li><a href="#">Valtteri Bottas</a></li>
-                        <li><a href="#">Huangyu Zhou</a></li>
-                        <li><a href="#">Daniel Ricciardo</a></li>
-                        <li><a href="#">Yuki Tsunoda</a></li>
-                        <li><a href="#">Logan Sargeant</a></li>
-                        <li><a href="#">Alexander Albon</a></li>
-                    </ul>
-                </li>
-            </ul>
-    </nav>
-
-    </header>
+    <header class="Encabezado-Principal" id="header-container"></header>
     <main>
         <div class="Pilotos-DatosEquipo">
             <section class="tabla-container">
@@ -222,28 +162,6 @@
             <!--1024x576 16:9-->
         </section> 
     </main>
-
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3>Sobre nosotros</h3>
-                <p>Esto es solo un ejemplo para una materia de DAM</p>
-            </div>
-            <div class="footer-column">
-                <h3>Contacto</h3>
-                <p>Email: email@lenmguajeDeMarcas.com</p>
-                <p>Phone: +34 670 633 975</p>
-            </div>
-            <div class="footer-column">
-                <h3>Sígueme en </h3>
-                <ul class="social-icons">
-                    <li><a href="#"><img src="/IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="/IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="/IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
-                </ul>
-            </div>
-        </div>
-        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
-    </footer>
+    <header class="Encabezado-Principal" id="header-container"></header>
 </body>
 </html>

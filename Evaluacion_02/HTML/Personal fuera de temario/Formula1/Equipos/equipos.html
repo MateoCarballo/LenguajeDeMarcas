@@ -8,11 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--CONEXION CON TODOS LOS ARCHIVOS DE ESTILO-->
     <link rel="stylesheet" href="equipos.css">
+    <link rel="stylesheet" href="../../Comunes/header.css">
+    <link rel="stylesheet" href="../../Comunes/footer.css">
+
+    <!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
+    <script src="../../Comunes/cargarContenido.js" defer></script>
 </head>
 <body>
     <!-- Revisar pagina oficial F1-->
-    <header class="Encabezado-Principal">
+    <header class="Encabezado-Principal" id="header-container"></header>
         <nav id="menu">
             <ul class="navegacion">
                 <li><a href="../equipos.html">Inicio</a></li>
@@ -163,5 +170,6 @@
             </a>
         </section>
     </main>
+    <footer class="site-footer" id="footer-container"></footer>
 </body>
 </html>
