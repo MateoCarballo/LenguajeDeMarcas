@@ -104,12 +104,15 @@ display: flex;
 .Piloto{
 transition: all 0.5s ease;
 border-style: none;
-/* border-color: #003399; */
 border-width: 2px;
 width: 380px;
 overflow: hidden;
 align-items: center;
-box-shadow: 1px 1px 1px #fd9cff;
+border-bottom-right-radius: 10px;
+border-right: 3px solid #FF69B4;
+border-bottom: 3px solid #0090FF;
+border-top: none;
+border-left: none;
 } 
 
 .Piloto .Foto-Piloto{
@@ -128,7 +131,7 @@ transform: scale(1.05);
  /* Primera capa de sombra - Azul */
  box-shadow: 8px 5px 5px #FF69B4,
  /* Segunda capa de sombra - Rosa */
- -8px -5px 5px #0090FF ;
+ -2px -5px 5px #0090FF ;
 } 
 
 .Bandera-Dorsal-Nombre{

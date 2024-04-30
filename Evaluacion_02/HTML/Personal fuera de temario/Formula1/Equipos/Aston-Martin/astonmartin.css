@@ -120,7 +120,11 @@ border-width: 2px;
 width: 380px;
 overflow: hidden;
 align-items: center;
-box-shadow: 1px 1px 1px #006F62;
+border-bottom-right-radius: 10px;
+border-right: 3px solid #006F62;
+border-bottom: 3px solid #006F62;
+border-top: none;
+border-left: none;
 } 
 
 .Piloto .Foto-Piloto{
@@ -139,7 +143,7 @@ transform: scale(1.05);
 /* Primera capa de sombra*/
 box-shadow: 8px 5px 5px #006F62,
 /* Segunda capa de sombra*/
--8px -5px 5px #FFD700;
+-2px -5px 5px #FFD700;
 } 
 
 .Bandera-Dorsal-Nombre{

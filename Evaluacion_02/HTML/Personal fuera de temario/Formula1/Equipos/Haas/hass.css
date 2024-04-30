@@ -103,12 +103,16 @@ display: flex;
 .Piloto{
 transition: all 0.5s ease;
 border-style: none;
-/* border-color: #003399; */
 border-width: 2px;
 width: 380px;
 overflow: hidden;
 align-items: center;
 box-shadow: 1px 1px 1px #000;
+border-bottom-right-radius: 10px;
+border-right: 3px solid #000;
+border-bottom: 3px solid #000;
+border-top: none;
+border-left: none;
 } 
 
 .Piloto .Foto-Piloto{
@@ -125,7 +129,7 @@ transform: scale(1.05);
 
 .Piloto:hover{
     box-shadow: 8px 5px 5px #000,
-    -8px -5px 5px #FFF;
+    -2px -5px 5px #FFF;
 } 
 
 .Bandera-Dorsal-Nombre{
