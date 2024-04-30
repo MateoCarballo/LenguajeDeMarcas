@@ -30,3 +30,7 @@ Preparado para el examen parcial del segundo trimestre
 
 IMPRIMIR LOS DOCUMENTOS DE TRANSFORMACION   W3 SCCHOOL
                                             REVISAR LOS EJERCICIOS HECHOS EN CLASE 
+
+
+                                            plantillas a un mismo  nodo
+                                            iteraciones
