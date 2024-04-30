@@ -1,27 +1,4 @@
-/*CSS ELEMENTOS GENERALES*/
-
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    
-}
-
-html{
-    font-family: 'Roboto','sans-serif';
-}
-
-body{
-    background-color: #efefef;
-    margin:0;
-}
-
-main{
-   width: 1400px; 
-   margin: 0 auto;
-} 
-
-/************************************************************************/
+/*Especifico para Alonso*/
 .Piloto{
     display: flex;
     align-items: center;
@@ -30,92 +7,8 @@ main{
     padding:30px;
     overflow: hidden;
     border-bottom-right-radius: 10px;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+    border-right: 3px solid #006F62;
+    border-bottom: 3px solid #006F62;
     border-top: none;
     border-left: none;
 }
-
-.containerPilotoDorsalBandera p{
-    font-size: 50px;
-    font-family: 'Roboto','sans-serif';
-    text-indent: 20px; /* Añade sangría al texto*/
-}
-
-.containerDorsalBandera{
-    padding: 10px;
-}
-
-.containerDorsalBandera .imagenDorsal{
-    width: 10%;
-}
-
-.containerDorsalBandera .imagenBandera{
-    width: 10%;
-    border-radius: 5px ;
-}
-
-.containerImagenPiloto{
-    overflow: hidden;
-    width: 600px;
-    height: 500px;
-}
-
-.imagenPiloto{
-    width: 600px;
-    padding: 10px;
-}
-
-.DatosPersonales {
-    margin: 30px;
-    width: 400px;
-}
-
-.DatosPersonales img{
-    width: 200px;
-}
-
-/*Tabla datos personales piloto*/
-
-.tabla-container {
-    display: flex;
-    justify-content: center;
-}
-
-.tabla {
-    max-width: 600px;
-    padding: 20px;
-}
-
-.tabla header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.tabla img.logo {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.tabla-estadisticas {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.tabla-estadisticas td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.tabla-estadisticas td:first-child {
-    font-weight: bold;
-}
-
-.tabla-estadisticas tr:last-child td {
-    border-bottom: none;
-}
-
-
