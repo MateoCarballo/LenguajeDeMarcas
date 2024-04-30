@@ -109,7 +109,7 @@ border-width: 2px;
 width: 380px;
 overflow: hidden;
 align-items: center;
-box-shadow: 1px 1px 1px #006F62;
+box-shadow: 1px 1px 1px #fd9cff;
 } 
 
 .Piloto .Foto-Piloto{
@@ -125,7 +125,10 @@ transform: scale(1.05);
 } 
 
 .Piloto:hover{
-box-shadow: 8px 5px 5px #0090FF;
+ /* Primera capa de sombra - Azul */
+ box-shadow: 8px 5px 5px #FF69B4,
+ /* Segunda capa de sombra - Rosa */
+ -8px -5px 5px #0090FF ;
 } 
 
 .Bandera-Dorsal-Nombre{

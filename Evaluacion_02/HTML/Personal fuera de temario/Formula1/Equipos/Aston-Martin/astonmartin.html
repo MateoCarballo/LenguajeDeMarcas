@@ -7,8 +7,8 @@
 
     <!--CONEXION CON TODOS LOS ARCHIVOS DE ESTILO-->
     <link rel="stylesheet" href="astonmartin.css">
-    <link rel="stylesheet" href="../../Comunes/header.css">
-    <link rel="stylesheet" href="../../Comunes/footer.css">
+    <link rel="stylesheet" href="/Comunes/header.css">
+    <link rel="stylesheet" href="/Comunes/footer.css">
 
     <link rel="shortcut icon" href="img/aston martin 2024.avif" type="image/x-icon">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,15 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
-    <script src="../../Comunes/cargarContenido.js" defer></script>
-    <!--
-
-    <header class="Encabezado-Principal" id="header-container"></header>
-    <footer class="site-footer" id="footer-container"></footer>
-    -->
+    <script src="/Comunes/cargarContenido.js" defer></script>
 </head>
 <body>
-    <header class="Encabezado-Principal" id="header-container"></header>
+    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html"></header>
     <main>
         <div class="Pilotos-DatosEquipo">
             <section class="tabla-container">
@@ -67,7 +62,7 @@
             <section class="Pilotos">
                 <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
                 <div class="ContenedorPilotos">
-                    <a id="Piloto1" href="pilotos/fernandoalonso.html" class="Enlace-Pagina-Piloto">
+                    <a id="Piloto1" href="./pilotos/alonso/fernandoalonso.html" class="Enlace-Pagina-Piloto">
                         <div class="Piloto">
                             <img src="./img/Fernando-Alonso.avif" class="Foto-Piloto" title="F.Alonso" alt="ALO">
                             <div class="Bandera-Dorsal-Nombre">
@@ -184,6 +179,6 @@
             <!--1024x576 16:9-->
         </section> 
     </main>
-    <footer class="site-footer" id="footer-container"></footer>
+    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html"></footer>
 </body>
 </html>

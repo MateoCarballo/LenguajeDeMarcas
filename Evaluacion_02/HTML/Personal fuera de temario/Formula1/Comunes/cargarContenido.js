@@ -1,15 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Cargar el contenido del header
-    fetch("../../Comunes/header.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("header-container").innerHTML = data;
-        });
+    // Función para cargar el contenido HTML desde una ruta específica
+    function cargarContenido(ruta, contenedorId) {
+        fetch(ruta)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById(contenedorId).innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error al cargar el contenido:', error);
+            });
+    }
 
+    // Obtener la ruta del header desde el atributo de datos
+    const rutaHeader = document.getElementById("header-container").getAttribute("data-ruta-header");
+    // Cargar el contenido del header
+    cargarContenido(rutaHeader, "header-container");
+
+    // Obtener la ruta del footer desde el atributo de datos
+    const rutaFooter = document.getElementById("footer-container").getAttribute("data-ruta-footer");
     // Cargar el contenido del footer
-    fetch("../../Comunes/footer.html")
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("footer-container").innerHTML = data;
-        });
+    cargarContenido(rutaFooter, "footer-container");
 });
