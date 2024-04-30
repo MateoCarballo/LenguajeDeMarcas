@@ -124,7 +124,9 @@ transform: scale(1.05);
 } 
 
 .Piloto:hover{
-box-shadow: 8px 5px 5px #00ff51;
+
+    box-shadow: 8px 5px 5px #00ff51,
+    -8px -5px 5px #000;
 } 
 
 .Bandera-Dorsal-Nombre{
