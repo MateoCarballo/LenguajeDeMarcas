@@ -1,34 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lewis Hamilton</title>
+    <!--ESTILOS NECESARIOS PARA PAGINAS DE CADA PILOTO-->
+    
+    <link rel="stylesheet" href="/Comunes/piloto.css">
+    <link rel="stylesheet" href="/Comunes/header.css">
+    <link rel="stylesheet" href="/Comunes/footer.css">
+    <link rel="stylesheet" href="/Equipos/Mercedes/pilotoMercedes.css">
+
+    <link rel="shortcut icon" href="/Equipos/Mercedes/img/casco-hamilton.avif" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
+<script src="/Comunes/cargarContenido.js" defer></script>
+
 </head>
 <body>
-    <div class="Pilotos-Equipo">
-        <!--Piloto 1 del equipo-->
-        <div class="Piloto">
-            <div class="fotoNombre-estadisticas">
-                    <div class="foto">
-                        <img src="/IMG/Equipos/Mercedes/Pilotos/lewis-hamilton-2023.png" width="300" alt="lewis">
+    <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
+    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html"></header>
+    <main>
+        <section class="Ficha-Piloto">
+            <div class="Piloto">
+                <div class="containerPilotoDorsalBandera">
+                    <div class="containerImagenPiloto">
+                        <img class="imagenPiloto" src="../../img/Lewis-Hamilton.avif" alt="Piloto">
                     </div>
-                    <div class="estadisticas">
-                        <h2>Lewis HAMILTON 44</h2>
-                        <ul>
-                        <li><strong>Fecha de nacimiento:</strong> {{fechaNacimiento}}</li>
-                        <li><strong>Nacionalidad:</strong> {{nacionalidad}}</li>
-                        <li><strong>Equipo:</strong> {{equipo}}</li>
-                        <li><strong>Número de carrera:</strong> {{numeroCarrera}}</li>
-                        <li><strong>Victorias:</strong> {{victorias}}</li>
-                        <li><strong>Podios:</strong> {{podios}}</li>
-                        <li><strong>Poles:</strong> {{poles}}</li>
-                        <li><strong>Vueltas rápidas:</strong> {{vueltasRapidas}}</li>
-                        <li><strong>Campeonatos:</strong> {{campeonatos}}</li>
-                        </ul>
+                    <div class="containerNombreDorsalBandera">
+                        <div class="containerDorsalBandera">
+                            <img class="imagenDorsal" src="../../img/Lewis-Hamilton(dorsal).avif" alt="Dorsal">
+                            <img class="imagenBandera" src="../../../ZZ_Banderas/Great-Britain.avif" alt="Bandera">                            <br>
+                            
+                        </div>
+                        <p><strong>Lewis Hamilton</strong></p>
                     </div>
-                  
+                </div>
+                <div class="DatosPersonales">
+                    <img src="../../img/casco-hamilton.avif" alt="casco">
+                    <section class="tabla-container">
+                        <div class="contenido">
+                                <table class="tabla-estadisticas">
+                                    <tr>
+                                        <td>Equipo</td>
+                                        <td>Mercedes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>País</td>
+                                        <td>Reino Unido</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Podiums</td>
+                                        <td>197</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Puntos</td>
+                                        <td>4658.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Grandes premios disputados</td>
+                                        <td>337</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Campeonatos del mundo</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mejor posicion en carrera</td>
+                                        <td>1(x103)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mejor posicion en parrilla</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fecha de cumpleaños </td>
+                                        <td>07/01/1985</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lugar de nacimiento </td>
+                                        <td>Stevenage, England</td>
+                                    </tr>
+                                </table>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
+        </section>
+    </main>
+    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html"></footer>
 </body>
 </html>
