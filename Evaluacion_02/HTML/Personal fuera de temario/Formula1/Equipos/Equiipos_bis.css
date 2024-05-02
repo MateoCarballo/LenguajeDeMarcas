@@ -8,12 +8,17 @@
 
 html{
     font-family: 'Roboto','sans-serif';
+    height: 100%;
 }
 
 body{
     background-color: #efefef;
     margin:0;
-    
+    padding: 0;
+}
+
+main{
+  min-height: 100%;
 }
 
 .rejilla-formulas{
@@ -30,8 +35,15 @@ height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 5em;
+    min-height: 100vh;
   }
   
+.contenedor-formulas::after {
+  content: "";
+  display: block;
+  height: 100px; /* Altura del pie de página */
+}
+
   /* hover styles */
   .equipo {
     position: relative;
@@ -73,7 +85,6 @@ height: auto;
     transform: scale(1.10);
   }
 
-  
 /* 
   GRADIENTES DE FONDO PARA CADA EQUIPO
 

@@ -9,9 +9,13 @@
 
 html{
     font-family: 'Roboto','sans-serif';
+    height: 100%;
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     background-color: #efefef;
     margin:0;
 }
@@ -20,6 +24,10 @@ main{
    width: 1400px; 
    margin: 0 auto;
 } 
+
+footer{
+margin-top: auto;
+}
 
 .imagenDorsal {
     width: 58px;
