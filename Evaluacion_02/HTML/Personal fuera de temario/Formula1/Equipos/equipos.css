@@ -56,25 +56,14 @@ a{
 }
 
 .Equipo{
-    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3) ;
+    /* box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3) ; */
     padding: 10px;
     width: 100%;
     height: 228px;
+    border-radius: 5%;
 }
-/* 
-.Equipo:hover p{
-    opacity: 1;
-    text-align: center;
-    transform: scale(1.05);
-} */
 
 /*EFECTO SOBRE LA IMAGEN AL PASAR SOBRE LA SECCION*/
-
-a{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em;
-}
 
 .Equipo img{
     transition: all 0.5s ease-in-out;
@@ -92,6 +81,7 @@ a{
     font-size: 35px;
     width: 432px;
     height: 100px;
+    
 }
 .Equipo:hover p{
     opacity: 0.8;
@@ -100,13 +90,14 @@ a{
 
 .Equipo:hover img{
     transition: all 0.5s ease-in-out;
-    transform: scale(1.05);
+    transform: scale(1.10);
+   
 }
 
 /*GRADIENTES DE FONDO PARA CADA EQUIPO*/
 
 #redbull:hover{
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background: linear-gradient(45deg, #0600EF, #ff0101, #FF8700);
     opacity: 0.85;
 }
