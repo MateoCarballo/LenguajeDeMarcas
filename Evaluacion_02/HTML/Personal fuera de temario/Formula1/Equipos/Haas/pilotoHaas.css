@@ -1,0 +1,14 @@
+/*Especifico para Haas*/
+.Piloto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+    padding:30px;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    border-top: none;
+    border-left: none;
+}
