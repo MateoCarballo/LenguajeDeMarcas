@@ -16,21 +16,20 @@ body{
     
 }
 
-.child-page-listing{
-    padding: 50px;
+.rejilla-formulas{
+    padding: 100px;
 }
 
 img {
 width: 100%; /* need to overwrite inline dimensions */
 height: auto;
 }
-  h2 {
-    margin-bottom: .5em;
-  }
-  .grid-container {
+
+
+  .contenedor-formulas {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em;
+    grid-gap: 5em;
   }
   
   /* hover styles */
@@ -39,14 +38,8 @@ height: auto;
   }
   
   .equipo-image {
-    line-height: 0;
+    line-height: 5;
     overflow: hidden;
-  }
-  
-  .equipo-image img {
-    filter: blur(0px);
-    transition: filter 0.3s ease-in;
-    transform: scale(1.1);
   }
   
   .equipo-title {
@@ -60,7 +53,7 @@ height: auto;
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity .5s;
+    /* transition: opacity .5s; */
     background: rgba(239, 239, 239, 0.1);
     color: black;
 
@@ -75,6 +68,72 @@ height: auto;
   }
   
   .equipo:hover .equipo-image img {
-    filter: blur(2px);
+    /* filter: blur(2px); */
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.10);
   }
+
+  
+/* 
+  GRADIENTES DE FONDO PARA CADA EQUIPO
+
+#redbull:hover{
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(45deg, #0600EF, #ff0101, #FF8700);
+}
+
+#mercedes:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg, #000000, #00D2BE);
+    opacity: 0.85;
+}
+
+#ferrari:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg,#DC0000,#fff, #fff700);
+    opacity: 0.85;
+}   
+
+#mclaren:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg, #000, #FF8700);
+    opacity: 0.85;
+}
+
+#astonmartin:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(35deg, #000 0%, #006F62 5%,#006F62 45%, #FFD700 50%, #006F62 55%, #fff 95%);
+    opacity: 0.85;
+}
+
+#alpine:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg, #000 0%, #0090FF 25%, #fd9cff 55%, #fff 95%);
+    opacity: 0.85;
+}
+
+#sauber:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(45deg, #000,#00ff51);
+    opacity: 0.85;
+}
+
+#visarb:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(15deg, #000 0%, #0299fd 25%, #fff 55%, #ff0000 95%);
+    opacity: 0.85;
+}
+
+#williams:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(15deg, #000 0%, #0090FF 65%, #835c07 85%);
+    opacity: 0.85;
+}
+
+#hass:hover{
+    transition: all 1s ease-in-out;
+    background: linear-gradient(15deg, #000 0%, #ffffff 65%, #ff0000 95%);
+    opacity: 0.85;
+} */
+
 

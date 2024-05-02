@@ -182,3 +182,9 @@ Logan Sargeant: #005AFF
 background: linear-gradient(45deg, #0600EF, #DC0000, #00D2BE, #FF8700,
  #006F62, #0090FF, #005AFF);
 */
+
+.contenedor-formulas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5em;
+  }
