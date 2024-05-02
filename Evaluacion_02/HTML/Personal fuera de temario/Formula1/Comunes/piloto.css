@@ -21,9 +21,18 @@ main{
    margin: 0 auto;
 } 
 
+.imagenDorsal {
+    width: 58px;
+    height: 40px;
+}
+
 .imagenBandera{
     border:solid 1px;
+    width: 58px;
+    height: 40px;
 }
+
+
 
 .containerPilotoDorsalBandera p{
     font-size: 50px;
