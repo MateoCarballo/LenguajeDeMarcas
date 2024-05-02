@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <!--ESTILOS COMUNES PARA CADA PILOTO-->
+    <link rel="stylesheet" href="/Registro/Formulario.css">
+    <link rel="stylesheet" href="/Comunes/header.css">
+    <link rel="stylesheet" href="/Comunes/footer.css">
+
+    <!--Estilo especifico pilotos Alpine-->
+    <link rel="stylesheet" href="/Equipos/Alpine/pilotoAlpine.css">
+
+    <link rel="shortcut icon" href="/IMG/Bandera cuadros.png" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
+<script src="/Comunes/cargarContenido.js" defer></script>
+
+</head>
+<body>
+    <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
+    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html"></header>
+    <main>
+        <form action="./guardarEnDB.php" method="post">
+            <section class="form-register">
+                <h4>CREAR UNA CUENTA</h4>
+                <hr>
+                <br>
+                <select class="controls" name="Género" id="desplegableSexo">
+                    <option value="" selected="Selected">-Género-</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
+                <input class="controls" type="text" name="nombre" placeholder="Nombre" id="nombre">
+                <input class="controls" type="text" name="apellido" placeholder="Apellidos" id="apellido">
+                <input class="controls" type="text" name="fechaNacimiento" placeholder="Fecha de Nacimiento (AAAA-MM-DD)" id="cumpleaños">
+                <select class="controls" name="paisDeNacimiento" id="desplegablePaises">
+                    <option value="" selected="selected">- País -</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Bélgica">Bélgica</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Chipre">Chipre</option>
+                    <option value="Croacia">Croacia</option>
+                    <option value="Dinamarca">Dinamarca</option>
+                    <option value="Eslovaquia">Eslovaquia</option>
+                    <option value="Eslovenia">Eslovenia</option>
+                    <option value="España">España</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Finlandia">Finlandia</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Grecia">Grecia</option>
+                    <option value="Hungría">Hungría</option>
+                    <option value="Irlanda">Irlanda</option>
+                    <option value="Italia">Italia</option>
+                    <option value="Letonia">Letonia</option>
+                    <option value="Lituania">Lituania</option>
+                    <option value="Luxemburgo">Luxemburgo</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Países Bajos">Países Bajos</option>
+                    <option value="Polonia">Polonia</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="República Checa">República Checa</option>
+                    <option value="Rumanía">Rumanía</option>
+                    <option value="Suecia">Suecia</option>
+                </select>
+                <input class="controls" type="text" name="correo" placeholder="correo@ejemplo.com" id="correo">
+                <input class="controls" type="password" placeholder="Contraseña" name="clave" id="clave">
+                <div class="explicaciones">
+                    <p>La contraseña debe tener: <br>
+                    · 8 caracteres ·Mayúsculas y minúsculas <br>
+                    · Algun caracter especial</p>
+                </div>
+    
+                <div class="terminosyCondiciones">
+                    <input type="checkbox" name="" id="">
+                    <p>Acepto los <a href="">Terminos y condiciones</a></p>
+                </div>
+                <input class="buttons" type="submit" value="Registrar">
+                <p><a href="">¿Estoy registrado?</a></p>
+            </section>
+    
+        </form>
+    </main>
+    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html"></footer>
+</body>
+</html>

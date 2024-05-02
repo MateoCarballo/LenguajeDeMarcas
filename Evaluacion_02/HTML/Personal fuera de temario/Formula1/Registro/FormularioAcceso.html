@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso</title>
+    <!--ESTILOS COMUNES PARA CADA PILOTO-->
+    <link rel="stylesheet" href="/Registro/Formulario.css">
+    <link rel="stylesheet" href="/Comunes/header.css">
+    <link rel="stylesheet" href="/Comunes/footer.css">
+
+    <!--Estilo especifico pilotos Alpine-->
+    <link rel="stylesheet" href="/Equipos/Alpine/pilotoAlpine.css">
+
+    <link rel="shortcut icon" href="/IMG/Bandera cuadros.png" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
+<script src="/Comunes/cargarContenido.js" defer></script>
+
+</head>
+<body>
+    <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
+    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html"></header>
+    <main>
+        <form action="./guardarEnDB.php" method="post">
+            <section class="form-register">
+                <h4>INICIAR SESIÓN</h4>
+                <hr>
+                <br>
+                
+                <input class="controls" type="text" name="nombre" placeholder="Usuario" id="nombre">
+                <input class="controls" type="password" name="apellido" placeholder="Contraseña" id="apellido">
+                <input class="buttons" type="submit" value="Iniciar sesión">
+                <p><a href="">¿Has olvidado tu contraseñah ?</a></p>
+            </section>
+    
+        </form>
+    </main>
+    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html"></footer>
+</body>
+</html>

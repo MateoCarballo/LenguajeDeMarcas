@@ -1,28 +1,22 @@
 
 *{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 html{
-    font-family: 'Roboto','sans-serif';
-    height: 100%;
+  font-family: 'Roboto','sans-serif';
 }
 
 body{
-    background-color: #efefef;
-    margin:0;
-    padding: 0;
-}
-
-main{
-  min-height: 100%;
+  background-color: #efefef;
+  margin:0px;
+  padding: 0px;
 }
 
 .rejilla-formulas{
-    padding: 100px;
+  padding: 100px;
 }
 
 img {
@@ -30,13 +24,15 @@ width: 100%; /* need to overwrite inline dimensions */
 height: auto;
 }
 
+footer{
+  margin-top: auto;
+}
 
-  .contenedor-formulas {
+.contenedor-formulas {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 5em;
-    min-height: 100vh;
-  }
+    min-height: 100%;}
   
 .contenedor-formulas::after {
   content: "";
