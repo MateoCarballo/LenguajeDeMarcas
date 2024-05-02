@@ -73,3 +73,7 @@
 .navegacion ul li a:hover {
     background-color: #333; /* Color de fondo al pasar el ratón */
 }
+
+li > img {
+    width: 80px;
+}
