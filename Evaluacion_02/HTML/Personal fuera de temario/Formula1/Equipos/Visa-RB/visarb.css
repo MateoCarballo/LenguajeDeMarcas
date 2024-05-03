@@ -168,7 +168,7 @@ padding: 30px;
     display: flex;
     padding: 0;
     width: 3000%;
-    animation: slide 20s infinite alternate ease-in-out;
+    animation: slide 10s infinite alternate ease-in-out;
 }
 
 .slider-box li {
@@ -185,19 +185,16 @@ padding: 30px;
 
 @keyframes slide {
     0% { margin-left: -0%; } /* 1ª imagen (0s) */
-    8% { margin-left: -0%; } /* 1ª imagen (2s) */
-    16% { margin-left: -100%; } /* 2ª imagen (0s) */
-    25% { margin-left: -100%; } /* 2ª imagen (2s) */
-    32% { margin-left: -200%; } /* 3ª imagen (0s) */
-    41% { margin-left: -200%; } /* 3ª imagen (2s) */
-    50% { margin-left: -300%; } /* 4ª imagen (0s) */
-    60% { margin-left: -300%; } /* 4ª imagen (2s) */
-    66% { margin-left: -400%; } /* 5ª imagen (0s) */
-    70% { margin-left: -400%; } /* 5ª imagen (2s) */
-    81% { margin-left: -500%; } /* 6ª imagen (0s) */
-    91% { margin-left: -500%; } /* 6ª imagen (2s) */
-    100% { margin-left: 0%; } /* 7ª imagen (0s) */
-  }
+    18% { margin-left: -0%; } /* 1ª imagen (2s) */
+    20% { margin-left: -100%; } /* 2ª imagen (0s) */
+    38% { margin-left: -100%; } /* 2ª imagen (2s) */
+    40% { margin-left: -200%; } /* 3ª imagen (0s) */
+    58% { margin-left: -200%; } /* 3ª imagen (2s) */
+    60% { margin-left: -300%; } /* 4ª imagen (0s) */
+    78% { margin-left: -300%; } /* 4ª imagen (2s) */
+    80% { margin-left: -400%; } /* 5ª imagen (0s) */
+    100% { margin-left: -400%; } /* 5ª imagen (2s) */
+}
 
 /* @keyframes slide {
     El porcentaje de la izquierda es el momento dentro de la animacion
