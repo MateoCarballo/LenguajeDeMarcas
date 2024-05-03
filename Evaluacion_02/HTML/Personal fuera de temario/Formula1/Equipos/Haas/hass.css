@@ -168,7 +168,7 @@ padding: 30px;
     display: flex;
     padding: 0;
     width: 3000%;
-    animation: slide 30s infinite alternate ease-in-out;
+    animation: slide 20s infinite alternate ease-in-out;
 }
 
 .slider-box li {
@@ -184,16 +184,15 @@ padding: 30px;
 /*PERSONALIZACION DE LOS TIEMPOS PARA LAS ANIMACIONES*/
  @keyframes slide {
     0% { margin-left: 0; }
-    12% { margin-left: 0; }  
-    15.33% { margin-left: -100%; }
-    33.33% { margin-left: -100%; }
-    36.48% { margin-left: -200%; }
-    60% { margin-left: -200%; }
-    69.48% { margin-left: -300%; }
-    92.66% { margin-left: -300%; }
-    96.66% { margin-left: 0; }
-    /* Mueve a la tercera imagen después de 2/3 de la animación */
-    100% { margin-left: 0; } /* Reinicia la animación */
+    15% { margin-left: 0; }  
+    20% { margin-left: -100%; }
+    35% { margin-left: -100%; }
+    40% { margin-left: -200%; }
+    55% { margin-left: -200%; }
+    60% { margin-left: -300%; }
+    75% { margin-left: -300%; }
+    80% { margin-left: -400%; }
+    100% { margin-left: -400%; }
 } 
 .Historia{
 margin: 30px;
