@@ -167,7 +167,7 @@ padding: 30px;
     display: flex;
     padding: 0;
     width: 3000%;
-    animation: slide 60s infinite alternate ease-in-out;
+    animation: slide 90s infinite alternate ease-in-out;
 }
 
 .slider-box li {
@@ -184,31 +184,58 @@ padding: 30px;
 
 @keyframes slide {
     0% { margin-left: -0%; } /* 1ª imagen (0s) */
-    4.16667% { margin-left: -0%; } /* 1ª imagen (2s) */
-    8.33333% { margin-left: -100%; } /* 2ª imagen (0s) */
-    12.5% { margin-left: -100%; } /* 2ª imagen (2s) */
-    16.66667% { margin-left: -200%; } /* 3ª imagen (0s) */
-    20.83333% { margin-left: -200%; } /* 3ª imagen (2s) */
-    25% { margin-left: -300%; } /* 4ª imagen (0s) */
-    29.16667% { margin-left: -300%; } /* 4ª imagen (2s) */
-    33.33333% { margin-left: -400%; } /* 5ª imagen (0s) */
-    37.5% { margin-left: -400%; } /* 5ª imagen (2s) */
-    41.66667% { margin-left: -500%; } /* 6ª imagen (0s) */
-    45.83333% { margin-left: -500%; } /* 6ª imagen (2s) */
-    50% { margin-left: -600%; } /* 7ª imagen (0s) */
-    54.16667% { margin-left: -600%; } /* 7ª imagen (2s) */
-    58.33333% { margin-left: -700%; } /* 8ª imagen (0s) */
-    62.5% { margin-left: -700%; } /* 8ª imagen (2s) */
-    66.66667% { margin-left: -800%; } /* 9ª imagen (0s) */
-    70.83333% { margin-left: -800%; } /* 9ª imagen (2s) */
-    75% { margin-left: -900%; } /* 10ª imagen (0s) */
-    79.16667% { margin-left: -900%; } /* 10ª imagen (2s) */
-    83.33333% { margin-left: -1000%; } /* 11ª imagen (0s) */
-    87.5% { margin-left: -1000%; } /* 11ª imagen (2s) */
-    91.66667% { margin-left: -1100%; } /* 12ª imagen (0s) */
-    95.83333% { margin-left: -1100%; } /* 12ª imagen (2s) */
-    100% { margin-left: -1100%; } /* Detiene la animación al final */
-  }
+    2% { margin-left: -0%; } /* 1ª imagen (2s) */
+    4% { margin-left: -100%; } /* 2ª imagen (0s) */
+    6% { margin-left: -100%; } /* 2ª imagen (2s) */
+    8% { margin-left: -200%; } /* 3ª imagen (0s) */
+    10% { margin-left: -200%; } /* 3ª imagen (2s) */
+    12% { margin-left: -300%; } /* 4ª imagen (0s) */
+    14% { margin-left: -300%; } /* 4ª imagen (2s) */
+    16% { margin-left: -400%; } /* 5ª imagen (0s) */
+    18% { margin-left: -400%; } /* 5ª imagen (2s) */
+    20% { margin-left: -500%; } /* 6ª imagen (0s) */
+    22% { margin-left: -500%; } /* 6ª imagen (2s) */
+    24% { margin-left: -600%; } /* 7ª imagen (0s) */
+    26% { margin-left: -600%; } /* 7ª imagen (2s) */
+    28% { margin-left: -700%; } /* 8ª imagen (0s) */
+    30% { margin-left: -700%; } /* 8ª imagen (2s) */
+    32% { margin-left: -800%; } /* 9ª imagen (0s) */
+    34% { margin-left: -800%; } /* 9ª imagen (2s) */
+    36% { margin-left: -900%; } /* 10ª imagen (0s) */
+    38% { margin-left: -900%; } /* 10ª imagen (2s) */
+    40% { margin-left: -1000%; } /* 11ª imagen (0s) */
+    42% { margin-left: -1000%; } /* 11ª imagen (2s) */
+    44% { margin-left: -1100%; } /* 12ª imagen (0s) */
+    46% { margin-left: -1100%; } /* 12ª imagen (2s) */
+    48% { margin-left: -1200%; } /* 13ª imagen (0s) */
+    50% { margin-left: -1200%; } /* 13ª imagen (2s) */
+    52% { margin-left: -1300%; } /* 14ª imagen (0s) */
+    54% { margin-left: -1300%; } /* 14ª imagen (2s) */
+    56% { margin-left: -1400%; } /* 15ª imagen (0s) */
+    58% { margin-left: -1400%; } /* 15ª imagen (2s) */
+    60% { margin-left: -1500%; } /* 16ª imagen (0s) */
+    62% { margin-left: -1500%; } /* 16ª imagen (2s) */
+    64% { margin-left: -1600%; } /* 17ª imagen (0s) */
+    66% { margin-left: -1600%; } /* 17ª imagen (2s) */
+    68% { margin-left: -1700%; } /* 18ª imagen (0s) */
+    70% { margin-left: -1700%; } /* 18ª imagen (2s) */
+    72% { margin-left: -1800%; } /* 19ª imagen (0s) */
+    74% { margin-left: -1800%; } /* 19ª imagen (2s) */
+    76% { margin-left: -1900%; } /* 20ª imagen (0s) */
+    78% { margin-left: -1900%; } /* 20ª imagen (2s) */
+    80% { margin-left: -2000%; } /* 21ª imagen (0s) */
+    82% { margin-left: -2000%; } /* 21ª imagen (2s) */
+    84% { margin-left: -2100%; } /* 22ª imagen (0s) */
+    86% { margin-left: -2100%; } /* 22ª imagen (2s) */
+    88% { margin-left: -2200%; } /* 23ª imagen (0s) */
+    90% { margin-left: -2200%; } /* 23ª imagen (2s) */
+    92% { margin-left: -2300%; } /* 24ª imagen (0s) */
+    94% { margin-left: -2300%; } /* 24ª imagen (2s) */
+    96% { margin-left: -2400%; } /* 25ª imagen (0s) */
+    98% { margin-left: -2400%; } /* 25ª imagen (2s) */
+    100% { margin-left: -2500%; } /* Detiene la animación al final */
+}
+
   
 .Historia{
 margin: 30px;
