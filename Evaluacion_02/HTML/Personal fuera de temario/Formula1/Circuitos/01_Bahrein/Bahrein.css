@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html{
+    font-family: 'Roboto','sans-serif';
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #efefef;
+    margin:0;
+}
+
+main{
+    width: 1400px; 
+    margin: 0 auto;
+} 
+
+footer{
+    margin-top: auto;
+}
+/*Estilos Nombre GP*/
+
+.Bundel{
+    position: relative;
+}
+
+.Bundel > .Container-texto {
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical */
+    left: 50%; /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: white; /* Color del texto */
+    text-align: center;
+    
+}
+
+
+.Bundel > .Container-texto > p{
+    font-size: 30px; /* Tamaño de fuente */
+}
+
+.Bundel > .Container-texto > .Fecha{
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.Bundel > img{
+    filter:brightness(35%); 
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 10% 60%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Nombre-GP{
+    margin: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* Estilos para el fieldset */
+fieldset {
+    border: none; /* Quitamos el borde general */
+    border-top: 3px solid red; /* Borde superior */
+    border-right: 3px solid red; /* Borde derecho */
+    border-bottom: 3px solid red; /* Borde inferior */
+    border-radius: 0 10px 10px 0;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Estilos para la leyenda */
+legend {
+    padding: 0 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+legend > img {
+    border: solid 1px black;
+    border-radius: 10%;
+    vertical-align: middle;
+}
+
+.Tarjeta-circuito{
+    width: 100%;
+    display:flex;
+    margin: 10px;
+    /* padding: 30px;  SIN PADDING PARA AJUSTAR CON MARGIN LOS CONTENIDOS POR ESTE*/
+    justify-content: space-between;
+}
+
+.Layout-Circuito> img{
+    width: 700px;
+    overflow: visible;
+}
+
+.Datos-circuito{
+    width: 100%;
+}
+
+.Datos-circuito {
+    display: inline-block;
+}
+
+/* PROPIEDAD DISPLAY 
+
+/ * Valores <display-outside> * /
+s
+display: block;
+display: inline;
+display: run-in;
+
+/ * Valores <display-inside> * /
+display: flow;
+display: flow-root;
+display: table;
+display: flex;
+display: grid;
+display: ruby;
+display: subgrid;
+
+/ * Valores <display-outside> más valores <display-inside> * /
+display: block flow;
+display: inline table;
+display: flex run-in;
+
+/ * Valores <display-listitem> * /
+display: list-item;
+display: list-item block;
+display: list-item inline;
+display: list-item flow;
+display: list-item flow-root;
+display: list-item block flow;
+display: list-item block flow-root;
+display: flow list-item block;
+
+/ * Valores <display-internal> * /
+display: table-row-group;
+display: table-header-group;
+display: table-footer-group;
+display: table-row;
+display: table-cell;
+display: table-column-group;
+display: table-column;
+display: table-caption;
+display: ruby-base;
+display: ruby-text;
+display: ruby-base-container;
+display: ruby-text-container;
+
+/ * Valores <display-box> * /
+display: contents;
+display: none;
+
+/ * Valores <display-legacy> * /
+display: inline-block;
+display: inline-table;
+display: inline-flex;
+display: inline-grid;
+
+/ * Valores globales * /
+display: heredar;
+display: initial;
+display: unset;
+*/
+
+.Linea-1, .Linea-2{
+    display: flex;
+}
+
+.estadistica{
+    border: none;
+    width: 300px;
+    margin-top: 30px;
+    padding:10px;
+    border-bottom-right-radius: 35px;
+    border-right: 3px solid rgb(210, 210, 210);
+    border-bottom: 3px solid rgb(210, 210, 210);
+    border-top: none;
+    border-left: none;
+}
+.Linea-3 >.estadistica{
+    width: 600px;
+}
+.estadistica-valor{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.estadistica-valor > p{
+    margin-right: 15px;
+}
+
+.anotacion{
+    font-weight:lighter;
+    font-size: 20px;
+}
+/*
+.Linea-1, .Linea-2 > .estadistica > .estadistica-nombre,.estadistica-valor {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.estadistica-nombre{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.estadistica-valor{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+ .Linea-3 > .estadistica-nombre{
+    font-size: 15px;
+    text-align: left;
+    text-indent: 5px;
+} */
+
+/* APLICAR BORDER SOLO A ALGUNOS LADOS 
+
+selector{
+    border-top-right-radius: 35px;
+    border-right: 10px solid red;
+    border-top: 10px solid red;
+} */

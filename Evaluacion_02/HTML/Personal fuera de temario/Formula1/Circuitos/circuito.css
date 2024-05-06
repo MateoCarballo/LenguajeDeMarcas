@@ -21,7 +21,7 @@ body{
 }
 
 main{
-   width: 1400px; 
+   width: 100%; 
    margin: 0 auto;
 } 
 
@@ -136,5 +136,33 @@ margin-top: auto;
     border-bottom: 3px solid #0090FF;
     border-top: none;
     border-left: none;
+    
+}
+
+
+/* 
+    ESTO AÑADE UN DEGRADADO A LA IMAGEN DE FONDO 
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url("/Circuitos/01_Bahrein/img/rodando.avif") */
+
+/* PONIENDO LA IMAGEN COMO FONDO 'BACKGROUND'
+
+.Cabecera-circuito {
+    border: solid 2px black;
+    ;
+    background-image: url(/Circuitos/01_Bahrein/img/rodando.avif);
+    background-size: cover;
+    height: 1500px;
+    filter:brightness(40%);
+} */
+
+.Cabecera-circuito{
+    width: auto;
+    height: 700px;
+}
+
+.Cabecera-circuito > img{
+    width: 100%;
+    overflow: hidden;
 }
 
