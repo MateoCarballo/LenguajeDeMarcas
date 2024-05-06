@@ -2,10 +2,73 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Bahrein</title>
+    <title>FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2024</title>
+    <!--ESTILOS COMUNES PARA CADA PILOTO-->
+    <link rel="stylesheet" href="/Circuitos/circuito.css">
+    <link rel="stylesheet" href="/Comunes/header.css">
+    <link rel="stylesheet" href="/Comunes/footer.css">
+
+    <link rel="shortcut icon" href="/Circuitos/01_Bahrein/img/layout1.avif" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
+<script src="/Comunes/cargarContenido.js" defer></script>
+
 </head>
 <body>
-    <h1>Bahrein</h1>
-    <p>Información del circuito...</p>
+    <!-- TODO revisar la pagina oficial de la f1 para datos concretos-->
+    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html"></header>
+    <main>
+        <div class="Piloto">
+            <div class="containerPilotoDorsalBandera">
+                <div class="containerImagenPiloto">
+                    <img class="imagenPiloto" src="/Circuitos/01_Bahrein/img/image.avif" alt="Piloto">
+                </div>
+                <div class="containerNombreDorsalBandera">
+                    <div class="containerDorsalBandera">
+                        <img class="imagenDorsal" src="/Circuitos/01_Bahrein/img/layout1.avif" alt="Dorsal">
+                        <img class="imagenBandera" src="/Circuitos/01_Bahrein/img/bandera.png" alt="Bandera">
+                        <br>
+                        
+                    </div>
+                    <p><strong>BAHREIN INTERNACIONAL CIRCUIT</strong></p>
+                </div>
+            </div>
+            <div class="DatosPersonales">
+                <img src="/Circuitos/01_Bahrein/img/bandera.png" alt="Casco">
+                <section class="tabla-container">
+                    <div class="contenido">
+                            <table class="tabla-estadisticas">
+                                <tr>
+                                    <td>Primer gran premio</td>
+                                    <td>2004</td>
+                                </tr>
+                                <tr>
+                                    <td>Longitud del circuito</td>
+                                    <td>5.412 km</td>
+                                </tr>
+                                <tr>
+                                    <td>Numero de vueltas</td>
+                                    <td>57</td>
+                                </tr>
+                                <tr>
+                                    <td>Distancia de carrera</td>
+                                    <td>308.238</td>
+                                </tr>
+                                <tr>
+                                    <td>Vuelta rápida</td>
+                                    <td>1:31:447 (Pedro de la Rosa 2005)</td>
+                                </tr>
+                            </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html"></footer>
+</body>
+</html>
 </body>
 </html>
