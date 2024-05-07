@@ -1,0 +1,220 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  html{
+    font-family: 'Roboto','sans-serif';
+    height: 100%;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #efefef;
+    margin:0;
+  }
+  
+  .rejilla-pilotos{
+    padding: 100px;
+  }
+  
+  img {
+  width: 80%;
+  height: auto;
+  }
+  
+  footer{
+    margin-top: auto;
+  }
+  
+  .contenedor-pilotos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 1em;
+      min-height: 100%;}
+    
+  .contenedor-pilotos::after {
+    content: "";
+    display: block;
+    height: 100px; /* Altura del pie de página */
+  }
+  
+    /* hover styles */
+    .piloto {
+      position: relative;
+    }
+    
+    .piloto-image {
+      line-height: 5;
+      overflow: hidden;
+    } 
+    
+    .piloto-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      /* transition: opacity .5s; */
+      background: rgba(239, 239, 239, 0.1);
+      color: black;
+  
+      /* position the text in t’ middle*/
+      display: flex;
+      align-items: last baseline;
+      justify-content: left;
+    }
+    
+    .piloto:hover .piloto-title {
+      opacity: 1;
+    }
+    
+   .piloto-image img{
+        border: none; 
+        border-top: 3px solid black; 
+        border-right: 3px solid black; 
+        border-radius: 0 10px 0 0;
+
+    }
+
+    .piloto:hover .piloto-image img {
+        transition: all 0.3s ease;
+        border-style: none;
+        border-width: 2px;
+        overflow: hidden;
+        align-items: center;
+        border-top-right-radius: 10px;
+        border-bottom: none;
+        border-left: none;
+    }
+
+    #Alpine:hover .piloto-image img {
+        border-top: 3px solid #0090FF;
+        border-right: 3px solid #0090FF;
+        box-shadow: 8px 5px 5px #0090FF;
+    }
+
+    #Aston-Martin:hover .piloto-image img {
+        border-top: 3px solid #006F62;
+        border-right: 3px solid #006F62;
+        box-shadow: 8px 5px 5px #006F62;
+    }
+
+    #Ferrari:hover .piloto-image img {
+        border-top: 3px solid #DC0000;
+        border-right: 3px solid #DC0000;
+        box-shadow: 8px 5px 5px #DC0000;
+    }
+
+    #Haas:hover .piloto-image img {
+        border-top: 3px solid #000;
+        border-right: 3px solid #000;
+        box-shadow: 8px 5px 5px #000;
+    }
+    #Mclaren:hover .piloto-image img {
+        border-top: 3px solid #FF8700;
+        border-right: 3px solid #FF8700;
+        box-shadow: 8px 5px 5px #FF8700;
+    }
+    #Mercedes:hover .piloto-image img {
+        border-top: 3px solid #00D2BE;
+        border-right: 3px solid #00D2BE;
+        box-shadow: 8px 5px 5px #00D2BE;
+    }
+
+    #Red-Bull:hover .piloto-image img {
+        border-top: 3px solid #0600EF;
+        border-right: 3px solid #0600EF;
+        box-shadow: 8px 5px 5px #0600EF;
+    }
+
+    #Stake:hover .piloto-image img {
+        border-top: 3px solid #00ff51;
+        border-right: 3px solid #00ff51;
+        box-shadow: 8px 5px 5px #00ff51;
+    }
+    #RB:hover .piloto-image img {
+        border-top: 3px solid #0299fd;
+        border-right: 3px solid #0299fd;
+        box-shadow: 8px 5px 5px #0299fd;
+    }
+    #Williams:hover .piloto-image img {
+        border-top: 3px solid #003cff;
+        border-right: 3px solid #003cff;
+        box-shadow: 8px 5px 5px #003cff;
+    }
+
+  /* 
+    GRADIENTES DE FONDO PARA CADA EQUIPO
+  
+    #redbull:hover {
+      transition: all 0.5s ease-in-out;
+      background: linear-gradient(45deg, #0600EF, #ff0101, #FF8700);
+      border-radius: 15px;
+  }
+  
+  #mercedes:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg, #000000, #00D2BE);
+      opacity: 0.85;
+  }
+  
+  #ferrari:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg,#DC0000,#fff, #fff700);
+      opacity: 0.85;
+  }   
+  
+  #mclaren:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg, #000, #FF8700);
+      opacity: 0.85;
+  }
+  
+  #astonmartin:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(35deg, #000 0%, #006F62 5%,#006F62 45%, #FFD700 50%, #006F62 55%, #fff 95%);
+      opacity: 0.85;
+  }
+  
+  #alpine:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg, #000 0%, #0090FF 25%, #fd9cff 55%, #fff 95%);
+      opacity: 0.85;
+  }
+  
+  #sauber:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg, #000,#00ff51);
+      opacity: 0.85;
+  }
+  
+  #visarb:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(15deg, #000 0%, #0299fd 25%, #fff 55%, #ff0000 95%);
+      opacity: 0.85;
+  }
+  
+  #williams:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(15deg, #000 0%, #0090FF 65%, #835c07 85%);
+      opacity: 0.85;
+  }
+  
+  #hass:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(15deg, #000 0%, #ffffff 65%, #ff0000 95%);
+      opacity: 0.85;
+  } */
+  
+  
+  
