@@ -16,11 +16,11 @@
 }
 
 .Bundel > .Container-texto > p{
-    font-size: 30px; /* Tamaño de fuente */
+    font-size: 60px; /* Tamaño de fuente */
 }
 
 .Bundel > .Container-texto > img{
-    width: 100px;
+    width: 150px;
     filter:opacity(50%);
 }
 

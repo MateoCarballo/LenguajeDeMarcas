@@ -16,7 +16,12 @@
 }
 
 .Bundel > .Container-texto > p{
-    font-size: 30px; /* Tamaño de fuente */
+    font-size: 60px; /* Tamaño de fuente */
+}
+
+.Bundel > .Container-texto > img{
+    width: 150px;
+    filter:opacity(50%);
 }
 
 .Bundel > .Container-texto > .Fecha{

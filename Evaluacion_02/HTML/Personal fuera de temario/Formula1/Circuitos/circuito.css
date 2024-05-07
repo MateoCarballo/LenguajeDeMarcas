@@ -26,7 +26,8 @@ main{
 footer{
     margin-top: auto;
 }
-/*Estilos Nombre GP*/
+
+/*  PERSONALIZADO EN CADA CIRCUITO
 
 .Bundel{
     position: relative;
@@ -34,17 +35,17 @@ footer{
 
 .Bundel > .Container-texto {
     position: absolute;
-    top: 50%; /* Ajusta la posición vertical */
-    left: 50%; /* Ajusta la posición horizontal */
-    transform: translate(-50%, -50%); /* Centra el texto */
-    color: white; /* Color del texto */
+    top: 50%;  Ajusta la posición vertical 
+    left: 50%;  Ajusta la posición horizontal 
+    transform: translate(-50%, -50%);  Centra el texto 
+    color: white;  Color del texto 
     text-align: center;
     
 }
 
 
 .Bundel > .Container-texto > p{
-    font-size: 30px; /* Tamaño de fuente */
+    font-size: 30px; Tamaño de fuente 
 }
 
 .Bundel > .Container-texto > .Fecha{
@@ -69,7 +70,7 @@ footer{
     font-size: 40px;
     font-weight: bold;
 }
-
+ */
 
 /* Estilos para el fieldset */
 fieldset {
