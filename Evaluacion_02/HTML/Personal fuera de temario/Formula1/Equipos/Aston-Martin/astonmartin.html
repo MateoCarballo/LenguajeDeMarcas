@@ -1,184 +1,302 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aston Martin Aramco F1 Team</title>
 
     <!--CONEXION CON TODOS LOS ARCHIVOS DE ESTILO-->
-    <link rel="stylesheet" href="astonmartin.css">
-    <link rel="stylesheet" href="/Comunes/header.css">
-    <link rel="stylesheet" href="/Comunes/footer.css">
+    <link rel="stylesheet" href="astonmartin.css" />
+    <link rel="stylesheet" href="/Comunes/header.css" />
+    <link rel="stylesheet" href="/Comunes/footer.css" />
 
-    <link rel="shortcut icon" href="img/aston martin 2024.avif" type="image/x-icon">  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      rel="shortcut icon"
+      href="img/aston martin 2024.avif"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
     <script src="/Comunes/cargarContenido.js" defer></script>
-</head>
-<body>
-    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html"></header>
+  </head>
+  <body>
+    <header
+      class="Encabezado-Principal"
+      id="header-container"
+      data-ruta-header="/Comunes/header.html"
+    ></header>
     <main>
-        <div class="Pilotos-DatosEquipo">
-            <section class="tabla-container">
-                <div class="tabla">
-                    <header>
-                        <h1>Datos del equipo</h1>
-                    </header>
-                    <div class="contenido">
-                        <img src="./img/aston martin 2024.avif" alt="Logo-AMR" class="logo">
-                        <table class="tabla-estadisticas">
-                            <tr>
-                                <td>Sede</td>
-                                <td>Silverstone, Reino Unido</td>
-                            </tr>
-                            <tr>
-                                <td>Jefe de equipo</td>
-                                <td>Mike Krack</td>
-                            </tr>
-                            <tr>
-                                <td>Chasis</td>
-                                <td>AMR24</td>
-                            </tr>
-                            <tr>
-                                <td>Unidad de potencia</td>
-                                <td>Mercedes</td>
-                            </tr>
-                            <tr>
-                                <td>Primera participación</td>
-                                <td>2018</td>
-                            </tr>
-                            <tr>
-                                <td>Campeonatos del mundo</td>
-                                <td>N/A</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </section>
-
-            <section class="Pilotos">
-                <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
-                <div class="ContenedorPilotos">
-                    <a id="Piloto1" href="./pilotos/alonso/fernandoalonso.html" class="Enlace-Pagina-Piloto">
-                        <div class="Piloto">
-                            <img src="./img/Fernando-Alonso.avif" class="Foto-Piloto" title="F.Alonso" alt="ALO">
-                            <div class="Bandera-Dorsal-Nombre">
-                                <div class="Bandera-Dorsal">
-                                    <img src="./img/Fernando-Alonso(dorsal).avif" alt="Dorsal-Alonso">
-                                    <img src="../ZZ_Banderas/Spain.avif"  alt="Bandera_España">
-                                </div>
-                                <div class="Nombre">
-                                    Fernando 🐐 <strong>ALONSO</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a id="Piloto2" href="/Equipos/Aston-Martin/pilotos/Stroll/lancestroll.html" class="Enlace-Pagina-Piloto">
-                        <div class="Piloto">
-                            <img src="./img/Lance-Stroll.avif" class="Foto-Piloto" title="L.Stroll" alt="STR">
-                            <div class="Bandera-Dorsal-Nombre">
-                                <div class="Bandera-Dorsal">
-                                    <img src="./img/Lance-Stroll(dorsal).avif"  alt="Dorsal-Stroll">
-                                    <img src="../ZZ_Banderas/Canada.avif" alt="Bandera_Canada">
-                                </div>
-                                <div class="Nombre">
-                                    Lance <br><strong>STROLL</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </div>
-        <section class="Historia">
+      <div class="Pilotos-DatosEquipo">
+        <section class="tabla-container">
+          <div class="tabla">
             <header>
-                <h1>Historia</h1>
+              <h1>Datos del equipo</h1>
             </header>
-            <p>
-                La incursión original de Aston Martin en la Fórmula 1, hace más de medio siglo, duró solo cinco carreras. 
-            Sin embargo, esta vez es diferente. Este equipo de F1 no son extraños al éxito, habiendo ganado en su forma 
-            original como Jordan y más recientemente como Racing Point en 2020. Renombrados por su capacidad de rendir 
-            por encima de su peso, y ahora con un campeón en su alineación de pilotos, Aston Martin es sin duda un 
-            equipo a tener en cuenta...
-            </p>
-
-            <p>
-                2023
-            Un inicio impresionante de temporada ve a Fernando Alonso en el podio seis veces en las primeras ocho carreras. 
-            Retrocede a medida que avanza la campaña, terminando el año en quinto lugar en el campeonato de constructores.
-
-            </p>
-
-            <p>
-                2022
-            Una temporada discreta ve al equipo mantenerse en séptimo lugar en la clasificación, con el sexto lugar como 
-            su mejor resultado en carrera, obtenido por Sebastian Vettel en Azerbaiyán y Japón, y por Lance Stroll en 
-            Singapur. Vettel anuncia su retiro de la F1, siendo reemplazado rápidamente por el también campeón Fernando
-            Alonso para el 2023.
-            </p>
-
-            <p>
-                2021
-            No logran mantener el ritmo de los rivales de la mitad de la parrilla y caen al séptimo lugar en la clasificación, 
-            anotando menos de la mitad de sus puntos de 2020. Los puntos destacados son el podio de Sebastian Vettel en 
-            Azerbaiyán y los quintos lugares en Spa y Mónaco. El punto bajo es su descalificación del P2 en Hungría por 
-            una infracción de combustible.
-            </p>
-
-            <p>
-                2020
-            Con el equipo firmemente de vuelta en acción, el nombre Racing Point logra su primera victoria en carrera camino 
-            al cuarto lugar en la clasificación gracias a Sergio Pérez, quien es reemplazado por Sebastian Vettel para 2021 
-            y la transformación del equipo a Aston Martin.
-            </p>
-
-            <p>
-                2019
-            La resaca de la turbulencia de 2018 hace mella, y la recuperación del equipo es lenta, a pesar de algunas valientes 
-            actuaciones del siempre confiable Sergio Pérez, quien anota 52 de sus 73 puntos, asegurando que retengan el séptimo 
-            lugar en la tabla de constructores.
-            </p>
-
-            <p>
-                2018
-            Mientras la estrecha rivalidad intraequipo entre el veterano Sergio Pérez y el protegido de Mercedes, Esteban Ocon, 
-            continúa, caen hacia la parte trasera de la mitad de la parrilla en medio de la incertidumbre financiera, culminando 
-            una nueva propiedad, el nuevo nombre Racing Point, y una nueva inscripción en el campeonato, a partir del GP de 
-            Bélgica en agosto. Se recuperan bien para terminar en séptimo lugar en general, a pesar de perder 59 puntos acumulados 
-            antes de Spa.
-            </p>
-        </section>
-        <section class="Palmares">
-            <header>
-                <h1>Palmarés</h1>
-            </header>
-            <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
-                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
-                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
-                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
-                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio consequatur ad rem accusantium aspernatur 
-                adipisci cumque tenetur beatae, et eligendi consequuntur quae fugiat possimus officiis. Placeat nesciunt iste harum</p>
-        </section>
-        <section class="Galeria">
-            <h1>Galería</h1>
-            <div class="slider-box">
-                <ul>
-                    <li><img src="./img/Galeria/00001.avif" alt=""></li>
-                    <li><img src="./img/Galeria/00002.avif" alt=""></li>
-                    <li><img src="./img/Galeria/00003.avif" alt=""></li>
-                </ul>
+            <div class="contenido">
+              <img
+                src="./img/aston martin 2024.avif"
+                alt="Logo-AMR"
+                class="logo"
+              />
+              <table class="tabla-estadisticas">
+                <tr>
+                  <td>Sede</td>
+                  <td>Silverstone, Reino Unido</td>
+                </tr>
+                <tr>
+                  <td>Jefe de equipo</td>
+                  <td>Mike Krack</td>
+                </tr>
+                <tr>
+                  <td>Chasis</td>
+                  <td>AMR24</td>
+                </tr>
+                <tr>
+                  <td>Unidad de potencia</td>
+                  <td>Mercedes</td>
+                </tr>
+                <tr>
+                  <td>Primera participación</td>
+                  <td>2018</td>
+                </tr>
+                <tr>
+                  <td>Campeonatos del mundo</td>
+                  <td>N/A</td>
+                </tr>
+              </table>
             </div>
-            <!--1024x576 16:9-->
-        </section> 
+          </div>
+        </section>
+
+        <section class="Pilotos">
+          <!-- TODO pendiende de redistribuir espacios. Una zona para cada piloto con el nombre, dorsal y nacionalidad debajo-->
+          <div class="ContenedorPilotos">
+            <a
+              id="Piloto1"
+              href="./pilotos/alonso/fernandoalonso.html"
+              class="Enlace-Pagina-Piloto"
+            >
+              <div class="Piloto">
+                <img
+                  src="./img/Fernando-Alonso.avif"
+                  class="Foto-Piloto"
+                  title="F.Alonso"
+                  alt="ALO"
+                />
+                <div class="Bandera-Dorsal-Nombre">
+                  <div class="Bandera-Dorsal">
+                    <img
+                      src="./img/Fernando-Alonso(dorsal).avif"
+                      alt="Dorsal-Alonso"
+                    />
+                    <img src="../ZZ_Banderas/Spain.avif" alt="Bandera_España" />
+                  </div>
+                  <div class="Nombre">Fernando 🐐 <strong>ALONSO</strong></div>
+                </div>
+              </div>
+            </a>
+            <a
+              id="Piloto2"
+              href="/Equipos/Aston-Martin/pilotos/Stroll/lancestroll.html"
+              class="Enlace-Pagina-Piloto"
+            >
+              <div class="Piloto">
+                <img
+                  src="./img/Lance-Stroll.avif"
+                  class="Foto-Piloto"
+                  title="L.Stroll"
+                  alt="STR"
+                />
+                <div class="Bandera-Dorsal-Nombre">
+                  <div class="Bandera-Dorsal">
+                    <img
+                      src="./img/Lance-Stroll(dorsal).avif"
+                      alt="Dorsal-Stroll"
+                    />
+                    <img
+                      src="../ZZ_Banderas/Canada.avif"
+                      alt="Bandera_Canada"
+                    />
+                  </div>
+                  <div class="Nombre">Lance <br /><strong>STROLL</strong></div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+      <section class="Historia">
+        <header>
+          <h1>Historia</h1>
+        </header>
+        <p>
+          La incursión original de Aston Martin en la Fórmula 1, hace más de
+          medio siglo, duró solo cinco carreras. Sin embargo, esta vez es
+          diferente. Este equipo de F1 no son extraños al éxito, habiendo ganado
+          en su forma original como Jordan y más recientemente como Racing Point
+          en 2020. Renombrados por su capacidad de rendir por encima de su peso,
+          y ahora con un campeón en su alineación de pilotos, Aston Martin es
+          sin duda un equipo a tener en cuenta...
+        </p>
+
+        <p>
+          2023 Un inicio impresionante de temporada ve a Fernando Alonso en el
+          podio seis veces en las primeras ocho carreras. Retrocede a medida que
+          avanza la campaña, terminando el año en quinto lugar en el campeonato
+          de constructores.
+        </p>
+
+        <p>
+          2022 Una temporada discreta ve al equipo mantenerse en séptimo lugar
+          en la clasificación, con el sexto lugar como su mejor resultado en
+          carrera, obtenido por Sebastian Vettel en Azerbaiyán y Japón, y por
+          Lance Stroll en Singapur. Vettel anuncia su retiro de la F1, siendo
+          reemplazado rápidamente por el también campeón Fernando Alonso para el
+          2023.
+        </p>
+
+        <p>
+          2021 No logran mantener el ritmo de los rivales de la mitad de la
+          parrilla y caen al séptimo lugar en la clasificación, anotando menos
+          de la mitad de sus puntos de 2020. Los puntos destacados son el podio
+          de Sebastian Vettel en Azerbaiyán y los quintos lugares en Spa y
+          Mónaco. El punto bajo es su descalificación del P2 en Hungría por una
+          infracción de combustible.
+        </p>
+
+        <p>
+          2020 Con el equipo firmemente de vuelta en acción, el nombre Racing
+          Point logra su primera victoria en carrera camino al cuarto lugar en
+          la clasificación gracias a Sergio Pérez, quien es reemplazado por
+          Sebastian Vettel para 2021 y la transformación del equipo a Aston
+          Martin.
+        </p>
+
+        <p>
+          2019 La resaca de la turbulencia de 2018 hace mella, y la recuperación
+          del equipo es lenta, a pesar de algunas valientes actuaciones del
+          siempre confiable Sergio Pérez, quien anota 52 de sus 73 puntos,
+          asegurando que retengan el séptimo lugar en la tabla de constructores.
+        </p>
+
+        <p>
+          2018 Mientras la estrecha rivalidad intraequipo entre el veterano
+          Sergio Pérez y el protegido de Mercedes, Esteban Ocon, continúa, caen
+          hacia la parte trasera de la mitad de la parrilla en medio de la
+          incertidumbre financiera, culminando una nueva propiedad, el nuevo
+          nombre Racing Point, y una nueva inscripción en el campeonato, a
+          partir del GP de Bélgica en agosto. Se recuperan bien para terminar en
+          séptimo lugar en general, a pesar de perder 59 puntos acumulados antes
+          de Spa.
+        </p>
+      </section>
+      <section class="Palmares">
+        <header>
+          <h1>Palmarés</h1>
+        </header>
+        <!-- TODO buscar el año por año de cada equipo y añadirlo aquí-->
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem odio
+          consequatur ad rem accusantium aspernatur adipisci cumque tenetur
+          beatae, et eligendi consequuntur quae fugiat possimus officiis.
+          Placeat nesciunt iste harum
+        </p>
+      </section>
+      <section class="Galeria">
+        <h1>Galería</h1>
+        <div class="slider-box">
+          <ul>
+            <li><img src="./img/Galeria/00001.avif" alt="" /></li>
+            <li><img src="./img/Galeria/00002.avif" alt="" /></li>
+            <li><img src="./img/Galeria/00003.avif" alt="" /></li>
+          </ul>
+        </div>
+        <!--1024x576 16:9-->
+      </section>
     </main>
-    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html"></footer>
-</body>
+    <footer
+      class="site-footer"
+      id="footer-container"
+      data-ruta-footer="/Comunes/footer.html"
+    ></footer>
+  </body>
 </html>

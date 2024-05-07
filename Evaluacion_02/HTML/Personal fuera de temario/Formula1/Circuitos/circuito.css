@@ -81,6 +81,8 @@ fieldset {
     border-radius: 0 10px 10px 0;
     margin: 20px;
     padding: 10px;
+    width: 1300px;
+    height: 500px;
 }
 
 /* Estilos para la leyenda */
@@ -97,20 +99,18 @@ legend > img {
 }
 
 .Tarjeta-circuito{
-    width: 100%;
     display:flex;
     margin: 10px;
-    /* padding: 30px;  SIN PADDING PARA AJUSTAR CON MARGIN LOS CONTENIDOS POR ESTE*/
     justify-content: space-between;
 }
 
 .Layout-Circuito> img{
-    width: 700px;
-    overflow: visible;
+    width: 600px;
+    overflow: hidden;
 }
 
 .Datos-circuito{
-    width: 100%;
+    width: 600px;
 }
 
 .Datos-circuito {

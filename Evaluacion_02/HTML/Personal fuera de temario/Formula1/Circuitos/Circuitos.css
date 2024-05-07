@@ -1,0 +1,159 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  html{
+    font-family: 'Roboto','sans-serif';
+    height: 100%;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #efefef;
+    margin:0;
+  }
+  
+  .rejilla-circuitos{
+    padding: 100px;
+  }
+  
+  img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+  }
+  
+  footer{
+    margin-top: auto;
+  }
+  
+  .contenedor-circuitos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 5em;
+      min-height: 100%;}
+    
+  .contenedor-circuitos::after {
+    content: "";
+    display: block;
+    height: 100px; /* Altura del pie de página */
+  }
+  
+    /* hover styles */
+    .circuito {
+      position: relative;
+    }
+    
+    .circuito-image {
+      line-height: 5;
+      overflow: hidden;
+    }
+    
+    .circuito-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      /* transition: opacity .5s; */
+      background: rgba(239, 239, 239, 0.1);
+      color: black;
+  
+      /* position the text in t’ middle*/
+      display: flex;
+      align-items: last baseline;
+      justify-content: center;
+    }
+    
+    .circuito:hover .circuito-title {
+      opacity: 1;
+    }
+    
+    .circuito-image img{
+      border: solid  3px;
+      border: solid #efefef 3px;
+      border-radius: 15px;
+    }
+
+    .circuito:hover .circuito-image img {
+      /* filter: blur(2px); */
+      transition: all 0.3s ease-in-out;
+      background-color: black;
+      border: solid red 3px;
+      border-radius: 15px;
+    }
+  
+  /* 
+    GRADIENTES DE FONDO PARA CADA EQUIPO
+  
+    #redbull:hover {
+      transition: all 0.5s ease-in-out;
+      background: linear-gradient(45deg, #0600EF, #ff0101, #FF8700);
+      border-radius: 15px;
+  }
+  
+  #mercedes:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg, #000000, #00D2BE);
+      opacity: 0.85;
+  }
+  
+  #ferrari:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg,#DC0000,#fff, #fff700);
+      opacity: 0.85;
+  }   
+  
+  #mclaren:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg, #000, #FF8700);
+      opacity: 0.85;
+  }
+  
+  #astonmartin:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(35deg, #000 0%, #006F62 5%,#006F62 45%, #FFD700 50%, #006F62 55%, #fff 95%);
+      opacity: 0.85;
+  }
+  
+  #alpine:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg, #000 0%, #0090FF 25%, #fd9cff 55%, #fff 95%);
+      opacity: 0.85;
+  }
+  
+  #sauber:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(45deg, #000,#00ff51);
+      opacity: 0.85;
+  }
+  
+  #visarb:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(15deg, #000 0%, #0299fd 25%, #fff 55%, #ff0000 95%);
+      opacity: 0.85;
+  }
+  
+  #williams:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(15deg, #000 0%, #0090FF 65%, #835c07 85%);
+      opacity: 0.85;
+  }
+  
+  #hass:hover{
+      transition: all 1s ease-in-out;
+      background: linear-gradient(15deg, #000 0%, #ffffff 65%, #ff0000 95%);
+      opacity: 0.85;
+  } */
+  
+  
+  

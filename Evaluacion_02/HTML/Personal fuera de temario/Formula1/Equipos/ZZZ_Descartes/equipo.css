@@ -1,0 +1,374 @@
+/*CSS ELEMENTOS GENERALES*/
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+}
+
+html{
+    font-family: 'Roboto','sans-serif';
+    height: 100%;
+  }
+  
+body{
+display: flex;
+flex-direction: column;
+min-height: 100%;
+background-color: #efefef;
+margin:0;
+}
+
+main{
+   width: 1000px; 
+   margin: 0 auto;
+}
+
+/*CSS PARA LA CREACION DE LA BARRA DE NAVEGACION*/
+
+.Encabezado-Principal{
+/*Uso sticky por si queremos posicionar alguna notica o algo relevante encima del encabezado*/
+position: sticky;
+top: 0;
+background-color: #003399;
+color: white;
+width: 100%;
+z-index: 100;
+font-size: 1.5rem;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+height: 85px;
+padding: 5px 10%;
+box-sizing: border-box;
+}
+
+.Encabezado-Principal img{
+height: 95%;
+width: auto;
+}
+
+.Encabezado-Principal nav{
+width: 700px;
+}
+
+.Encabezado-Principal .Enlaces-Navegacion{
+list-style: none;
+display: flex;
+justify-content: space-between;
+}
+
+.Encabezado-Principal .Enlaces-Navegacion li{
+transition: all 0.5s ease;
+}
+
+.Encabezado-Principal .Enlaces-Navegacion li:hover{
+transform: scale(1.15);
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Difuminado del texto */
+}
+
+.Encabezado-Principal .Enlaces-Navegacion a{
+font-size: 700;
+color: white;
+text-decoration: none ;
+}
+
+/* CSS PARA LA SECCION DE LOS PILOTOS Y LA TABLA DE DATOS DEL EQUIPO*/
+
+.Pilotos-DatosEquipo{
+box-sizing: border-box;
+display: flex;
+margin:30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px;
+}
+
+.Pilotos-DatosEquipo header{
+box-sizing: border-box;
+height: 30px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.Tabla{
+    padding: 10px;
+}
+
+.Pilotos{
+    padding: 10px;
+}
+
+.Tabla-estadisticas tr,td {
+background-color: grey;
+margin: 40px;
+padding: 10px;
+font-size: larger;
+}
+
+.ContenedorPilotos{
+box-sizing: border-box;
+position: relative;
+display: flex;
+justify-content: space-between;
+width: 450px;
+height: 400px;
+}
+
+.Pilotos a{
+text-decoration: none;
+color: inherit;
+display: flex;
+}
+
+.Piloto{
+transition: all 0.5s ease;
+border-style: solid;
+/* border-color: #003399; */
+border-width: 2px;
+width: 206px;
+overflow: hidden;
+align-items: center;
+box-shadow: 1px 1px 1px #003399;
+} 
+
+.Piloto .Foto-Piloto{
+transition: all 0.5s ease;
+transform: scale(1.0);
+} 
+
+
+.Piloto:hover .Foto-Piloto{
+transition: all 0.5s ease;
+transform: scale(1.05);
+} 
+
+.Piloto:hover{
+box-shadow: 8px 5px 5px #003399;
+background-color: grey;
+color:white;
+} 
+
+.Bandera-Dorsal-Nombre{
+padding:8px;
+ }
+
+.Bandera-Dorsal{
+font-size: 50px;
+}
+
+.Bandera-Dorsal img{
+font-size: 50px;
+width: 80px;  
+}
+
+.Nombre{
+font-size: 30px;
+}
+
+/*CSS PARA EL CARRUSEL DE FOTOGRAFIAS A MODO DE GALERÍA*/
+
+.Galeria{
+margin: 30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px;
+}
+
+.slider-box{
+    width: 100%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 3000%;
+    animation: slide 180s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 3.3333333%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+/*PERSONALIZACION DE LOS TIEMPOS PARA LAS ANIMACIONES*/
+
+@keyframes slide {
+    /*El porcentaje de la izquierda es el momento dentro de la animacion
+    el de la derecha en el porcentaje dentro de la "tira" de fotos.
+    Sabiendo que tenemos 30 fotos en total le damos un ancho de 3000% en 'ul' 
+    cada foto ocupara un 3,333333% del ancho en la pantalla cuando se visualiza*/
+        0% { margin-left: 0; }
+        2% { margin-left: -100%; }
+        3.33% { margin-left: -100%; }
+
+        5% { margin-left: -200%; }
+        6.66% { margin-left: -200%; }
+
+        8% { margin-left: -300%; }
+        9.99% { margin-left: -300%; }
+
+        11% { margin-left: -400%; }
+        13.32% { margin-left: -400%; }
+
+        15% { margin-left: -500%; }
+        16.65% { margin-left: -500%; }
+
+        18% { margin-left: -600%; }
+        19.98% { margin-left: -600%; }
+
+        21% { margin-left: -700%; }
+        23.31% { margin-left: -700%; }
+
+        25% { margin-left: -800%; }
+        26.64% { margin-left: -800%; }
+
+        28% { margin-left: -900%; }
+        29.97% { margin-left: -900%; }
+
+        31% {margin-left: -1000%;}
+        33.30% { margin-left: -1000%; }
+
+        35% { margin-left: -1100%; }
+        36.63% { margin-left: -1100%; }
+
+        39.96% { margin-left: -1200%; }
+        39.96% { margin-left: -1200%; }
+
+        41% { margin-left: -1300%; }
+        43.29% { margin-left: -1300%; }
+
+        45% { margin-left: -1400%; }
+        46.62% { margin-left: -1400%; }
+
+        48% { margin-left: -1500%; }
+        49.95% { margin-left: -1500%; }
+
+        51% { margin-left: -1600%; }
+        53.28% { margin-left: -1600%; }
+
+        54% { margin-left: -1700%; }
+        56.61% { margin-left: -1700%; }
+
+        57% { margin-left: -1800%; }
+        59.94% { margin-left: -1800%; }
+
+        61% { margin-left: -1900%; }
+        63.27% { margin-left: -1900%; }
+
+        64% { margin-left: -2000%; }
+        66.60% { margin-left: -2000%; }
+
+        67% { margin-left: -2100%; }
+        69.93% { margin-left: -2100%; }
+
+        71% { margin-left: -2200%; }
+        73.26% { margin-left: -2200%; }
+
+        75% { margin-left: -2300%; }
+        76.59% { margin-left: -2300%; }
+
+        77% { margin-left: -2400%; }
+        79.92% { margin-left: -2400%; }
+
+        81% { margin-left: -2500%; }
+        83.25% { margin-left: -2500%; }
+
+        84% { margin-left: -2600%; }
+        86.58% { margin-left: -2600%; }
+
+        87% { margin-left: -2700%; }
+        89.91% { margin-left: -2700%; }
+
+        91% { margin-left: -2800%; }
+        93.24% { margin-left: -2800%; }
+
+        94% { margin-left: -2900%; }
+        96.57% { margin-left: -2900%; }
+
+        98% { margin-left: -3000%; } 
+        99.90% { margin-left: -3000%; }      
+}
+
+
+
+
+.Historia{
+margin: 30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px;
+}
+
+.Historia header,p{
+padding-bottom: 30px;
+}
+
+.Palmares{
+margin: 30px;
+box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+padding: 30px
+}
+
+.Palmares header,p{
+padding-bottom: 30px;
+}
+
+/*CSS PARA EL PIE DE PAGINA*/
+.site-footer {
+    background-color: #003399;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Copyright */
+.copyright {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+

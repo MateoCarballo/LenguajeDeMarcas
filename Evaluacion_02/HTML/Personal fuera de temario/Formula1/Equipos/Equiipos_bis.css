@@ -7,12 +7,15 @@
 
 html{
   font-family: 'Roboto','sans-serif';
+  height: 100%;
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   background-color: #efefef;
-  margin:0px;
-  padding: 0px;
+  margin:0;
 }
 
 .rejilla-formulas{
@@ -84,9 +87,10 @@ footer{
 /* 
   GRADIENTES DE FONDO PARA CADA EQUIPO
 
-#redbull:hover{
+  #redbull:hover {
     transition: all 0.5s ease-in-out;
     background: linear-gradient(45deg, #0600EF, #ff0101, #FF8700);
+    border-radius: 15px;
 }
 
 #mercedes:hover{
