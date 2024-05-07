@@ -10,191 +10,291 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!--CONEXION CON TODOS LOS ARCHIVOS DE ESTILO-->
-    <link rel="stylesheet" href="/Circuitos/Circuitos.css">
-    <link rel="stylesheet" href="/Comunes/header.css">
-    <link rel="stylesheet" href="/Comunes/footer.css">
+    <link rel="stylesheet" href="./Circuitos.css">
+    <link rel="stylesheet" href="../Comunes/header.css">
+    <link rel="stylesheet" href="../Comunes/footer.css">
 
     <!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
-    <script src="/Comunes/cargarContenido.js" defer></script>
+    <script src="../Comunes/cargarContenido.js" defer></script>
 </head>
 <body>
     <!-- Revisar pagina oficial F1-->
-    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html"></header>
+    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html">
+        <nav id="menu">
+            <ul class="navegacion">
+                <li><img src="../Equipos/f1_logo_rojo.svg" alt=""></li>
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="./Circuitos.html">Circuitos</a>
+                    <ul>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/01_Bahrein/Bahrein.html">Bahrain</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/02_Arabia Saudita/Arabia Saudita.html">Arabia Saudi</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/03_Australia/Australia.html">Australia</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/04_Japon/Japon.html">Japón</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/05_China/China.html">China</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/06_Miami/Miami.html">Miami</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/07_Emilia Romagna/Emilia Romagna.html">Imola</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/08_Monaco/Monaco.html">Monaco</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/09_Canada/Canada.html">Canadá</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/10_Espanha/Espanha.html">España</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/11_Austria/Austria.html">Austria</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/12_Gran Bretanha/Gran Bretanha.html">Silverstone</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/13_Hungria/Hungria.html">Hungría</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/14_Belgica/Belgica.html">Bélgica</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/15_Paises Bajos/Paises Bajos.html">Zandvort</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/16_Italia/Italia.html">Monza</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/17_Azerbaiyan/Azerbaiyan.html">Azerbaiyan</a></li> 
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/18_Singapur/Singapur.html">Singapore</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/19_Estados Unidos/Austin.html">Austin</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/20_Mexico/Ciudad de Mexico.html">Mexico</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/21_Brasil/Sao Paulo.html">Sao Paulo</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/22_Las Vegas/Las_Vegas.html">Las Vegas</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/23_Qatar/Qatar.html">Qatar</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/24_Abu Dabi/Abu Dhabi.html">Abu Dhabi</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Equipos/Equipos_bis.html">Equipos</a>
+                    <ul>
+                        <li><a href="../Equipos/Alpine/alpine.html">Alpine</a></li>
+                        <li><a href="../Equipos/Aston-Martin/astonmartin.html">Aston-Martin</a></li>
+                        <li><a href="../Equipos/Ferrari/ferrari.html">Ferrari</a></li>
+                        <li><a href="../Equipos/Haas/haas.html">Haas</a></li>
+                        <li><a href="../Equipos/Mclaren/mclaren.html">Mclaren</a></li>
+                        <li><a href="../Equipos/Mercedes/mercedes.html">Mercedes</a></li>
+                        <li><a href="../Equipos/Red-Bull/redbull.html">Red-Bull</a></li>
+                        <li><a href="../Equipos/Stake/stake.html">Stake</a></li>
+                        <li><a href="../Equipos/Visa-RB/visarb.html">Visa-RB</a></li>
+                        <li><a href="../Equipos/Williams/williams.html">Williams</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Equipos/Pilotos.html">Pilotos</a>
+                    <ul>
+                        <li><a href="../Equipos/Alpine/Pilotos/Gasly/pierregasly.html">Pierre Gasly</a></li>
+                        <li><a href="../Equipos/Alpine/Pilotos/Ocon/estebanocon.html">Esteban Ocon</a></li>
+                        <li><a href="../Equipos/Aston-Martin/pilotos/Alonso/fernandoalonso.html">Fernano Alonso</a></li>
+                        <li><a href="../Equipos/Aston-Martin/pilotos/Stroll/lancestroll.html">Lance Stroll</a></li>
+                        <li><a href="../Equipos/Ferrari/pilotos/Sainz/carlossainz.html">Carlos Sainz</a></li>
+                        <li><a href="../Equipos/Ferrari/pilotos/Leclerc/charleslecrec.html">Charles Leclerc</a></li>
+                        <li><a href="../Equipos/Haas/pilotos/Magnusen/kevinmagnusen.html">Kevin Magnusen</a></li>
+                        <li><a href="../Equipos/Haas/pilotos/Hulkenberg/nicohulkenberg.html">Nico Hulkenberg</a></li>
+                        <li><a href="../Equipos/Mclaren/pilotos/Norris/landonorris.html">Lando Norris</a></li>
+                        <li><a href="../Equipos/Mclaren/pilotos/Piastri/oscarpiastri.html">Oscar Piastri</a></li>
+                        <li><a href="../Equipos/Mercedes/pilotos/Hamilton/lewishamilton.html">Lewis Hamilton</a></li>
+                        <li><a href="../Equipos/Mercedes/pilotos/Russell/gerogerussell.html">George Russell</a></li>
+                        <li><a href="../Equipos/Red-Bull/Pilotos/Verstappen/maxverstapen.html">Max Verstapen</a></li>
+                        <li><a href="../Equipos/Red-Bull/Pilotos/Perez/sergioperez.html">Sergio Pérrez</a></li>
+                        <li><a href="../Equipos/Stake/pilotos/Bottas/valteribottas.html">Valtteri Bottas</a></li>
+                        <li><a href="../Equipos/Stake/pilotos/Zhou/zhou.html">Huangyu Zhou</a></li>
+                        <li><a href="../Equipos/Visa-RB/pilotos/Ricciardo/danielricciardo.html">Daniel Ricciardo</a></li>
+                        <li><a href="../Equipos/Visa-RB/pilotos/Tsunoda/yukitsunoda.html">Yuki Tsunoda</a></li>
+                        <li><a href="../Equipos/Williams/pilotos/Sargeant/logansargeant.html">Logan Sargeant</a></li>
+                        <li><a href="../Equipos/Williams/pilotos/Albon/alexanderalbon.html">Alexander Albon</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Registro</a>
+                    <ul>
+                        <li><a href="../Registro/FormularioAcceso.html">Acceso</a></li>
+                        <li><a href="../Registro/FormularioRegistro.html">Registro</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </nav>
+    </header>
     </header>
     <main>
         <div class="rejilla-circuitos">
             <div class="contenedor-circuitos">
               <section id="bahrein" class="circuito">
-                <a class="circuito-title" href="/Circuitos/01_Bahrein/Bahrein.html">Bahrein</a>
+                <a class="circuito-title" href="./01_Bahrein/Bahrein.html">Bahrein</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/01_Bahrein/img/layout_Color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./01_Bahrein/img/layout_Color.avif" alt="Layout"></a>
                 </div>
                 </section>
 
             <section id="Arabia Saudi" class="circuito">
-                <a class="circuito-title" href="/Circuitos/02_Arabia Saudita/Arabia Saudita.html">Arabia Saudi</a>
+                <a class="circuito-title" href="./02_Arabia Saudita/Arabia Saudita.html">Arabia Saudi</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/02_Arabia Saudita/img/image.png" alt="Layout"></a>
+                    <a href="#"><img src="./02_Arabia Saudita/img/image.png" alt="Layout"></a>
                 </div>
             </section>
          
             <section id="Australia" class="circuito">
-                <a class="circuito-title" href="/Circuitos/03_Australia/Australia.html">Australia</a>
+                <a class="circuito-title" href="./03_Australia/Australia.html">Australia</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/03_Australia/img/layout.avif" alt="Layout"></a>
+                    <a href="#"><img src="./03_Australia/img/layout.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/04_Japon/Japon.html">Japon</a>
+                <a class="circuito-title" href="./04_Japon/Japon.html">Japon</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/04_Japon/img/Layout_Color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./04_Japon/img/Layout_Color.avif" alt="Layout"></a>
                 </div>
             </section>
      
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/05_China/China.html">China</a>
+                <a class="circuito-title" href="./05_China/China.html">China</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/05_China/img/Layout_Color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./05_China/img/Layout_Color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/06_Miami/Miami.html">Miami</a>
+                <a class="circuito-title" href="./06_Miami/Miami.html">Miami</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/06_Miami/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./06_Miami/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/07_Emilia Romagna/Emilia Romagna.html">Imola</a>
+                <a class="circuito-title" href="./07_Emilia Romagna/Emilia Romagna.html">Imola</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/07_Emilia Romagna/img/Layout_color.png" alt="Layout"></a>
+                    <a href="#"><img src="./07_Emilia Romagna/img/Layout_color.png" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/08_Monaco/Monaco.html">Mónaco</a>
+                <a class="circuito-title" href="./08_Monaco/Monaco.html">Mónaco</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/08_Monaco/img/Layout_color.png" alt="Layout"></a>
+                    <a href="#"><img src="./08_Monaco/img/Layout_color.png" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/09_Canada/Canada.html">Canada</a>
+                <a class="circuito-title" href="./09_Canada/Canada.html">Canada</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/09_Canada/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./09_Canada/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/10_Espanha/Espanha.html">España</a>
+                <a class="circuito-title" href="./10_Espanha/Espanha.html">España</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/10_Espanha/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./10_Espanha/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/11_Austria/Austria.html">Austria</a>
+                <a class="circuito-title" href="./11_Austria/Austria.html">Austria</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/11_Austria/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./11_Austria/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/12_Gran Bretanha/Gran Bretanha.html">Inglaterra</a>
+                <a class="circuito-title" href="./12_Gran Bretanha/Gran Bretanha.html">Inglaterra</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/12_Gran Bretanha/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./12_Gran Bretanha/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/13_Hungria/Hungria.html">Hungría</a>
+                <a class="circuito-title" href="./13_Hungria/Hungria.html">Hungría</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/13_Hungria/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./13_Hungria/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/14_Belgica/Belgica.html">Bélgica</a>
+                <a class="circuito-title" href="./14_Belgica/Belgica.html">Bélgica</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/14_Belgica/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./14_Belgica/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/15_Paises Bajos/Paises Bajos.html">Holanda</a>
+                <a class="circuito-title" href="./15_Paises Bajos/Paises Bajos.html">Holanda</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/15_Paises Bajos/img/Layout_color.png" alt="Layout"></a>
+                    <a href="#"><img src="./15_Paises Bajos/img/Layout_color.png" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/16_Italia/Italia.html">Italia</a>
+                <a class="circuito-title" href="./16_Italia/Italia.html">Italia</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/16_Italia/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./16_Italia/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/17_Azerbaiyan/Azerbaiyan.html">Azerbaiyan</a>
+                <a class="circuito-title" href="./17_Azerbaiyan/Azerbaiyan.html">Azerbaiyan</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/17_Azerbaiyan/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./17_Azerbaiyan/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/18_Singapur/Singapur.html">Singapur</a>
+                <a class="circuito-title" href="./18_Singapur/Singapur.html">Singapur</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/18_Singapur/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./18_Singapur/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/19_Estados Unidos/Austin.html">EE.UU.</a>
+                <a class="circuito-title" href="./19_Estados Unidos/Austin.html">EE.UU.</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/19_Estados Unidos/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./19_Estados Unidos/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/20_Mexico/Ciudad de Mexico.html">México</a>
+                <a class="circuito-title" href="./20_Mexico/Ciudad de Mexico.html">México</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/20_Mexico/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./20_Mexico/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/21_Brasil/Sao Paulo.html">Brasil</a>
+                <a class="circuito-title" href="./21_Brasil/Sao Paulo.html">Brasil</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/21_Brasil/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./21_Brasil/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/22_Las Vegas/Las_Vegas.html">Las Vegas</a>
+                <a class="circuito-title" href="./22_Las Vegas/Las_Vegas.html">Las Vegas</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/22_Las Vegas/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./22_Las Vegas/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/23_Qatar/Qatar.html">Las Vegas</a>
+                <a class="circuito-title" href="./23_Qatar/Qatar.html">Las Vegas</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/23_Qatar/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./23_Qatar/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
             <section class="circuito">
-                <a class="circuito-title" href="/Circuitos/24_Abu Dabi/Abu Dhabi.html">Las Vegas</a>
+                <a class="circuito-title" href="./24_Abu Dabi/Abu Dhabi.html">Las Vegas</a>
                 <div class="circuito-image">
-                    <a href="#"><img src="/Circuitos/24_Abu Dabi/img/Layout_color.avif" alt="Layout"></a>
+                    <a href="#"><img src="./24_Abu Dabi/img/Layout_color.avif" alt="Layout"></a>
                 </div>
             </section>
 
           </div>
         </div>
     </main>
-    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html"></footer>
+    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre nosotros</h3>
+                <p>Esto es solo un ejemplo para una materia de DAM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: email@lenmguajeDeMarcas.com</p>
+                <p>Phone: +34 670 633 975</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sígueme en </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="../IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="../IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

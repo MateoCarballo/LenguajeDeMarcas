@@ -4,148 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pilotos</title>
-    <link rel="shortcut icon" href="/Equipos/f1_logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./f1_logo.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!--CONEXION CON TODOS LOS ARCHIVOS DE ESTILO-->
-    <link rel="stylesheet" href="/Equipos/Pilotos.css">
-    <link rel="stylesheet" href="/Comunes/header.css">
-    <link rel="stylesheet" href="/Comunes/footer.css">
+    <link rel="stylesheet" href="./Pilotos.css">
+    <link rel="stylesheet" href="../Comunes/header.css">
+    <link rel="stylesheet" href="../Comunes/footer.css">
 
     <!--SCRIP QUE REPITE LOS ENCABEZADOS Y PIE DE PAGINA-->
-    <script src="/Comunes/cargarContenido.js" defer></script>
+    <script src="../Comunes/cargarContenido.js" defer></script>
 </head>
 <body>
     <!-- Revisar pagina oficial F1-->
-    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html"></header>
+    <header class="Encabezado-Principal" id="header-container" data-ruta-header="/Comunes/header.html">
+        <nav id="menu">
+            <ul class="navegacion">
+                <li><img src="./f1_logo_rojo.svg" alt=""></li>
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="../Circuitos/Circuitos.html">Circuitos</a>
+                    <ul>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/01_Bahrein/Bahrein.html">Bahrain</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/02_Arabia Saudita/Arabia Saudita.html">Arabia Saudi</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/03_Australia/Australia.html">Australia</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/04_Japon/Japon.html">Japón</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/05_China/China.html">China</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/06_Miami/Miami.html">Miami</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/07_Emilia Romagna/Emilia Romagna.html">Imola</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/08_Monaco/Monaco.html">Monaco</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/09_Canada/Canada.html">Canadá</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/10_Espanha/Espanha.html">España</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/11_Austria/Austria.html">Austria</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/12_Gran Bretanha/Gran Bretanha.html">Silverstone</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/13_Hungria/Hungria.html">Hungría</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/14_Belgica/Belgica.html">Bélgica</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/15_Paises Bajos/Paises Bajos.html">Zandvort</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/16_Italia/Italia.html">Monza</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/17_Azerbaiyan/Azerbaiyan.html">Azerbaiyan</a></li> 
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/18_Singapur/Singapur.html">Singapore</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/19_Estados Unidos/Austin.html">Austin</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/20_Mexico/Ciudad de Mexico.html">Mexico</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/21_Brasil/Sao Paulo.html">Sao Paulo</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/22_Las Vegas/Las_Vegas.html">Las Vegas</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/23_Qatar/Qatar.html">Qatar</a></li>
+                        <li class="Enlace-Navegacion"><a href="../Circuitos/24_Abu Dabi/Abu Dhabi.html">Abu Dhabi</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Equipos/Equipos_bis.html">Equipos</a>
+                    <ul>
+                        <li><a href="../Equipos/Alpine/alpine.html">Alpine</a></li>
+                        <li><a href="../Equipos/Aston-Martin/astonmartin.html">Aston-Martin</a></li>
+                        <li><a href="../Equipos/Ferrari/ferrari.html">Ferrari</a></li>
+                        <li><a href="../Equipos/Haas/haas.html">Haas</a></li>
+                        <li><a href="../Equipos/Mclaren/mclaren.html">Mclaren</a></li>
+                        <li><a href="../Equipos/Mercedes/mercedes.html">Mercedes</a></li>
+                        <li><a href="../Equipos/Red-Bull/redbull.html">Red-Bull</a></li>
+                        <li><a href="../Equipos/Stake/stake.html">Stake</a></li>
+                        <li><a href="../Equipos/Visa-RB/visarb.html">Visa-RB</a></li>
+                        <li><a href="../Equipos/Williams/williams.html">Williams</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Equipos/Pilotos.html">Pilotos</a>
+                    <ul>
+                        <li><a href="../Equipos/Alpine/Pilotos/Gasly/pierregasly.html">Pierre Gasly</a></li>
+                        <li><a href="../Equipos/Alpine/Pilotos/Ocon/estebanocon.html">Esteban Ocon</a></li>
+                        <li><a href="../Equipos/Aston-Martin/pilotos/Alonso/fernandoalonso.html">Fernano Alonso</a></li>
+                        <li><a href="../Equipos/Aston-Martin/pilotos/Stroll/lancestroll.html">Lance Stroll</a></li>
+                        <li><a href="../Equipos/Ferrari/pilotos/Sainz/carlossainz.html">Carlos Sainz</a></li>
+                        <li><a href="../Equipos/Ferrari/pilotos/Leclerc/charleslecrec.html">Charles Leclerc</a></li>
+                        <li><a href="../Equipos/Haas/pilotos/Magnusen/kevinmagnusen.html">Kevin Magnusen</a></li>
+                        <li><a href="../Equipos/Haas/pilotos/Hulkenberg/nicohulkenberg.html">Nico Hulkenberg</a></li>
+                        <li><a href="../Equipos/Mclaren/pilotos/Norris/landonorris.html">Lando Norris</a></li>
+                        <li><a href="../Equipos/Mclaren/pilotos/Piastri/oscarpiastri.html">Oscar Piastri</a></li>
+                        <li><a href="../Equipos/Mercedes/pilotos/Hamilton/lewishamilton.html">Lewis Hamilton</a></li>
+                        <li><a href="../Equipos/Mercedes/pilotos/Russell/gerogerussell.html">George Russell</a></li>
+                        <li><a href="../Equipos/Red-Bull/Pilotos/Verstappen/maxverstapen.html">Max Verstapen</a></li>
+                        <li><a href="../Equipos/Red-Bull/Pilotos/Perez/sergioperez.html">Sergio Pérrez</a></li>
+                        <li><a href="../Equipos/Stake/pilotos/Bottas/valteribottas.html">Valtteri Bottas</a></li>
+                        <li><a href="../Equipos/Stake/pilotos/Zhou/zhou.html">Huangyu Zhou</a></li>
+                        <li><a href="../Equipos/Visa-RB/pilotos/Ricciardo/danielricciardo.html">Daniel Ricciardo</a></li>
+                        <li><a href="../Equipos/Visa-RB/pilotos/Tsunoda/yukitsunoda.html">Yuki Tsunoda</a></li>
+                        <li><a href="../Equipos/Williams/pilotos/Sargeant/logansargeant.html">Logan Sargeant</a></li>
+                        <li><a href="../Equipos/Williams/pilotos/Albon/alexanderalbon.html">Alexander Albon</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Registro</a>
+                    <ul>
+                        <li><a href="../Registro/FormularioAcceso.html">Acceso</a></li>
+                        <li><a href="../Registro/FormularioRegistro.html">Registro</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </nav>
     </header>
     <main>
         <div class="rejilla-pilotos">
             <div class="contenedor-pilotos">
                 <section id="Alpine" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Alpine/Pilotos/Ocon/estebanocon.html">Esteban Ocon</a>
+                    <a class="piloto-title" href="./Alpine/Pilotos/Ocon/estebanocon.html">Esteban Ocon</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Alpine/img/Esteban-Ocon(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Alpine/img/Esteban-Ocon(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Alpine" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Alpine/Pilotos/Gasly/pierregasly.html">Pierre Gasly</a>
+                    <a class="piloto-title" href="./Alpine/Pilotos/Gasly/pierregasly.html">Pierre Gasly</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Alpine/img/Pierre-Gasly(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Alpine/img/Pierre-Gasly(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Aston-Martin" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Aston-Martin/pilotos/Alonso/fernandoalonso.html">Fernando Alonso</a>
+                    <a class="piloto-title" href="./Aston-Martin/pilotos/Alonso/fernandoalonso.html">Fernando Alonso</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Aston-Martin/img/Fernando-Alonso(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Aston-Martin/img/Fernando-Alonso(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Aston-Martin" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Aston-Martin/pilotos/Stroll/lancestroll.html">Lance Stroll</a>
+                    <a class="piloto-title" href="./Aston-Martin/pilotos/Stroll/lancestroll.html">Lance Stroll</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Aston-Martin/img/Lance-Stroll(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Aston-Martin/img/Lance-Stroll(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Ferrari" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Ferrari/pilotos/Leclerc/charleslecrec.html">Charles Leclerc</a>
+                    <a class="piloto-title" href="./Ferrari/pilotos/Leclerc/charleslecrec.html">Charles Leclerc</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Ferrari/img/Charles-Leclerc(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Ferrari/img/Charles-Leclerc(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Ferrari" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Ferrari/pilotos/Sainz/carlossainz.html">Carlos Sainz</a>
+                    <a class="piloto-title" href="./Ferrari/pilotos/Sainz/carlossainz.html">Carlos Sainz</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Ferrari/img/Carlos-Sainz(Nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Ferrari/img/Carlos-Sainz(Nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Haas" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Haas/pilotos/Hulkenberg/nicohulkenberg.html">Nico Hulkenberg</a>
+                    <a class="piloto-title" href="./Haas/pilotos/Hulkenberg/nicohulkenberg.html">Nico Hulkenberg</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Haas/img/Nico-Hulkenberg(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Haas/img/Nico-Hulkenberg(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Haas" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Haas/pilotos/Magnusen/kevinmagnusen.html">Kevin Magnusen</a>
+                    <a class="piloto-title" href="./Haas/pilotos/Magnusen/kevinmagnusen.html">Kevin Magnusen</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Haas/img/Kevin-Magnussen(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Haas/img/Kevin-Magnussen(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Mclaren" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Mclaren/pilotos/Norris/landonorris.html">Lando Norris</a>
+                    <a class="piloto-title" href="./Mclaren/pilotos/Norris/landonorris.html">Lando Norris</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Mclaren/img/Lando-Norris(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Mclaren/img/Lando-Norris(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Mclaren" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Mclaren/pilotos/Piastri/oscarpiastri.html">Oscar Piastri</a>
+                    <a class="piloto-title" href="./Mclaren/pilotos/Piastri/oscarpiastri.html">Oscar Piastri</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Mclaren/img/Oscar-Piastri(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Mclaren/img/Oscar-Piastri(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Mercedes" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Mercedes/pilotos/Hamilton/lewishamilton.html">Lewis Hamilton</a>
+                    <a class="piloto-title" href="./Mercedes/pilotos/Hamilton/lewishamilton.html">Lewis Hamilton</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Mercedes/img/Lewis-Hamilton(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Mercedes/img/Lewis-Hamilton(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Mercedes" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Mercedes/pilotos/Russell/gerogerussell.html">George Russell</a>
+                    <a class="piloto-title" href="./Mercedes/pilotos/Russell/gerogerussell.html">George Russell</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Mercedes/img/George-Russell(nofondo)avif.avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Mercedes/img/George-Russell(nofondo)avif.avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Red-Bull" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Red-Bull/Pilotos/Perez/sergioperez.html">Sergio Pérez</a>
+                    <a class="piloto-title" href="./Red-Bull/Pilotos/Perez/sergioperez.html">Sergio Pérez</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Red-Bull/img/Sergio-Perez(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Red-Bull/img/Sergio-Perez(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Red-Bull" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Red-Bull/Pilotos/Verstappen/maxverstapen.html">Max Verstappen</a>
+                    <a class="piloto-title" href="./Red-Bull/Pilotos/Verstappen/maxverstapen.html">Max Verstappen</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Red-Bull/img/Max-Verstappen(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Red-Bull/img/Max-Verstappen(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Stake" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Stake/pilotos/Bottas/valteribottas.html">Valtteri Bottas</a>
+                    <a class="piloto-title" href="./Stake/pilotos/Bottas/valteribottas.html">Valtteri Bottas</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Stake/img/Valtteri-Bottas(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Stake/img/Valtteri-Bottas(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Stake" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Stake/pilotos/Zhou/zhou.html">Guanyu Zhou</a>
+                    <a class="piloto-title" href="./Stake/pilotos/Zhou/zhou.html">Guanyu Zhou</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Stake/img/Zhou-Guanyu(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Stake/img/Zhou-Guanyu(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="RB" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Visa-RB/pilotos/Ricciardo/danielricciardo.html">Daniel Ricciardo</a>
+                    <a class="piloto-title" href="./Visa-RB/pilotos/Ricciardo/danielricciardo.html">Daniel Ricciardo</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Visa-RB/img/Daniel Ricciardo(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Visa-RB/img/Daniel Ricciardo(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="RB" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Visa-RB/pilotos/Tsunoda/yukitsunoda.html">Yuki Tsunoda</a>
+                    <a class="piloto-title" href="./Visa-RB/pilotos/Tsunoda/yukitsunoda.html">Yuki Tsunoda</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Visa-RB/img/Yuki Tsunoda(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Visa-RB/img/Yuki Tsunoda(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Williams" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Williams/pilotos/Albon/alexanderalbon.html">Alexander Albon</a>
+                    <a class="piloto-title" href="./Williams/pilotos/Albon/alexanderalbon.html">Alexander Albon</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Williams/img/Alexander-Albon(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Williams/img/Alexander-Albon(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
                 <section id="Williams" class="piloto">
-                    <a class="piloto-title" href="/Equipos/Williams/pilotos/Sargeant/logansargeant.html">Logan Sargeant</a>
+                    <a class="piloto-title" href="./Williams/pilotos/Sargeant/logansargeant.html">Logan Sargeant</a>
                     <div class="piloto-image">
-                        <a href="#"><img src="/Equipos/Williams/img/Logan-Sargeant(nofondo).avif" alt="img Piloto"></a>
+                        <a href="#"><img src="./Williams/img/Logan-Sargeant(nofondo).avif" alt="img Piloto"></a>
                     </div>
                 </section>
           </div>
     </main>
-    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html"></footer>
+    <footer class="site-footer" id="footer-container" data-ruta-footer="/Comunes/footer.html">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Sobre nosotros</h3>
+                <p>Esto es solo un ejemplo para una materia de DAM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: email@lenmguajeDeMarcas.com</p>
+                <p>Phone: +34 670 633 975</p>
+            </div>
+            <div class="footer-column">
+                <h3>Sígueme en </h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="../IMG/iconmonstr-facebook-6.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../IMG/iconmonstr-twitter-1.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="../IMG/iconmonstr-instagram-15.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2024 Mi entregable. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
