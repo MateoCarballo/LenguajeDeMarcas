@@ -80,9 +80,14 @@ footer{
   
   .equipo:hover .equipo-image img {
     /* filter: blur(2px); */
-    transition: all 0.5s ease-in-out;
-    transform: scale(1.10);
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.05);
+    filter: drop-shadow(5px 5px 8px #006F62 );
   }
+
+  
+
 
 /* 
   GRADIENTES DE FONDO PARA CADA EQUIPO

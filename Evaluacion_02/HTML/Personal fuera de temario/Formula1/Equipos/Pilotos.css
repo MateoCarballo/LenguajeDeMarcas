@@ -78,16 +78,8 @@
       opacity: 1;
     }
     
-   .piloto-image img{
-        border: none; 
-        border-top: 3px solid black; 
-        border-right: 3px solid black; 
-        border-radius: 0 10px 0 0;
-
-    }
-
     .piloto:hover .piloto-image img {
-        transition: all 0.3s ease;
+        transition: all 0.3s ease-in-out;
         border-style: none;
         border-width: 2px;
         overflow: hidden;
@@ -98,59 +90,95 @@
     }
 
     #Alpine:hover .piloto-image img {
-        border-top: 3px solid #0090FF;
+      filter: drop-shadow(5px -2px 8px #0090FF );
+       /*  border-top: 3px solid #0090FF;
         border-right: 3px solid #0090FF;
-        box-shadow: 8px 5px 5px #0090FF;
+        box-shadow: 8px 5px 5px #0090FF; */
+        
     }
 
     #Aston-Martin:hover .piloto-image img {
-        border-top: 3px solid #006F62;
+      filter: drop-shadow(5px -2px 8px #006F62 );
+       /*  border-top: 3px solid #006F62;
         border-right: 3px solid #006F62;
-        box-shadow: 8px 5px 5px #006F62;
+        box-shadow: 8px 5px 5px #006F62; */
     }
 
     #Ferrari:hover .piloto-image img {
-        border-top: 3px solid #DC0000;
+       /*  border-top: 3px solid #DC0000;
         border-right: 3px solid #DC0000;
-        box-shadow: 8px 5px 5px #DC0000;
+        box-shadow: 8px 5px 5px #DC0000; */
+      filter: drop-shadow(5px -2px 8px #DC0000 );
+        
     }
 
     #Haas:hover .piloto-image img {
-        border-top: 3px solid #000;
+        /* border-top: 3px solid #000;
         border-right: 3px solid #000;
-        box-shadow: 8px 5px 5px #000;
+        box-shadow: 8px 5px 5px #000; */
+        filter: drop-shadow(5px -2px 8px #000 );
     }
     #Mclaren:hover .piloto-image img {
-        border-top: 3px solid #FF8700;
+        /* border-top: 3px solid #FF8700;
         border-right: 3px solid #FF8700;
-        box-shadow: 8px 5px 5px #FF8700;
+        box-shadow: 8px 5px 5px #FF8700; */
+        filter: drop-shadow(5px -2px 8px #FF8700 );
     }
     #Mercedes:hover .piloto-image img {
-        border-top: 3px solid #00D2BE;
-        border-right: 3px solid #00D2BE;
-        box-shadow: 8px 5px 5px #00D2BE;
+        /* border-top: 3px solid #FF8700;
+        border-right: 3px solid #FF8700;
+        box-shadow: 8px 5px 5px #FF8700; */
+        filter: drop-shadow(5px -2px 8px #00D2BE );
     }
 
     #Red-Bull:hover .piloto-image img {
-        border-top: 3px solid #0600EF;
+        /* border-top: 3px solid #0600EF;
         border-right: 3px solid #0600EF;
-        box-shadow: 8px 5px 5px #0600EF;
+        box-shadow: 8px 5px 5px #0600EF; */
+        filter: drop-shadow(5px -2px 8px #00D2BE );
     }
 
     #Stake:hover .piloto-image img {
-        border-top: 3px solid #00ff51;
+        /* border-top: 3px solid #00ff51;
         border-right: 3px solid #00ff51;
-        box-shadow: 8px 5px 5px #00ff51;
+        box-shadow: 8px 5px 5px #00ff51; */
+        filter: drop-shadow(5px -2px 8px #00ff51 );
     }
     #RB:hover .piloto-image img {
-        border-top: 3px solid #0299fd;
+        /* border-top: 3px solid #0299fd;
         border-right: 3px solid #0299fd;
-        box-shadow: 8px 5px 5px #0299fd;
+        box-shadow: 8px 5px 5px #0299fd; */
+        filter: drop-shadow(5px -2px 8px #0299fd );
     }
     #Williams:hover .piloto-image img {
-        border-top: 3px solid #003cff;
+       /*  border-top: 3px solid #003cff;
         border-right: 3px solid #003cff;
-        box-shadow: 8px 5px 5px #003cff;
+        box-shadow: 8px 5px 5px #003cff; */
+        filter: drop-shadow(5px -2px 8px #003cff );
+    }
+
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background: rgba(0, 0, 0, 0);
+      transition: background 1s;
+      pointer-events: none;
+      z-index: 9999;
+    }
+    
+    #Alpine:hover ~ body::after,
+    #Aston-Martin:hover ~ body::after,
+    #Ferrari:hover ~ body::after,
+    #Haas:hover ~ body::after,
+    #Mclaren:hover ~ body::after,
+    #Mercedes:hover ~ body::after,
+    #Red-Bull:hover ~ body::after,
+    #Stake:hover ~ body::after,
+    #RB:hover ~ body::after,
+    #Williams:hover ~ body::after {
+      background: rgba(0, 0, 0, 0.5);
     }
 
   /* 
