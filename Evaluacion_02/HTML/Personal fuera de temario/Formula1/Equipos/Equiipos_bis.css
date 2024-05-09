@@ -23,7 +23,7 @@ body{
 }
 
 img {
-width: 100%; /* need to overwrite inline dimensions */
+width: 90%; 
 height: auto;
 }
 
@@ -40,10 +40,9 @@ footer{
 .contenedor-formulas::after {
   content: "";
   display: block;
-  height: 100px; /* Altura del pie de página */
+  height: 100px; 
 }
 
-  /* hover styles */
   .equipo {
     position: relative;
   }
@@ -64,8 +63,6 @@ footer{
     top: 0;
     left: 0;
     opacity: 0;
-    /* transition: opacity .5s; */
-    background: rgba(239, 239, 239, 0.1);
     color: black;
 
     /* position the text in t’ middle*/
@@ -78,24 +75,64 @@ footer{
     opacity: 1;
   }
   
+  .equipo .equipo-image img {
+    /* filter: blur(2px); */
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.00);
+  }
+
   .equipo:hover .equipo-image img {
     /* filter: blur(2px); */
     position: relative;
     transition: all 0.4s ease-in-out;
     transform: scale(1.05);
-    filter: drop-shadow(5px 5px 8px #006F62 );
   }
 
-  
+  #redbull:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #0600EF );
+  }
 
+  #ferrari:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #DC0000);
+  }
+
+  #mercedes:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #00D2BE);
+  }
+
+  #mclaren:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #FF8700);
+  }
+
+  #astonmartin:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #FFD700);
+  }
+
+  #alpine:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #fd9cff);
+  }
+
+  #stake:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #00ff51);
+  }
+
+  #visarb:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #0299fd);
+  }
+
+  #williams:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #835c07);
+  }
+
+  #haas:hover .equipo-image img {
+    filter: drop-shadow(5px 5px 8px #000);
+  }
 
 /* 
   GRADIENTES DE FONDO PARA CADA EQUIPO
 
-  #redbull:hover {
-    transition: all 0.5s ease-in-out;
-    background: linear-gradient(45deg, #0600EF, #ff0101, #FF8700);
-    border-radius: 15px;
+  
 }
 
 #mercedes:hover{
