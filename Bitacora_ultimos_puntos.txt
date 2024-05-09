@@ -34,3 +34,7 @@ IMPRIMIR LOS DOCUMENTOS DE TRANSFORMACION   W3 SCCHOOL
 
                                             plantillas a un mismo  nodo
                                             iteraciones
+
+
+
+                    
