@@ -16,6 +16,13 @@ body{
     min-height: 100%;
     background-color: #efefef;
     margin:0;
+
+    /*
+    display, flex-direction, min-height: Al utilizar un contenedor flexible 
+    con dirección de columna y altura mínima del viewport, se logra que el 
+    cuerpo de la página se ajuste correctamente al tamaño de la ventana del 
+    navegador,incluso si el contenido es insuficiente para llenar toda la altura.
+    */
 }
 
 main{
@@ -35,20 +42,23 @@ footer{
 
 .Bundel > .Container-texto {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 50%; /* Ajusta la posición vertical */
     left: 50%; /* Ajusta la posición horizontal */
     transform: translate(-50%, -50%); /* Centra el texto */
     color: white; /* Color del texto */
-    text-align: center;
-    
 }
 
 .Bundel > .Container-texto > p{
     font-size: 80px; /* Tamaño de fuente */
+    text-align: center;
 }
 
 .Bundel > .Container-texto > .Fecha{
     background-color: black;
+    width: 180px;
     border-radius: 10px;
     padding: 5px;
     font-size: 20px;

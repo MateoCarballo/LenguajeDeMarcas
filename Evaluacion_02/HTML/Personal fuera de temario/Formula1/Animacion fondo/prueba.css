@@ -1,0 +1,22 @@
+
+
+.container{
+    display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 300px; /* Puedes ajustar la altura del contenedor según tus necesidades */
+  border: 1px solid #ccc; 
+}
+.orange{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    bottom:anchor (top);
+    left: anchor(10%);
+}
+#blue{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

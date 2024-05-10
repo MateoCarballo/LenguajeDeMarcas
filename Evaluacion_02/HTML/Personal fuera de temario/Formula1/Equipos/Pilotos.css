@@ -43,7 +43,6 @@
     height: 100px; /* Altura del pie de página */
   }
   
-    /* hover styles */
     .piloto {
       position: relative;
     }
@@ -157,29 +156,19 @@
         filter: drop-shadow(5px -2px 8px #003cff );
     }
 
+    .Dorsal{
+      width: 100px;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      visibility: hidden; 
+    }
 
-    body::after {
-      content: "";
-      position: fixed;
-      top: 0; right: 0; bottom: 0; left: 0;
-      background: rgba(0, 0, 0, 0);
-      transition: background 1s;
-      pointer-events: none;
-      z-index: 9999;
+    .piloto:hover > .Dorsal{
+      transition: all ease-in-out 350ms;
+      visibility: visible;
     }
-    
-    #Alpine:hover ~ body::after,
-    #Aston-Martin:hover ~ body::after,
-    #Ferrari:hover ~ body::after,
-    #Haas:hover ~ body::after,
-    #Mclaren:hover ~ body::after,
-    #Mercedes:hover ~ body::after,
-    #Red-Bull:hover ~ body::after,
-    #Stake:hover ~ body::after,
-    #RB:hover ~ body::after,
-    #Williams:hover ~ body::after {
-      background: rgba(0, 0, 0, 0.5);
-    }
+
 
   /* 
     GRADIENTES DE FONDO PARA CADA EQUIPO
