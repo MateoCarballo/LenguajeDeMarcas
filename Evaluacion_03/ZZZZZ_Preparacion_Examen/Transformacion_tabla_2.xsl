@@ -16,7 +16,7 @@
               <xsl:element name="style">
                   h2{color:red}
                   table{border: solid;border-collapse:collapse;width:300px;background-color:red;
-                  font-size:1px;}
+                  font-size:16px;}
               </xsl:element>
           </xsl:element>
           <!--Etiqueta body-->
@@ -49,6 +49,9 @@
          </xsl:element>
          <xsl:element name="td">
             <xsl:value-of select="artist"/>
+         </xsl:element>
+         <xsl:element name="td">
+            <xsl:value-of select="year"/>
          </xsl:element>
     </xsl:element>
 </xsl:template>  

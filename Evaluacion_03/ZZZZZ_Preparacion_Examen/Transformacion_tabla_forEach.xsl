@@ -16,7 +16,7 @@
               <xsl:element name="style">
                   h2{color:red}
                   table{border: solid;border-collapse:collapse;width:300px;background-color:red;
-                  font-size:1px;}
+                  font-size:16px;}
               </xsl:element>
           </xsl:element>
           <!--Etiqueta body-->
@@ -24,33 +24,29 @@
               <xsl:element name="h2">Tabla Ejemplo</xsl:element>
               <xsl:element name="table">
                   <xsl:attribute name="border">1</xsl:attribute>
-                  
                   <xsl:element name="thead">
                       <xsl:element name="tr">
                           <xsl:element name="th">Encabezado 1</xsl:element>
                           <xsl:element name="th">Encabezado 2</xsl:element>
-                          <xsl:element name="th">Encabezado 3</xsl:element>
                       </xsl:element>
                   </xsl:element>
-
                    <xsl:element name="tbody">
-                      <xsl:apply-templates select="//cd"/>
+                   <!--BUCLE FOR-EACH-->
+                     <xsl:for-each select="//cd">
+                          <xsl:element name="tr">
+                              <xsl:element name="td">
+                              <xsl:value-of select="title"/>
+                              </xsl:element>
+                              <xsl:element name="td">
+                              <xsl:value-of select="artist"/>
+                              </xsl:element>
+                          </xsl:element>
+                     </xsl:for-each>
                   </xsl:element>
                   
               </xsl:element>
           </xsl:element>
       </xsl:element>
   </xsl:template>
-  
-<xsl:template match="cd">
-    <xsl:element name="tr">
-         <xsl:element name="td">
-            <xsl:value-of select="title"/>
-         </xsl:element>
-         <xsl:element name="td">
-            <xsl:value-of select="artist"/>
-         </xsl:element>
-    </xsl:element>
-</xsl:template>  
-  
+    
 </xsl:stylesheet>
