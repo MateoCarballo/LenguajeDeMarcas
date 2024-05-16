@@ -79,6 +79,12 @@
   <!-- Transformación condicionada -->
 </xsl:if>
 
+<!--3.1.C) Condicional IF expresandolos de una forma absoluta-->
+
+<xsl:if test="catalog/cd/year &lt; 1990">
+  <!-- Transformación condicionada -->
+</xsl:if>
+
 <!-- 3.1.1) Condicionales combinada con iteración -->
 <xsl:for-each select="NodoSobreElQueIterar">
 <xsl:if test="price &gt; 10">
