@@ -2,7 +2,7 @@
 <!-- COSAS APLICABLES DURANTE EL EXÁMEN-->
 
 <!-- Ejemplos de transformacion conocida -->
-<xsl:template match="">
+<xsl:template match="/">
 	<html>
 	<body>
 	<h2>Titulo</h2>
@@ -10,6 +10,7 @@
 	<xsl:apply-templates/>
 	</body>
 	</html>
+</xsl:template>
 
 	<xsl:template match="cd">
 		<p>
@@ -63,6 +64,19 @@
 <!-- 3.1) Condicional IF -->
 <xsl:if test="price &gt; 10">
 	<!-- Transformacion condicionada -->
+</xsl:if>
+
+<!--3.1.A.) Condicional IF para saber si existe o no un elemento con el atributo 'select=nodo'-->
+<xsl:if select="//nodo">
+  <!-- Transformación condicionada -->
+  <mensaje>Al menos existe un nodo como el del select.</mensaje>
+</xsl:if>
+
+
+<!--3.1.B) Condicional IF con dos condiciones 'test' y 'test2'-->
+
+<xsl:if test="price &gt; 10" test2="price &lt; 20">
+  <!-- Transformación condicionada -->
 </xsl:if>
 
 <!-- 3.1.1) Condicionales combinada con iteración -->

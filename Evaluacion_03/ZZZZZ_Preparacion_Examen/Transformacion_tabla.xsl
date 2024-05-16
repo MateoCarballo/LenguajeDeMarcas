@@ -15,8 +15,9 @@
               <xsl:element name="title">Tabla</xsl:element>
               <xsl:element name="style">
                   h2{color:red}
-                  table{border: solid;border-collapse:collapse;width:300px;background-color:red;
-                  font-size:1px;}
+                  th{background-color:green;}
+                  table{border: solid;border-collapse:collapse;width:300px;
+                  font-size:15px;}
               </xsl:element>
           </xsl:element>
           <!--Etiqueta body-->
@@ -34,7 +35,25 @@
                   </xsl:element>
 
                    <xsl:element name="tbody">
-                      <xsl:apply-templates select="//cd"/>
+                   <xsl:for-each select="//cd">
+                   <xsl:sort select="./artist"/>
+                   <xsl:if test="price >= 10.5">
+	                  
+                    
+                      <xsl:element name="tr">
+                          <xsl:element name="td">
+                              <xsl:value-of select="./title"/>
+                          </xsl:element>
+                          <xsl:element name="td">
+                              <xsl:value-of select="./artist"/>
+                          </xsl:element>
+                          <xsl:element name="td">
+                              <xsl:value-of select="./price"/>
+                          </xsl:element>
+                      </xsl:element>
+                      </xsl:if>
+                      </xsl:for-each>
+                      
                   </xsl:element>
                   
               </xsl:element>
@@ -42,6 +61,7 @@
       </xsl:element>
   </xsl:template>
   
+<!-- 
 <xsl:template match="cd">
     <xsl:element name="tr">
          <xsl:element name="td">
@@ -52,5 +72,6 @@
          </xsl:element>
     </xsl:element>
 </xsl:template>  
+-->
   
 </xsl:stylesheet>
