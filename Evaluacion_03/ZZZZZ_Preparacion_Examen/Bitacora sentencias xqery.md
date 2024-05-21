@@ -70,4 +70,357 @@ Pagina 13, Ejercicio 2:
 where $b/@año = "2000"
 return $b/titulo|<titulo>Data on the Web</titulo>|
 
- 
+## AGRUPACION DE EJEMPLOS xQery (sobre documento canciones.xml)
+```
+(: ejemplo 1 :)
+doc("canciones.xml")/MiBibliotecaMP3/archivo/canción
+```
+```
+(: ejemplo 2 :)
+doc("canciones.xml")/MiBibliotecaMP3/archivo[puntuacion=10]
+```
+```
+(: ejemplo 3 :)
+doc("canciones.xml")/MiBibliotecaMP3/archivo[puntuacion>8]/canción
+```
+```
+(: ejemplo 4 :)
+for $archivo in doc("canciones.xml")/MiBibliotecaMP3/archivo
+where $archivo/puntuacion>8
+return $archivo/canción
+```
+
+```
+(: ejemplo 5:)
+<html>
+
+	<head>
+	
+	<title>Ejemplo 5</title>
+
+	</head>
+	
+	<body>
+		<ol>
+			{
+			for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+			where $i/puntuacion>8
+			order by $i/puntuacion
+			return <li> {$i/canción}({$i/puntuacion}) </li>
+			}
+		</ol>
+	</body>
+</html>
+
+```
+```
+(: ejemplo 6:)
+<html>
+	<head>
+		<title>Ejemplo 6</title>
+	</head>
+
+	<body>
+		<ol>
+		{
+		for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+		where $i/puntuacion>8
+		order by $i/puntuacion
+		return <li> {data($i/canción)}({data($i/puntuacion)}) </li>
+		}
+		</ol>
+	</body>
+</html>
+```
+
+```
+(: ejemplo 7:)
+<html>
+	<head>
+		<title>Ejemplo 7</title>
+	</head>
+	<body>
+		<ol>
+		{
+		for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+		where $i/puntuacion>8
+		order by $i/puntuacion
+		return <li class="{data($i/@almacenado)}"> {data($i/canción)}({data($i/puntuacion)}) </li>
+		}
+		</ol>
+	</body>
+</html>
+```
+
+```
+(: ejemplo 8:)
+<html>
+	<head>
+		<title>Ejemplo 8</title>
+	</head>
+
+	<body>
+		<table>
+			<caption>DISCO 1 </caption>
+			<tr><td>Artista</td><td>Disco</td></tr>
+			{
+			for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+			order by $i/puntuacion
+			return if ($i/@almacenado="DISCO1")
+			then <tr><td>{data($i/artista)}</td><td>{data($i/disco)}</td></tr>
+			else ()
+			}
+		</table>
+
+		<table>
+			<caption>DISCO 2 </caption>
+			<tr><td>Artista</td><td>Disco</td></tr>
+			{
+			for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+			order by $i/puntuacion
+			return if ($i/@almacenado="DISCO2")
+			then <tr><td>{data($i/artista)}</td><td>{data($i/disco)}</td></tr>
+			else ()
+			}
+		</table>
+	</body>
+</html>
+
+```
+
+```
+(: ejemplo 9:)
+<html>
+	<head>
+		<title>Ejemplo 9</title>
+	</head>
+	
+	<body>
+		<table>
+		<caption>CANCIONES POR DISCO </caption>
+		<tr>
+			<td>Artista</td>
+			<td>Nombre disco</td>
+			<td>Grabada en</td>
+		</tr>
+		{
+		for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+		order by $i/puntuacion
+		return if ($i/@almacenado="DISCO1")
+		(:Aqui podemos omitir el usar then else para cada disco, cogiendo el valor del elemento
+		en lugar de evaluarlo para dar un resultado. Ver ejemplo 10:)
+		then <tr><td>{data($i/artista)}</td><td>{data($i/disco)}</td>
+		     <td>DISCO1</td></tr>
+		else <tr><td>{data($i/artista)}</td><td>{data($i/disco)}</td>
+		     <td>DISCO2</td></tr>
+		}
+		</table>
+	</body>
+</html>
+```
+
+```
+(: ejemplo 10:)
+<html>
+     <head>
+          <title>Ejemplo 10</title>
+     </head>
+
+     <body>
+          <table>
+          <caption>CANCIONES DE METALLICA </caption>
+          <tr>
+               <td>Canción</td>
+               <td>Disco</td>
+               <td>Grabada en</td>
+          </tr>
+          {
+          for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+          where $i/artista="Metallica"
+          order by $i/puntuacion
+          return 
+          <tr>
+               <td>{data($i/artista)}</td>
+               <td>{data($i/disco)}</td>
+               <td>{data($i/@almacenado)}</td>
+          </tr>
+          }
+          </table>
+     </body>
+</html>
+```
+
+```
+(: ejemplo 11 :)
+
+for $i in (1 to 10)
+return $i
+```
+
+```
+(: ejemplo 12:)
+<html>
+	<head>
+		<title>Ejemplo 12</title>
+	</head>
+
+	<body>
+		<ul>
+		{
+			(:$numeroDeIteracion nos devuelve el numero de elemento que es dentro del documento xml original:)
+		for $archivo at $numeroDeIteracion in doc("canciones.xml")/MiBibliotecaMP3/archivo
+		where $archivo/puntuacion>8
+		order by $archivo/puntuacion
+		return <li>{$numeroDeIteracion}. {data($archivo/canción)}({data($archivo/puntuacion)}) </li>
+		}
+		</ul>
+	</body>
+</html>
+```
+
+```
+(: ejemplo 13:)
+for $i in (1 to 5), $j in (1,2,3)
+return <resultado>i es {$i} j es {$j}</resultado>
+```
+
+```
+(: ejemplo 14:)
+let $i := (1 to 10)
+let $j := (1,2,3)
+let $k := 1 
+return <resultado>i es {$i} j es {$j} k es {$k}</resultado>
+```
+
+```
+(: ejemplo 15:)
+<html>
+	<head>
+		<title>Ejemplo 15</title>
+	</head>
+	<body>
+		<ol>
+		{
+		for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+		where $i/puntuacion=8 or $i/puntuacion=10
+		order by $i/puntuacion
+		return <li class="{data($i/@almacenado)}"> {data($i/canción)}({data($i/puntuacion)}) </li>
+		}
+		</ol>
+	</body>
+</html>
+```
+
+```
+(: ejemplo 16:)
+<html>
+   <head>
+      <title>Ejemplo 16</title>
+   </head>
+   <body>
+      <ol>
+      {
+      (: canciones de grupos cuyo nombre empieza por "M" y 
+         tienen puntuación de 9	:)
+      for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+      where $i[substring(artista,1,1)="M"] and $i/puntuacion=9
+      order by $i/puntuacion
+      return <li> {data($i/canción)}({data($i/artista)}) </li>
+      }
+      </ol>
+   </body>
+</html>
+```
+
+```
+(:ejemplo 17:)
+<html>
+   <head>
+      <title>Ejemplo 17</title>
+   </head>
+   <body>
+   <ol>
+   {
+   (: canciones de grupos cuyo nombre empieza por "M" y 
+      NO tienen puntuación de 9	:)
+   for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+   where $i[substring(artista,1,1)="M"] and not($i/puntuacion=9)
+   order by $i/puntuacion
+   return <li> {data($i/canción)}({data($i/artista)}) </li>
+   }
+   </ol>
+   </body>
+</html>
+```
+
+```
+(: ejercicio 18:)
+<html>
+     <head>
+     <title>Ejemplo 18</title>
+     </head>
+
+     <body>
+          <table>
+               <caption>CANCIONES POR DISCO </caption>
+               <tr>
+                    <td>Artista</td>
+                    <td>Nombre</td>
+                    <td>Grabada en</td>
+               </tr>
+               {
+               for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+               order by $i/artista ascending, $i/canción descending
+               return <tr>
+                    <td>{data($i/artista)}</td>
+                    <td>{data($i/canción)}</td>
+                    <td>{data($i/@almacenado)}</td>
+               </tr>
+               }
+          </table>
+     </body>
+</html>
+```
+
+```
+(: ejemplo 19:)
+<html>
+     <head>
+          <title>Ejemplo 19</title>
+     </head>
+
+     <body>
+          <table>
+               <caption>CANCIONES POR DISCO </caption>
+               <tr>
+                    <td>Artista</td>
+                    <td>Nombre</td>
+                    <td>Grabada en</td>
+               </tr>
+               {
+               for $i in doc("canciones.xml")/MiBibliotecaMP3/archivo
+               let $numero := (substring($i/@almacenado,6,1))
+               order by $i/artista ascending, $i/canción descending
+               return <tr><td>{upper-case(data($i/artista))}</td><td>{data($i/canción)}</td>
+                    <td>{$numero}</td></tr>
+               }
+          </table>
+     </body>
+</html>
+```
+
+```
+(: declaración de la función :)
+declare function local:MinutosASegundos($tiempo as xs:decimal?) as xs:decimal?
+{
+($tiempo*60) 
+};
+
+(: llamada a la función :)
+local:MinutosASegundos(14)
+```
+```
+(: Hola mundo en XQuery :)
+let $var := "¡Hola Mundo!"
+return $var
+```
