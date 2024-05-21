@@ -4,7 +4,10 @@
 
 **Procedimiento:** Clic en eXist-bd Launcher, luego “Open Java Admin Client”, entramos en recurso “gutierrez2005”, clic en prismáticos (Consultar la base de datos usando XPath), editamos las consultas y clic en Ejecutar.
 
-## Pág. 12
+## EJEMPLOS xQery (sobre documento libros.xml y comentarios.xml)
+
+
+### Pág. 12
 
 Completamos la consulta como:
 
@@ -31,9 +34,10 @@ let $b := doc("/db/gutierrez2005/libros.xml") //bib/libro
 return count($b)
 resultado:
 4
-
+```
 ** IMPORTANTE
 
+```xquery
 Al usar *for* cada libro esta encerrado dentro de otro elemento '<libros>' sin embargo al usar 
 *let* solo hay un elemento '<libros>' que engloba a todos los libros.
 
@@ -50,25 +54,28 @@ return <libros>{$b}</libros>
 resultado:
 <libros><libro>….</libro><libro>….</libro>….</libros>
 
-```
+``` 
 
-Pagina 13, Ejercicio 1:
 
-|Consulta|Resultado|
-|--------|---------|
-|for $b in doc("libros.xml") //libro
+```xquery
+(:consulta Pagina 13, Ejercicio 1:)
+for $b in doc("libros.xml") //libro
 let $c := $b/autor
 where count($c) > 2
 return $b/titulo|<titulo>Data on the Web</titulo>|
-
-
-Pagina 13, Ejercicio 2:
-
-|Consulta|Resultado|
-|--------|---------|
-|for $b in doc("libros.xml") //libro
+```
+```xquery
+(:Pagina 13, Ejercicio 2:)
+for $b in doc("libros.xml") //libro
 where $b/@año = "2000"
-return $b/titulo|<titulo>Data on the Web</titulo>|
+return $b/titulo|<titulo>Data on the Web</titulo>
+```
+
+
+
+
+
+
 
 ## AGRUPACION DE EJEMPLOS xQery (sobre documento canciones.xml)
 ```xquery
