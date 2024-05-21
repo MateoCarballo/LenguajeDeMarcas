@@ -71,26 +71,26 @@ where $b/@año = "2000"
 return $b/titulo|<titulo>Data on the Web</titulo>|
 
 ## AGRUPACION DE EJEMPLOS xQery (sobre documento canciones.xml)
-```
+```xquery
 (: ejemplo 1 :)
 doc("canciones.xml")/MiBibliotecaMP3/archivo/canción
 ```
-```
+```xquery
 (: ejemplo 2 :)
 doc("canciones.xml")/MiBibliotecaMP3/archivo[puntuacion=10]
 ```
-```
+```xquery
 (: ejemplo 3 :)
 doc("canciones.xml")/MiBibliotecaMP3/archivo[puntuacion>8]/canción
 ```
-```
+```xquery
 (: ejemplo 4 :)
 for $archivo in doc("canciones.xml")/MiBibliotecaMP3/archivo
 where $archivo/puntuacion>8
 return $archivo/canción
 ```
 
-```
+```xquery
 (: ejemplo 5:)
 <html>
 
@@ -113,7 +113,7 @@ return $archivo/canción
 </html>
 
 ```
-```
+```xquery
 (: ejemplo 6:)
 <html>
 	<head>
@@ -133,7 +133,7 @@ return $archivo/canción
 </html>
 ```
 
-```
+```xquery
 (: ejemplo 7:)
 <html>
 	<head>
@@ -152,7 +152,7 @@ return $archivo/canción
 </html>
 ```
 
-```
+```xquery
 (: ejemplo 8:)
 <html>
 	<head>
@@ -188,7 +188,7 @@ return $archivo/canción
 
 ```
 
-```
+```xquery
 (: ejemplo 9:)
 <html>
 	<head>
@@ -219,7 +219,7 @@ return $archivo/canción
 </html>
 ```
 
-```
+```xquery
 (: ejemplo 10:)
 <html>
      <head>
@@ -250,14 +250,14 @@ return $archivo/canción
 </html>
 ```
 
-```
+```xquery
 (: ejemplo 11 :)
 
 for $i in (1 to 10)
 return $i
 ```
 
-```
+```xquery
 (: ejemplo 12:)
 <html>
 	<head>
@@ -278,7 +278,7 @@ return $i
 </html>
 ```
 
-```
+```xquery
 (: ejemplo 13:)
 for $i in (1 to 5), $j in (1,2,3)
 return <resultado>i es {$i} j es {$j}</resultado>
@@ -292,7 +292,7 @@ let $k := 1
 return <resultado>i es {$i} j es {$j} k es {$k}</resultado>
 ```
 
-```
+```xquery
 (: ejemplo 15:)
 <html>
 	<head>
@@ -311,7 +311,7 @@ return <resultado>i es {$i} j es {$j} k es {$k}</resultado>
 </html>
 ```
 
-```
+```xquery
 (: ejemplo 16:)
 <html>
    <head>
@@ -332,7 +332,7 @@ return <resultado>i es {$i} j es {$j} k es {$k}</resultado>
 </html>
 ```
 
-```
+```xquery
 (:ejemplo 17:)
 <html>
    <head>
@@ -353,7 +353,7 @@ return <resultado>i es {$i} j es {$j} k es {$k}</resultado>
 </html>
 ```
 
-```
+```xquery
 (: ejercicio 18:)
 <html>
      <head>
@@ -382,7 +382,7 @@ return <resultado>i es {$i} j es {$j} k es {$k}</resultado>
 </html>
 ```
 
-```
+```xquery
 (: ejemplo 19:)
 <html>
      <head>
@@ -409,7 +409,7 @@ return <resultado>i es {$i} j es {$j} k es {$k}</resultado>
 </html>
 ```
 
-```
+```xquery
 (: declaración de la función :)
 declare function local:MinutosASegundos($tiempo as xs:decimal?) as xs:decimal?
 {
@@ -419,7 +419,7 @@ declare function local:MinutosASegundos($tiempo as xs:decimal?) as xs:decimal?
 (: llamada a la función :)
 local:MinutosASegundos(14)
 ```
-```
+```xquery
 (: Hola mundo en XQuery :)
 let $var := "¡Hola Mundo!"
 return $var
