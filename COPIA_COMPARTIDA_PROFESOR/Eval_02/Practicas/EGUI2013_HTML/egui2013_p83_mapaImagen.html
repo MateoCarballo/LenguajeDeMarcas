@@ -1,0 +1,22 @@
+<html>
+<head><title>Ejemplo de mapa de imagen</title></head>
+<body>
+<h2>Un mapa de imagen</h2>
+<p>
+Un mapa de imagen permite definir diferentes zonas "pinchables" dentro de una imagen. El
+usuario puede pinchar sobre cada una de las zonas definidas y cada una de ellas puede apuntar a
+una URL diferente.
+</p>
+<p align="center">
+<img align="center" src="images/figuras.gif" usemap="#mapa_zonas"alt="Imagen con figuras" width="200" />
+</p>
+<map name="mapa_zonas">
+<area shape="rect" coords="20,25,84,113" href="egui2013_p83_rectanguloAzul.html" />
+<area shape="polygon" coords="90,25,162,26,163,96,89,25,90,24" href="egui2013_p83_triangulo.html"
+/>
+<area shape="circle" coords="130,114,29" href="egui2013_p83_circulo.html" />
+<area shape="rect" coords="19,156,170,211" href="egui2013_p83_rectanguloVerde.html" />
+<area shape="default" nohref="nohref" />
+</map>
+</body>
+</html>

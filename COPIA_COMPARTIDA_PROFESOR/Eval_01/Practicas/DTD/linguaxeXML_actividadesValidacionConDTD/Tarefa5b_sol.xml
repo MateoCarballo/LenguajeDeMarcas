@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reservas [
+<!ELEMENT reservas (reserva)+>
+<!ATTLIST reservas ano CDATA #REQUIRED>
+<!ELEMENT reserva (data , evento? , (clienteEmpresa | clientePersoal))>
+<!ATTLIST reserva local (polideportivo | localSocial) #REQUIRED>
+<!ATTLIST reserva bonificacion CDATA #IMPLIED>
+<!ELEMENT data EMPTY>
+<!ATTLIST data mes CDATA #REQUIRED>
+<!ATTLIST data dia CDATA #REQUIRED>
+<!ATTLIST data horario (maña | tarde | día) "tarde">
+<!ELEMENT evento (#PCDATA)>
+<!ELEMENT clienteEmpresa (#PCDATA)>
+<!ELEMENT clientePersoal (#PCDATA)>
+]>
+<reservas ano="2023">
+  <reserva local="polideportivo" bonificacion="0.3">
+    <data mes="enero" dia="25" horario="día"/>
+    <evento>Campeonato Padel</evento>
+    <clienteEmpresa>AlfaSA</clienteEmpresa>
+  </reserva>
+  <reserva local="localSocial">
+    <data mes="Outubro" dia="23" horario="día"/>
+    <clientePersoal>Manuela Samos García</clientePersoal>
+  </reserva>
+</reservas>

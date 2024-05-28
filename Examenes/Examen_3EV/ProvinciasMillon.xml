@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<provinciaMillon>
+  <provincia>
+    <codPRO>28</codPRO>
+    <nomPRO>Madrid</nomPRO>
+    <numHAB>6424370</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>8</codPRO>
+    <nomPRO>Barcelona</nomPRO>
+    <numHAB>5498384</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>46</codPRO>
+    <nomPRO>Valencia</nomPRO>
+    <numHAB>2555253</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>41</codPRO>
+    <nomPRO>Sevilla</nomPRO>
+    <numHAB>1934421</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>3</codPRO>
+    <nomPRO>Alicante</nomPRO>
+    <numHAB>1854319</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>29</codPRO>
+    <nomPRO>Málaga</nomPRO>
+    <numHAB>1605515</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>30</codPRO>
+    <nomPRO>Murcia</nomPRO>
+    <numHAB>1460227</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>11</codPRO>
+    <nomPRO>Cádiz</nomPRO>
+    <numHAB>1245834</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>48</codPRO>
+    <nomPRO>Bizkaia</nomPRO>
+    <numHAB>1151648</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>15</codPRO>
+    <nomPRO>A Coruña</nomPRO>
+    <numHAB>1139680</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>7</codPRO>
+    <nomPRO>Illes Balears</nomPRO>
+    <numHAB>1104604</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>35</codPRO>
+    <nomPRO>Las Palmas</nomPRO>
+    <numHAB>1092133</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>33</codPRO>
+    <nomPRO>Principado de Asturias</nomPRO>
+    <numHAB>1070518</numHAB>
+  </provincia>
+  <provincia>
+    <codPRO>38</codPRO>
+    <nomPRO>Sta. Cruz de Tenerife</nomPRO>
+    <numHAB>1000468</numHAB>
+  </provincia>
+</provinciaMillon>

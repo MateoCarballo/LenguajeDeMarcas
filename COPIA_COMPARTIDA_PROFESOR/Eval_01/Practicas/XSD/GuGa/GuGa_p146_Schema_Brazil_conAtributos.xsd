@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documento: GuGa_p146_Schema_Brazil_conAtributos.xsd
+      Observaciones: derivado de GuGa_p136_Brazil_conSchema.xml; cambiamos elementos por atributos-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="pelicula">
+      <complexType>
+          <attribute name="titulo" type="string"/>
+          <attribute name="minutos" type="integer"/>
+      </complexType>
+  </element>
+</schema>

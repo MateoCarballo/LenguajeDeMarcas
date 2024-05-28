@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instituto SYSTEM "tarefa_4_a.dtd">
+<instituto>
+  <alumno numExpedente="123" nome="Alicia María" apelido1="Casal" apelido2="Ferreiro"/>
+  <alumno numExpedente="155" nome="Fernando" apelido1="Puga" />
+  <profesor NRP="1234A590" nome="Carme" apelido1="Bouza" apelido2="Dominguez"/>
+  <alumno numExpedente="3442" nome="Fernando" apelido1="Puga" apelido2="Prado" />
+  </instituto>

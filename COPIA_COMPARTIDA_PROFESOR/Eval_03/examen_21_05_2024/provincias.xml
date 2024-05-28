@@ -1,0 +1,262 @@
+<provincias>
+<provincia codPRO="4">
+<codCCAA>AN</codCCAA>
+<nomPRO>Almería</nomPRO>
+<numHAB>690099</numHAB>
+</provincia>
+<provincia codPRO="11">
+<codCCAA>AN</codCCAA>
+<nomPRO>Cádiz</nomPRO>
+<numHAB>1245834</numHAB>
+</provincia>
+<provincia codPRO="14">
+<codCCAA>AN</codCCAA>
+<nomPRO>Córdoba</nomPRO>
+<numHAB>801343</numHAB>
+</provincia>
+<provincia codPRO="18">
+<codCCAA>AN</codCCAA>
+<nomPRO>Granada</nomPRO>
+<numHAB>922184</numHAB>
+</provincia>
+<provincia codPRO="23">
+<codCCAA>AN</codCCAA>
+<nomPRO>Jaén</nomPRO>
+<numHAB>664374</numHAB>
+</provincia>
+<provincia codPRO="21">
+<codCCAA>AN</codCCAA>
+<nomPRO>Huelva</nomPRO>
+<numHAB>520183</numHAB>
+</provincia>
+<provincia codPRO="29">
+<codCCAA>AN</codCCAA>
+<nomPRO>Málaga</nomPRO>
+<numHAB>1605515</numHAB>
+</provincia>
+<provincia codPRO="41">
+<codCCAA>AN</codCCAA>
+<nomPRO>Sevilla</nomPRO>
+<numHAB>1934421</numHAB>
+</provincia>
+<provincia codPRO="22">
+<codCCAA>AR</codCCAA>
+<nomPRO>Huesca</nomPRO>
+<numHAB>225009</numHAB>
+</provincia>
+<provincia codPRO="44">
+<codCCAA>AR</codCCAA>
+<nomPRO>Teruel</nomPRO>
+<numHAB>141902</numHAB>
+</provincia>
+<provincia codPRO="50">
+<codCCAA>AR</codCCAA>
+<nomPRO>Zaragoza</nomPRO>
+<numHAB>973806</numHAB>
+</provincia>
+<provincia codPRO="33">
+<codCCAA>AS</codCCAA>
+<nomPRO>Principado de Asturias</nomPRO>
+<numHAB>1070518</numHAB>
+</provincia>
+<provincia codPRO="7">
+<codCCAA>BL</codCCAA>
+<nomPRO>Illes Balears</nomPRO>
+<numHAB>1104604</numHAB>
+</provincia>
+<provincia codPRO="35">
+<codCCAA>CA</codCCAA>
+<nomPRO>Las Palmas</nomPRO>
+<numHAB>1092133</numHAB>
+</provincia>
+<provincia codPRO="38">
+<codCCAA>CA</codCCAA>
+<nomPRO>Sta. Cruz de Tenerife</nomPRO>
+<numHAB>1000468</numHAB>
+</provincia>
+<provincia codPRO="5">
+<codCCAA>CL</codCCAA>
+<nomPRO>Ávila</nomPRO>
+<numHAB>170203</numHAB>
+</provincia>
+<provincia codPRO="9">
+<codCCAA>CL</codCCAA>
+<nomPRO>Burgos</nomPRO>
+<numHAB>370091</numHAB>
+</provincia>
+<provincia codPRO="24">
+<codCCAA>CL</codCCAA>
+<nomPRO>León</nomPRO>
+<numHAB>490618</numHAB>
+</provincia>
+<provincia codPRO="34">
+<codCCAA>CL</codCCAA>
+<nomPRO>Palencia</nomPRO>
+<numHAB>169469</numHAB>
+</provincia>
+<provincia codPRO="37">
+<codCCAA>CL</codCCAA>
+<nomPRO>Salamanca</nomPRO>
+<numHAB>348307</numHAB>
+</provincia>
+<provincia codPRO="40">
+<codCCAA>CL</codCCAA>
+<nomPRO>Segovia</nomPRO>
+<numHAB>162080</numHAB>
+</provincia>
+<provincia codPRO="42">
+<codCCAA>CL</codCCAA>
+<nomPRO>Soria</nomPRO>
+<numHAB>93965</numHAB>
+</provincia>
+<provincia codPRO="47">
+<codCCAA>CL</codCCAA>
+<nomPRO>Valladolid</nomPRO>
+<numHAB>531613</numHAB>
+</provincia>
+<provincia codPRO="49">
+<codCCAA>CL</codCCAA>
+<nomPRO>Zamora</nomPRO>
+<numHAB>190074</numHAB>
+</provincia>
+<provincia codPRO="2">
+<codCCAA>CM</codCCAA>
+<nomPRO>Albacete</nomPRO>
+<numHAB>400331</numHAB>
+</provincia>
+<provincia codPRO="13">
+<codCCAA>CM</codCCAA>
+<nomPRO>Ciudad real</nomPRO>
+<numHAB>524098</numHAB>
+</provincia>
+<provincia codPRO="16">
+<codCCAA>CM</codCCAA>
+<nomPRO>Cuenca</nomPRO>
+<numHAB>213030</numHAB>
+</provincia>
+<provincia codPRO="19">
+<codCCAA>CM</codCCAA>
+<nomPRO>Guadalajara</nomPRO>
+<numHAB>257398</numHAB>
+</provincia>
+<provincia codPRO="45">
+<codCCAA>CM</codCCAA>
+<nomPRO>Toledo</nomPRO>
+<numHAB>704522</numHAB>
+</provincia>
+<provincia codPRO="39">
+<codCCAA>CN</codCCAA>
+<nomPRO>Cantabria</nomPRO>
+<numHAB>590984</numHAB>
+</provincia>
+<provincia codPRO="8">
+<codCCAA>CT</codCCAA>
+<nomPRO>Barcelona</nomPRO>
+<numHAB>5498384</numHAB>
+</provincia>
+<provincia codPRO="17">
+<codCCAA>CT</codCCAA>
+<nomPRO>Girona</nomPRO>
+<numHAB>750023</numHAB>
+</provincia>
+<provincia codPRO="25">
+<codCCAA>CT</codCCAA>
+<nomPRO>Lleida</nomPRO>
+<numHAB>437088</numHAB>
+</provincia>
+<provincia codPRO="43">
+<codCCAA>CT</codCCAA>
+<nomPRO>Tarragona</nomPRO>
+<numHAB>804871</numHAB>
+</provincia>
+<provincia codPRO="3">
+<codCCAA>CV</codCCAA>
+<nomPRO>Alicante</nomPRO>
+<numHAB>1854319</numHAB>
+</provincia>
+<provincia codPRO="12">
+<codCCAA>CV</codCCAA>
+<nomPRO>Castellón</nomPRO>
+<numHAB>590573</numHAB>
+</provincia>
+<provincia codPRO="46">
+<codCCAA>CV</codCCAA>
+<nomPRO>Valencia</nomPRO>
+<numHAB>2555253</numHAB>
+</provincia>
+<provincia codPRO="6">
+<codCCAA>EX</codCCAA>
+<nomPRO>Badajoz</nomPRO>
+<numHAB>690876</numHAB>
+</provincia>
+<provincia codPRO="10">
+<codCCAA>EX</codCCAA>
+<nomPRO>Cáceres</nomPRO>
+<numHAB>411172</numHAB>
+</provincia>
+<provincia codPRO="15">
+<codCCAA>GL</codCCAA>
+<nomPRO>A Coruña</nomPRO>
+<numHAB>1139680</numHAB>
+</provincia>
+<provincia codPRO="27">
+<codCCAA>GL</codCCAA>
+<nomPRO>Lugo</nomPRO>
+<numHAB>346037</numHAB>
+</provincia>
+<provincia codPRO="32">
+<codCCAA>GL</codCCAA>
+<nomPRO>Ourense</nomPRO>
+<numHAB>326398</numHAB>
+</provincia>
+<provincia codPRO="36">
+<codCCAA>GL</codCCAA>
+<nomPRO>Pontevedra</nomPRO>
+<numHAB>953548</numHAB>
+</provincia>
+<provincia codPRO="51">
+<codCCAA>IN</codCCAA>
+<nomPRO>Ceuta</nomPRO>
+<numHAB>84235</numHAB>
+</provincia>
+<provincia codPRO="52">
+<codCCAA>IN</codCCAA>
+<nomPRO>Melilla</nomPRO>
+<numHAB>82690</numHAB>
+</provincia>
+<provincia codPRO="26">
+<codCCAA>LR</codCCAA>
+<nomPRO>La Rioja</nomPRO>
+<numHAB>320160</numHAB>
+</provincia>
+<provincia codPRO="28">
+<codCCAA>MD</codCCAA>
+<nomPRO>Madrid</nomPRO>
+<numHAB>6424370</numHAB>
+</provincia>
+<provincia codPRO="30">
+<codCCAA>MR</codCCAA>
+<nomPRO>Murcia</nomPRO>
+<numHAB>1460227</numHAB>
+</provincia>
+<provincia codPRO="31">
+<codCCAA>NV</codCCAA>
+<nomPRO>Navarra</nomPRO>
+<numHAB>639081</numHAB>
+</provincia>
+<provincia codPRO="1">
+<codCCAA>PV</codCCAA>
+<nomPRO>Álava/Araba</nomPRO>
+<numHAB>319082</numHAB>
+</provincia>
+<provincia codPRO="20">
+<codCCAA>PV</codCCAA>
+<nomPRO>Gipuzkoa</nomPRO>
+<numHAB>707969</numHAB>
+</provincia>
+<provincia codPRO="48">
+<codCCAA>PV</codCCAA>
+<nomPRO>Bizkaia</nomPRO>
+<numHAB>1151648</numHAB>
+</provincia>
+</provincias>
